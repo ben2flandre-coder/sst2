@@ -408,3 +408,22 @@
   padding: 8px;
   font-size: 0.85rem;
 }
+
+.objective-card { border-left: 5px solid #2563eb; background: #eff6ff; }
+.urgency-card { border-left: 5px solid #dc2626; background: #fff1f2; }
+.remember-card { border-left: 5px solid #0f766e; background: #f0fdfa; }
+
+.pi-grid { display: grid; gap: 10px; }
+.pi-card p { margin: 6px 0; }
+
+.sim-head,
+.sim-stats-inline,
+.variant-switch { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.sim-choices-grid { display: grid; gap: 8px; margin: 10px 0; }
+.sim-feedback-box { margin: 6px 0; padding: 10px; border-radius: 10px; background: #f8fafc; border: 1px solid #e2e8f0; }
+.sim-feedback-box.good { border-color: #10b981; background: #ecfdf5; }
+.sim-feedback-box.warn { border-color: #f59e0b; background: #fffbeb; }
+.sim-feedback-box.bad { border-color: #ef4444; background: #fef2f2; }
+.sim-hint { font-size: 0.92rem; color: #334155; }
+.sim-report pre { white-space: pre-wrap; background: #f8fafc; padding: 8px; border-radius: 8px; }
+.staying-logo { margin: 8px 0 12px; }

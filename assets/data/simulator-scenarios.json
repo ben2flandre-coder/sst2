@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "title": "Simulateur SST opérationnel",
+    "timeLimit": 90,
+    "passingScore": 75
+  },
+  "scenarios": [
+    {
+      "id": "arret-cardiaque",
+      "title": "Arrêt cardiaque en open-space",
+      "context": "Bureau",
+      "description": "Un collègue s'effondre, ne répond pas et ne respire pas normalement.",
+      "variantHints": {
+        "adulte": "Compressions thoraciques au centre du thorax, DAE dès disponibilité.",
+        "enfant": "Compressions adaptées à la morphologie, alterner avec insufflations si formé.",
+        "nourrisson": "5 insufflations initiales puis compressions à 2 doigts en attendant le relais."
+      },
+      "steps": [
+        {
+          "phase": "proteger",
+          "question": "Première action ?",
+          "choices": [
+            { "label": "Sécuriser la zone et demander un DAE", "correct": true, "feedback": "Bonne décision : vous évitez un sur-accident avant d'agir." },
+            { "label": "Déplacer la victime pour faire de la place", "critical": true, "feedback": "Erreur critique : déplacement injustifié d'une victime en détresse vitale." },
+            { "label": "Attendre le manager", "feedback": "Perte de temps : le SST déclenche immédiatement la chaîne de secours." }
+          ]
+        },
+        {
+          "phase": "examiner",
+          "question": "Que vérifiez-vous en priorité ?",
+          "choices": [
+            { "label": "Conscience puis respiration", "correct": true, "feedback": "Exact : l'examen oriente immédiatement vers la RCP." },
+            { "label": "Température corporelle", "feedback": "Secondaire ici, non prioritaire en détresse vitale." },
+            { "label": "Antécédents médicaux détaillés", "feedback": "À transmettre plus tard, priorité à la survie immédiate." }
+          ]
+        },
+        {
+          "phase": "alerter",
+          "question": "Quelle alerte est la plus adaptée ?",
+          "choices": [
+            { "label": "15/112 + infos précises + haut-parleur", "correct": true, "feedback": "Alerte conforme : localisation + état + gestes en cours." },
+            { "label": "Message vocal incomplet au standard", "feedback": "Alerte insuffisante et non structurée." },
+            { "label": "Poster sur le chat d'équipe", "feedback": "Canal non adapté à une urgence vitale." }
+          ]
+        },
+        {
+          "phase": "secourir",
+          "question": "Action de secours prioritaire ?",
+          "choices": [
+            { "label": "RCP immédiate et DAE dès arrivée", "correct": true, "feedback": "Conduite attendue pour maximiser la survie." },
+            { "label": "Mettre en PLS", "feedback": "Incorrect : la PLS concerne une victime inconsciente qui respire." },
+            { "label": "Donner à boire", "feedback": "Contre-indiqué en arrêt cardiaque." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hemorragie",
+      "title": "Hémorragie sur atelier",
+      "context": "Atelier",
+      "description": "Plaie profonde de l'avant-bras avec saignement abondant continu.",
+      "variantHints": {
+        "adulte": "Compression manuelle ferme puis relais compressif.",
+        "enfant": "Compression douce mais efficace, rassurer activement.",
+        "nourrisson": "Compression adaptée à la taille, surveillance constante des signes vitaux."
+      },
+      "steps": [
+        {
+          "phase": "proteger",
+          "question": "Choix initial ?",
+          "choices": [
+            { "label": "Porter des gants / protection puis comprimer", "correct": true, "feedback": "Bien : auto-protection + contrôle immédiat du saignement." },
+            { "label": "Rincer longtemps la plaie", "feedback": "Retarde la compression qui est prioritaire." },
+            { "label": "Chercher le dossier RH", "feedback": "Non pertinent face à l'urgence." }
+          ]
+        },
+        {
+          "phase": "examiner",
+          "question": "Quel signe confirme la gravité ?",
+          "choices": [
+            { "label": "Saignement abondant qui ne cesse pas", "correct": true, "feedback": "Critère de gravité confirmé." },
+            { "label": "Main froide isolée", "feedback": "Indicateur incomplet sans vision globale." },
+            { "label": "Victime assise", "feedback": "La posture ne qualifie pas seule la gravité." }
+          ]
+        },
+        {
+          "phase": "alerter",
+          "question": "Message d'alerte attendu ?",
+          "choices": [
+            { "label": "18/112, hémorragie massive, compression en cours", "correct": true, "feedback": "Alerte structurée et opérationnelle." },
+            { "label": "On verra si ça saigne encore dans 5 min", "critical": true, "feedback": "Erreur critique : délai dangereux en hémorragie." },
+            { "label": "Simple SMS sans adresse", "feedback": "Informations insuffisantes." }
+          ]
+        },
+        {
+          "phase": "secourir",
+          "question": "Conduite jusqu'à la relève ?",
+          "choices": [
+            { "label": "Maintenir compression + surveillance + relais", "correct": true, "feedback": "Conduite conforme INRS en attendant les secours." },
+            { "label": "Retirer la compression pour contrôler visuellement", "feedback": "Risque de reprise d'hémorragie." },
+            { "label": "Faire marcher la victime", "feedback": "Aggrave potentiellement l'état circulatoire." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "etouffement",
+      "title": "Étouffement en réfectoire",
+      "context": "Réfectoire",
+      "description": "Victime avec toux inefficace, cyanose, impossibilité de parler.",
+      "variantHints": {
+        "adulte": "5 claques dorsales puis compressions abdominales si inefficace.",
+        "enfant": "Gestes identiques adaptés à la taille et à la force.",
+        "nourrisson": "Claques dorsales + compressions thoraciques, jamais de Heimlich abdominal."
+      },
+      "steps": [
+        {
+          "phase": "proteger",
+          "question": "Premier réflexe ?",
+          "choices": [
+            { "label": "Faire asseoir et rassurer, préparer intervention", "correct": true, "feedback": "Correct : sécurisation immédiate et action rapide." },
+            { "label": "Donner de l'eau", "feedback": "Contre-indiqué en obstruction sévère." },
+            { "label": "Frapper fort sur la poitrine", "feedback": "Geste non recommandé dans ce contexte." }
+          ]
+        },
+        {
+          "phase": "examiner",
+          "question": "Quel signe clé ?",
+          "choices": [
+            { "label": "Toux inefficace et silence respiratoire", "correct": true, "feedback": "Oui : obstruction sévère probable." },
+            { "label": "Parole normale", "feedback": "Signifierait plutôt une obstruction légère." },
+            { "label": "Douleur jambe", "feedback": "Sans lien." }
+          ]
+        },
+        {
+          "phase": "alerter",
+          "question": "Quand alerter ?",
+          "choices": [
+            { "label": "Immédiatement en parallèle des manœuvres", "correct": true, "feedback": "Exact : intervention + alerte simultanées." },
+            { "label": "Après 10 minutes", "feedback": "Trop tardif." },
+            { "label": "Seulement si témoin insiste", "feedback": "L'alerte ne dépend pas de l'avis des témoins." }
+          ]
+        },
+        {
+          "phase": "secourir",
+          "question": "Conduite adaptée ?",
+          "choices": [
+            { "label": "Claques dorsales puis compressions adaptées", "correct": true, "feedback": "Conforme au protocole." },
+            { "label": "PLS immédiate", "feedback": "Non, sauf perte de connaissance." },
+            { "label": "Mise debout et attente", "feedback": "Risque d'aggravation." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chute-trauma",
+      "title": "Chute traumatique sur chantier",
+      "context": "Chantier",
+      "description": "Ouvrier tombé de 2,5 m, douleur dorsale intense, victime consciente.",
+      "variantHints": {
+        "adulte": "Limiter mobilisation, maintien tête-cou-tronc alignés.",
+        "enfant": "Immobilisation douce et accompagnement verbal.",
+        "nourrisson": "Prise en charge spécialisée urgente, manipulation minimale."
+      },
+      "steps": [
+        {
+          "phase": "proteger",
+          "question": "Priorité terrain ?",
+          "choices": [
+            { "label": "Baliser la zone de chute", "correct": true, "feedback": "Oui : éviter un second accident." },
+            { "label": "Relever immédiatement la victime", "critical": true, "feedback": "Erreur critique : aggravation possible d'un traumatisme rachidien." },
+            { "label": "Faire une photo", "feedback": "Non prioritaire." }
+          ]
+        },
+        {
+          "phase": "examiner",
+          "question": "Évaluation initiale ?",
+          "choices": [
+            { "label": "Conscience, respiration, douleur, déficit moteur", "correct": true, "feedback": "Bilan adapté au traumatisme." },
+            { "label": "Seulement douleur", "feedback": "Insuffisant." },
+            { "label": "Uniquement tension artérielle", "feedback": "Non accessible/secondaire ici." }
+          ]
+        },
+        {
+          "phase": "alerter",
+          "question": "Type d'alerte ?",
+          "choices": [
+            { "label": "112 avec notion de chute de hauteur", "correct": true, "feedback": "Information critique bien transmise." },
+            { "label": "Reporter à la fin de poste", "feedback": "Inacceptable." },
+            { "label": "Alerte partielle sans hauteur de chute", "feedback": "Alerte incomplète." }
+          ]
+        },
+        {
+          "phase": "secourir",
+          "question": "Action jusqu'à la relève ?",
+          "choices": [
+            { "label": "Immobiliser, couvrir, surveiller", "correct": true, "feedback": "Conduite adaptée." },
+            { "label": "Faire marcher pour tester", "feedback": "Risque majeur." },
+            { "label": "Donner un anti-douleur oral", "feedback": "Non recommandé en premier secours." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malaise",
+      "title": "Malaise brutal en accueil",
+      "context": "Accueil",
+      "description": "Victime pâle, sueurs, propos confus et douleur thoracique.",
+      "variantHints": {
+        "adulte": "Installer au repos strict et alerte urgente.",
+        "enfant": "Adapter position de confort et rassurer le parent/témoin.",
+        "nourrisson": "Détresse atypique : surveillance rapprochée + alerte immédiate."
+      },
+      "steps": [
+        {
+          "phase": "proteger",
+          "question": "Action de sécurisation ?",
+          "choices": [
+            { "label": "Isoler du flux et asseoir en position confortable", "correct": true, "feedback": "Bonne protection et limitation des efforts." },
+            { "label": "Forcer à marcher", "feedback": "Peut aggraver le malaise." },
+            { "label": "Ignorer les signes", "feedback": "Perte de chance importante." }
+          ]
+        },
+        {
+          "phase": "examiner",
+          "question": "Quels signes à relever ?",
+          "choices": [
+            { "label": "Douleur thoracique, conscience, respiration", "correct": true, "feedback": "Examen ciblé et pertinent." },
+            { "label": "Couleur des chaussures", "feedback": "Sans intérêt médical." },
+            { "label": "Ancienneté professionnelle", "feedback": "Hors priorité." }
+          ]
+        },
+        {
+          "phase": "alerter",
+          "question": "Numéro conseillé ?",
+          "choices": [
+            { "label": "15 ou 112 avec symptômes précis", "correct": true, "feedback": "Alerte médicale adaptée." },
+            { "label": "Seulement message interne", "feedback": "Insuffisant en urgence potentielle." },
+            { "label": "Attendre 30 minutes", "feedback": "Délai dangereux." }
+          ]
+        },
+        {
+          "phase": "secourir",
+          "question": "Conduite d'attente ?",
+          "choices": [
+            { "label": "Surveiller en continu et réévaluer", "correct": true, "feedback": "Conforme : surveillance active jusqu'à relève." },
+            { "label": "Donner café énergétique", "feedback": "Peut aggraver certains tableaux." },
+            { "label": "Laisser seul", "feedback": "Contre-indiqué." }
+          ]
+        }
+      ]
+    }
+  ]
+}
