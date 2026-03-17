@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module C7 — Analyser le risque</title>
+  <title>Module 7 — Simulateur SST opérationnel</title>
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
@@ -15,17 +15,38 @@
   </header>
   <main class="app-main">
     <section class="hero">
-      <h1>C7 — Analyser</h1>
-      <p>Tu pars du réel, pas d'un quiz passif : repérer le danger, qualifier le risque, anticiper le dommage.</p>
+      <h1>Module 7 — Simulateur SST pro</h1>
+      <p>Simulation immersive d'intervention : décider sous pression selon PAP (Protéger, Examiner, Alerter, Secourir).</p>
     </section>
 
-    <section class="card-action">
-      <h2>Simulator SST C7</h2>
-      <p>Chaque erreur est utile : on t'explique pourquoi ce n'est pas le bon raisonnement.</p>
-      <p class="sim-progress-text" data-sim-global-progress>C7 : 0/2 cas validés.</p>
+    <section class="grid two">
+      <article class="card objective-card"><h3>🎯 Objectif</h3><p>Évaluer la prise de décision terrain sur 5 scénarios critiques et variantes adulte/enfant/nourrisson.</p></article>
+      <article class="card urgency-card"><h3>🚨 Urgence</h3><p>-10% de chance de survie/minute en arrêt cardiaque sans action immédiate.</p></article>
     </section>
 
-    <section class="decision-sim" data-simulator="c7"></section>
+    <section class="card remember-card" data-sst-simulator>
+      <p data-previous class="sim-previous"></p>
+      <div class="sim-head">
+        <p><strong>Scénario</strong> <span data-progress>1/5</span></p>
+        <p>Timer : <strong data-timer>90s</strong></p>
+      </div>
+      <h3 data-context></h3>
+      <p data-description></p>
+      <div class="variant-switch">
+        <button class="pap-step" data-variant="adulte">Adulte</button>
+        <button class="pap-step" data-variant="enfant">Enfant</button>
+        <button class="pap-step" data-variant="nourrisson">Nourrisson</button>
+      </div>
+      <p class="sim-hint"><strong>Déclinaison :</strong> <span data-variant-hint></span></p>
+      <p class="sim-phase">Étape PAP : <strong data-phase></strong></p>
+      <p data-question></p>
+      <div class="sim-choices-grid" data-choices></div>
+      <p class="sim-feedback-box" data-feedback>Choisissez l'action la plus sûre.</p>
+      <div class="sim-stats-inline">
+        <p>Score : <strong data-score>100/100</strong></p>
+        <p>Erreurs : <strong data-errors>0</strong></p>
+      </div>
+    </section>
 
     <div class="grid two module-nav-grid">
       <a class="btn-secondary" href="module-6.html">Retour C6</a>
@@ -44,6 +65,6 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
-  <script src="../assets/js/c678.js"></script>
+  <script src="../assets/js/simulator.js"></script>
 </body>
 </html>

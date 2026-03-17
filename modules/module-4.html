@@ -15,49 +15,34 @@
   </header>
   <main class="app-main">
     <section class="hero">
-      <div class="premium-header">
-        <span class="icon-badge" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92V19a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 3.18 2 2 0 0 1 4.11 1h2.09a2 2 0 0 1 2 1.72c.12.9.33 1.79.62 2.64a2 2 0 0 1-.45 2.11L7.08 8.91a16 16 0 0 0 8 8l1.44-1.29a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.64.62A2 2 0 0 1 22 16.92z"/></svg>
-        </span>
-        <div>
-          <h1>C4 — ALERTER</h1>
-          <p>Être capable de transmettre une alerte claire, structurée et utile aux secours en moins de 30 secondes.</p>
-        </div>
+      <h1>C4 — ALERTE OPÉRATIONNELLE</h1>
+      <p>Composer 15, 18, 112 ou 114 avec un message structuré INRS : lieu, risque, victimes, gestes engagés.</p>
+    </section>
+
+    <section class="grid two">
+      <article class="card objective-card"><h3>🎯 Objectif</h3><p>Transmettre une alerte exploitable par le régulateur en moins de 30 secondes.</p></article>
+      <article class="red-flag"><h3>⚠️ Red flags</h3><ul><li>Victime inconsciente / ne respire pas.</li><li>Hémorragie abondante.</li><li>Danger persistant (gaz, électricité, feu).</li></ul></article>
+    </section>
+
+    <article class="card-action">
+      <h3>Numéros d'urgence à connaître</h3>
+      <div class="schema-row"><span class="schema-node">15 SAMU</span><span class="schema-node">18 Pompiers</span><span class="schema-node">112 Europe</span><span class="schema-node">114 SMS/Tchat</span></div>
+      <p><strong>114 obligatoire :</strong> pour public sourd/malentendant, impossibilité de parler, situation silencieuse ou danger immédiat ne permettant pas un appel vocal.</p>
+    </article>
+
+    <article class="card">
+      <h3>Simulation d'appel dynamique</h3>
+      <p data-call-script>Script : « Ici [Nom], au [lieu exact], victime [état], danger [oui/non], gestes [en cours]. »</p>
+      <div class="grid two">
+        <button class="btn-secondary" data-script="voice">Simulation 15/18/112</button>
+        <button class="btn-secondary" data-script="silent">Simulation 114 (SMS/Tchat)</button>
       </div>
-    </section>
-
-    <h2 class="section-title">Objectifs explicites</h2>
-    <article class="card"><ul class="list-tight"><li>Donner lieu exact, nature de l'accident, nombre de victimes.</li><li>Décrire état vital observé et gestes déjà engagés.</li><li>Maintenir la communication jusqu'à validation de l'opérateur.</li></ul></article>
-
-    <h2 class="section-title">🔴 Red flags d'alerte immédiate</h2>
-    <article class="red-flag"><ul><li>Victime inconsciente et/ou ne respirant pas.</li><li>Hémorragie abondante non contrôlée.</li><li>Détresse respiratoire ou douleur thoracique brutale.</li></ul></article>
-
-    <h2 class="section-title">Conduites à tenir (aide-mémoire)</h2>
-    <article class="card action-flow">
-      <div class="flow-step">1. Composer 15 / 18 / 112 sans délai.</div>
-      <div class="flow-step">2. Message type : « Ici [nom], à [adresse précise], [type d'accident], [état de la victime]. »</div>
-      <div class="flow-step">3. Signaler risques persistants (feu, électricité, produits).</div>
-      <div class="flow-step">4. Appliquer les consignes données et organiser l'accueil des secours.</div>
+      <ul class="list-tight">
+        <li>Erreur fréquente : lieu imprécis (« dans l'usine »).</li>
+        <li>Erreur fréquente : oublier le risque persistant.</li>
+        <li>Erreur fréquente : raccrocher sans validation opérateur.</li>
+      </ul>
     </article>
-
-    <h2 class="section-title">PI + PAP terrain intégrés</h2>
-    <article class="card schema-flow">
-      <h3>PI (plan d'intervention) visuel</h3>
-      <div class="schema-row"><span class="schema-node">Danger identifié</span><span class="schema-arrow">→</span><span class="schema-node">Décision d'alerter</span><span class="schema-arrow">→</span><span class="schema-node">Message structuré</span><span class="schema-arrow">→</span><span class="schema-node">Accueil secours</span></div>
-      <h3>PAP opérationnel</h3>
-      <div class="schema-row"><span class="schema-node">Observer</span><span class="schema-arrow">→</span><span class="schema-node">Analyser</span><span class="schema-arrow">→</span><span class="schema-node">Agir</span><span class="schema-arrow">→</span><span class="schema-node">Transmettre</span></div>
-    </article>
-
-    <h2 class="section-title">Erreurs fréquentes</h2>
-    <article class="card error-block"><ul class="list-tight"><li>Raccrocher avant validation du régulateur.</li><li>Donner un lieu imprécis (« dans l'usine »).</li><li>Oublier de signaler un risque secondaire.</li></ul></article>
-
-    <h2 class="section-title">Micro-scénarios terrain</h2>
-    <section class="micro-grid">
-      <article class="micro-item"><strong>Chantier</strong> : chute de hauteur → <em>décision</em> 112 immédiat → <em>action</em> guidage entrée chantier.</article>
-      <article class="micro-item"><strong>Bureau</strong> : collègue inconscient → <em>décision</em> 15 + défibrillateur interne → <em>action</em> binôme alerte/secours.</article>
-      <article class="micro-item"><strong>Atelier</strong> : brûlure chimique → <em>décision</em> alerte + rinçage continu → <em>action</em> préciser produit en cause.</article>
-      <article class="micro-item"><strong>Domicile</strong> : étouffement sévère → <em>décision</em> 15 en haut-parleur → <em>action</em> manœuvres guidées.</article>
-    </section>
   </main>
   <div class="floating-urgence">
     <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
@@ -71,5 +56,15 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
+  <script>
+    document.querySelectorAll('[data-script]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const text = btn.dataset.script === 'silent'
+          ? 'Script 114 : « Besoin aide urgente. Adresse précise : [adresse]. Victime [état]. Danger immédiat [oui/non]. Je ne peux pas parler. »'
+          : 'Script 15/18/112 : « Ici [nom], à [adresse précise], [type d\'accident], [nombre de victimes], [gestes réalisés], [risque persistant]. »';
+        document.querySelector('[data-call-script]').textContent = text;
+      });
+    });
+  </script>
 </body>
 </html>
