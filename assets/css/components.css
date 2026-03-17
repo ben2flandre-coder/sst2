@@ -427,3 +427,44 @@
 .sim-hint { font-size: 0.92rem; color: #334155; }
 .sim-report pre { white-space: pre-wrap; background: #f8fafc; padding: 8px; border-radius: 8px; }
 .staying-logo { margin: 8px 0 12px; }
+
+.global-nav details {
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.global-nav summary {
+  font-weight: 800;
+  color: #0b3c5d;
+  cursor: pointer;
+}
+
+.quick-group { margin-top: 12px; }
+.quick-group h3 { font-size: 0.88rem; color: #1e3a8a; margin-bottom: 6px; text-transform: uppercase; }
+.quick-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.quick-link {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #0f172a;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.quick-link.is-active { background: #dbeafe; border-color: #60a5fa; color: #1e40af; }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #475569;
+  font-size: 0.82rem;
+}
+
+.breadcrumb a { color: #1d4ed8; font-weight: 600; }
+.see-also { margin-top: 12px; }

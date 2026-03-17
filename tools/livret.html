@@ -9,73 +9,28 @@
   <link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/revision/index.html" data-next="/tools/staying-alive.html">
-  <header class="app-header">
-    <div class="app-title">SST • Plateforme App</div>
-    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
-  </header>
+  <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
-    <section class="hero">
-      <h1>Aide-mémoire SST</h1>
-      <p>Référence rapide INRS : phrases courtes, gestes prioritaires et navigation par urgence.</p>
-    </section>
+    <section class="hero"><h1>Aide-mémoire SST (outil terrain)</h1><p>Version opérationnelle avec téléchargement PDF, impression immédiate et ancrages rapides.</p></section>
 
     <article class="card-action">
-      <h2>Téléchargement PDF</h2>
-      <p>Télécharger le support pour une consultation hors ligne en formation ou sur le terrain.</p>
-      <div class="grid two"><a class="btn-primary" href="https://www.inrs.fr/dms/inrs/CataloguePapier/ED/TI-ED-4085/ed4085.pdf" target="_blank" rel="noopener">Télécharger le PDF</a><button class="btn-secondary" type="button" onclick="window.print()">Version imprimable</button></div>
+      <h2>Téléchargement et impression</h2>
+      <div class="grid two"><a class="btn-primary" href="https://www.inrs.fr/dms/inrs/CataloguePapier/ED/TI-ED-4085/ed4085.pdf" target="_blank" rel="noopener">📄 Télécharger le PDF INRS</a><button class="btn-secondary" type="button" onclick="window.print()">🖨️ Imprimer</button></div>
+      <p><strong>Objectif :</strong> disposer d'un support stable en salle et en poste de travail pour homogénéiser les messages SST.</p>
     </article>
 
-    <h2 class="section-title">Navigation interne</h2>
-    <nav class="tool-nav">
-      <a class="btn-secondary" href="#alerte">Alerte</a>
-      <a class="btn-secondary" href="#hemorragie">Hémorragie</a>
-      <a class="btn-secondary" href="#inconscience">Inconscience</a>
-      <a class="btn-secondary" href="#arret">Arrêt cardiaque</a>
-      <a class="btn-secondary" href="#brulure">Brûlure</a>
-      <a class="btn-secondary" href="#etouffement">Étouffement</a>
-    </nav>
+    <h2 class="section-title">Sommaire cliquable</h2>
+    <nav class="tool-nav"><a class="btn-secondary" href="#alerte">Alerte</a><a class="btn-secondary" href="#saignement">Saignement</a><a class="btn-secondary" href="#inconscience">Inconscience</a><a class="btn-secondary" href="#arret">Arrêt cardiaque</a><a class="btn-secondary" href="#brulure">Brûlure</a><a class="btn-secondary" href="#etouffement">Étouffement</a></nav>
 
-    <section id="alerte" class="card">
-      <h3>Alerte</h3>
-      <p>Qui ? Où ? Quoi ? Combien de victimes ? Quels gestes en cours ?</p>
-    </section>
-    <section id="hemorragie" class="card">
-      <h3>Hémorragie</h3>
-      <p>Compression immédiate. Allonger si possible. Alerter sans délai.</p>
-    </section>
-    <section id="inconscience" class="card">
-      <h3>Inconscience</h3>
-      <p>Ne répond pas, respire : PLS et surveillance continue.</p>
-    </section>
-    <section id="arret" class="card">
-      <h3>Arrêt cardiaque</h3>
-      <p>Ne répond pas, ne respire pas : RCP + DAE dès que possible.</p>
-    </section>
-    <section id="brulure" class="card">
-      <h3>Brûlure</h3>
-      <p>Refroidir à l'eau tempérée 15 minutes. Retirer ce qui ne colle pas.</p>
-    </section>
-    <section id="etouffement" class="card">
-      <h3>Étouffement</h3>
-      <p>Toux inefficace : claques dorsales puis compressions abdominales.</p>
-    </section>
-
-    <article class="card-action">
-      <h3>Aperçu visuel</h3>
-      <div class="schema-row"><span class="schema-node">Protéger</span><span class="schema-arrow">→</span><span class="schema-node">Examiner</span><span class="schema-arrow">→</span><span class="schema-node">Alerter</span><span class="schema-arrow">→</span><span class="schema-node">Secourir</span></div>
-    </article>
+    <section id="alerte" class="card"><h3>Alerte</h3><p>15 / 18 / 112 / 114 selon contexte.</p><p><strong>Extrait :</strong> « Où ? Quoi ? Combien ? Risque persistant ? Gestes engagés ? »</p></section>
+    <section id="saignement" class="card"><h3>Saignement abondant</h3><p>Compression immédiate, allonger, alerter, surveiller.</p><p><strong>Extrait :</strong> priorité absolue à l'arrêt de la perte sanguine.</p></section>
+    <section id="inconscience" class="card"><h3>Inconscience</h3><p>Victime inconsciente qui respire : PLS + surveillance continue.</p><p><strong>Extrait :</strong> réévaluer la respiration régulièrement.</p></section>
+    <section id="arret" class="card"><h3>Arrêt cardiaque</h3><p>Victime inconsciente qui ne respire pas : RCP + DAE.</p><p><strong>Extrait :</strong> interruptions de compressions minimales.</p></section>
+    <section id="brulure" class="card"><h3>Brûlure</h3><p>Refroidir 15 à 20 min, protéger ensuite, alerter si grave.</p><p><strong>Extrait :</strong> ne pas appliquer de corps gras.</p></section>
+    <section id="etouffement" class="card"><h3>Étouffement</h3><p>Toux inefficace : claques dorsales puis compressions adaptées.</p><p><strong>Extrait :</strong> enchaîner jusqu'à désobstruction ou inconscience.</p></section>
   </main>
-  <div class="floating-urgence">
-    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-  </div>
-  <footer class="app-footer">
-    <button class="btn-secondary" data-nav="prev">Précédent</button>
-    <button class="btn-primary" data-nav="hub">HUB</button>
-    <button class="btn-secondary" data-nav="next">Suivant</button>
-    <button class="btn-danger" data-nav="urgence">URGENCE</button>
-  </footer>
-  <script src="../assets/js/navigation.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <script src="../assets/js/app.js"></script>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
 </body>
 </html>

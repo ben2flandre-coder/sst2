@@ -9,60 +9,37 @@
   <link rel="stylesheet" href="assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="" data-next="/modules/module-0.html">
-  <header class="app-header">
-    <div class="app-title">SST • Plateforme App</div>
-    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
-  </header>
+  <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
     <section class="hero">
-      <h1>Formation SST : agir vite, agir juste</h1>
-      <p>Un parcours app-like pour maîtriser les gestes essentiels en situation réelle.</p>
+      <h1>Plateforme SST inspection-ready</h1>
+      <p>Accès direct par compétences, situations, publics et outils de formation SST.</p>
       <button class="btn-danger" onclick="goToUrgence('arret-cardiaque')">⚡ URGENCE IMMÉDIATE</button>
     </section>
-    
-    <h2 class="section-title">Navigation principale</h2>
-    <div class="grid">
-      <article class="card-action">
-        <span class="badge">Parcours</span>
-        <h3>PARCOURS SST</h3>
-        <p>Démarrer par le module immersif puis progresser sur les 8 compétences SST.</p>
-        <button class="btn-primary" onclick="goToModule(0)">Ouvrir le parcours</button>
-      </article>
-      <article class="card-action">
-        <span class="badge">Révision</span>
-        <h3>RÉVISION</h3>
-        <p>Revoir les points clés, mémoriser les conduites à tenir et se tester.</p>
-        <a class="btn-secondary" href="revision/index.html">Accéder à la révision</a>
-      </article>
-      <article class="card-action">
-        <span class="badge">Outils</span>
-        <h3>OUTILS</h3>
-        <p>Livret de synthèse SST et repère rythmique « Staying Alive » pour le massage cardiaque.</p>
-        <a class="btn-secondary" href="tools/livret.html">Voir les outils</a>
-      </article>
+
+    <h2 class="section-title">Accès par compétences</h2>
+    <div class="quick-links">
+      <a class="quick-link" href="modules/module-c1.html">C1</a><a class="quick-link" href="modules/module-6.html">C6</a><a class="quick-link" href="modules/module-7.html">C7</a><a class="quick-link" href="modules/module-8.html">C8</a><a class="quick-link" href="modules/module-2.html">C2</a><a class="quick-link" href="modules/module-3.html">C3</a><a class="quick-link" href="modules/module-4.html">C4</a><a class="quick-link" href="modules/module-5.html">C5</a>
     </div>
-    
-    <h2 class="section-title">Accès direct urgences</h2>
+
+    <h2 class="section-title">Accès par situations</h2>
     <div class="grid two">
-      <button class="btn-danger" onclick="goToUrgence('hemorragie')">Hémorragie</button>
-      <button class="btn-danger" onclick="goToUrgence('inconscience')">Inconscience</button>
-      <button class="btn-danger" onclick="goToUrgence('arret-cardiaque')">Arrêt cardiaque</button>
-      <button class="btn-danger" onclick="goToUrgence('etouffement')">Étouffement</button>
-      <button class="btn-danger" onclick="goToUrgence('brulure')">Brûlure</button>
-      <button class="btn-danger" onclick="goToUrgence('malaise')">Malaise</button>
+      <a class="btn-danger" href="urgence/hemorragie.html">Saignement abondant</a><a class="btn-danger" href="urgence/etouffement.html">Étouffement</a><a class="btn-danger" href="urgence/malaise.html">Malaise</a><a class="btn-danger" href="urgence/brulure.html">Brûlure</a><a class="btn-danger" href="urgence/douleur-mouvements.html">Traumatisme / douleur</a><a class="btn-danger" href="urgence/plaie-simple.html">Plaie simple</a><a class="btn-danger" href="urgence/inconscience.html">Inconscience</a><a class="btn-danger" href="urgence/arret-cardiaque.html">Arrêt cardiaque</a><a class="btn-danger" href="urgence/dae.html">DAE</a>
+    </div>
+
+    <h2 class="section-title">Accès par publics</h2>
+    <div class="quick-links"><a class="quick-link" href="modules/module-5.html#variante-adulte">Adulte</a><a class="quick-link" href="modules/module-5.html#variante-enfant">Enfant</a><a class="quick-link" href="modules/module-5.html#variante-nourrisson">Nourrisson</a></div>
+
+    <h2 class="section-title">Accès par outils</h2>
+    <div class="grid">
+      <article class="card-action"><h3>PAP SST</h3><p>Analyse de situation, dommage, transmission et prévention.</p><a class="btn-secondary" href="modules/module-6.html">Ouvrir PAP</a></article>
+      <article class="card-action"><h3>PI SST</h3><p>Arbre décisionnel secourir + branches adulte/enfant/nourrisson.</p><a class="btn-secondary" href="modules/module-5.html">Ouvrir PI</a></article>
+      <article class="card-action"><h3>Aide-mémoire PDF / impression</h3><p>Support terrain rapide avec ancrages d'urgence.</p><a class="btn-secondary" href="tools/livret.html">Ouvrir livret</a></article>
+      <article class="card-action"><h3>Staying Alive + révision + simulateur</h3><p>DAE, rythme RCP, entraînement et cas concrets.</p><div class="grid two"><a class="btn-secondary" href="tools/staying-alive.html">Staying Alive</a><a class="btn-secondary" href="revision/index.html">Révision</a></div></article>
     </div>
   </main>
-  <div class="floating-urgence">
-    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-  </div>
-  <footer class="app-footer">
-    <button class="btn-secondary" data-nav="prev">Précédent</button>
-    <button class="btn-primary" data-nav="hub">HUB</button>
-    <button class="btn-secondary" data-nav="next">Suivant</button>
-    <button class="btn-danger" data-nav="urgence">URGENCE</button>
-  </footer>
-  <script src="assets/js/navigation.js"></script>
-  <script src="assets/js/ui.js"></script>
-  <script src="assets/js/app.js"></script>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="assets/js/navigation.js"></script><script src="assets/js/ui.js"></script><script src="assets/js/app.js"></script>
 </body>
 </html>
