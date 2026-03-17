@@ -16,44 +16,16 @@
   <main class="app-main">
     <section class="hero">
       <h1>C8 — Agir / Transmettre</h1>
-      <p>Le SST agit comme auxiliaire de prévention : action immédiate, transmission utile, traçabilité DUERP.</p>
+      <p>Objectif : décider une action prévention réaliste, puis transmettre au bon relais sans perdre de temps.</p>
     </section>
 
-    <h2 class="section-title">Qui prévenir ?</h2>
-    <div class="grid">
-      <article class="card-action"><strong>Immédiat :</strong> encadrant de proximité pour supprimer l’exposition.</article>
-      <article class="card-action"><strong>Suivi :</strong> référent prévention / QHSE pour intégrer l’action au plan de prévention et DUERP.</article>
-      <article class="card-action"><strong>Secours :</strong> si victime, articulation prévention + conduite de secours sans délai.</article>
-    </div>
-
-    <h2 class="section-title">Simulation visuelle — fiche situation dangereuse</h2>
-    <section class="card form-sim">
-      <p><strong>Lieu :</strong> Quai 2 — 14h20</p>
-      <p><strong>Observation :</strong> flaque en zone de recul transpalette.</p>
-      <p><strong>Danger :</strong> glissade + charge instable.</p>
-      <p><strong>Dommage possible :</strong> fracture poignet / écrasement pied.</p>
-      <p><strong>Action proposée :</strong> balisage + absorbant + rappel briefing équipe.</p>
-      <p><strong>Transmission :</strong> chef d’équipe + QHSE (traçabilité DUERP).</p>
+    <section class="card-action">
+      <h2>Simulator SST C8</h2>
+      <p>Validation progressive par étapes PAP avec score de décision.</p>
+      <p class="sim-progress-text" data-sim-global-progress>C8 : 0/2 cas validés.</p>
     </section>
 
-    <h2 class="section-title">Mode Tableau formateur</h2>
-    <section class="trainer-board" data-trainer-board>
-      <div class="trainer-head">
-        <span>OBSERVATION</span><span>DANGER</span><span>RISQUE</span><span>ACTION</span>
-      </div>
-      <div class="trainer-row" data-row>
-        <span data-cell="observation">Palette qui dérive au freinage.</span>
-        <span data-cell="danger">Charge instable.</span>
-        <span data-cell="risque">Chute + choc.</span>
-        <span data-cell="action">Bloquer, refilmer, rebrief.</span>
-      </div>
-      <div class="board-controls">
-        <button class="btn-secondary" data-board-case="btp">Charger BTP</button>
-        <button class="btn-secondary" data-board-case="atelier">Charger Atelier</button>
-        <button class="btn-secondary" data-board-case="bureau">Charger Bureau</button>
-        <button class="btn-secondary" data-board-case="manutention">Charger Manutention</button>
-      </div>
-    </section>
+    <section class="decision-sim" data-simulator="c8"></section>
 
     <div class="grid two module-nav-grid">
       <a class="btn-secondary" href="module-7.html">Retour C7</a>
