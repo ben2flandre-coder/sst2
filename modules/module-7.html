@@ -16,67 +16,16 @@
   <main class="app-main">
     <section class="hero">
       <h1>C7 — Analyser</h1>
-      <p>Ici le SST relie cause → effet : danger, déclencheur, dommage et conséquence pour l’équipe.</p>
+      <p>Tu pars du réel, pas d'un quiz passif : repérer le danger, qualifier le risque, anticiper le dommage.</p>
     </section>
 
-    <h2 class="section-title">Mécanisme du dommage</h2>
-    <div class="grid two">
-      <article class="card">
-        <h3>Question clé</h3>
-        <p>Qu’est-ce qui peut déclencher l’accident maintenant ?</p>
-      </article>
-      <article class="card">
-        <h3>Réflexe C7</h3>
-        <p>Je relie la source de danger à la conséquence probable, pas à une opinion.</p>
-      </article>
-    </div>
-
-    <h2 class="section-title">Cas pratiques interactifs (4 environnements)</h2>
-    <section class="scenario-grid">
-      <article class="scenario-card" data-scenario>
-        <span class="badge">BTP</span>
-        <h3>Tranchée ouverte, passage piéton</h3>
-        <p>1. Situation : fin de journée, rubalise partielle, pluie.</p>
-        <p><strong>2. Où est le danger ?</strong></p>
-        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
-        <p class="scenario-line" data-line="danger">3. Danger : bord non protégé + sol gras.</p>
-        <p class="scenario-line" data-line="analyse">4. Analyse : un pas de côté suffit à provoquer une chute dans la tranchée.</p>
-        <p class="scenario-line" data-line="action">5. Action : arrêt passage + barriérage rigide + alerte chef de chantier.</p>
-      </article>
-
-      <article class="scenario-card" data-scenario>
-        <span class="badge">Atelier industriel</span>
-        <h3>Redémarrage machine après bourrage</h3>
-        <p>1. Situation : opérateur en appui près d’un organe mobile.</p>
-        <p><strong>2. Où est le danger ?</strong></p>
-        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
-        <p class="scenario-line" data-line="danger">3. Danger : zone de coupe accessible.</p>
-        <p class="scenario-line" data-line="analyse">4. Analyse : déclenchement intempestif = coupure grave main/avant-bras.</p>
-        <p class="scenario-line" data-line="action">5. Action : consignation + capot fermé + validation chef d’équipe.</p>
-      </article>
-
-      <article class="scenario-card" data-scenario>
-        <span class="badge">Bureau</span>
-        <h3>Allée d’évacuation encombrée</h3>
-        <p>1. Situation : cartons + câble, collègue étourdi.</p>
-        <p><strong>2. Où est le danger ?</strong></p>
-        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
-        <p class="scenario-line" data-line="danger">3. Danger : obstacle bas dans axe de marche.</p>
-        <p class="scenario-line" data-line="analyse">4. Analyse : trébuchement + choc crânien possible.</p>
-        <p class="scenario-line" data-line="action">5. Action : dégagement immédiat + signalement RH/manager.</p>
-      </article>
-
-      <article class="scenario-card" data-scenario>
-        <span class="badge">Manutention</span>
-        <h3>Quai humide et palette instable</h3>
-        <p>1. Situation : charge haute, marche arrière, visibilité faible.</p>
-        <p><strong>2. Où est le danger ?</strong></p>
-        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
-        <p class="scenario-line" data-line="danger">3. Danger : sol glissant + charge déséquilibrée.</p>
-        <p class="scenario-line" data-line="analyse">4. Analyse : glissade + écrasement du pied possible.</p>
-        <p class="scenario-line" data-line="action">5. Action : balisage, séchage, manutention à deux.</p>
-      </article>
+    <section class="card-action">
+      <h2>Simulator SST C7</h2>
+      <p>Chaque erreur est utile : on t'explique pourquoi ce n'est pas le bon raisonnement.</p>
+      <p class="sim-progress-text" data-sim-global-progress>C7 : 0/2 cas validés.</p>
     </section>
+
+    <section class="decision-sim" data-simulator="c7"></section>
 
     <div class="grid two module-nav-grid">
       <a class="btn-secondary" href="module-6.html">Retour C6</a>

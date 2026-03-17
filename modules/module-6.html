@@ -16,47 +16,16 @@
   <main class="app-main">
     <section class="hero">
       <h1>C6 — Repérer</h1>
-      <p>Ce que voit le SST : des faits concrets, des signaux faibles, et une chaîne de risque à activer en 10 secondes.</p>
+      <p>Mode terrain : tu observes, tu analyses vite, tu agis et tu transmets. Ici, chaque décision compte.</p>
     </section>
 
-    <h2 class="section-title">Mécanique du risque</h2>
-    <section class="risk-mechanic" data-risk-mechanic>
-      <div class="risk-chain" role="tablist" aria-label="Mécanique du risque SST">
-        <button class="risk-step is-active" data-risk-step="danger" role="tab" aria-selected="true">DANGER</button>
-        <span class="pap-arrow">→</span>
-        <button class="risk-step" data-risk-step="situation" role="tab" aria-selected="false">SITUATION DANGEREUSE</button>
-        <span class="pap-arrow">→</span>
-        <button class="risk-step" data-risk-step="declencheur" role="tab" aria-selected="false">ÉVÉNEMENT DÉCLENCHEUR</button>
-        <span class="pap-arrow">→</span>
-        <button class="risk-step" data-risk-step="dommage" role="tab" aria-selected="false">DOMMAGE</button>
-      </div>
-      <article class="card-action mechanic-detail">
-        <h3 data-risk-title>DANGER</h3>
-        <p data-risk-text>La source capable de blesser est présente.</p>
-        <p class="mechanic-example">Exemple : <strong>sol mouillé → salarié marche → glissade → fracture</strong>.</p>
-      </article>
+    <section class="card-action">
+      <h2>Simulator SST C6</h2>
+      <p>Démarre un cas et passe obligatoirement par le PAP : <strong>observer → analyser → agir → transmettre</strong>.</p>
+      <p class="sim-progress-text" data-sim-global-progress>C6 : 0/2 cas validés.</p>
     </section>
 
-    <h2 class="section-title">Parcours PAP actif</h2>
-    <section class="pap-journey" data-pap-journey>
-      <button class="journey-step is-active" data-journey-step="observe">J’OBSERVE</button>
-      <button class="journey-step" data-journey-step="danger">J’IDENTIFIE LE DANGER</button>
-      <button class="journey-step" data-journey-step="analyse">J’ANALYSE LE RISQUE</button>
-      <button class="journey-step" data-journey-step="dommage">J’IMAGINE LE DOMMAGE</button>
-      <button class="journey-step" data-journey-step="action">JE PROPOSE UNE ACTION</button>
-      <button class="journey-step" data-journey-step="transmets">JE TRANSMETS</button>
-    </section>
-    <article class="card" data-journey-detail>
-      <p data-journey-text>Je prends une photo mentale : lieu, geste, matériel, personne exposée.</p>
-    </article>
-
-    <h2 class="section-title">Images mentales terrain</h2>
-    <div class="grid">
-      <article class="card-action"><strong>BTP :</strong> trémie non protégée, circulation proche, pluie fine.</article>
-      <article class="card-action"><strong>Atelier :</strong> capot levé, main proche outil, cadence relancée.</article>
-      <article class="card-action"><strong>Bureau :</strong> allée encombrée, câble au sol, collègue pâle.</article>
-      <article class="card-action"><strong>Manutention :</strong> charge haute, visibilité réduite, zone glissante.</article>
-    </div>
+    <section class="decision-sim" data-simulator="c6"></section>
 
     <div class="grid two module-nav-grid">
       <a class="btn-secondary" href="module-c1.html">Retour C1</a>
