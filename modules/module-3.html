@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module 3</title>
+  <title>C3 — Examiner</title>
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
@@ -14,11 +14,47 @@
     <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
   </header>
   <main class="app-main">
-    <section class="hero"><h1>Module 3</h1><p>Compétence SST 3 : entraînement progressif, cas terrain et points clés opérationnels.</p></section>
-    <h2 class="section-title">Objectifs</h2>
-    <article class="card"><ul class="list-tight"><li>Repérer les risques prioritaires liés à la situation.</li><li>Appliquer la conduite SST adaptée sans perte de temps.</li><li>Transmettre une information utile à l’équipe et aux secours.</li></ul></article>
-    <h2 class="section-title">Exercice guidé</h2>
-    <article class="card-action"><p>Analysez un scénario d’accident en milieu professionnel, choisissez l’action immédiate puis vérifiez votre décision avec la grille SST.</p></article>
+    <section class="hero">
+      <div class="premium-header">
+        <span class="icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </span>
+        <div>
+          <h1>C3 — EXAMINER</h1>
+          <p>Être capable d'identifier rapidement une détresse vitale pour orienter le secours en moins de 10 secondes.</p>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">Objectifs explicites</h2>
+    <article class="card"><ul class="list-tight"><li>Rechercher conscience, respiration et signes de détresse.</li><li>Distinguer arrêt cardiaque, inconscience et hémorragie.</li><li>Préparer une alerte précise et immédiate.</li></ul></article>
+
+    <h2 class="section-title">🔴 Trigger alerts / red flags</h2>
+    <section class="grid">
+      <article class="red-flag"><h3>Hémorragie</h3><ul><li>Sang qui coule abondamment.</li><li>Imprègne rapidement vêtements/sol.</li></ul></article>
+      <article class="red-flag"><h3>Arrêt cardiaque</h3><ul><li>Ne répond pas.</li><li>Ne respire pas ou respiration absente.</li></ul></article>
+      <article class="red-flag"><h3>Inconscience</h3><ul><li>Ne répond pas.</li><li>Respiration présente.</li></ul></article>
+      <article class="red-flag"><h3>Détresse respiratoire</h3><ul><li>Respiration anormale.</li><li>Agitation, cyanose, sueurs.</li></ul></article>
+    </section>
+
+    <h2 class="section-title">Conduites à tenir (aide-mémoire)</h2>
+    <article class="card action-flow">
+      <div class="flow-step">1. Parler fort et stimuler : « Vous m'entendez ? ».</div>
+      <div class="flow-step">2. Vérifier respiration sur 10 sec maximum.</div>
+      <div class="flow-step">3. Identifier le signe prioritaire (saignement / absence respiration / inconscience).</div>
+      <div class="flow-step">4. Basculer vers module urgence adapté + alerte immédiate.</div>
+    </article>
+
+    <h2 class="section-title">Erreurs fréquentes</h2>
+    <article class="card error-block"><ul class="list-tight"><li>Passer trop de temps à chercher un pouls.</li><li>Confondre gasps et respiration normale.</li><li>Multiplier les questions au lieu d'agir.</li></ul></article>
+
+    <h2 class="section-title">Micro-scénarios terrain</h2>
+    <section class="micro-grid">
+      <article class="micro-item"><strong>Chantier</strong> : ouvrier au sol, ne répond pas → <em>décision</em> contrôle respiration 10 sec → <em>action</em> alerte + DAE.</article>
+      <article class="micro-item"><strong>Bureau</strong> : collègue pâle, sueurs, oppression thoracique → <em>décision</em> suspicion détresse → <em>action</em> appel 15 immédiat.</article>
+      <article class="micro-item"><strong>Atelier</strong> : coupure profonde avec jet sanguin → <em>décision</em> compression directe → <em>action</em> alerte simultanée.</article>
+      <article class="micro-item"><strong>Domicile</strong> : personne inconsciente qui respire → <em>décision</em> PLS → <em>action</em> surveillance continue.</article>
+    </section>
   </main>
   <div class="floating-urgence">
     <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
