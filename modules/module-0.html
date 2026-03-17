@@ -7,58 +7,90 @@
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
+  <style>
+    .narrative-step { margin-bottom: 0.9rem; border-left: 3px solid #cbd5e1; padding-left: 0.8rem; }
+    .sst-flow { display: grid; gap: 0.7rem; }
+    .flow-item { border: 1px solid #cbd5e1; border-radius: 12px; padding: 0.9rem; background: #fff; text-align: left; width: 100%; cursor: pointer; }
+    .flow-item small { display: block; color: #475569; margin-top: 0.4rem; }
+    .flow-arrow { text-align: center; font-weight: 700; color: #64748b; }
+    .next-block { margin-top: 0.7rem; display: none; }
+    .next-block.active { display: block; animation: fadeIn .45s ease; }
+    .mental-check { margin-top: 0.6rem; color: #0f766e; font-weight: 600; display: none; }
+    .mental-check.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; transform: translateY(0);} }
+  </style>
 </head>
-<body class="app-shell" data-prev="/index.html" data-next="/modules/module-1.html">
+<body class="app-shell" data-prev="/index.html" data-next="/modules/module-c1.html">
   <header class="app-header">
     <div class="app-title">SST • Plateforme App</div>
     <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
   </header>
   <main class="app-main">
     <section class="hero">
-      <h1>SST : devenir le premier maillon qui sauve</h1>
-      <p>En entreprise, chaque seconde compte. Ce parcours vous entraîne à protéger, alerter et secourir avec méthode.</p>
-      <button class="btn-primary" onclick="goToModule(1)">Entrer dans le parcours</button>
+      <h1>Tu arrives au travail. Un collègue est au sol.</h1>
+      <p>Le bruit s'arrête, tout le monde te regarde. En quelques secondes, ton stress monte et ton rôle SST commence.</p>
+      <a class="btn-primary" href="module-c1.html">Entrer dans le parcours C1</a>
     </section>
-    
-    <h2 class="section-title">Pourquoi le SST</h2>
-    <div class="grid">
-      <article class="card"><h3>Protéger</h3><p>Identifier immédiatement les dangers persistants pour éviter le sur-accident et sécuriser la zone.</p></article>
-      <article class="card"><h3>Examiner / Alerter</h3><p>Évaluer l’état de la victime puis transmettre une alerte claire et structurée aux secours adaptés.</p></article>
-      <article class="card"><h3>Secourir</h3><p>Réaliser le geste prioritaire, au bon moment, en respectant les protocoles SST et le contexte de travail.</p></article>
-    </div>
-    
+
     <h2 class="section-title">Scénario immersif</h2>
     <article class="card-action">
-      <p><strong>Situation travail :</strong> atelier logistique, fin de poste, circulation d’un transpalette.</p>
-      <p><strong>Incident :</strong> un collègue glisse, chute, se blesse et ne répond plus clairement.</p>
-      <p><strong>Hésitation :</strong> témoins stressés, personne ne sait par quoi commencer.</p>
-      <p><strong>Besoin SST :</strong> vous prenez le lead, appliquez la logique d’action et coordonnez secours + prévention.</p>
+      <p class="narrative-step"><strong>Stress :</strong> tu vois la victime immobile près d'une zone de passage, ton cœur accélère.</p>
+      <p class="narrative-step"><strong>Doute :</strong> tu te demandes si tu vas bien faire, si un danger est encore présent.</p>
+      <p class="narrative-step"><strong>Responsabilité :</strong> tu décides d'agir avec méthode pour protéger, alerter et secourir.</p>
+      <button class="btn-secondary section-trigger" data-target="m0-next-1">Et maintenant ?</button>
+      <div class="next-block" id="m0-next-1"><p>Tu ne cherches pas le geste parfait. Tu suis la logique SST, étape par étape, sans te précipiter.</p></div>
+      <p class="mental-check" id="m0-check-1">✔ Validation mentale : je garde mon calme et je prends le lead.</p>
     </article>
-    
-    <h2 class="section-title">Secours + prévention</h2>
-    <div class="grid two">
-      <article class="card"><h3>Agir</h3><p>Intervenir tout de suite pour préserver les fonctions vitales et limiter l’aggravation.</p></article>
-      <article class="card"><h3>Prévenir</h3><p>Analyser la cause, corriger l’environnement de travail et éviter la répétition de l’accident.</p></article>
+
+    <h2 class="section-title">Pourquoi SST ?</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Intervenir vite</h3>
+        <p>Le SST réduit les délais d'action dans les premières minutes critiques.</p>
+      </article>
+      <article class="card">
+        <h3>Limiter les conséquences</h3>
+        <p>Un geste juste peut éviter l'aggravation avant l'arrivée des secours spécialisés.</p>
+      </article>
+      <article class="card">
+        <h3>Créer une culture prévention</h3>
+        <p>Chaque intervention alimente des actions de prévention dans l'entreprise.</p>
+      </article>
     </div>
-    
-    <h2 class="section-title">Parcours 8 compétences</h2>
+    <article class="card-action">
+      <h3>Accidents du travail (repères à compléter INRS)</h3>
+      <ul class="list-tight">
+        <li><strong>Indicateur 1 :</strong> [donnée INRS à intégrer]</li>
+        <li><strong>Indicateur 2 :</strong> [donnée INRS à intégrer]</li>
+        <li><strong>Indicateur 3 :</strong> [donnée INRS à intégrer]</li>
+      </ul>
+      <button class="btn-secondary section-trigger" data-target="m0-next-2">Et maintenant ?</button>
+      <div class="next-block" id="m0-next-2"><p>Ces chiffres deviennent utiles seulement si tu sais transformer l'information en action sur le terrain.</p></div>
+      <p class="mental-check" id="m0-check-2">✔ Validation mentale : je relie secours immédiat et prévention durable.</p>
+    </article>
+
+    <h2 class="section-title">LOGIQUE SST</h2>
+    <div class="sst-flow">
+      <button class="flow-item" title="Repérer le danger pour toi, la victime et les témoins."><strong>DANGER</strong><small>Identifier ce qui menace encore la scène.</small></button>
+      <div class="flow-arrow">↓</div>
+      <button class="flow-item" title="Supprimer ou isoler le risque avant d'approcher."><strong>PROTÉGER</strong><small>Éviter le sur-accident.</small></button>
+      <div class="flow-arrow">↓</div>
+      <button class="flow-item" title="Évaluer conscience, respiration et signes visibles."><strong>EXAMINER</strong><small>Observer l'état réel de la victime.</small></button>
+      <div class="flow-arrow">↓</div>
+      <button class="flow-item" title="Donner une alerte claire, interne puis externe si nécessaire."><strong>ALERTER</strong><small>Transmettre les bonnes informations.</small></button>
+      <div class="flow-arrow">↓</div>
+      <button class="flow-item" title="Appliquer le geste prioritaire selon la situation."><strong>SECOURIR</strong><small>Agir sans perdre de temps.</small></button>
+    </div>
+
+    <h2 class="section-title">Parcours compétences SST</h2>
     <div class="pill-row">
       <span class="pill">C1</span><span class="pill">C6</span><span class="pill">C7</span><span class="pill">C8</span>
       <span class="pill">C2</span><span class="pill">C3</span><span class="pill">C4</span><span class="pill">C5</span>
     </div>
-    
-    <h2 class="section-title">Logique SST</h2>
-    <ol class="list-tight">
-      <li>Observer</li>
-      <li>Analyser</li>
-      <li>Décider</li>
-      <li>Agir</li>
-      <li>Transmettre</li>
-    </ol>
-    
-    <h2 class="section-title">Passer à l’action</h2>
+
+    <h2 class="section-title">Passer à l'action</h2>
     <div class="grid two">
-      <button class="btn-primary" onclick="goToModule(1)">Aller au module 1</button>
+      <a class="btn-primary" href="module-c1.html">Démarrer le module C1</a>
       <button class="btn-danger" onclick="goToUrgence('arret-cardiaque')">Basculer en mode urgence</button>
     </div>
   </main>
@@ -74,5 +106,15 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
+  <script>
+    document.querySelectorAll('.section-trigger').forEach((btn, idx) => {
+      btn.addEventListener('click', () => {
+        const block = document.getElementById(btn.dataset.target);
+        const check = document.getElementById(`m0-check-${idx + 1}`);
+        if (block) block.classList.toggle('active');
+        if (check) check.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
