@@ -9,55 +9,19 @@
   <link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/tools/livret.html" data-next="/index.html">
-  <header class="app-header">
-    <div class="app-title">SST • Plateforme App</div>
-    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
-  </header>
+  <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
-    <section class="hero"><h1>Application Staying Alive</h1><p>Localiser les défibrillateurs et les citoyens secouristes.</p></section>
-
+    <section class="hero"><h1>Application Staying Alive</h1><p>Outil de localisation DAE et de mobilisation citoyenne, relié au module arrêt cardiaque SST.</p></section>
     <article class="card-action">
-      <div class="premium-header">
-        <span class="icon-badge" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10Z"/><path d="m9 12 2 2 4-4"/></svg>
-        </span>
-        <div>
-          <h3>Staying Alive</h3>
-          <p>Outil terrain recommandé pour orienter rapidement la réponse défibrillation.</p>
-        </div>
-      </div>
-            <div class="staying-logo" aria-hidden="true">
-        <svg viewBox="0 0 160 54" width="160" height="54" fill="none">
-          <rect x="1" y="1" width="158" height="52" rx="12" fill="#fff" stroke="#cbd5e1"/>
-          <path d="M26 38c12-8 12-22 0-30-12 8-12 22 0 30Z" fill="#ef4444"/>
-          <path d="M20 26h12M26 20v12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-          <text x="48" y="24" fill="#0f172a" font-size="14" font-family="Arial" font-weight="700">Staying Alive</text>
-          <text x="48" y="38" fill="#64748b" font-size="10" font-family="Arial">DAE & citoyens secouristes</text>
-        </svg>
-      </div>
-      <div class="app-badge-row">
-        <a class="btn-secondary" href="https://apps.apple.com/fr/app/staying-alive/id332564626" target="_blank" rel="noopener">App Store</a>
-        <a class="btn-secondary" href="https://play.google.com/store/apps/details?id=com.mobilehealth.stayingalive" target="_blank" rel="noopener">Google Play</a>
-      </div>
+      <div class="premium-header"><span class="icon-badge">❤️</span><div><h3>Staying Alive</h3><p><strong>Objectif :</strong> gagner du temps sur la chaîne de survie (alerte, DAE, RCP).</p></div></div>
+      <div class="staying-logo" aria-hidden="true"><svg viewBox="0 0 160 54" width="160" height="54" fill="none"><rect x="1" y="1" width="158" height="52" rx="12" fill="#fff" stroke="#cbd5e1"/><path d="M26 38c12-8 12-22 0-30-12 8-12 22 0 30Z" fill="#ef4444"/><path d="M20 26h12M26 20v12" stroke="#fff" stroke-width="3" stroke-linecap="round"/><text x="48" y="24" fill="#0f172a" font-size="14" font-family="Arial" font-weight="700">Staying Alive</text><text x="48" y="38" fill="#64748b" font-size="10" font-family="Arial">DAE & citoyens secouristes</text></svg></div>
+      <div class="app-badge-row"><a class="btn-secondary" href="https://apps.apple.com/fr/app/staying-alive/id332564626" target="_blank" rel="noopener">App Store</a><a class="btn-secondary" href="https://play.google.com/store/apps/details?id=com.mobilehealth.stayingalive" target="_blank" rel="noopener">Google Play</a></div>
+      <p><strong>Légende pédagogique :</strong> utiliser l'application dès l'alerte pour localiser le DAE disponible le plus proche et déclencher une assistance de proximité.</p>
     </article>
-
-    <article class="card">
-      <h3>Rythme RCP</h3>
-      <p>Conservez une cadence de 100 à 120 compressions/minute, bras tendus, relâchement complet entre chaque compression.</p>
-      <button class="btn-danger" onclick="goToUrgence('arret-cardiaque')">Mode arrêt cardiaque</button>
-    </article>
+    <div class="grid two"><a class="btn-danger" href="../urgence/arret-cardiaque.html">Module arrêt cardiaque</a><a class="btn-danger" href="../urgence/dae.html">Module DAE</a></div>
   </main>
-  <div class="floating-urgence">
-    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-  </div>
-  <footer class="app-footer">
-    <button class="btn-secondary" data-nav="prev">Précédent</button>
-    <button class="btn-primary" data-nav="hub">HUB</button>
-    <button class="btn-secondary" data-nav="next">Suivant</button>
-    <button class="btn-danger" data-nav="urgence">URGENCE</button>
-  </footer>
-  <script src="../assets/js/navigation.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <script src="../assets/js/app.js"></script>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
 </body>
 </html>

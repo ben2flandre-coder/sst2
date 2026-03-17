@@ -9,62 +9,36 @@
   <link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/modules/module-3.html" data-next="/modules/module-5.html">
-  <header class="app-header">
-    <div class="app-title">SST • Plateforme App</div>
-    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
-  </header>
+  <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
-    <section class="hero">
-      <h1>C4 — ALERTE OPÉRATIONNELLE</h1>
-      <p>Composer 15, 18, 112 ou 114 avec un message structuré INRS : lieu, risque, victimes, gestes engagés.</p>
-    </section>
-
-    <section class="grid two">
-      <article class="card objective-card"><h3>🎯 Objectif</h3><p>Transmettre une alerte exploitable par le régulateur en moins de 30 secondes.</p></article>
-      <article class="red-flag"><h3>⚠️ Red flags</h3><ul><li>Victime inconsciente / ne respire pas.</li><li>Hémorragie abondante.</li><li>Danger persistant (gaz, électricité, feu).</li></ul></article>
-    </section>
+    <section class="hero"><h1>C4 — ALERTER</h1><p>Message d'alerte SST structuré et exploitable: lieu précis, nature, nombre, risques, gestes engagés.</p></section>
 
     <article class="card-action">
-      <h3>Numéros d'urgence à connaître</h3>
-      <div class="schema-row"><span class="schema-node">15 SAMU</span><span class="schema-node">18 Pompiers</span><span class="schema-node">112 Europe</span><span class="schema-node">114 SMS/Tchat</span></div>
-      <p><strong>114 obligatoire :</strong> pour public sourd/malentendant, impossibilité de parler, situation silencieuse ou danger immédiat ne permettant pas un appel vocal.</p>
+      <h3>Quel numéro selon la situation ?</h3>
+      <div class="trainer-board">
+        <div class="trainer-head"><span>Numéro</span><span>Usage</span><span>Cas</span><span>Point clé</span></div>
+        <div class="trainer-row"><span>15</span><span>SAMU</span><span>Urgence médicale</span><span>Bilan clinique précis</span></div>
+        <div class="trainer-row"><span>18</span><span>Pompiers</span><span>Incendie/accident</span><span>Danger environnemental</span></div>
+        <div class="trainer-row"><span>112</span><span>Numéro européen</span><span>Tout type d'urgence</span><span>Relais multilingue</span></div>
+        <div class="trainer-row"><span>114</span><span>SMS / tchat / fax</span><span>Parole/audition empêchée</span><span>Transmission écrite</span></div>
+      </div>
     </article>
 
+    <div class="grid two">
+      <article class="card objective-card"><h3>114 — usage explicite</h3><ul class="list-tight"><li>Personne sourde, malentendante ou aphasique.</li><li>Environnement empêchant de parler (agresseur proche, bruit, confinement).</li><li>Besoin de transmettre par écrit sans appel vocal.</li></ul></article>
+      <article class="red-flag"><h3>Erreurs fréquentes</h3><ul><li>Adresse incomplète ou imprécise.</li><li>Pas d'indication du risque persistant.</li><li>Message trop long, sans priorités.</li><li>Raccrocher avant validation opérateur.</li></ul></article>
+    </div>
+
     <article class="card">
-      <h3>Simulation d'appel dynamique</h3>
-      <p data-call-script>Script : « Ici [Nom], au [lieu exact], victime [état], danger [oui/non], gestes [en cours]. »</p>
-      <div class="grid two">
-        <button class="btn-secondary" data-script="voice">Simulation 15/18/112</button>
-        <button class="btn-secondary" data-script="silent">Simulation 114 (SMS/Tchat)</button>
-      </div>
-      <ul class="list-tight">
-        <li>Erreur fréquente : lieu imprécis (« dans l'usine »).</li>
-        <li>Erreur fréquente : oublier le risque persistant.</li>
-        <li>Erreur fréquente : raccrocher sans validation opérateur.</li>
-      </ul>
+      <h3>Script type d'alerte</h3>
+      <p>« Ici [Nom], SST sur [site + adresse exacte]. Accident [type]. [Nombre] victime(s), état [conscience/respiration/saignement]. Risque persistant [oui/non]. Gestes en cours [x]. Rappel au [numéro]. »</p>
+      <p><strong>Simulation 114 :</strong> « URGENCE SST. Adresse : [adresse]. Victime inconsciente, respire oui/non. Je ne peux pas parler. Danger : [préciser]. Besoin secours immédiat. »</p>
     </article>
+
+    <article class="card-action practice-case"><h3>Cas concret C4</h3><p>Atelier bruyant : opératrice aphasique témoin d'un malaise. Envoi SMS 114 avec géolocalisation, nature du malaise, risques machine, gestes SST déjà engagés.</p></article>
   </main>
-  <div class="floating-urgence">
-    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-  </div>
-  <footer class="app-footer">
-    <button class="btn-secondary" data-nav="prev">Précédent</button>
-    <button class="btn-primary" data-nav="hub">HUB</button>
-    <button class="btn-secondary" data-nav="next">Suivant</button>
-    <button class="btn-danger" data-nav="urgence">URGENCE</button>
-  </footer>
-  <script src="../assets/js/navigation.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <script src="../assets/js/app.js"></script>
-  <script>
-    document.querySelectorAll('[data-script]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const text = btn.dataset.script === 'silent'
-          ? 'Script 114 : « Besoin aide urgente. Adresse précise : [adresse]. Victime [état]. Danger immédiat [oui/non]. Je ne peux pas parler. »'
-          : 'Script 15/18/112 : « Ici [nom], à [adresse précise], [type d\'accident], [nombre de victimes], [gestes réalisés], [risque persistant]. »';
-        document.querySelector('[data-call-script]').textContent = text;
-      });
-    });
-  </script>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
 </body>
 </html>

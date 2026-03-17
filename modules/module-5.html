@@ -9,39 +9,27 @@
   <link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/modules/module-4.html" data-next="/revision/index.html">
-  <header class="app-header">
-    <div class="app-title">SST • Plateforme App</div>
-    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
-  </header>
+  <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
-    <section class="hero">
-      <h1>C5 — PI SST COMPLET</h1>
-      <p>Référentiel d'intervention structuré : Objectif, Signes, Actions, Vigilances, Erreurs, déclinaisons adulte/enfant/nourrisson.</p>
-    </section>
-
-    <article class="card urgency-card"><h3>🚨 Urgence</h3><p>-10% de survie par minute sans RCP/DAE lors d'un arrêt cardiaque. AT/MP France : sinistralité toujours élevée, nécessité d'une intervention SST fiable.</p></article>
+    <section class="hero"><h1>C5 — PI SST COMPLET</h1><p>Arbre décisionnel visuel PI : objectif, repérage, conduite, red flags, erreurs, variantes et cas concrets métier.</p></section>
+    <article class="card"><h3>Chaîne PI</h3><div class="schema-row"><span class="schema-node">Danger</span><span class="schema-arrow">→</span><span class="schema-node">Protéger</span><span class="schema-arrow">→</span><span class="schema-node">Examiner</span><span class="schema-arrow">→</span><span class="schema-node">Alerter</span><span class="schema-arrow">→</span><span class="schema-node">Secourir</span></div></article>
 
     <section class="pi-grid">
-      <article class="card pi-card"><h3>1) Arrêt cardiaque</h3><p><strong>Objectif :</strong> maintenir circulation/oxygénation avant relais.</p><p><strong>Signes :</strong> inconscience, absence de respiration normale.</p><p><strong>Actions :</strong> alerte + RCP + DAE.</p><p><strong>Vigilances :</strong> minimiser interruptions de compressions.</p><p><strong>Erreurs :</strong> PLS à tort, absence DAE.</p><p><strong>Déclinaisons :</strong> adulte (30:2), enfant (adaptation force), nourrisson (2 doigts + insufflations si formé).</p></article>
-      <article class="card pi-card"><h3>2) Hémorragie</h3><p><strong>Objectif :</strong> stopper perte sanguine.</p><p><strong>Signes :</strong> saignement abondant continu.</p><p><strong>Actions :</strong> compression directe, alerte, surveillance.</p><p><strong>Vigilances :</strong> auto-protection, maintien compression.</p><p><strong>Erreurs :</strong> attendre, retirer compression pour vérifier.</p><p><strong>Déclinaisons :</strong> adulte (pression ferme), enfant (pression adaptée), nourrisson (pression douce continue).</p></article>
-      <article class="card pi-card"><h3>3) Étouffement</h3><p><strong>Objectif :</strong> libérer voies aériennes rapidement.</p><p><strong>Signes :</strong> toux inefficace, cyanose, impossibilité parler.</p><p><strong>Actions :</strong> claques dorsales + compressions adaptées.</p><p><strong>Vigilances :</strong> alerte en parallèle.</p><p><strong>Erreurs :</strong> faire boire, manœuvres non adaptées nourrisson.</p><p><strong>Déclinaisons :</strong> adulte/enfant (abdominales), nourrisson (thoraciques uniquement).</p></article>
-      <article class="card pi-card"><h3>4) Chute traumatique</h3><p><strong>Objectif :</strong> éviter aggravation lésionnelle.</p><p><strong>Signes :</strong> douleur rachidienne, impotence, choc.</p><p><strong>Actions :</strong> protéger zone, immobiliser, alerter.</p><p><strong>Vigilances :</strong> ne pas mobiliser inutilement.</p><p><strong>Erreurs :</strong> relever la victime.</p><p><strong>Déclinaisons :</strong> adulte (maintien axe tête-cou-tronc), enfant (rassurer + immobilisation douce), nourrisson (manipulation minimale).</p></article>
-      <article class="card pi-card"><h3>5) Malaise</h3><p><strong>Objectif :</strong> prévenir aggravation brutale.</p><p><strong>Signes :</strong> pâleur, sueurs, douleur thoracique/confusion.</p><p><strong>Actions :</strong> repos strict, alerte 15/112, surveillance.</p><p><strong>Vigilances :</strong> réévaluer état régulièrement.</p><p><strong>Erreurs :</strong> laisser seul, effort physique imposé.</p><p><strong>Déclinaisons :</strong> adulte (position de confort), enfant (adapter communication), nourrisson (alerte immédiate + observation continue).</p></article>
+      <article class="card pi-card"><h3>1. Saignement abondant</h3><p><strong>Objectif :</strong> stopper la perte sanguine.</p><p><strong>Signes :</strong> saignement continu abondant.</p><p><strong>Conduite :</strong> compression + allonger + alerter.</p><p><strong>Red flags :</strong> jet pulsatile, pâleur, confusion.</p><p><strong>Erreur :</strong> retirer la compression.</p><p><strong>Scénario :</strong> coupure profonde sur machine.</p></article>
+      <article class="card pi-card"><h3>2. Étouffement</h3><p><strong>Objectif :</strong> désobstruer vite.</p><p><strong>Signes :</strong> toux inefficace, incapacité parler.</p><p><strong>Conduite :</strong> 5 claques + 5 compressions.</p><p><strong>Red flags :</strong> cyanose, perte de connaissance.</p><p><strong>Erreur :</strong> faire boire.</p><p><strong>Scénario :</strong> cantine, obstruction alimentaire.</p></article>
+      <article class="card pi-card"><h3>3. Malaise</h3><p><strong>Objectif :</strong> éviter aggravation.</p><p><strong>Signes :</strong> pâleur, sueurs, douleur thorax, confusion.</p><p><strong>Conduite :</strong> repos, questionner, surveiller, alerter 15.</p><p><strong>Red flags :</strong> trouble parole, faiblesse bras.</p><p><strong>Erreur :</strong> laisser seul.</p><p><strong>Scénario :</strong> salarié diabétique en salle de pause.</p></article>
+      <article class="card pi-card"><h3>4. Brûlure</h3><p><strong>Objectif :</strong> limiter l'extension tissulaire.</p><p><strong>Signes :</strong> douleur vive, rougeur, phlyctènes.</p><p><strong>Conduite :</strong> refroidir 15-20 min, protéger, alerter si grave.</p><p><strong>Red flags :</strong> visage, mains, voie aérienne.</p><p><strong>Erreur :</strong> appliquer pommade grasse.</p><p><strong>Scénario :</strong> projection eau bouillante.</p></article>
+      <article class="card pi-card"><h3>5. Traumatisme / douleur</h3><p><strong>Objectif :</strong> prévenir aggravation.</p><p><strong>Signes :</strong> impotence, déformation, douleur majeure.</p><p><strong>Conduite :</strong> repos, immobiliser position, alerter.</p><p><strong>Red flags :</strong> douleur rachis/cou.</p><p><strong>Erreur :</strong> mobilisation forcée.</p><p><strong>Scénario :</strong> chute de plain-pied en atelier.</p></article>
+      <article class="card pi-card"><h3>6. Plaie simple</h3><p><strong>Objectif :</strong> éviter infection et aggravation.</p><p><strong>Signes :</strong> plaie superficielle non hémorragique.</p><p><strong>Conduite :</strong> nettoyer, protéger, tracer.</p><p><strong>Red flags :</strong> corps étranger, morsure.</p><p><strong>Erreur :</strong> retrait objet planté.</p><p><strong>Scénario :</strong> coupure mineure en cuisine.</p></article>
+      <article class="card pi-card"><h3>7. Inconscience</h3><p><strong>Objectif :</strong> maintenir ventilation.</p><p><strong>Signes :</strong> inconscience avec respiration.</p><p><strong>Conduite :</strong> PLS + alerte + surveillance.</p><p><strong>Red flags :</strong> respiration irrégulière.</p><p><strong>Erreur :</strong> abandon surveillance.</p><p><strong>Scénario :</strong> malaise vestiaire.</p></article>
+      <article class="card pi-card"><h3>8. Arrêt cardiaque + DAE</h3><p><strong>Objectif :</strong> perfusion minimale et choc précoce.</p><p><strong>Signes :</strong> inconscience + absence respiration normale.</p><p><strong>Conduite :</strong> RCP immédiate + DAE.</p><p><strong>Red flags :</strong> interruptions prolongées.</p><p><strong>Erreur :</strong> attendre secours sans agir.</p><p><strong>Scénario :</strong> effondrement en production.</p></article>
+      <article class="card pi-card"><h3>9. Risque spécifique / cas concret</h3><p><strong>Objectif :</strong> intégrer les risques de l'entreprise.</p><p><strong>Signes :</strong> chimique, électrique, thermique, circulation.</p><p><strong>Conduite :</strong> isoler danger, EPI, alerter, secourir.</p><p><strong>Red flags :</strong> atmosphère toxique, source active.</p><p><strong>Erreur :</strong> intervention sans protection.</p><p><strong>Scénario :</strong> projection chimique maintenance.</p></article>
     </section>
 
-    <article class="card remember-card"><h3>🧠 À retenir</h3><p>Le PI n'est pas linéaire : chaque étape PAP se réévalue en continu selon l'évolution clinique et les risques résiduels.</p></article>
+    <article class="card remember-card"><h3 id="variante-adulte">Variantes public</h3><p><strong>Adulte :</strong> protocole standard PI.</p><p id="variante-enfant"><strong>Enfant :</strong> force adaptée, communication rassurante.</p><p id="variante-nourrisson"><strong>Nourrisson :</strong> gestes dédiés + alerte médicalisée précoce.</p></article>
   </main>
-  <div class="floating-urgence">
-    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-  </div>
-  <footer class="app-footer">
-    <button class="btn-secondary" data-nav="prev">Précédent</button>
-    <button class="btn-primary" data-nav="hub">HUB</button>
-    <button class="btn-secondary" data-nav="next">Suivant</button>
-    <button class="btn-danger" data-nav="urgence">URGENCE</button>
-  </footer>
-  <script src="../assets/js/navigation.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <script src="../assets/js/app.js"></script>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
 </body>
 </html>
