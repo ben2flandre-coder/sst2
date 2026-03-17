@@ -15,81 +15,66 @@
   </header>
   <main class="app-main">
     <section class="hero">
-      <h1>C7 — Analyser le risque</h1>
-      <p>Ici tu passes du constat à la compréhension : ce qui peut arriver, pourquoi, et avec quelles conséquences concrètes.</p>
+      <h1>C7 — Analyser</h1>
+      <p>Ici le SST relie cause → effet : danger, déclencheur, dommage et conséquence pour l’équipe.</p>
     </section>
 
-    <h2 class="section-title">Carte d'analyse terrain</h2>
+    <h2 class="section-title">Mécanisme du dommage</h2>
     <div class="grid two">
-      <article class="card risk-card">
-        <span class="badge">Carte situation</span>
-        <h3>Contexte réel de travail</h3>
-        <p>Charge, cadence, environnement, circulation et pression temporelle.</p>
+      <article class="card">
+        <h3>Question clé</h3>
+        <p>Qu’est-ce qui peut déclencher l’accident maintenant ?</p>
       </article>
-      <article class="card risk-card">
-        <span class="badge">Carte danger</span>
-        <h3>Source de l'atteinte</h3>
-        <p>Machine en mouvement, sol glissant, obstacle, geste inadapté, fatigue.</p>
-      </article>
-      <article class="card risk-card">
-        <span class="badge">Carte conséquence</span>
-        <h3>Dommage potentiel</h3>
-        <p>Coupure, chute de plain-pied, choc, aggravation d'un malaise, arrêt de production.</p>
+      <article class="card">
+        <h3>Réflexe C7</h3>
+        <p>Je relie la source de danger à la conséquence probable, pas à une opinion.</p>
       </article>
     </div>
 
-    <h2 class="section-title">Signaux faibles à ne pas rater</h2>
-    <article class="card-action">
-      <ul class="list-tight">
-        <li>Écarts de procédure « juste pour aller plus vite ».</li>
-        <li>Postures compensées (torsion, appui instable, extension du bras au-dessus d'une zone dangereuse).</li>
-        <li>Fatigue visible, essoufflement, manque de concentration.</li>
-        <li>Variations de flux (arrivées palettes, circulation inhabituelle, allées encombrées).</li>
-      </ul>
-    </article>
+    <h2 class="section-title">Cas pratiques interactifs (4 environnements)</h2>
+    <section class="scenario-grid">
+      <article class="scenario-card" data-scenario>
+        <span class="badge">BTP</span>
+        <h3>Tranchée ouverte, passage piéton</h3>
+        <p>1. Situation : fin de journée, rubalise partielle, pluie.</p>
+        <p><strong>2. Où est le danger ?</strong></p>
+        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
+        <p class="scenario-line" data-line="danger">3. Danger : bord non protégé + sol gras.</p>
+        <p class="scenario-line" data-line="analyse">4. Analyse : un pas de côté suffit à provoquer une chute dans la tranchée.</p>
+        <p class="scenario-line" data-line="action">5. Action : arrêt passage + barriérage rigide + alerte chef de chantier.</p>
+      </article>
 
-    <h2 class="section-title">Cas pratiques multi-contextes — J'analyse</h2>
-    <div class="grid">
-      <article class="card-action practice-case">
-        <span class="badge">Cas 1 • Manutention / chute / glissade</span>
-        <p><strong>Situation :</strong> réception sous pluie, zone de quai partiellement mouillée.</p>
-        <p><strong>Danger :</strong> semelles lisses + visibilité réduite par la charge.</p>
-        <p><strong>Risque analysé :</strong> glissade arrière, chute avec entorse ou fracture poignet.</p>
-        <p><strong>Pourquoi :</strong> pression de cadence et absence de balisage temporaire.</p>
+      <article class="scenario-card" data-scenario>
+        <span class="badge">Atelier industriel</span>
+        <h3>Redémarrage machine après bourrage</h3>
+        <p>1. Situation : opérateur en appui près d’un organe mobile.</p>
+        <p><strong>2. Où est le danger ?</strong></p>
+        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
+        <p class="scenario-line" data-line="danger">3. Danger : zone de coupe accessible.</p>
+        <p class="scenario-line" data-line="analyse">4. Analyse : déclenchement intempestif = coupure grave main/avant-bras.</p>
+        <p class="scenario-line" data-line="action">5. Action : consignation + capot fermé + validation chef d’équipe.</p>
       </article>
-      <article class="card-action practice-case">
-        <span class="badge">Cas 2 • Atelier / machine / coupure</span>
-        <p><strong>Situation :</strong> bourrage matière sur une cisaille, reprise en urgence.</p>
-        <p><strong>Danger :</strong> outil tranchant accessible pendant réglage.</p>
-        <p><strong>Risque analysé :</strong> section ou coupure profonde des doigts.</p>
-        <p><strong>Pourquoi :</strong> suppression ponctuelle du capot et procédure non respectée.</p>
-      </article>
-      <article class="card-action practice-case">
-        <span class="badge">Cas 3 • Bureau / circulation / malaise / obstacle</span>
-        <p><strong>Situation :</strong> fin de journée, couloir encombré de dossiers.</p>
-        <p><strong>Danger :</strong> obstacle bas + collaboratrice vertigineuse.</p>
-        <p><strong>Risque analysé :</strong> trébuchement, chute tête en avant, malaise aggravé.</p>
-        <p><strong>Pourquoi :</strong> absence de rangement immédiat et signalement tardif de l'état de santé.</p>
-      </article>
-    </div>
 
-    <h2 class="section-title">Mode tableau digital — J'analyse</h2>
-    <section class="digital-board">
-      <article class="board-column">
-        <h3>J'observe</h3>
-        <p>Je note les faits : lieu, tâche, personne exposée, matériel.</p>
+      <article class="scenario-card" data-scenario>
+        <span class="badge">Bureau</span>
+        <h3>Allée d’évacuation encombrée</h3>
+        <p>1. Situation : cartons + câble, collègue étourdi.</p>
+        <p><strong>2. Où est le danger ?</strong></p>
+        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
+        <p class="scenario-line" data-line="danger">3. Danger : obstacle bas dans axe de marche.</p>
+        <p class="scenario-line" data-line="analyse">4. Analyse : trébuchement + choc crânien possible.</p>
+        <p class="scenario-line" data-line="action">5. Action : dégagement immédiat + signalement RH/manager.</p>
       </article>
-      <article class="board-column board-column-highlight">
-        <h3>J'analyse</h3>
-        <p>Je relie danger + exposition + probabilité + gravité.</p>
-      </article>
-      <article class="board-column">
-        <h3>Je propose</h3>
-        <p>Je priorise une mesure qui réduit immédiatement l'exposition.</p>
-      </article>
-      <article class="board-column">
-        <h3>Je transmets</h3>
-        <p>Je formule un message utilisable par le manager ou référent sécurité.</p>
+
+      <article class="scenario-card" data-scenario>
+        <span class="badge">Manutention</span>
+        <h3>Quai humide et palette instable</h3>
+        <p>1. Situation : charge haute, marche arrière, visibilité faible.</p>
+        <p><strong>2. Où est le danger ?</strong></p>
+        <button class="btn-secondary scenario-btn" data-reveal="danger">Révéler</button>
+        <p class="scenario-line" data-line="danger">3. Danger : sol glissant + charge déséquilibrée.</p>
+        <p class="scenario-line" data-line="analyse">4. Analyse : glissade + écrasement du pied possible.</p>
+        <p class="scenario-line" data-line="action">5. Action : balisage, séchage, manutention à deux.</p>
       </article>
     </section>
 
@@ -110,5 +95,6 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/c678.js"></script>
 </body>
 </html>
