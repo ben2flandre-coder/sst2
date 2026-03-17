@@ -15,99 +15,47 @@
   </header>
   <main class="app-main">
     <section class="hero">
-      <h1>C6 — Repérer une situation dangereuse</h1>
-      <p>Avant tout geste, le SST lit la scène. Ce module entraîne ton regard terrain pour détecter vite ce qui peut blesser.</p>
+      <h1>C6 — Repérer</h1>
+      <p>Ce que voit le SST : des faits concrets, des signaux faibles, et une chaîne de risque à activer en 10 secondes.</p>
     </section>
 
-    <h2 class="section-title">Bloc logique PAP</h2>
-    <section class="pap-flow" data-pap>
-      <div class="pap-steps" role="tablist" aria-label="Chaîne logique PAP">
-        <button class="pap-step is-active" data-pap-step="situation" role="tab" aria-selected="true">Situation</button>
+    <h2 class="section-title">Mécanique du risque</h2>
+    <section class="risk-mechanic" data-risk-mechanic>
+      <div class="risk-chain" role="tablist" aria-label="Mécanique du risque SST">
+        <button class="risk-step is-active" data-risk-step="danger" role="tab" aria-selected="true">DANGER</button>
         <span class="pap-arrow">→</span>
-        <button class="pap-step" data-pap-step="danger" role="tab" aria-selected="false">Danger</button>
+        <button class="risk-step" data-risk-step="situation" role="tab" aria-selected="false">SITUATION DANGEREUSE</button>
         <span class="pap-arrow">→</span>
-        <button class="pap-step" data-pap-step="risque" role="tab" aria-selected="false">Risque</button>
+        <button class="risk-step" data-risk-step="declencheur" role="tab" aria-selected="false">ÉVÉNEMENT DÉCLENCHEUR</button>
         <span class="pap-arrow">→</span>
-        <button class="pap-step" data-pap-step="dommage" role="tab" aria-selected="false">Dommage possible</button>
-        <span class="pap-arrow">→</span>
-        <button class="pap-step" data-pap-step="action" role="tab" aria-selected="false">Action de prévention</button>
-        <span class="pap-arrow">→</span>
-        <button class="pap-step" data-pap-step="transmission" role="tab" aria-selected="false">Transmission</button>
+        <button class="risk-step" data-risk-step="dommage" role="tab" aria-selected="false">DOMMAGE</button>
       </div>
-      <article class="pap-detail card-action" data-pap-detail>
-        <h3 data-pap-title>Situation</h3>
-        <p data-pap-text>Prendre une photo mentale de la scène : qui fait quoi, où, avec quel matériel et quel rythme de travail.</p>
+      <article class="card-action mechanic-detail">
+        <h3 data-risk-title>DANGER</h3>
+        <p data-risk-text>La source capable de blesser est présente.</p>
+        <p class="mechanic-example">Exemple : <strong>sol mouillé → salarié marche → glissade → fracture</strong>.</p>
       </article>
     </section>
 
-    <h2 class="section-title">Ce que le SST observe sur le terrain</h2>
+    <h2 class="section-title">Parcours PAP actif</h2>
+    <section class="pap-journey" data-pap-journey>
+      <button class="journey-step is-active" data-journey-step="observe">J’OBSERVE</button>
+      <button class="journey-step" data-journey-step="danger">J’IDENTIFIE LE DANGER</button>
+      <button class="journey-step" data-journey-step="analyse">J’ANALYSE LE RISQUE</button>
+      <button class="journey-step" data-journey-step="dommage">J’IMAGINE LE DOMMAGE</button>
+      <button class="journey-step" data-journey-step="action">JE PROPOSE UNE ACTION</button>
+      <button class="journey-step" data-journey-step="transmets">JE TRANSMETS</button>
+    </section>
+    <article class="card" data-journey-detail>
+      <p data-journey-text>Je prends une photo mentale : lieu, geste, matériel, personne exposée.</p>
+    </article>
+
+    <h2 class="section-title">Images mentales terrain</h2>
     <div class="grid">
-      <article class="card">
-        <h3>Manutention / quai logistique</h3>
-        <ul class="list-tight">
-          <li>Palette mal filmée qui se déforme quand le transpalette freine.</li>
-          <li>Sol humide à la sortie du camion et absence de signalisation.</li>
-          <li>Salarié qui porte en torsion pour gagner du temps.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Atelier / ligne machine</h3>
-        <ul class="list-tight">
-          <li>Capot de protection relevé pendant un réglage rapide.</li>
-          <li>Gants inadaptés sur poste avec lame rotative.</li>
-          <li>Consigne arrêt/redémarrage non rappelée au changement d'équipe.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Bureau / circulation interne</h3>
-        <ul class="list-tight">
-          <li>Câble d'alimentation dans une zone de passage fréquent.</li>
-          <li>Cartons devant une issue de circulation.</li>
-          <li>Collaborateur pâle, essoufflé, qui s'agrippe au bureau.</li>
-        </ul>
-      </article>
-    </div>
-
-    <h2 class="section-title">Mode tableau digital — J'observe</h2>
-    <section class="digital-board">
-      <article class="board-column">
-        <h3>J'observe</h3>
-        <p>Je décris les faits visibles sans interpréter.</p>
-      </article>
-      <article class="board-column">
-        <h3>J'analyse</h3>
-        <p>Je relie la source de danger à une exposition réelle.</p>
-      </article>
-      <article class="board-column">
-        <h3>Je propose</h3>
-        <p>Je formule une action simple réalisable dès aujourd'hui.</p>
-      </article>
-      <article class="board-column">
-        <h3>Je transmets</h3>
-        <p>Je préviens le bon relais avec des faits, lieu, heure, urgence.</p>
-      </article>
-    </section>
-
-    <h2 class="section-title">Mini-cas C6 — Repérage immédiat</h2>
-    <div class="grid two">
-      <article class="card-action practice-case">
-        <span class="badge">Cas 1 • Manutention</span>
-        <h3>Zone de déchargement glissante</h3>
-        <p><strong>Repérage :</strong> un préparateur recule avec charge masquant sa vision, sur une flaque.</p>
-        <p><strong>À relever :</strong> glissade potentielle + collision transpalette/piéton.</p>
-      </article>
-      <article class="card-action practice-case">
-        <span class="badge">Cas 2 • Atelier</span>
-        <h3>Réglage machine en cadence</h3>
-        <p><strong>Repérage :</strong> main proche d'une lame alors que la production redémarre.</p>
-        <p><strong>À relever :</strong> exposition directe à la coupure grave.</p>
-      </article>
-      <article class="card-action practice-case">
-        <span class="badge">Cas 3 • Bureau</span>
-        <h3>Circulation obstruée + malaise</h3>
-        <p><strong>Repérage :</strong> chariot archives dans l'allée, collègue ralenti et désorienté.</p>
-        <p><strong>À relever :</strong> obstacle + risque de chute avec possible aggravation d'un malaise.</p>
-      </article>
+      <article class="card-action"><strong>BTP :</strong> trémie non protégée, circulation proche, pluie fine.</article>
+      <article class="card-action"><strong>Atelier :</strong> capot levé, main proche outil, cadence relancée.</article>
+      <article class="card-action"><strong>Bureau :</strong> allée encombrée, câble au sol, collègue pâle.</article>
+      <article class="card-action"><strong>Manutention :</strong> charge haute, visibilité réduite, zone glissante.</article>
     </div>
 
     <div class="grid two module-nav-grid">
@@ -127,6 +75,6 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
-  <script src="../assets/js/pap.js"></script>
+  <script src="../assets/js/c678.js"></script>
 </body>
 </html>

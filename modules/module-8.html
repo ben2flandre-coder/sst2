@@ -15,82 +15,45 @@
   </header>
   <main class="app-main">
     <section class="hero">
-      <h1>C8 — Agir en prévention</h1>
-      <p>Après repérage et analyse, le SST transforme l'information en action utile pour éviter la répétition d'une situation dangereuse.</p>
+      <h1>C8 — Agir / Transmettre</h1>
+      <p>Le SST agit comme auxiliaire de prévention : action immédiate, transmission utile, traçabilité DUERP.</p>
     </section>
 
-    <h2 class="section-title">Action PAP : de l'idée à la transmission</h2>
-    <div class="grid two">
-      <article class="card-action">
-        <h3>Que remonter ?</h3>
-        <ul class="list-tight">
-          <li>Le fait observé, daté, localisé.</li>
-          <li>Le danger précis et les personnes exposées.</li>
-          <li>Le dommage déjà survenu ou possible à court terme.</li>
-        </ul>
-      </article>
-      <article class="card-action">
-        <h3>À qui transmettre ?</h3>
-        <ul class="list-tight">
-          <li>Encadrant de proximité pour action immédiate.</li>
-          <li>Référent sécurité / QHSE pour suivi.</li>
-          <li>Équipe concernée pour prévention collective.</li>
-        </ul>
-      </article>
-    </div>
-
-    <h2 class="section-title">Proposer une mesure simple et efficace</h2>
+    <h2 class="section-title">Qui prévenir ?</h2>
     <div class="grid">
-      <article class="card">
-        <h3>Mesure 1 — Supprimer l'exposition</h3>
-        <p>Baliser immédiatement la flaque + kit absorbant disponible en zone de quai.</p>
-      </article>
-      <article class="card">
-        <h3>Mesure 2 — Sécuriser la machine</h3>
-        <p>Rappel de consignation courte avec check visuel capot avant redémarrage.</p>
-      </article>
-      <article class="card">
-        <h3>Mesure 3 — Fluidifier la circulation</h3>
-        <p>Allée dégagée en continu et signalement express d'un collaborateur en malaise.</p>
-      </article>
+      <article class="card-action"><strong>Immédiat :</strong> encadrant de proximité pour supprimer l’exposition.</article>
+      <article class="card-action"><strong>Suivi :</strong> référent prévention / QHSE pour intégrer l’action au plan de prévention et DUERP.</article>
+      <article class="card-action"><strong>Secours :</strong> si victime, articulation prévention + conduite de secours sans délai.</article>
     </div>
 
-    <h2 class="section-title">Mode tableau digital — Je propose / Je transmets</h2>
-    <section class="digital-board">
-      <article class="board-column">
-        <h3>J'observe</h3>
-        <p>Fait concret : « palette instable, 14h20, quai 2 ».</p>
-      </article>
-      <article class="board-column">
-        <h3>J'analyse</h3>
-        <p>Risque : chute arrière avec blessure lombaire.</p>
-      </article>
-      <article class="board-column board-column-highlight">
-        <h3>Je propose</h3>
-        <p>Action : balisage + nettoyage + rappel port de charge en binôme.</p>
-      </article>
-      <article class="board-column board-column-highlight">
-        <h3>Je transmets</h3>
-        <p>Message court : fait, risque, action demandée, niveau d'urgence.</p>
-      </article>
+    <h2 class="section-title">Simulation visuelle — fiche situation dangereuse</h2>
+    <section class="card form-sim">
+      <p><strong>Lieu :</strong> Quai 2 — 14h20</p>
+      <p><strong>Observation :</strong> flaque en zone de recul transpalette.</p>
+      <p><strong>Danger :</strong> glissade + charge instable.</p>
+      <p><strong>Dommage possible :</strong> fracture poignet / écrasement pied.</p>
+      <p><strong>Action proposée :</strong> balisage + absorbant + rappel briefing équipe.</p>
+      <p><strong>Transmission :</strong> chef d’équipe + QHSE (traçabilité DUERP).</p>
     </section>
 
-    <h2 class="section-title">Continuité PI SST</h2>
-    <article class="card-action">
-      <p>Les actions PAP collectées ici alimentent directement le prochain travail PI SST : suivi des actions, mesure d'efficacité et preuve de non-répétition.</p>
-    </article>
-
-    <h2 class="section-title">Parcours validé</h2>
-    <div class="pill-row">
-      <span class="pill">C1</span>
-      <span class="pill">C6</span>
-      <span class="pill">C7</span>
-      <span class="pill">C8</span>
-      <span class="pill">C2</span>
-      <span class="pill">C3</span>
-      <span class="pill">C4</span>
-      <span class="pill">C5</span>
-    </div>
+    <h2 class="section-title">Mode Tableau formateur</h2>
+    <section class="trainer-board" data-trainer-board>
+      <div class="trainer-head">
+        <span>OBSERVATION</span><span>DANGER</span><span>RISQUE</span><span>ACTION</span>
+      </div>
+      <div class="trainer-row" data-row>
+        <span data-cell="observation">Palette qui dérive au freinage.</span>
+        <span data-cell="danger">Charge instable.</span>
+        <span data-cell="risque">Chute + choc.</span>
+        <span data-cell="action">Bloquer, refilmer, rebrief.</span>
+      </div>
+      <div class="board-controls">
+        <button class="btn-secondary" data-board-case="btp">Charger BTP</button>
+        <button class="btn-secondary" data-board-case="atelier">Charger Atelier</button>
+        <button class="btn-secondary" data-board-case="bureau">Charger Bureau</button>
+        <button class="btn-secondary" data-board-case="manutention">Charger Manutention</button>
+      </div>
+    </section>
 
     <div class="grid two module-nav-grid">
       <a class="btn-secondary" href="module-7.html">Retour C7</a>
@@ -109,5 +72,6 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/c678.js"></script>
 </body>
 </html>
