@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urgence Hémorragie</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body class="app-shell" data-prev="/index.html" data-next="/urgence/inconscience.html">
+  <header class="app-header">
+    <div class="app-title">SST • Plateforme App</div>
+    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
+  </header>
+  <main class="app-main">
+    <section class="hero"><h1>⚡ Hémorragie</h1><p>Mode urgence : lisibilité maximale, actions immédiates, zéro détour.</p></section>
+    <div class="grid">
+      <article class="urgence-step"><h3>Étape 1</h3><p>Comprimez immédiatement la plaie avec un tissu propre ou la main protégée.</p></article>
+      <article class="urgence-step"><h3>Étape 2</h3><p>Allongez la victime, maintenez la compression sans relâcher.</p></article>
+      <article class="urgence-step"><h3>Étape 3</h3><p>Alertez le 15/112 et surveillez conscience + respiration.</p></article>
+    </div>
+    <div class="grid two"><button class="btn-primary" onclick="goHome()">Retour HUB</button><button class="btn-secondary" onclick="goToModule(0)">Retour formation</button></div>
+  </main>
+  <div class="floating-urgence">
+    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+  </div>
+  <footer class="app-footer">
+    <button class="btn-secondary" data-nav="prev">Précédent</button>
+    <button class="btn-primary" data-nav="hub">HUB</button>
+    <button class="btn-secondary" data-nav="next">Suivant</button>
+    <button class="btn-danger" data-nav="urgence">URGENCE</button>
+  </footer>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

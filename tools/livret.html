@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livret SST</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body class="app-shell" data-prev="/revision/index.html" data-next="/tools/staying-alive.html">
+  <header class="app-header">
+    <div class="app-title">SST • Plateforme App</div>
+    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
+  </header>
+  <main class="app-main">
+    <section class="hero"><h1>Livret SST</h1><p>Synthèse opérationnelle : repères, protocoles et mémo de transmission d’alerte.</p></section>
+    <article class="card"><h3>Contenu</h3><ul class="list-tight"><li>Conduites à tenir par situation</li><li>Messages d’alerte type</li><li>Prévention des risques au poste</li></ul></article>
+    <div class="grid two"><a class="btn-secondary" href="staying-alive.html">Outil Staying Alive</a><button class="btn-primary" onclick="goToModule(0)">Retour parcours</button></div>
+  </main>
+  <div class="floating-urgence">
+    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+  </div>
+  <footer class="app-footer">
+    <button class="btn-secondary" data-nav="prev">Précédent</button>
+    <button class="btn-primary" data-nav="hub">HUB</button>
+    <button class="btn-secondary" data-nav="next">Suivant</button>
+    <button class="btn-danger" data-nav="urgence">URGENCE</button>
+  </footer>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
