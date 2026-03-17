@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urgence Malaise</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body class="app-shell" data-prev="/urgence/brulure.html" data-next="/index.html">
+  <header class="app-header">
+    <div class="app-title">SST • Plateforme App</div>
+    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
+  </header>
+  <main class="app-main">
+    <section class="hero"><h1>⚡ Malaise</h1><p>Mode urgence : lisibilité maximale, actions immédiates, zéro détour.</p></section>
+    <div class="grid">
+      <article class="urgence-step"><h3>Étape 1</h3><p>Installez la personne au repos dans la position la plus confortable.</p></article>
+      <article class="urgence-step"><h3>Étape 2</h3><p>Questionnez les signes (douleur thorax, parole, sueurs, antécédents).</p></article>
+      <article class="urgence-step"><h3>Étape 3</h3><p>Alertez le 15 si signe inhabituel, persistant ou aggravation.</p></article>
+    </div>
+    <div class="grid two"><button class="btn-primary" onclick="goHome()">Retour HUB</button><button class="btn-secondary" onclick="goToModule(0)">Retour formation</button></div>
+  </main>
+  <div class="floating-urgence">
+    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+  </div>
+  <footer class="app-footer">
+    <button class="btn-secondary" data-nav="prev">Précédent</button>
+    <button class="btn-primary" data-nav="hub">HUB</button>
+    <button class="btn-secondary" data-nav="next">Suivant</button>
+    <button class="btn-danger" data-nav="urgence">URGENCE</button>
+  </footer>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
