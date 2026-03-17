@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Livret SST</title>
+  <title>Aide-mémoire SST</title>
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
@@ -14,9 +14,56 @@
     <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
   </header>
   <main class="app-main">
-    <section class="hero"><h1>Livret SST</h1><p>Synthèse opérationnelle : repères, protocoles et mémo de transmission d’alerte.</p></section>
-    <article class="card"><h3>Contenu</h3><ul class="list-tight"><li>Conduites à tenir par situation</li><li>Messages d’alerte type</li><li>Prévention des risques au poste</li></ul></article>
-    <div class="grid two"><a class="btn-secondary" href="staying-alive.html">Outil Staying Alive</a><button class="btn-primary" onclick="goToModule(0)">Retour parcours</button></div>
+    <section class="hero">
+      <h1>Aide-mémoire SST</h1>
+      <p>Référence rapide INRS : phrases courtes, gestes prioritaires et navigation par urgence.</p>
+    </section>
+
+    <article class="card-action">
+      <h2>Téléchargement PDF</h2>
+      <p>Télécharger le support pour une consultation hors ligne en formation ou sur le terrain.</p>
+      <a class="btn-primary" href="https://www.inrs.fr/dms/inrs/CataloguePapier/ED/TI-ED-4085/ed4085.pdf" target="_blank" rel="noopener">Télécharger le PDF</a>
+    </article>
+
+    <h2 class="section-title">Navigation interne</h2>
+    <nav class="tool-nav">
+      <a class="btn-secondary" href="#alerte">Alerte</a>
+      <a class="btn-secondary" href="#hemorragie">Hémorragie</a>
+      <a class="btn-secondary" href="#inconscience">Inconscience</a>
+      <a class="btn-secondary" href="#arret">Arrêt cardiaque</a>
+      <a class="btn-secondary" href="#brulure">Brûlure</a>
+      <a class="btn-secondary" href="#etouffement">Étouffement</a>
+    </nav>
+
+    <section id="alerte" class="card">
+      <h3>Alerte</h3>
+      <p>Qui ? Où ? Quoi ? Combien de victimes ? Quels gestes en cours ?</p>
+    </section>
+    <section id="hemorragie" class="card">
+      <h3>Hémorragie</h3>
+      <p>Compression immédiate. Allonger si possible. Alerter sans délai.</p>
+    </section>
+    <section id="inconscience" class="card">
+      <h3>Inconscience</h3>
+      <p>Ne répond pas, respire : PLS et surveillance continue.</p>
+    </section>
+    <section id="arret" class="card">
+      <h3>Arrêt cardiaque</h3>
+      <p>Ne répond pas, ne respire pas : RCP + DAE dès que possible.</p>
+    </section>
+    <section id="brulure" class="card">
+      <h3>Brûlure</h3>
+      <p>Refroidir à l'eau tempérée 15 minutes. Retirer ce qui ne colle pas.</p>
+    </section>
+    <section id="etouffement" class="card">
+      <h3>Étouffement</h3>
+      <p>Toux inefficace : claques dorsales puis compressions abdominales.</p>
+    </section>
+
+    <article class="card-action">
+      <h3>Aperçu visuel</h3>
+      <div class="schema-row"><span class="schema-node">Protéger</span><span class="schema-arrow">→</span><span class="schema-node">Examiner</span><span class="schema-arrow">→</span><span class="schema-node">Alerter</span><span class="schema-arrow">→</span><span class="schema-node">Secourir</span></div>
+    </article>
   </main>
   <div class="floating-urgence">
     <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>

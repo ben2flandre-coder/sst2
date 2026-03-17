@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module 4</title>
+  <title>C4 — Alerter</title>
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
@@ -14,11 +14,50 @@
     <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
   </header>
   <main class="app-main">
-    <section class="hero"><h1>Module 4</h1><p>Compétence SST 4 : entraînement progressif, cas terrain et points clés opérationnels.</p></section>
-    <h2 class="section-title">Objectifs</h2>
-    <article class="card"><ul class="list-tight"><li>Repérer les risques prioritaires liés à la situation.</li><li>Appliquer la conduite SST adaptée sans perte de temps.</li><li>Transmettre une information utile à l’équipe et aux secours.</li></ul></article>
-    <h2 class="section-title">Exercice guidé</h2>
-    <article class="card-action"><p>Analysez un scénario d’accident en milieu professionnel, choisissez l’action immédiate puis vérifiez votre décision avec la grille SST.</p></article>
+    <section class="hero">
+      <div class="premium-header">
+        <span class="icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92V19a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 3.18 2 2 0 0 1 4.11 1h2.09a2 2 0 0 1 2 1.72c.12.9.33 1.79.62 2.64a2 2 0 0 1-.45 2.11L7.08 8.91a16 16 0 0 0 8 8l1.44-1.29a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.64.62A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <div>
+          <h1>C4 — ALERTER</h1>
+          <p>Être capable de transmettre une alerte claire, structurée et utile aux secours en moins de 30 secondes.</p>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">Objectifs explicites</h2>
+    <article class="card"><ul class="list-tight"><li>Donner lieu exact, nature de l'accident, nombre de victimes.</li><li>Décrire état vital observé et gestes déjà engagés.</li><li>Maintenir la communication jusqu'à validation de l'opérateur.</li></ul></article>
+
+    <h2 class="section-title">🔴 Red flags d'alerte immédiate</h2>
+    <article class="red-flag"><ul><li>Victime inconsciente et/ou ne respirant pas.</li><li>Hémorragie abondante non contrôlée.</li><li>Détresse respiratoire ou douleur thoracique brutale.</li></ul></article>
+
+    <h2 class="section-title">Conduites à tenir (aide-mémoire)</h2>
+    <article class="card action-flow">
+      <div class="flow-step">1. Composer 15 / 18 / 112 sans délai.</div>
+      <div class="flow-step">2. Message type : « Ici [nom], à [adresse précise], [type d'accident], [état de la victime]. »</div>
+      <div class="flow-step">3. Signaler risques persistants (feu, électricité, produits).</div>
+      <div class="flow-step">4. Appliquer les consignes données et organiser l'accueil des secours.</div>
+    </article>
+
+    <h2 class="section-title">PI + PAP terrain intégrés</h2>
+    <article class="card schema-flow">
+      <h3>PI (plan d'intervention) visuel</h3>
+      <div class="schema-row"><span class="schema-node">Danger identifié</span><span class="schema-arrow">→</span><span class="schema-node">Décision d'alerter</span><span class="schema-arrow">→</span><span class="schema-node">Message structuré</span><span class="schema-arrow">→</span><span class="schema-node">Accueil secours</span></div>
+      <h3>PAP opérationnel</h3>
+      <div class="schema-row"><span class="schema-node">Observer</span><span class="schema-arrow">→</span><span class="schema-node">Analyser</span><span class="schema-arrow">→</span><span class="schema-node">Agir</span><span class="schema-arrow">→</span><span class="schema-node">Transmettre</span></div>
+    </article>
+
+    <h2 class="section-title">Erreurs fréquentes</h2>
+    <article class="card error-block"><ul class="list-tight"><li>Raccrocher avant validation du régulateur.</li><li>Donner un lieu imprécis (« dans l'usine »).</li><li>Oublier de signaler un risque secondaire.</li></ul></article>
+
+    <h2 class="section-title">Micro-scénarios terrain</h2>
+    <section class="micro-grid">
+      <article class="micro-item"><strong>Chantier</strong> : chute de hauteur → <em>décision</em> 112 immédiat → <em>action</em> guidage entrée chantier.</article>
+      <article class="micro-item"><strong>Bureau</strong> : collègue inconscient → <em>décision</em> 15 + défibrillateur interne → <em>action</em> binôme alerte/secours.</article>
+      <article class="micro-item"><strong>Atelier</strong> : brûlure chimique → <em>décision</em> alerte + rinçage continu → <em>action</em> préciser produit en cause.</article>
+      <article class="micro-item"><strong>Domicile</strong> : étouffement sévère → <em>décision</em> 15 en haut-parleur → <em>action</em> manœuvres guidées.</article>
+    </section>
   </main>
   <div class="floating-urgence">
     <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>

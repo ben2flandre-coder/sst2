@@ -14,9 +14,29 @@
     <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
   </header>
   <main class="app-main">
-    <section class="hero"><h1>Repère rythmique “Staying Alive”</h1><p>Utilisez un tempo proche de 100-120 compressions/minute pour le massage cardiaque.</p></section>
-    <article class="card-action"><h3>Application pratique</h3><p>Comptez à voix haute en rythme stable, bras tendus, en relâchant complètement entre compressions.</p><p>Ce repère aide à garder une cadence efficace jusqu’à la prise en charge par les secours.</p></article>
-    <div class="grid two"><button class="btn-danger" onclick="goToUrgence('arret-cardiaque')">Mode arrêt cardiaque</button><a class="btn-secondary" href="livret.html">Retour livret</a></div>
+    <section class="hero"><h1>Application Staying Alive</h1><p>Localiser les défibrillateurs et les citoyens secouristes.</p></section>
+
+    <article class="card-action">
+      <div class="premium-header">
+        <span class="icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <div>
+          <h3>Staying Alive</h3>
+          <p>Outil terrain recommandé pour orienter rapidement la réponse défibrillation.</p>
+        </div>
+      </div>
+      <div class="app-badge-row">
+        <a class="btn-secondary" href="https://apps.apple.com/fr/app/staying-alive/id332564626" target="_blank" rel="noopener">App Store</a>
+        <a class="btn-secondary" href="https://play.google.com/store/apps/details?id=com.mobilehealth.stayingalive" target="_blank" rel="noopener">Google Play</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>Rythme RCP</h3>
+      <p>Conservez une cadence de 100 à 120 compressions/minute, bras tendus, relâchement complet entre chaque compression.</p>
+      <button class="btn-danger" onclick="goToUrgence('arret-cardiaque')">Mode arrêt cardiaque</button>
+    </article>
   </main>
   <div class="floating-urgence">
     <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
