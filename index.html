@@ -3,160 +3,212 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SST • Parcours terrain apprenant</title>
+<title>SST • Hub apprenant terrain</title>
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/layout.css" />
 <link rel="stylesheet" href="assets/css/components.css" />
 </head>
 <body class="app-shell home-main" data-prev="" data-next="/modules/module-c1.html">
 <header class="app-header">
-<div class="app-title">SST • Parcours terrain</div>
+<div class="app-title">SST • Hub apprenant</div>
 <button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
 </header>
-<main class="app-main">
-<section class="hero hero-home hero-premium">
-<div class="hero-split hero-split--balanced">
-<div>
-<p class="hero-kicker">Parcours SST conforme</p>
-<h1>Formation SST organisée comme sur le terrain : 1 → 6 → 7 → 8 → 2 → 3 → 4 → 5.</h1>
-<p>On part du rôle SST et de la prévention, on enchaîne sur l’analyse PAP, l’alerte interne, la remontée utile, puis on déroule la protection, l’examen, l’alerte et le secours.</p>
-<div class="hero-actions hero-actions--start">
-<a class="btn-primary" href="modules/module-c1.html">Commencer la formation</a>
-<a class="btn-danger" href="urgence/index.html">Urgence</a>
-<a class="btn-secondary" href="revision/index.html">Révision</a>
-</div>
-</div>
-<aside class="hero-panel hero-panel--glass institutional-card">
-<p class="badge">Repères SST / INRS</p>
-<h2>Le fil visuel de toute la plateforme</h2>
-<div class="visual-legend">
-<article class="legend-card panel--critical"><span class="pictogram pictogram--red">⛑️</span><strong>Rouge</strong><span>urgence et red flags.</span></article>
-<article class="legend-card panel--warning"><span class="pictogram pictogram--orange">👁️</span><strong>Orange</strong><span>vigilance et signes d’alerte.</span></article>
-<article class="legend-card panel--info"><span class="pictogram pictogram--blue">➡️</span><strong>Bleu</strong><span>action attendue.</span></article>
-<article class="legend-card panel--success"><span class="pictogram pictogram--green">🛡️</span><strong>Vert</strong><span>prévention et traçabilité.</span></article>
-</div>
+<main class="app-main app-main--home">
+<section class="hero hero-home hero-home--learner">
+  <div class="hero-split hero-split--balanced">
+    <div>
+      <p class="hero-kicker">Parcours terrain SST</p>
+      <h1>Agir dans l’ordre validé, du repérage prévention au geste de secours.</h1>
+      <p>Le parcours apprenant suit strictement la progression C1 → C6 → C7 → C8 → C2 → C3 → C4 → C5 pour apprendre à protéger, examiner, alerter et secourir sans perdre le fil terrain.</p>
+      <div class="hero-actions hero-actions--start">
+        <a class="btn-primary" href="modules/module-c1.html">Commencer la formation</a>
+        <a class="btn-danger" href="urgence/index.html">Urgence</a>
+        <a class="btn-secondary" href="revision/index.html">Révision</a>
+      </div>
+    </div>
+    <aside class="hero-panel hero-panel--legend">
+      <p class="badge">Code visuel SST</p>
+      <div class="legend-stack">
+        <div class="legend-line legend-line--danger"><span class="tile-icon tile-icon--danger">U</span><div><strong>Rouge</strong><span>geste vital, urgence majeure.</span></div></div>
+        <div class="legend-line legend-line--warning"><span class="tile-icon tile-icon--warning">A</span><div><strong>Orange</strong><span>signe d’alerte, vigilance.</span></div></div>
+        <div class="legend-line legend-line--info"><span class="tile-icon tile-icon--info">G</span><div><strong>Bleu</strong><span>action, procédure, progression.</span></div></div>
+        <div class="legend-line legend-line--success"><span class="tile-icon tile-icon--success">P</span><div><strong>Vert</strong><span>prévention, traçabilité, PAP.</span></div></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="card-action progress-banner" aria-label="Progression officielle SST">
+  <div class="section-heading section-heading--spread">
+    <div>
+      <p class="badge">Progression / compétences</p>
+      <h2>Ordre pédagogique officiel conservé sans réorganisation</h2>
+      <p>Chaque tuile mène à la page réelle correspondante du parcours.</p>
+    </div>
+  </div>
+  <div class="training-roadmap training-roadmap--compact">
+    <a class="learning-tile learning-tile--info is-current" href="modules/module-c1.html" data-step="1">
+      <span class="tile-icon tile-icon--info">C1</span>
+      <strong>Rôle du SST</strong>
+      <span>Entrer dans la mission SST et le repérage initial.</span>
+    </a>
+    <a class="learning-tile learning-tile--success" href="modules/module-6.html" data-step="2">
+      <span class="tile-icon tile-icon--success">C6</span>
+      <strong>Analyser</strong>
+      <span>Lire l’événement avec le PAP.</span>
+    </a>
+    <a class="learning-tile learning-tile--warning" href="modules/module-7.html" data-step="3">
+      <span class="tile-icon tile-icon--warning">C7</span>
+      <strong>Alerte interne</strong>
+      <span>Prévenir l’organisation vite et juste.</span>
+    </a>
+    <a class="learning-tile learning-tile--success" href="modules/module-8.html" data-step="4">
+      <span class="tile-icon tile-icon--success">C8</span>
+      <strong>Remontée utile</strong>
+      <span>Tracer et orienter la prévention.</span>
+    </a>
+    <a class="learning-tile learning-tile--info" href="modules/module-2.html" data-step="5">
+      <span class="tile-icon tile-icon--info">C2</span>
+      <strong>Protéger</strong>
+      <span>Éviter le sur-accident.</span>
+    </a>
+    <a class="learning-tile learning-tile--warning" href="modules/module-3.html" data-step="6">
+      <span class="tile-icon tile-icon--warning">C3</span>
+      <strong>Examiner</strong>
+      <span>Repérer le signe majeur.</span>
+    </a>
+    <a class="learning-tile learning-tile--warning" href="modules/module-4.html" data-step="7">
+      <span class="tile-icon tile-icon--warning">C4</span>
+      <strong>Alerter</strong>
+      <span>Transmettre un message complet.</span>
+    </a>
+    <a class="learning-tile learning-tile--danger" href="modules/module-5.html" data-step="8">
+      <span class="tile-icon tile-icon--danger">C5</span>
+      <strong>Secourir</strong>
+      <span>Appliquer le geste adapté à la situation.</span>
+    </a>
+  </div>
+</section>
+
+<section class="home-flow" aria-label="Accès apprenant principaux">
+  <article class="card-action stack-section">
+    <div class="section-heading section-heading--spread">
+      <div>
+        <p class="badge badge--alert">Urgence</p>
+        <h2>4 accès terrain visibles immédiatement</h2>
+        <p>Chaque tuile est active sur toute sa surface pour aller directement à la fiche utile.</p>
+      </div>
+      <a class="quick-link quick-link--danger" href="urgence/index.html">Voir tout le mode urgence</a>
+    </div>
+    <div class="tile-grid tile-grid--emergency">
+      <a class="action-tile action-tile--danger" href="urgence/hemorragie.html">
+        <span class="tile-icon tile-icon--danger">HE</span>
+        <div>
+          <strong>Saignement abondant</strong>
+          <span>Compression immédiate.</span>
+        </div>
+      </a>
+      <a class="action-tile action-tile--danger" href="urgence/etouffement.html">
+        <span class="tile-icon tile-icon--danger">ET</span>
+        <div>
+          <strong>Étouffement</strong>
+          <span>Désobstruer sans délai.</span>
+        </div>
+      </a>
+      <a class="action-tile action-tile--danger" href="urgence/arret-cardiaque.html">
+        <span class="tile-icon tile-icon--danger">AC</span>
+        <div>
+          <strong>Arrêt cardiaque</strong>
+          <span>Massage + DAE.</span>
+        </div>
+      </a>
+      <a class="action-tile action-tile--warning" href="urgence/inconscience.html">
+        <span class="tile-icon tile-icon--warning">IN</span>
+        <div>
+          <strong>Inconscience</strong>
+          <span>PLS et surveillance.</span>
+        </div>
+      </a>
+    </div>
+  </article>
+
+  <article class="card-action stack-section">
+    <div class="section-heading section-heading--spread">
+      <div>
+        <p class="badge">Révision</p>
+        <h2>Fiches réflexes majeures</h2>
+        <p>Accès rapide aux gestes et repères à retrouver en quelques secondes.</p>
+      </div>
+      <a class="quick-link" href="revision/index.html">Ouvrir toutes les fiches</a>
+    </div>
+    <div class="tile-grid tile-grid--revision">
+      <a class="action-tile action-tile--info" href="urgence/hemorragie.html">
+        <span class="tile-icon tile-icon--info">V</span>
+        <div>
+          <strong>Je vois un sang abondant</strong>
+          <span>Je comprime sans attendre.</span>
+        </div>
+      </a>
+      <a class="action-tile action-tile--warning" href="urgence/etouffement.html">
+        <span class="tile-icon tile-icon--warning">R</span>
+        <div>
+          <strong>La victime ne parle plus</strong>
+          <span>Claques dorsales puis compressions.</span>
+        </div>
+      </a>
+      <a class="action-tile action-tile--danger" href="urgence/arret-cardiaque.html">
+        <span class="tile-icon tile-icon--danger">RCP</span>
+        <div>
+          <strong>La victime ne respire pas</strong>
+          <span>J’alerte, je masse, je mets le DAE.</span>
+        </div>
+      </a>
+      <a class="action-tile action-tile--success" href="modules/module-8.html">
+        <span class="tile-icon tile-icon--success">PAP</span>
+        <div>
+          <strong>Après l’intervention</strong>
+          <span>Je trace pour la prévention.</span>
+        </div>
+      </a>
+    </div>
+  </article>
+</section>
+
+<section class="quick-gesture-bar quick-gesture-bar--memo" aria-label="Mémo terrain">
+  <div class="section-heading section-heading--spread">
+    <div>
+      <p class="badge">Mémo terrain</p>
+      <h2>4 réflexes à garder en tête</h2>
+    </div>
+  </div>
+  <div class="field-mini-flow field-mini-flow--compact">
+    <article class="field-cue panel--success"><strong>1. Voir</strong><span>danger, situation, dommage.</span></article>
+    <article class="field-cue panel--warning"><strong>2. Alerter</strong><span>interne puis externe si nécessaire.</span></article>
+    <article class="field-cue panel--info"><strong>3. Agir</strong><span>protéger, examiner, secourir.</span></article>
+    <article class="field-cue panel--success"><strong>4. Tracer</strong><span>remontée claire pour prévenir la suite.</span></article>
+  </div>
+</section>
+
+<aside class="support-panel" aria-label="Outils secondaires">
+  <details>
+    <summary>Espace outils secondaires</summary>
+    <div class="support-panel__links">
+      <a href="tools/ressources-formateur.html">Accueil outils</a>
+      <a href="tools/pap.html">PAP</a>
+      <a href="tools/pi.html">PI</a>
+      <a href="tools/livret.html">Livret</a>
+    </div>
+  </details>
 </aside>
-</div>
-</section>
-
-<section class="card-action progress-banner" aria-label="Parcours pédagogique SST">
-<div class="progress-banner__meta">
-<div>
-<p class="badge">Progression officielle</p>
-<h2>Ordre imposé : C1 → C6 → C7 → C8 → C2 → C3 → C4 → C5</h2>
-<p>Chaque étape prépare la suivante. Aucun module catalogue : une seule trajectoire pédagogique.</p>
-</div>
-<div class="progress-banner__chips">
-<span class="status-chip status-chip--success">🟢 Prévenir</span>
-<span class="status-chip status-chip--info">🔵 Agir</span>
-<span class="status-chip status-chip--warning">🟠 Alerter</span>
-<span class="status-chip status-chip--danger">🔴 Secourir</span>
-</div>
-</div>
-<div class="training-roadmap">
-<article class="roadmap-step roadmap-step--active" data-step="1"><strong>C1</strong><span>Rôle SST + PAP de départ.</span></article>
-<article class="roadmap-step roadmap-step--success" data-step="2"><strong>C6</strong><span>Analyser après l’événement avec le PAP.</span></article>
-<article class="roadmap-step roadmap-step--warning" data-step="3"><strong>C7</strong><span>Alerter l’organisation interne vite et bien.</span></article>
-<article class="roadmap-step roadmap-step--success" data-step="4"><strong>C8</strong><span>Tracer, transmettre, prévenir.</span></article>
-<article class="roadmap-step roadmap-step--info" data-step="5"><strong>C2</strong><span>Protéger sans sur-accident.</span></article>
-<article class="roadmap-step roadmap-step--warning" data-step="6"><strong>C3</strong><span>Examiner et lire le signe majeur.</span></article>
-<article class="roadmap-step roadmap-step--warning" data-step="7"><strong>C4</strong><span>Alerter avec un message complet.</span></article>
-<article class="roadmap-step roadmap-step--danger" data-step="8"><strong>C5</strong><span>Secourir selon la situation.</span></article>
-</div>
-</section>
-
-<section class="home-zones" aria-label="Entrées principales">
-<article class="entry-card entry-card--primary entry-card--dominant">
-<span class="entry-card__number">1</span>
-<div>
-<p class="badge">Commencer la formation</p>
-<h2>Un parcours unique, visible, progressif</h2>
-<p>L’apprenant suit toute la logique SST, du repérage prévention jusqu’aux gestes de secours terrain, avec indicateurs de progression sur chaque écran.</p>
-</div>
-<div class="training-roadmap">
-<article class="roadmap-step roadmap-step--active" data-step="1"><strong>C1</strong><span>Rôle SST</span></article>
-<article class="roadmap-step roadmap-step--success" data-step="2"><strong>C6</strong><span>PAP retour terrain</span></article>
-<article class="roadmap-step roadmap-step--warning" data-step="3"><strong>C7</strong><span>Alerte interne</span></article>
-<article class="roadmap-step roadmap-step--success" data-step="4"><strong>C8</strong><span>Remontée</span></article>
-<article class="roadmap-step roadmap-step--info" data-step="5"><strong>C2</strong><span>Protéger</span></article>
-<article class="roadmap-step roadmap-step--warning" data-step="6"><strong>C3</strong><span>Examiner</span></article>
-<article class="roadmap-step roadmap-step--warning" data-step="7"><strong>C4</strong><span>Alerter</span></article>
-<article class="roadmap-step roadmap-step--danger" data-step="8"><strong>C5</strong><span>Secourir</span></article>
-</div>
-<a class="btn-primary" href="modules/module-c1.html">Démarrer le parcours</a>
-</article>
-
-<div class="status-grid">
-<article class="entry-card entry-card--alert">
-<span class="entry-card__number">2</span>
-<div>
-<p class="badge badge--alert">Urgence</p>
-<h2>Accès terrain immédiat</h2>
-<p>Gros boutons, code couleur, accès direct aux gestes vitaux et aux conduites critiques.</p>
-</div>
-<div class="alert-lane">
-<a class="quick-link quick-link--danger" href="urgence/hemorragie.html">🩸 Saignement</a>
-<a class="quick-link quick-link--danger" href="urgence/etouffement.html">🫁 Étouffement</a>
-<a class="quick-link quick-link--danger" href="urgence/arret-cardiaque.html">⚡ Arrêt cardiaque</a>
-<a class="quick-link" href="urgence/inconscience.html">🛏️ Inconscience</a>
-</div>
-<a class="btn-danger" href="urgence/index.html">Ouvrir l’espace urgence</a>
-</article>
-
-<article class="entry-card">
-<span class="entry-card__number">3</span>
-<div>
-<p class="badge">Révision</p>
-<h2>Fiches réflexes visuelles</h2>
-<p>Tri par geste, mini schémas, repères “je vois / je fais / j’évite” pour réactiver un réflexe en quelques secondes.</p>
-</div>
-<div class="pictogram-row">
-<article class="pictogram-card panel--info"><span class="pictogram pictogram--blue">🩸</span><strong>Comprimer</strong><span>Hémorragie.</span></article>
-<article class="pictogram-card panel--warning"><span class="pictogram pictogram--orange">🫁</span><strong>Désobstruer</strong><span>Étouffement.</span></article>
-<article class="pictogram-card panel--critical"><span class="pictogram pictogram--red">⚡</span><strong>Masser / DAE</strong><span>Arrêt cardiaque.</span></article>
-<article class="pictogram-card panel--success"><span class="pictogram pictogram--green">📝</span><strong>Traçer</strong><span>PAP et prévention.</span></article>
-</div>
-<a class="btn-secondary" href="revision/index.html">Ouvrir la révision</a>
-</article>
-
-<article class="entry-card entry-card--quiet">
-<span class="entry-card__number">4</span>
-<div>
-<p class="badge">Outils</p>
-<h2>Ressources formateur et supports</h2>
-<p>PAP complet, PI complet, livret et médias restent accessibles, mais les logiques PAP et PI sont désormais intégrées dans le parcours apprenant.</p>
-</div>
-<div class="quick-links quick-links--spaced">
-<a class="quick-link" href="tools/ressources-formateur.html">Accueil outils</a>
-<a class="quick-link" href="tools/pap.html">PAP</a>
-<a class="quick-link" href="tools/pi.html">PI</a>
-<a class="quick-link" href="tools/livret.html">Livret</a>
-</div>
-</article>
-</div>
-</section>
-
-<section class="quick-gesture-bar" aria-label="Fil conducteur SST">
-<div>
-<p class="badge">Mémo terrain</p>
-<h2>Le SST pense à la fois secours, organisation et prévention</h2>
-</div>
-<div class="field-mini-flow">
-<article class="field-cue panel--success"><strong>1. Voir</strong><span>Danger, situation, dommage.</span></article>
-<article class="field-cue panel--warning"><strong>2. Alerter en interne</strong><span>Qui prévenir, comment, combien de temps.</span></article>
-<article class="field-cue panel--info"><strong>3. Agir</strong><span>Protection, examen, alerte, geste.</span></article>
-<article class="field-cue panel--success"><strong>4. Tracer</strong><span>Remontée, fiche événement, action de prévention.</span></article>
-</div>
-</section>
 </main>
 <div class="floating-urgence">
-<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+<button class="btn-danger" data-nav="urgence">Urgence</button>
 </div>
 <footer class="app-footer">
 <button class="btn-secondary" data-nav="prev">Précédent</button>
 <button class="btn-primary" data-nav="hub">Accueil</button>
 <button class="btn-secondary" data-nav="next">Suivant</button>
-<button class="btn-danger" data-nav="urgence">URGENCE</button>
+<button class="btn-danger" data-nav="urgence">Urgence</button>
 </footer>
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/ui.js"></script>
