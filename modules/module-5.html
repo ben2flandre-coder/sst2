@@ -16,203 +16,114 @@
         <div>
           <p class="hero-kicker">Compétence C5</p>
           <h1>C5 — Plan d'intervention SST</h1>
-          <p>Lecture arborescente du PI : protéger, examiner, faire alerter, secourir, puis basculer vers la conduite à tenir adaptée à la situation et au public.</p>
+          <p>Cette page s'appuie d'abord sur la source HTML réelle du PI SST présente dans le dépôt, puis sur les PDF de référence et les déroulés déjà fournis dans <code>/assets/</code>.</p>
         </div>
         <aside class="hero-panel decision-panel">
-          <h2>Lecture rapide</h2>
+          <h2>Accès prioritaire</h2>
           <div class="pi-ladder">
-            <span>Danger persistant ?</span>
-            <span>Examen vital</span>
-            <span>Alerte 15 / 18 / 112 / 114</span>
-            <span>Conduite à tenir</span>
+            <span>Source locale PI</span>
+            <span>Accès par situation</span>
+            <span>PDF de référence</span>
+            <span>Déroulés pédagogiques</span>
           </div>
         </aside>
       </div>
     </section>
 
     <nav class="anchor-nav" aria-label="Sous-navigation PI">
-      <a class="quick-link" href="#arbre-pi">Arbre PI</a>
+      <a class="quick-link" href="#source-pi">Source PI</a>
       <a class="quick-link" href="#situations">Accès par situation</a>
-      <a class="quick-link" href="#variante-adulte">Adulte</a>
-      <a class="quick-link" href="#variante-enfant">Enfant</a>
-      <a class="quick-link" href="#variante-nourrisson">Nourrisson</a>
-      <a class="quick-link" href="#videos-c5">Vidéos / ressources</a>
-      <a class="quick-link" href="#ressources-pi">Voir aussi</a>
+      <a class="quick-link" href="#ressources-pi">Références locales</a>
+      <a class="quick-link" href="#deroules-pi">Déroulés pédagogiques</a>
     </nav>
 
-    <section class="preview-grid">
-      <article class="preview-card"><img src="../assets/images/previews/Manuel-formateur-de-formateurs-SST-V10-2016_p1.png" alt="Visuel PI SST" /><div><h3>PI intégré en lecture directe</h3><p>Le vrai support PI est intégré tel quel dans une page dédiée, sans réécriture simplifiée.</p><div class="quick-links"><a class="quick-link" href="../tools/pi.html">Ouvrir la page PI</a><a class="quick-link" href="#arbre-pi">Voir l’arbre C5</a></div></div></article>
-      <article class="preview-card"><img src="../assets/images/previews/Deroule-pedagogique-MAC-SST-Mar-2021_p2.png" alt="Lien urgence et C5" /><div><h3>C5 connecté aux urgences</h3><p>Chaque branche renvoie vers la fiche geste correspondante et vers les outils d’entraînement.</p><div class="quick-links"><a class="quick-link" href="../urgence/arret-cardiaque.html">Urgence</a><a class="quick-link" href="../tools/livret.html">Livret</a></div></div></article>
-    </section>
-
-    <section class="card-action source-doc-card">
+    <section id="source-pi" class="card-action source-doc-card">
       <div class="section-heading">
         <div>
           <h2>Source PI intégrée</h2>
-          <p>Le module embarque le support local existant <code>assets/html/pi/PI_SST.html</code> et le relie aux branches C5.</p>
+          <p>Le module pointe directement vers la source locale prioritaire <code>assets/html/pi/PI_SST.html</code>, sans recréer un PI simplifié.</p>
         </div>
-        <div class="doc-toolbar">
-          <a class="btn-secondary doc-toolbar__link" href="../tools/pi.html">Page PI dédiée</a>
-          <a class="btn-primary doc-toolbar__link" href="../assets/html/pi/PI_SST.html" target="_blank" rel="noopener">Ouvrir la source PI</a>
-        </div>
+        <a class="btn-secondary doc-toolbar__link" href="../assets/html/pi/PI_SST.html" target="_blank" rel="noopener">Ouvrir la source PI</a>
       </div>
-      <div class="source-frame asset-embed">
+      <div class="source-frame">
         <iframe title="Source PI SST" src="../assets/html/pi/PI_SST.html"></iframe>
       </div>
     </section>
 
-    <section id="arbre-pi" class="card-action">
-      <div class="section-heading">
-        <div>
-          <h2>Arborescence décisionnelle C2 → C3 → C4 → C5</h2>
-          <p>Le PI reste lisible si l'on suit toujours la même logique de décision.</p>
-        </div>
-        <span class="badge">PI SST</span>
-      </div>
-      <div class="decision-tree-grid">
-        <article class="decision-node">
-          <h3>C2 — Protéger</h3>
-          <p>Supprimer ou isoler le danger, sécuriser la zone, éviter le sur-accident.</p>
-          <a class="quick-link" href="module-2.html">Voir C2</a>
-        </article>
-        <article class="decision-node">
-          <h3>C3 — Examiner</h3>
-          <p>Conscience, respiration, saignement, gêne respiratoire, plainte ou douleur.</p>
-          <a class="quick-link" href="module-3.html">Voir C3</a>
-        </article>
-        <article class="decision-node">
-          <h3>C4 — Alerter</h3>
-          <p>15, 18, 112 ou 114 avec message court, localisable et exploitable.</p>
-          <a class="quick-link" href="module-4.html">Voir C4</a>
-        </article>
-        <article class="decision-node decision-node--highlight">
-          <h3>C5 — Secourir</h3>
-          <p>Choisir la branche adaptée et la conduite à tenir sans perdre le fil décisionnel.</p>
-        </article>
-      </div>
-    </section>
+    <span id="variante-adulte"></span>
+    <span id="variante-enfant"></span>
+    <span id="variante-nourrisson"></span>
 
     <section id="situations" class="card">
       <div class="section-heading">
         <div>
           <h2>Accès rapide par situation</h2>
-          <p>Chaque branche renvoie à la fiche geste détaillée correspondante, au PI complet et aux variantes adulte / enfant / nourrisson.</p>
+          <p>Navigation directe vers les fiches geste de la plateforme, en complément de la lecture du PI source.</p>
         </div>
-        <span class="badge">Navigation intuitive</span>
+        <span class="badge">Navigation terrain</span>
       </div>
       <div class="quick-links quick-links--spaced">
-        <a class="quick-link" href="#branche-saignement">Saignement abondant</a>
-        <a class="quick-link" href="#branche-etouffement">Étouffement</a>
-        <a class="quick-link" href="#branche-malaise">Malaise</a>
-        <a class="quick-link" href="#branche-brulure">Brûlure</a>
-        <a class="quick-link" href="#branche-douleur">Douleurs / mouvements impossibles</a>
-        <a class="quick-link" href="#branche-plaie">Plaie simple</a>
-        <a class="quick-link" href="#branche-inconscience">Inconscience</a>
-        <a class="quick-link" href="#branche-arret">Arrêt cardiaque</a>
-        <a class="quick-link" href="#branche-dae">DAE</a>
-      </div>
-    </section>
-
-    <section class="branch-grid">
-      <article id="branche-saignement" class="branch-card">
-        <div class="branch-card__top"><h3>1. Saignement abondant</h3><span class="badge">Priorité absolue</span></div>
-        <p><strong>Objectif :</strong> arrêter la perte sanguine.</p>
-        <ul class="list-tight"><li><strong>Red flags :</strong> jet pulsatile, imprégnation rapide, pâleur, agitation.</li><li><strong>Technique :</strong> compression immédiate, relais si besoin, allonger, couvrir, alerter.</li><li><strong>Erreur fréquente :</strong> retirer la compression pour « voir ».</li><li><strong>Exemple terrain :</strong> coupure atelier, outil tranchant, gants imprégnés en quelques secondes.</li></ul>
-        <div class="variant-grid"><div id="variante-adulte"><strong>Adulte</strong><span>Compression manuelle continue et relais organisé.</span></div><div><strong>Enfant</strong><span>Compression adaptée sans perdre l'efficacité ni retarder l’alerte.</span></div><div><strong>Nourrisson</strong><span>Compression délicate + alerte médicalisée très précoce.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/hemorragie.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/pi.html">Voir aussi : PI</a></div>
-      </article>
-
-      <article id="branche-etouffement" class="branch-card">
-        <div class="branch-card__top"><h3>2. Étouffement</h3><span class="badge">Détresse respiratoire</span></div>
-        <p><strong>Objectif :</strong> désobstruer avant l'inconscience.</p>
-        <ul class="list-tight"><li><strong>Red flags :</strong> toux inefficace, impossibilité de parler, cyanose.</li><li><strong>Technique :</strong> 5 claques dorsales, puis 5 compressions thoraciques ou abdominales selon le public.</li><li><strong>Erreur fréquente :</strong> faire boire ou taper sans méthode.</li><li><strong>Exemple terrain :</strong> restauration collective, bouchée coincée, victime debout puis agitation croissante.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>Claques dorsales + compressions abdominales si obstruction sévère.</span></div><div id="variante-enfant"><strong>Enfant</strong><span>Gestes identiques avec force adaptée, surveillance rapprochée après désobstruction.</span></div><div id="variante-nourrisson"><strong>Nourrisson</strong><span>Claques dorsales et compressions thoraciques uniquement.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/etouffement.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/pi.html">Voir aussi : PI</a></div>
-      </article>
-
-      <article id="branche-malaise" class="branch-card">
-        <div class="branch-card__top"><h3>3. Malaise</h3><span class="badge">Questionner / surveiller</span></div>
-        <p><strong>Objectif :</strong> éviter l'aggravation et guider l'alerte médicale.</p>
-        <ul class="list-tight"><li><strong>Trigger alerts :</strong> douleur thoracique, trouble de la parole, faiblesse d'un côté, sueurs, pâleur.</li><li><strong>Technique :</strong> installer au repos, questionner, aider à la prise du traitement personnel si habituel et autorisé, appeler le 15 si signe anormal persistant.</li><li><strong>Erreur fréquente :</strong> laisser seul ou banaliser.</li><li><strong>Exemple terrain :</strong> bureau, collègue confus avec douleur thoracique et sueurs froides.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>Recherche douleur thoracique, antécédents, prise de traitement.</span></div><div><strong>Enfant</strong><span>Rechercher contexte, chute, fièvre, allergie, détresse.</span></div><div><strong>Nourrisson</strong><span>Repérer changement brutal de comportement, coloration et tonus.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/malaise.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/livret.html">Voir aussi : livret</a></div>
-      </article>
-
-      <article id="branche-brulure" class="branch-card">
-        <div class="branch-card__top"><h3>4. Brûlure</h3><span class="badge">Refroidir</span></div>
-        <p><strong>Objectif :</strong> stopper l'effet thermique ou chimique et limiter l'aggravation.</p>
-        <ul class="list-tight"><li><strong>Red flags :</strong> brûlure étendue, visage, voies aériennes, brûlure chimique ou électrique.</li><li><strong>Technique :</strong> refroidir à l'eau tempérée, retirer ce qui ne colle pas, protéger, alerter si besoin.</li><li><strong>Erreur fréquente :</strong> appliquer crème, glace ou coton.</li><li><strong>Exemple terrain :</strong> cuisine professionnelle, liquide chaud sur avant-bras, projection continue.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>Refroidissement prolongé et évaluation de l’étendue.</span></div><div><strong>Enfant</strong><span>Vigilance accrue à l’hypothermie et à la douleur.</span></div><div><strong>Nourrisson</strong><span>Alerte précoce et surveillance constante.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/brulure.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/livret.html#brulure">Voir aussi : livret</a></div>
-      </article>
-
-      <article id="branche-douleur" class="branch-card">
-        <div class="branch-card__top"><h3>5. Douleurs / mouvements impossibles</h3><span class="badge">Traumatisme</span></div>
-        <p><strong>Objectif :</strong> éviter l’aggravation d’un traumatisme.</p>
-        <ul class="list-tight"><li><strong>Red flags :</strong> douleur intense, déformation, impotence fonctionnelle, choc associé.</li><li><strong>Technique :</strong> immobiliser, éviter toute mobilisation inutile, couvrir, surveiller, alerter.</li><li><strong>Erreur fréquente :</strong> tester l’amplitude de force.</li><li><strong>Exemple terrain :</strong> chute de plain-pied avec cheville déformée et incapacité d’appui.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>Immobilisation de confort et surveillance douleur.</span></div><div><strong>Enfant</strong><span>Communication simple, soutien psychologique et immobilisation adaptée.</span></div><div><strong>Nourrisson</strong><span>Manipulations minimales et alerte médicale rapide.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/douleur-mouvements.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/pi.html">Voir aussi : PI</a></div>
-      </article>
-
-      <article id="branche-plaie" class="branch-card">
-        <div class="branch-card__top"><h3>6. Plaie simple</h3><span class="badge">Nettoyer / protéger</span></div>
-        <p><strong>Objectif :</strong> limiter l’infection et surveiller l’évolution.</p>
-        <ul class="list-tight"><li><strong>Red flags :</strong> corps étranger, localisation œil / thorax / abdomen, saignement persistant.</li><li><strong>Technique :</strong> nettoyer autour, protéger, orienter si nécessaire, vérifier vaccination tétanos selon procédure locale.</li><li><strong>Erreur fréquente :</strong> retirer un corps étranger fiché.</li><li><strong>Exemple terrain :</strong> petite coupure papier/outil sans hémorragie mais environnement souillé.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>Protection simple et surveillance douleur / rougeur.</span></div><div><strong>Enfant</strong><span>Explication rassurante et pansement adapté.</span></div><div><strong>Nourrisson</strong><span>Surveillance rapprochée et demande d’avis rapide en cas de doute.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/plaie-simple.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/livret.html">Voir aussi : livret</a></div>
-      </article>
-
-      <article id="branche-inconscience" class="branch-card">
-        <div class="branch-card__top"><h3>7. Inconscience</h3><span class="badge">Respire</span></div>
-        <p><strong>Objectif :</strong> maintenir les voies aériennes libres.</p>
-        <ul class="list-tight"><li><strong>Trigger alerts :</strong> ne répond pas, respiration présente mais inefficace à surveiller.</li><li><strong>Technique :</strong> PLS, libération des voies aériennes, surveillance continue.</li><li><strong>Erreur fréquente :</strong> installer puis s'éloigner.</li><li><strong>Exemple terrain :</strong> personne au sol après malaise, inconsciente mais ventilant normalement.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>PLS standard et réévaluation régulière.</span></div><div><strong>Enfant</strong><span>Position adaptée à la taille, surveillance respiratoire rapprochée.</span></div><div><strong>Nourrisson</strong><span>Maintien manuel si besoin et alerte précoce.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/inconscience.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/pi.html">Voir aussi : PI</a></div>
-      </article>
-
-      <article id="branche-arret" class="branch-card branch-card--critical">
-        <div class="branch-card__top"><h3>8. Arrêt cardiaque</h3><span class="badge">RCP + DAE</span></div>
-        <p><strong>Objectif :</strong> perfuser et défibriller le plus tôt possible.</p>
-        <ul class="list-tight"><li><strong>Trigger alerts :</strong> inconscience + absence de respiration normale.</li><li><strong>Technique :</strong> faire alerter, débuter la RCP, utiliser le DAE dès qu'il arrive, limiter toute interruption.</li><li><strong>Erreur fréquente :</strong> attendre les secours sans agir.</li><li><strong>Exemple terrain :</strong> effondrement brutal sur poste de travail avec gasps puis absence de réponse.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>30 compressions / 2 insufflations si formé, sinon compressions seules.</span></div><div><strong>Enfant</strong><span>Adaptation de la profondeur et de la force, priorité à la ventilation si formé.</span></div><div><strong>Nourrisson</strong><span>Technique spécifique, vigilance extrême et alerte médicalisée immédiate.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/arret-cardiaque.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/staying-alive.html">Voir aussi : Staying Alive</a></div>
-      </article>
-
-      <article id="branche-dae" class="branch-card">
-        <div class="branch-card__top"><h3>9. DAE</h3><span class="badge">Défibriller</span></div>
-        <p><strong>Objectif :</strong> intégrer le DAE au plus tôt dans la chaîne de survie.</p>
-        <ul class="list-tight"><li><strong>Red flags :</strong> milieu humide, patch médicamenteux, thorax très poilu, enfant avec électrodes pédiatriques.</li><li><strong>Technique :</strong> allumer, poser les électrodes, laisser analyser, s'écarter, reprendre immédiatement la RCP.</li><li><strong>Erreur fréquente :</strong> toucher la victime pendant l'analyse.</li><li><strong>Exemple terrain :</strong> DAE récupéré par un témoin pendant la RCP, pose des électrodes sans interrompre inutilement les compressions.</li></ul>
-        <div class="variant-grid"><div><strong>Adulte</strong><span>Électrodes standard, thorax dénudé et sec.</span></div><div><strong>Enfant</strong><span>Électrodes pédiatriques si disponibles ou protocole appareil.</span></div><div><strong>Nourrisson</strong><span>Suivre protocole de secours médicalisés, très forte vigilance.</span></div></div>
-        <div class="branch-actions"><a class="btn-danger" href="../urgence/dae.html">Retour à la fiche geste</a><a class="quick-link" href="../tools/staying-alive.html">Voir aussi : app DAE</a></div>
-      </article>
-    </section>
-
-    <section id="videos-c5" class="card-action media-callout">
-      <div class="section-heading">
-        <div>
-          <h2>Vidéos / démonstrations reliées à C5</h2>
-          <p>Pour ancrer les techniques, les erreurs fréquentes et les renvois du PI vers les gestes d’urgence.</p>
-        </div>
-        <span class="badge">INRS / fiable</span>
-      </div>
-      <div class="resource-grid">
-        <a class="resource-card" href="https://www.inrs.fr/media.html?refINRS=outil31" target="_blank" rel="noopener"><strong>INRS — PI SST interactif</strong><span>Référence arborescente à consulter pendant la formation et les mises en situation.</span></a>
-        <a class="resource-card" href="https://www.inrs.fr/demarche/organisation-secours/accident-malaise.html" target="_blank" rel="noopener"><strong>INRS — Organisation des secours</strong><span>Cadre global pour relier protection, examen, alerte et secours.</span></a>
+        <a class="quick-link" href="../urgence/hemorragie.html">Saignement abondant</a>
+        <a class="quick-link" href="../urgence/etouffement.html">Étouffement</a>
+        <a class="quick-link" href="../urgence/malaise.html">Malaise</a>
+        <a class="quick-link" href="../urgence/brulure.html">Brûlure</a>
+        <a class="quick-link" href="../urgence/douleur-mouvements.html">Douleurs / mouvements impossibles</a>
+        <a class="quick-link" href="../urgence/plaie-simple.html">Plaie simple</a>
+        <a class="quick-link" href="../urgence/inconscience.html">Inconscience</a>
+        <a class="quick-link" href="../urgence/arret-cardiaque.html">Arrêt cardiaque</a>
+        <a class="quick-link" href="../urgence/dae.html">DAE</a>
       </div>
     </section>
 
     <section id="ressources-pi" class="card-action media-callout">
       <div class="section-heading">
         <div>
-          <h2>Ressources utiles</h2>
-          <p>Pour retrouver l'outil de référence, les repères institutionnels et les démonstrations associées.</p>
+          <h2>Ressources locales de référence</h2>
+          <p>Toutes les entrées ci-dessous pointent vers des assets déjà présents dans le dépôt : source HTML, PDF de référence et livret local.</p>
         </div>
-        <span class="badge">Documents de référence</span>
+        <span class="badge">Assets du repo</span>
       </div>
       <div class="resource-grid">
-        <a class="resource-card" href="../tools/pi.html"><strong>PI SST local intégré</strong><span>Version interne dédiée, conservant l’arborescence d’origine.</span></a>
-        <a class="resource-card" href="../tools/livret.html"><strong>Livret terrain</strong><span>Aperçu, impression et accès directs vers les fiches geste.</span></a>
-        <a class="resource-card" href="../urgence/arret-cardiaque.html"><strong>Urgence : arrêt cardiaque</strong><span>Branche critique reliée directement au PI et au DAE.</span></a>
+        <a class="resource-card" href="../assets/html/pi/PI_SST.html" target="_blank" rel="noopener">
+          <strong>PI SST — source HTML</strong>
+          <span>Source locale prioritaire pour consulter l'arborescence complète du PI.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/reference-pdfs/General.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/General_p1.png" alt="Aperçu du PDF General" />
+          <strong>General.pdf</strong>
+          <span>Document de référence local déjà fourni dans <code>/assets/docs/reference-pdfs/</code>.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/reference-pdfs/Fiche-outils-INRS.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Aperçu du PDF Fiche outils INRS" />
+          <strong>Fiche outils</strong>
+          <span>Repères documentaires locaux sans redirection vers un bon de commande.</span>
+        </a>
+        <a class="resource-card" href="../tools/livret.html">
+          <strong>Livret terrain local</strong>
+          <span>Accès à l'aperçu embarqué et au PDF <code>livret-sst.pdf</code> déjà présent dans le repo.</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="deroules-pi" class="card-action media-callout">
+      <div class="section-heading">
+        <div>
+          <h2>Déroulés pédagogiques disponibles</h2>
+          <p>Réutilisation des PDF déjà décompressés dans <code>/assets/docs/unzipped/</code> avec leurs aperçus existants.</p>
+        </div>
+        <span class="badge">Déroulés</span>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-card" href="../assets/docs/unzipped/Acteur/Deroule-pedagogique-SST-Mar-2021.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/Deroule-pedagogique-SST-Mar-2021_p1.png" alt="Aperçu du déroulé pédagogique SST mars 2021" />
+          <strong>Déroulé pédagogique SST</strong>
+          <span>Version acteur déjà fournie localement.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/unzipped/Acteur/Deroule-pedagogique-MAC-SST-Mar-2021.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/Deroule-pedagogique-MAC-SST-Mar-2021_p1.png" alt="Aperçu du déroulé pédagogique MAC SST mars 2021" />
+          <strong>Déroulé pédagogique MAC SST</strong>
+          <span>Version MAC acteur disponible dans le dépôt.</span>
+        </a>
       </div>
     </section>
   </main>
