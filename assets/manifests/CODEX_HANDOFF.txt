@@ -1,0 +1,28 @@
+SST2 assets handoff for Codex
+============================
+
+Use these assets directly from the repo. Do not reinvent content if a source file exists.
+
+Priority files:
+- assets/html/pap/PAP_SST.html
+- assets/html/pi/PI_SST.html
+- assets/docs/reference-pdfs/Fiche-outils-INRS.pdf
+- assets/docs/reference-pdfs/Fiches-pedagogiques-formateur-SST-V3.pdf
+- assets/docs/reference-pdfs/General.pdf
+- assets/docs/reference-pdfs/Manuel-formateur-de-formateurs-SST-V10-2016.pdf
+- assets/docs/reference-pdfs/Pedagogie.pdf
+- assets/docs/reference-pdfs/Quiz-2019.pdf
+- assets/docs/unzipped/Acteur/Deroule-pedagogique-SST-Mar-2021.pdf
+- assets/docs/unzipped/Acteur/Deroule-pedagogique-MAC-SST-Mar-2021.pdf
+
+Important limits:
+- The raw Storyline HTML files reference external story_content resources that were not provided.
+- The dedicated printable aide-memoire PDF mentioned by the user was not present in the uploaded files visible in this session.
+- If a missing asset is required, leave a TODO note in code comments pointing to the exact missing asset name rather than inventing substitute content.
+
+Recommended implementation behavior:
+1. Link or embed the real PDFs from assets/docs/reference-pdfs/ when applicable.
+2. Use the PAP/PI source logic and structure as references for module architecture.
+3. Reuse logos and visual motifs only from assets actually present in the repo.
+4. Never redirect the livret button to an INRS order form.
+5. Validate all external app-store and video links before shipping.

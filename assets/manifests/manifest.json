@@ -1,0 +1,79 @@
+{
+  "status": "prepared_for_codex",
+  "notes": [
+    "This pack groups uploaded SST source materials into repo-friendly folders.",
+    "Raw Storyline HTML files PAP_SST.html and PI_SST.html are included, but their dependent story_content assets were not provided in this conversation.",
+    "The printable aide-memoire PDF referenced by the user was not separately present among the uploaded files available in this session, so no definitive livret-printable.pdf could be packaged.",
+    "Reference PDFs and zipped pedagogical déroulés are preserved verbatim."
+  ],
+  "recommended_repo_paths": {
+    "reference PDFs": "assets/docs/reference-pdfs/",
+    "unzipped pedagogical déroulés": "assets/docs/unzipped/",
+    "PAP HTML": "assets/html/pap/PAP_SST.html",
+    "PI HTML": "assets/html/pi/PI_SST.html",
+    "preview images": "assets/images/previews/",
+    "diagnostic screenshots": "assets/images/screenshots/"
+  },
+  "files": [
+    {
+      "path": "assets/docs/reference-pdfs/Fiche-outils-INRS.pdf",
+      "size_bytes": 3597366
+    },
+    {
+      "path": "assets/docs/reference-pdfs/Fiches-pedagogiques-formateur-SST-V3.pdf",
+      "size_bytes": 1842539
+    },
+    {
+      "path": "assets/docs/reference-pdfs/General.pdf",
+      "size_bytes": 1068639
+    },
+    {
+      "path": "assets/docs/reference-pdfs/Les-deroules-pedagogiques-acteurs-SST-20251120.zip",
+      "size_bytes": 4778643
+    },
+    {
+      "path": "assets/docs/reference-pdfs/Manuel-formateur-de-formateurs-SST-V10-2016.pdf",
+      "size_bytes": 753736
+    },
+    {
+      "path": "assets/docs/reference-pdfs/Pedagogie.pdf",
+      "size_bytes": 2624364
+    },
+    {
+      "path": "assets/docs/reference-pdfs/Quiz-2019.pdf",
+      "size_bytes": 308101
+    },
+    {
+      "path": "assets/docs/unzipped/Acteur/Deroule-pedagogique-MAC-SST-Mar-2021.pdf",
+      "size_bytes": 949068
+    },
+    {
+      "path": "assets/docs/unzipped/Acteur/Deroule-pedagogique-SST-Mar-2021.pdf",
+      "size_bytes": 2096221
+    },
+    {
+      "path": "assets/docs/unzipped/Formateur/Déroulé-MAC-formateur SST-septembre-2021.pdf",
+      "size_bytes": 1213739
+    },
+    {
+      "path": "assets/docs/unzipped/Formateur/Déroulé-formateur SST-septembre-2021.pdf",
+      "size_bytes": 1377141
+    },
+    {
+      "path": "assets/html/pap/PAP_SST.html",
+      "size_bytes": 19116
+    },
+    {
+      "path": "assets/html/pi/PI_SST.html",
+      "size_bytes": 18804
+    },
+    {
+      "path": "assets/images/screenshots/167c91a1-d66a-45f4-8b85-cb749b8cfaf2.png",
+      "size_bytes": 87065
+    },
+    {
+      "path": "assets/images/screenshots/72d8edea-a566-4ba1-be3d-df7f285fe1b7.png",
+      "size_bytes": 85325
+    }
+  ]
+}
