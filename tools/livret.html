@@ -8,61 +8,46 @@
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
 </head>
-<body class="app-shell" data-prev="/revision/index.html" data-next="/tools/staying-alive.html">
+<body class="app-shell" data-prev="/tools/pi.html" data-next="/tools/videos-inrs.html">
   <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
     <section class="hero hero-premium">
-      <div class="hero-split">
+      <div class="hero-split hero-split--balanced">
         <div>
           <p class="hero-kicker">Outil terrain</p>
-          <h1>Livret SST imprimable</h1>
-          <p>Page dédiée au vrai PDF local <code>assets/docs/livret-sst.pdf</code>, avec téléchargement, impression, sommaire et aperçu intégré pour la salle comme pour le terrain.</p>
+          <h1>Aide-mémoire SST</h1>
+          <p>Le bon PDF local est consultable dans une page propre avec téléchargement, impression, sommaire cliquable et accès directs vers les modules utiles.</p>
+          <div class="hero-actions hero-actions--start">
+            <a class="btn-primary" href="../assets/docs/livret-sst.pdf" target="_blank" rel="noopener">Télécharger le PDF</a>
+            <button class="btn-secondary" type="button" data-print-page>Imprimer</button>
+            <a class="btn-secondary" href="../index.html">Retour au hub</a>
+          </div>
         </div>
         <aside class="hero-panel institutional-card">
-          <h2>Accès directs</h2>
+          <h2>Accès rapides</h2>
           <div class="quick-links quick-links--spaced">
             <a class="quick-link" href="#sommaire">Sommaire</a>
             <a class="quick-link" href="#apercu">Aperçu PDF</a>
-            <a class="quick-link" href="#alerte">Alerte</a>
-            <a class="quick-link" href="#arret">Arrêt cardiaque</a>
-            <a class="quick-link" href="#etouffement">Étouffement</a>
+            <a class="quick-link" href="#fiches">Gestes clés</a>
             <a class="quick-link" href="#voir-aussi">Voir aussi</a>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="preview-grid">
-      <article class="preview-card"><img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Couverture d'outil INRS" /><div><h3>PDF terrain</h3><p>Le livret intégré est le document local présent dans le dépôt, consultable, téléchargeable et imprimable.</p></div></article>
-      <article class="preview-card"><img src="../assets/images/previews/Fiche-outils-INRS_p2.png" alt="Aperçu seconde page outil INRS" /><div><h3>Usage formation</h3><p>Accès rapide par ancres vers les séquences critiques et vers les modules associés.</p></div></article>
-    </section>
-
-    <section class="card-action">
-      <div class="section-heading">
-        <div>
-          <h2>Téléchargement et impression</h2>
-          <p>Accéder au PDF de référence puis lancer une impression papier sans quitter la plateforme.</p>
+    <section class="content-grid-two">
+      <article class="card-action media-summary-card">
+        <div class="section-heading"><div><h2>Document utilisé</h2><p>Source locale : <code>assets/docs/livret-sst.pdf</code>.</p></div><span class="badge">PDF local</span></div>
+        <div class="preview-spotlight">
+          <img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Aperçu du livret SST" />
+          <div>
+            <p><strong>Usage recommandé :</strong> support de salle, remise stagiaire, mémo d’intervention et préparation des révisions.</p>
+            <p><strong>Confort de lecture :</strong> l’aperçu est limité à un conteneur propre pour éviter tout débordement visuel.</p>
+          </div>
         </div>
-        <span class="badge">Livret PDF local</span>
-      </div>
-      <div class="doc-toolbar">
-        <a class="btn-primary" href="../assets/docs/livret-sst.pdf" target="_blank" rel="noopener">📄 Télécharger le PDF</a>
-        <button class="btn-secondary" type="button" data-print-page>🖨️ Imprimer</button>
-        <a class="btn-secondary" href="../modules/module-5.html">↗ Aller vers C5</a>
-        <a class="btn-secondary" href="../tools/pi.html">↗ Aller vers PI</a>
-      </div>
-      <p class="helper-text">Si l'aperçu intégré ne se charge pas selon le navigateur, utilisez le bouton de téléchargement pour ouvrir le PDF dans un nouvel onglet.</p>
-    </section>
-
-    <section id="sommaire" class="card-action">
-      <div class="section-heading">
-        <div>
-          <h2>Sommaire cliquable</h2>
-          <p>Accès rapides vers les situations demandées en formation et en révision.</p>
-        </div>
-        <span class="badge">Sommaire</span>
-      </div>
-      <div class="doc-frame-grid">
+      </article>
+      <article class="card-action" id="sommaire">
+        <div class="section-heading"><div><h2>Sommaire cliquable</h2><p>Rejoindre immédiatement les thèmes les plus demandés.</p></div><span class="badge">Navigation</span></div>
         <nav class="doc-summary" aria-label="Sommaire du livret SST">
           <ol>
             <li><a href="#alerte">Alerte</a></li>
@@ -74,67 +59,56 @@
             <li><a href="#etouffement">Étouffement</a></li>
           </ol>
         </nav>
-        <div class="tool-nav">
-          <a class="btn-secondary" href="#alerte">Alerte</a>
-          <a class="btn-secondary" href="#saignement">Saignement abondant</a>
-          <a class="btn-secondary" href="#inconscience">Inconscience</a>
-          <a class="btn-secondary" href="#arret">Arrêt cardiaque</a>
-          <a class="btn-secondary" href="#dae">DAE</a>
-          <a class="btn-secondary" href="#brulure">Brûlure</a>
-          <a class="btn-secondary" href="#etouffement">Étouffement</a>
-        </div>
-      </div>
+      </article>
     </section>
 
     <section id="apercu" class="pdf-preview card-action">
-      <div class="section-heading">
-        <div>
-          <h2>Aperçu intégré du PDF</h2>
-          <p>Lecture embarquée du support printable pour consultation rapide en salle ou sur poste.</p>
-        </div>
-        <span class="badge">Aperçu</span>
+      <div class="section-heading"><div><h2>Aperçu du PDF</h2><p>Consultation embarquée dans un cadre maîtrisé, avec téléchargement en secours si besoin.</p></div><span class="badge">Aperçu cadré</span></div>
+      <div class="media-embed pdf-frame pdf-frame--compact">
+        <iframe title="Aperçu du livret SST" loading="lazy" src="../assets/docs/livret-sst.pdf#toolbar=1&navpanes=0&scrollbar=1"></iframe>
       </div>
-      <div class="media-embed pdf-frame">
-        <iframe title="Aperçu du livret SST" src="../assets/docs/livret-sst.pdf#toolbar=1&navpanes=0&scrollbar=1"></iframe>
-      </div>
+      <p class="helper-text">Si le navigateur bloque l’aperçu, utilisez le bouton de téléchargement pour ouvrir le PDF dans un nouvel onglet.</p>
     </section>
 
-    <section class="grid">
+    <section id="fiches" class="grid">
       <article id="alerte" class="card technique-card">
-        <div class="section-heading"><h3>Alerte</h3><a class="quick-link" href="../modules/module-4.html">Retour à la fiche geste</a></div>
+        <div class="section-heading"><h3>Alerte</h3><a class="quick-link" href="../modules/module-4.html">Retour module</a></div>
         <p><strong>Priorité :</strong> transmettre où, quoi, combien, état de la victime, risque persistant et gestes déjà engagés.</p>
-        <div class="quick-links"><a class="quick-link" href="../modules/module-4.html">C4 — Alerter</a><a class="quick-link" href="../urgence/arret-cardiaque.html">Urgence arrêt cardiaque</a></div>
       </article>
       <article id="saignement" class="card technique-card">
-        <div class="section-heading"><h3>Saignement abondant</h3><a class="quick-link" href="../urgence/hemorragie.html">Retour à la fiche geste</a></div>
+        <div class="section-heading"><h3>Saignement abondant</h3><a class="quick-link" href="../urgence/hemorragie.html">Retour fiche</a></div>
         <p><strong>Priorité :</strong> compression immédiate, allonger si possible, couvrir, faire alerter et surveiller.</p>
       </article>
       <article id="inconscience" class="card technique-card">
-        <div class="section-heading"><h3>Inconscience</h3><a class="quick-link" href="../urgence/inconscience.html">Retour à la fiche geste</a></div>
-        <p><strong>Priorité :</strong> victime inconsciente qui respire = PLS, surveillance continue et réévaluation régulière.</p>
+        <div class="section-heading"><h3>Inconscience</h3><a class="quick-link" href="../urgence/inconscience.html">Retour fiche</a></div>
+        <p><strong>Priorité :</strong> si la victime respire, PLS et surveillance continue avec réévaluation régulière.</p>
       </article>
       <article id="arret" class="card technique-card technique-card--critical">
-        <div class="section-heading"><h3>Arrêt cardiaque</h3><a class="quick-link" href="../urgence/arret-cardiaque.html">Retour à la fiche geste</a></div>
-        <p><strong>Priorité :</strong> RCP immédiate, DAE dès que disponible, interruptions minimales.</p>
-        <div class="quick-links"><a class="quick-link" href="#dae">Voir le DAE</a><a class="quick-link" href="staying-alive.html">Voir Staying Alive</a></div>
+        <div class="section-heading"><h3>Arrêt cardiaque</h3><a class="quick-link" href="../urgence/arret-cardiaque.html">Retour fiche</a></div>
+        <p><strong>Priorité :</strong> RCP immédiate, DAE dès que disponible et interruptions minimales.</p>
+        <div class="quick-links"><a class="quick-link" href="#dae">Voir le DAE</a><a class="quick-link" href="staying-alive.html">Staying Alive</a></div>
       </article>
       <article id="dae" class="card technique-card">
-        <div class="section-heading"><h3>DAE</h3><a class="quick-link" href="../urgence/dae.html">Retour à la fiche geste</a></div>
+        <div class="section-heading"><h3>DAE</h3><a class="quick-link" href="../urgence/dae.html">Retour fiche</a></div>
         <p><strong>Priorité :</strong> allumer, poser les électrodes, laisser analyser, s’écarter et reprendre la RCP sans délai.</p>
       </article>
       <article id="brulure" class="card technique-card">
-        <div class="section-heading"><h3>Brûlure</h3><a class="quick-link" href="../urgence/brulure.html">Retour à la fiche geste</a></div>
-        <p><strong>Priorité :</strong> refroidir longuement, protéger ensuite, alerter si brûlure grave, chimique ou électrique.</p>
+        <div class="section-heading"><h3>Brûlure</h3><a class="quick-link" href="../urgence/brulure.html">Retour fiche</a></div>
+        <p><strong>Priorité :</strong> refroidir longuement, protéger ensuite, alerter si la brûlure est grave, chimique ou électrique.</p>
       </article>
       <article id="etouffement" class="card technique-card">
-        <div class="section-heading"><h3>Étouffement</h3><a class="quick-link" href="../urgence/etouffement.html">Retour à la fiche geste</a></div>
-        <p><strong>Priorité :</strong> 5 claques dorsales, puis compressions adaptées à l'âge jusqu'à désobstruction ou perte de connaissance.</p>
+        <div class="section-heading"><h3>Étouffement</h3><a class="quick-link" href="../urgence/etouffement.html">Retour fiche</a></div>
+        <p><strong>Priorité :</strong> 5 claques dorsales puis compressions adaptées à l’âge jusqu’à désobstruction ou perte de connaissance.</p>
       </article>
     </section>
 
     <section id="voir-aussi" class="card-action">
-      <div class="section-heading"><div><h2>Voir aussi</h2><p>Relier le livret aux modules et aux outils utilisés en formation.</p></div><span class="badge">Navigation</span></div>
-      <div class="quick-links quick-links--spaced"><a class="quick-link" href="../modules/module-4.html">C4 — Alerter</a><a class="quick-link" href="../modules/module-5.html">C5 — PI</a><a class="quick-link" href="../tools/pi.html">PI complet</a><a class="quick-link" href="../tools/pap.html">PAP complet</a><a class="quick-link" href="../urgence/arret-cardiaque.html">Urgence</a></div>
+      <div class="section-heading"><div><h2>Voir aussi</h2><p>Continuer vers les outils utilisés en salle et en intervention.</p></div><span class="badge">Navigation</span></div>
+      <div class="resource-grid">
+        <a class="resource-card resource-card--visual" href="pi.html"><img src="../assets/images/previews/General_p1.png" alt="PI SST" /><strong>PI SST</strong><span>Retrouver l’arborescence d’intervention dans une vue dédiée.</span></a>
+        <a class="resource-card resource-card--visual" href="videos-inrs.html"><img src="../assets/images/previews/Fiches-pedagogiques-formateur-SST-V3_p2.png" alt="Vidéos pratiques INRS" /><strong>Vidéos pratiques INRS</strong><span>Appuyer une démonstration avec des liens fiables.</span></a>
+        <a class="resource-card resource-card--visual" href="staying-alive.html"><img src="../assets/images/staying-alive.svg" alt="Staying Alive" /><strong>Staying Alive</strong><span>Articuler arrêt cardiaque, DAE et secours citoyen.</span></a>
+      </div>
     </section>
   </main>
   <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
