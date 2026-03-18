@@ -57,3 +57,73 @@
   .app-main { padding: 12px; }
   .app-title { font-size: 0.92rem; }
 }
+
+/* Strict learner hub / mobile-first refactor */
+:root {
+  --footer-height: 64px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app-shell {
+  padding-bottom: calc(var(--footer-height) + 18px);
+}
+
+.app-main--home,
+.app-main--compact {
+  display: grid;
+  gap: 18px;
+}
+
+.app-footer {
+  height: var(--footer-height);
+  padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+  gap: 6px;
+}
+
+.floating-urgence {
+  right: 12px;
+  bottom: calc(var(--footer-height) + 12px);
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    padding-top: var(--header-height);
+    padding-bottom: calc(var(--footer-height) + 14px);
+  }
+
+  .app-main {
+    padding: 14px 12px 20px;
+  }
+
+  .app-header {
+    padding: 0 12px;
+  }
+
+  .app-footer {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .floating-urgence .btn-danger {
+    min-width: 0;
+    padding-inline: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  .app-title {
+    font-size: 0.86rem;
+  }
+
+  .app-footer {
+    height: 60px;
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .floating-urgence {
+    right: 10px;
+    bottom: calc(var(--footer-height) + 10px);
+  }
+}

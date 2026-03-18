@@ -1873,3 +1873,339 @@
     min-height: auto;
   }
 }
+
+/* Learner hub refactor */
+.hero-home--learner {
+  background:
+    linear-gradient(135deg, rgba(12, 52, 93, 0.98), rgba(17, 94, 139, 0.96)),
+    linear-gradient(180deg, #0b3c5d 0%, #145c8f 100%);
+}
+
+.hero-panel--legend {
+  display: grid;
+  gap: 12px;
+}
+
+.legend-stack {
+  display: grid;
+  gap: 10px;
+}
+
+.legend-line {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.legend-line span,
+.legend-line strong {
+  color: #fff;
+}
+
+.tile-grid,
+.home-flow,
+.priority-stack--refined,
+.tile-grid--signals {
+  display: grid;
+  gap: 14px;
+}
+
+.home-flow,
+.content-grid-two--stack {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.tile-grid--emergency {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tile-grid--wide,
+.tile-grid--revision,
+.tile-grid--revision-detail {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tile-grid--signals {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.training-roadmap--compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.learning-tile,
+.action-tile,
+.reflex-tile,
+.signal-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 100%;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid #d8dee6;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.learning-tile,
+.action-tile,
+.reflex-tile {
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.learning-tile::after {
+  content: attr(data-step);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.learning-tile:hover,
+.learning-tile:focus-visible,
+.action-tile:hover,
+.action-tile:focus-visible,
+.reflex-tile:hover,
+.reflex-tile:focus-visible,
+.quick-link:hover,
+.quick-link:focus-visible,
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.btn-danger:focus-visible,
+.app-footer button:focus-visible,
+.hub-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+  outline: 3px solid rgba(14, 165, 233, 0.22);
+  outline-offset: 2px;
+}
+
+.learning-tile strong,
+.action-tile strong,
+.reflex-tile strong,
+.signal-card strong {
+  color: #102235;
+}
+
+.learning-tile span,
+.action-tile span,
+.reflex-tile p,
+.signal-card span {
+  color: #334155;
+}
+
+.learning-tile.is-current {
+  border-color: #60a5fa;
+  background: #eff6ff;
+}
+
+.learning-tile--danger,
+.action-tile--danger,
+.reflex-tile--danger,
+.signal-card--danger {
+  border-color: #fecaca;
+  background: #fff1f2;
+}
+
+.learning-tile--warning,
+.action-tile--warning,
+.reflex-tile--warning,
+.signal-card--warning {
+  border-color: #fed7aa;
+  background: #fff7ed;
+}
+
+.learning-tile--info,
+.action-tile--info,
+.reflex-tile--info,
+.signal-card--info {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+}
+
+.learning-tile--success,
+.action-tile--success,
+.reflex-tile--success {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.action-tile {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  min-height: 112px;
+}
+
+.tile-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.tile-icon--danger { background: #b91c1c; color: #fff; }
+.tile-icon--warning { background: #c2410c; color: #fff; }
+.tile-icon--info { background: #1d4ed8; color: #fff; }
+.tile-icon--success { background: #15803d; color: #fff; }
+
+.stack-section {
+  display: grid;
+  gap: 14px;
+}
+
+.section-heading--spread {
+  align-items: start;
+}
+
+.quick-gesture-bar--memo {
+  display: grid;
+  gap: 14px;
+}
+
+.field-mini-flow--compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.support-panel {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.support-panel details {
+  border: 1px solid #d8dee6;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 12px 14px;
+}
+
+.support-panel summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.support-panel__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.support-panel__links a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.reflex-tile {
+  grid-template-rows: auto repeat(3, auto) auto;
+}
+
+.reflex-tile p {
+  margin: 0;
+}
+
+.reflex-tile__cta {
+  margin-top: 4px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.signal-card {
+  gap: 6px;
+  min-height: 0;
+}
+
+.red-flag--full {
+  height: 100%;
+}
+
+@media (max-width: 1100px) {
+  .tile-grid--emergency,
+  .tile-grid--wide,
+  .tile-grid--revision,
+  .tile-grid--revision-detail,
+  .training-roadmap--compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-split--balanced {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions--start > * {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .training-roadmap--compact,
+  .tile-grid--emergency,
+  .tile-grid--wide,
+  .tile-grid--revision,
+  .tile-grid--revision-detail,
+  .field-mini-flow--compact,
+  .tile-grid--signals {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-tile,
+  .action-tile,
+  .reflex-tile {
+    min-height: 0;
+  }
+
+  .action-tile {
+    padding: 14px;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .learning-tile,
+  .action-tile,
+  .reflex-tile,
+  .signal-card,
+  .field-cue {
+    padding: 13px;
+    border-radius: 16px;
+  }
+
+  .tile-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+  }
+
+  .quick-link,
+  .btn,
+  .btn-primary,
+  .btn-secondary,
+  .btn-danger {
+    min-height: 40px;
+    padding-block: 10px;
+  }
+}
