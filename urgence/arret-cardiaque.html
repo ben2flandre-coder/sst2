@@ -14,13 +14,66 @@
     <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
   </header>
   <main class="app-main">
-    <section class="hero"><h1>⚡ Arrêt cardiaque</h1><p>Mode urgence : lisibilité maximale, actions immédiates, zéro détour.</p></section>
-    <div class="grid">
-      <article class="urgence-step"><h3>Étape 1</h3><p>Confirmez l’absence de respiration normale et faites alerter le 15/112 + DAE.</p></article>
-      <article class="urgence-step"><h3>Étape 2</h3><p>Commencez immédiatement 30 compressions / 2 insufflations si formé.</p></article>
-      <article class="urgence-step"><h3>Étape 3</h3><p>Utilisez le DAE dès disponibilité et poursuivez jusqu’au relais.</p></article>
-    </div>
-    <div class="grid two"><button class="btn-primary" onclick="goHome()">Retour HUB</button><button class="btn-secondary" onclick="goToModule(0)">Retour formation</button></div>
+    <section class="hero hero-premium hero-premium--critical">
+      <div class="premium-header">
+        <span class="icon-badge icon-badge--critical" aria-hidden="true">🫀</span>
+        <div>
+          <p class="hero-kicker">Urgence vitale</p>
+          <h1>⚡ Arrêt cardiaque</h1>
+          <p>Mode urgence : identification rapide, appel immédiat, RCP continue, DAE dès qu'il arrive.</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="anchor-nav" aria-label="Sous-navigation arrêt cardiaque">
+      <a class="quick-link" href="#actions">Actions immédiates</a>
+      <a class="quick-link" href="#variantes">Variantes d'âge</a>
+      <a class="quick-link" href="#videos">Ressources</a>
+    </nav>
+
+    <section id="actions" class="urgent-grid">
+      <article class="urgence-step urgence-step--strong"><h3>Étape 1 — Reconnaître</h3><p>La victime ne répond pas et ne respire pas normalement : considérer l'arrêt cardiaque.</p></article>
+      <article class="urgence-step urgence-step--strong"><h3>Étape 2 — Faire alerter</h3><p>Demander immédiatement le <strong>15</strong> ou le <strong>112</strong> et faire apporter le <strong>DAE</strong>.</p></article>
+      <article class="urgence-step urgence-step--strong"><h3>Étape 3 — Masser</h3><p>Commencer sans attendre les compressions thoraciques, 30/2 si formé, sinon compressions seules.</p></article>
+      <article class="urgence-step urgence-step--strong"><h3>Étape 4 — Défibriller</h3><p>Allumer le DAE, suivre ses consignes, s'écarter pendant l'analyse et reprendre immédiatement la RCP.</p></article>
+    </section>
+
+    <section class="grid two">
+      <article id="variantes" class="card objective-card">
+        <h3>Variantes adulte / enfant / nourrisson</h3>
+        <ul class="list-tight">
+          <li><strong>Adulte :</strong> profondeur et rythme standard, DAE dès disponibilité.</li>
+          <li><strong>Enfant :</strong> compression adaptée à la taille, électrodes pédiatriques si disponibles.</li>
+          <li><strong>Nourrisson :</strong> technique spécifique, priorité à l'alerte médicalisée et à la continuité des compressions adaptées.</li>
+        </ul>
+      </article>
+      <article class="red-flag">
+        <h3>Red flags / erreurs à éviter</h3>
+        <ul>
+          <li>Interrompre trop longtemps les compressions.</li>
+          <li>Perdre du temps à vérifier un pouls.</li>
+          <li>Attendre le DAE avant de commencer la RCP.</li>
+          <li>Toucher la victime pendant l'analyse.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="videos" class="card-action media-callout">
+      <div class="section-heading">
+        <div>
+          <h2>Ressources et démonstrations utiles</h2>
+          <p>Compléter le geste avec les ressources officielles d'organisation des secours et l'outil de plan d'intervention.</p>
+        </div>
+        <span class="badge">INRS + outils</span>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-card" href="https://www.inrs.fr/demarche/organisation-secours/accident-malaise.html" target="_blank" rel="noopener"><strong>Organisation des secours INRS</strong><span>Repères SST, rôle du secouriste, alerte et premiers secours.</span></a>
+        <a class="resource-card" href="https://www.inrs.fr/media.html?refINRS=outil31" target="_blank" rel="noopener"><strong>Plan d'intervention SST interactif</strong><span>Chaîne décisionnelle secourir selon l'état de la victime.</span></a>
+        <a class="resource-card" href="../tools/staying-alive.html"><strong>Staying Alive</strong><span>App DAE et citoyens secouristes à activer pendant l'alerte.</span></a>
+      </div>
+    </section>
+
+    <div class="grid two"><button class="btn-primary" type="button" onclick="goHome()">Retour HUB</button><a class="btn-secondary" href="../modules/module-5.html#branche-arret">Retour à la fiche geste</a></div>
   </main>
   <div class="floating-urgence">
     <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>

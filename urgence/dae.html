@@ -11,15 +11,31 @@
 <body class="app-shell" data-prev="/urgence/arret-cardiaque.html" data-next="/urgence/etouffement.html">
   <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
-    <section class="hero"><h1>⚡ Défibrillateur Automatisé Externe (DAE)</h1><p>Objectif : défibriller précocement et sécuriser la chaîne de survie SST.</p></section>
-    <article class="card objective-card"><h3>Repérage</h3><ul class="list-tight"><li>Victime inconsciente, ne respire pas normalement.</li><li>DAE disponible sur site ou à proximité.</li></ul></article>
-    <article class="card-action"><h3>Conduite à tenir</h3><ol class="list-tight"><li>Faire alerter 15/112 et demander le DAE.</li><li>Dénuder thorax, coller électrodes comme indiqué.</li><li>Écarter tout le monde lors de l'analyse et du choc.</li><li>Reprendre immédiatement la RCP après choc ou message "pas de choc".</li></ol></article>
+    <section class="hero hero-premium">
+      <div class="premium-header">
+        <span class="icon-badge" aria-hidden="true">⚡</span>
+        <div>
+          <p class="hero-kicker">Urgence vitale</p>
+          <h1>⚡ Défibrillateur Automatisé Externe (DAE)</h1>
+          <p>Objectif : défibriller précocement, sécuriser l'analyse et reprendre immédiatement la RCP.</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="anchor-nav" aria-label="Sous-navigation DAE">
+      <a class="quick-link" href="#repere">Repérage</a>
+      <a class="quick-link" href="#technique">Technique</a>
+      <a class="quick-link" href="#staying">Staying Alive</a>
+    </nav>
+
+    <article id="repere" class="card objective-card"><h3>Repérage</h3><ul class="list-tight"><li>Victime inconsciente, ne respire pas normalement.</li><li>DAE disponible sur site ou à proximité.</li><li>Un témoin peut aller le chercher pendant que la RCP démarre.</li></ul></article>
+    <article id="technique" class="card-action"><h3>Conduite à tenir</h3><ol class="list-tight"><li>Faire alerter 15/112 et demander le DAE.</li><li>Allumer le DAE, dénuder et sécher rapidement le thorax si nécessaire.</li><li>Coller les électrodes comme indiqué, s'écarter pendant l'analyse et le choc.</li><li>Reprendre immédiatement la RCP après choc ou message « pas de choc ».</li></ol></article>
     <div class="grid two">
-      <article class="red-flag"><h3>Red flags</h3><ul><li>Patch médicamenteux : retirer avant pose électrode.</li><li>Milieu humide : sécher rapidement avant pose.</li></ul></article>
-      <article class="card error-block"><h3>Erreurs fréquentes</h3><ul class="list-tight"><li>Interrompre trop longtemps la RCP.</li><li>Toucher la victime pendant l'analyse.</li><li>Oublier de rallumer le DAE après déplacement.</li></ul></article>
+      <article class="red-flag"><h3>Red flags</h3><ul><li>Patch médicamenteux : retirer avant pose électrode.</li><li>Milieu humide : sécher rapidement avant pose.</li><li>Poils très abondants : assurer le contact électrodes/peau.</li></ul></article>
+      <article class="card error-block"><h3>Erreurs fréquentes</h3><ul class="list-tight"><li>Interrompre trop longtemps la RCP.</li><li>Toucher la victime pendant l'analyse.</li><li>Oublier de rallumer ou de suivre le message vocal.</li></ul></article>
     </div>
-    <article class="card"><h3>Variantes</h3><p><strong>Adulte :</strong> électrodes standard. <strong>Enfant :</strong> électrodes pédiatriques si disponibles. <strong>Nourrisson :</strong> suivre protocole médical dédié, priorité à l'alerte médicalisée.</p></article>
-    <article class="card-action practice-case"><h3>Mini scénario métier</h3><p>Atelier logistique : salarié s'effondre. Un SST lance la RCP, un témoin apporte le DAE d'accueil, un autre alerte le 15. Coordination en moins de 2 minutes.</p></article>
+    <article class="card"><h3>Variantes</h3><p><strong>Adulte :</strong> électrodes standard. <strong>Enfant :</strong> électrodes pédiatriques si disponibles. <strong>Nourrisson :</strong> suivre le protocole médicalisé, alerte prioritaire et gestes adaptés.</p></article>
+    <article id="staying" class="card-action practice-case"><h3>DAE + Staying Alive</h3><p>En parallèle de la RCP, l'application Staying Alive aide à localiser un DAE complémentaire et à mobiliser des citoyens secouristes autour du lieu d'intervention.</p><div class="branch-actions"><a class="btn-secondary" href="../tools/staying-alive.html">Ouvrir Staying Alive</a><a class="btn-danger" href="arret-cardiaque.html">Retour à l'arrêt cardiaque</a></div></article>
   </main>
   <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
   <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>

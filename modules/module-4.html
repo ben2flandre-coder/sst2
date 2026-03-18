@@ -11,31 +11,109 @@
 <body class="app-shell" data-prev="/modules/module-3.html" data-next="/modules/module-5.html">
   <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
-    <section class="hero"><h1>C4 — ALERTER</h1><p>Message d'alerte SST structuré et exploitable: lieu précis, nature, nombre, risques, gestes engagés.</p></section>
-
-    <article class="card-action">
-      <h3>Quel numéro selon la situation ?</h3>
-      <div class="trainer-board">
-        <div class="trainer-head"><span>Numéro</span><span>Usage</span><span>Cas</span><span>Point clé</span></div>
-        <div class="trainer-row"><span>15</span><span>SAMU</span><span>Urgence médicale</span><span>Bilan clinique précis</span></div>
-        <div class="trainer-row"><span>18</span><span>Pompiers</span><span>Incendie/accident</span><span>Danger environnemental</span></div>
-        <div class="trainer-row"><span>112</span><span>Numéro européen</span><span>Tout type d'urgence</span><span>Relais multilingue</span></div>
-        <div class="trainer-row"><span>114</span><span>SMS / tchat / fax</span><span>Parole/audition empêchée</span><span>Transmission écrite</span></div>
+    <section class="hero hero-premium">
+      <div class="premium-header">
+        <span class="icon-badge" aria-hidden="true">📣</span>
+        <div>
+          <p class="hero-kicker">Compétence C4</p>
+          <h1>C4 — Alerter avec un message exploitable</h1>
+          <p>Choisir le bon numéro, transmettre sans perte d'information et préparer l'arrivée des secours en articulant alerte externe, interne et relais témoin.</p>
+        </div>
       </div>
-    </article>
+    </section>
 
-    <div class="grid two">
-      <article class="card objective-card"><h3>114 — usage explicite</h3><ul class="list-tight"><li>Personne sourde, malentendante ou aphasique.</li><li>Environnement empêchant de parler (agresseur proche, bruit, confinement).</li><li>Besoin de transmettre par écrit sans appel vocal.</li></ul></article>
-      <article class="red-flag"><h3>Erreurs fréquentes</h3><ul><li>Adresse incomplète ou imprécise.</li><li>Pas d'indication du risque persistant.</li><li>Message trop long, sans priorités.</li><li>Raccrocher avant validation opérateur.</li></ul></article>
-    </div>
+    <nav class="anchor-nav" aria-label="Sous-navigation C4">
+      <a class="quick-link" href="#numeros">Numéros</a>
+      <a class="quick-link" href="#114">Focus 114</a>
+      <a class="quick-link" href="#message">Message type</a>
+      <a class="quick-link" href="#videos">Vidéos / ressources</a>
+    </nav>
 
-    <article class="card">
-      <h3>Script type d'alerte</h3>
-      <p>« Ici [Nom], SST sur [site + adresse exacte]. Accident [type]. [Nombre] victime(s), état [conscience/respiration/saignement]. Risque persistant [oui/non]. Gestes en cours [x]. Rappel au [numéro]. »</p>
-      <p><strong>Simulation 114 :</strong> « URGENCE SST. Adresse : [adresse]. Victime inconsciente, respire oui/non. Je ne peux pas parler. Danger : [préciser]. Besoin secours immédiat. »</p>
-    </article>
+    <section id="numeros" class="card-action">
+      <div class="section-heading">
+        <div>
+          <h2>Quel numéro selon la situation ?</h2>
+          <p>Repère opérationnel à mémoriser et à afficher près des postes d'appel.</p>
+        </div>
+        <span class="badge">Alerte externe</span>
+      </div>
+      <div class="trainer-board trainer-board--five">
+        <div class="trainer-head"><span>Numéro</span><span>Service</span><span>Quand</span><span>À préciser</span><span>Réflexe SST</span></div>
+        <div class="trainer-row"><span>15</span><span>SAMU</span><span>Urgence médicale, douleur thoracique, AVC, malaise grave</span><span>Conscience, respiration, signes observés</span><span>Garder la victime sous surveillance</span></div>
+        <div class="trainer-row"><span>18</span><span>Sapeurs-pompiers</span><span>Incendie, accident, secours avec danger environnemental</span><span>Feu, fumée, explosion, accès, nombre de victimes</span><span>Baliser et protéger</span></div>
+        <div class="trainer-row"><span>112</span><span>Urgence européenne</span><span>Depuis mobile, déplacement, interlocuteur étranger</span><span>Localisation précise et nature de l'urgence</span><span>Ne raccrocher qu'après validation</span></div>
+        <div class="trainer-row"><span>114</span><span>Urgence par SMS / tchat</span><span>Impossible de parler ou d'entendre</span><span>Message écrit très court, adresse, état de la victime</span><span>Envoyer puis rester disponible</span></div>
+      </div>
+    </section>
 
-    <article class="card-action practice-case"><h3>Cas concret C4</h3><p>Atelier bruyant : opératrice aphasique témoin d'un malaise. Envoi SMS 114 avec géolocalisation, nature du malaise, risques machine, gestes SST déjà engagés.</p></article>
+    <section class="grid two">
+      <article id="114" class="objective-card card">
+        <h3>114 — usage explicite</h3>
+        <ul class="list-tight">
+          <li>Personne sourde, malentendante, aphasique ou empêchée de parler.</li>
+          <li>Contexte dangereux ou discret : agression, environnement très bruyant, confinement.</li>
+          <li>Canal écrit permettant d'envoyer une adresse, la nature de l'urgence et un rappel sécurisé.</li>
+        </ul>
+      </article>
+      <article class="red-flag">
+        <h3>Erreurs fréquentes</h3>
+        <ul>
+          <li>Adresse imprécise ou sans point d'accès.</li>
+          <li>Oublier le risque persistant ou la machine toujours active.</li>
+          <li>Parler longtemps sans hiérarchiser l'information.</li>
+          <li>Couper la communication avant la validation de l'opérateur.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="message" class="card">
+      <div class="section-heading">
+        <div>
+          <h2>Exemple de message d'alerte</h2>
+          <p>Format court, robuste, transmissible par téléphone ou par écrit.</p>
+        </div>
+        <span class="badge">Modèle prêt à l'emploi</span>
+      </div>
+      <div class="quote-card">
+        <p>« Ici <strong>[Nom]</strong>, SST sur <strong>[site + adresse exacte + point d'accès]</strong>. Nous avons <strong>[type d'accident ou malaise]</strong>. Il y a <strong>[nombre]</strong> victime(s). La victime est <strong>[consciente / inconsciente / respire / ne respire pas / saigne abondamment]</strong>. Le danger persistant est <strong>[oui/non + précision]</strong>. Les gestes en cours sont <strong>[compression / PLS / RCP / refroidissement]</strong>. Vous pouvez me rappeler au <strong>[numéro]</strong>. »</p>
+      </div>
+      <div class="quote-card quote-card--muted">
+        <p><strong>Exemple 114 :</strong> « URGENCE SST. Atelier B, 14 rue des Forges, entrée quai 2. Homme 52 ans inconscient, ne respire pas normalement. RCP commencée, DAE demandé. Machine arrêtée. Je ne peux pas parler. Rappel SMS nécessaire. »</p>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="card-action practice-case">
+        <h3>Cas métier</h3>
+        <p>Atelier bruyant : une opératrice témoin d'un malaise ne peut pas transmettre à voix haute. Elle déclenche le <strong>114</strong>, envoie l'adresse, la nature du malaise, le risque machine et les gestes SST déjà engagés.</p>
+      </article>
+      <article class="card action-flow">
+        <div class="flow-step">1. Choisir le bon numéro ou désigner un témoin.</div>
+        <div class="flow-step">2. Donner le lieu exact avant toute autre information.</div>
+        <div class="flow-step">3. Décrire l'état de la victime et les gestes engagés.</div>
+        <div class="flow-step">4. Organiser l'accueil des secours et le guidage.</div>
+      </article>
+    </section>
+
+    <section id="videos" class="card-action media-callout">
+      <div class="section-heading">
+        <div>
+          <h2>Voir la démonstration vidéo / ressource INRS</h2>
+          <p>Compléter l'apprentissage avec les ressources officielles liées à l'organisation des secours et au plan d'intervention.</p>
+        </div>
+        <span class="badge">INRS</span>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-card" href="https://www.inrs.fr/demarche/organisation-secours/accident-malaise.html" target="_blank" rel="noopener">
+          <strong>Organisation des secours</strong>
+          <span>Dossier INRS : rôle du SST, alerte, organisation et matériel.</span>
+        </a>
+        <a class="resource-card" href="https://www.inrs.fr/media.html?refINRS=outil31" target="_blank" rel="noopener">
+          <strong>Plan d'intervention SST interactif</strong>
+          <span>Outil INRS pour visualiser l'enchaînement des conduites à tenir.</span>
+        </a>
+      </div>
+    </section>
   </main>
   <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
   <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
