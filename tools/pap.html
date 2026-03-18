@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAP SST — support intégré</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body class="app-shell" data-prev="/tools/livret.html" data-next="/tools/pi.html">
+  <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
+  <main class="app-main">
+    <section class="hero hero-premium">
+      <div class="hero-split">
+        <div>
+          <p class="hero-kicker">Outil pédagogique</p>
+          <h1>PAP SST — intégration directe</h1>
+          <p>Le support local <code>assets/html/pap/PAP_SST.html</code> est intégré tel quel, avec un environnement de lecture, des liens de navigation et des repères visuels.</p>
+        </div>
+        <aside class="hero-panel institutional-card">
+          <h2>Accès rapides</h2>
+          <div class="quick-links quick-links--spaced"><a class="quick-link" href="#pap-source">Source</a><a class="quick-link" href="#pap-embed">Intégration</a><a class="quick-link" href="#pap-liens">Voir aussi</a></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="preview-grid">
+      <article class="preview-card"><img src="../assets/images/previews/Pedagogie_p1.png" alt="Aperçu pédagogique PAP" /><div><h3>Structure conservée</h3><p>Le fichier source n’est pas réécrit : il est intégré dans son état existant et mis en contexte dans la plateforme.</p></div></article>
+      <article class="preview-card"><img src="../assets/images/previews/Pedagogie_p2.png" alt="Aperçu visuel PAP" /><div><h3>Lecture renforcée</h3><p>Le design autour du support améliore l’accès, la lisibilité et le lien avec C6, les outils et les urgences.</p></div></article>
+    </section>
+
+    <section id="pap-source" class="card-action">
+      <div class="section-heading"><div><h2>Source locale</h2><p>Support pédagogique intégré depuis le dépôt sans transformation du contenu source.</p></div><span class="badge">Asset interne</span></div>
+      <div class="doc-toolbar"><a class="btn-primary" href="../assets/html/pap/PAP_SST.html" target="_blank" rel="noopener">Ouvrir la source PAP</a><a class="btn-secondary" href="../modules/module-6.html">Aller vers C6</a><a class="btn-secondary" href="pi.html">Aller vers PI</a></div>
+    </section>
+
+    <section id="pap-embed" class="card-action">
+      <div class="section-heading"><div><h2>Intégration du PAP</h2><p>Lecture directe du vrai fichier pédagogique local.</p></div><span class="badge">PAP</span></div>
+      <div class="asset-embed asset-embed--tall"><iframe title="PAP SST intégré" src="../assets/html/pap/PAP_SST.html"></iframe></div>
+    </section>
+
+    <section id="pap-liens" class="card-action">
+      <div class="section-heading"><div><h2>Voir aussi</h2><p>Navigation directe vers les autres supports et modules associés.</p></div><span class="badge">Navigation</span></div>
+      <div class="quick-links quick-links--spaced"><a class="quick-link" href="../modules/module-6.html">C6 — PAP</a><a class="quick-link" href="pi.html">PI complet</a><a class="quick-link" href="livret.html">Livret PDF</a><a class="quick-link" href="../urgence/arret-cardiaque.html">Urgence</a></div>
+    </section>
+  </main>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+</body>
+</html>

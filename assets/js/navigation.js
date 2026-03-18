@@ -48,13 +48,66 @@ const NAV_GROUPS = {
     { label: 'Nourrisson', href: '/modules/module-5.html#variante-nourrisson' }
   ],
   outils: [
-    { label: 'PAP SST', href: '/modules/module-6.html' },
-    { label: 'PI SST', href: '/modules/module-5.html' },
+    { label: 'PAP SST', href: '/tools/pap.html' },
+    { label: 'PI SST', href: '/tools/pi.html' },
     { label: 'Aide-mémoire PDF', href: '/tools/livret.html' },
     { label: 'Staying Alive', href: '/tools/staying-alive.html' },
     { label: 'Révision', href: '/revision/index.html' },
     { label: 'Simulateur / cas concrets', href: '/modules/module-8.html' }
+  ],
+  accesRapide: [
+    { label: 'Gestes', href: '/modules/module-5.html#situations' },
+    { label: 'Outils', href: '/tools/livret.html' },
+    { label: 'Urgence', href: '/urgence/arret-cardiaque.html' }
   ]
+};
+
+const MODULE_CONTEXT = {
+  '/modules/module-2.html': {
+    title: 'Accès rapide C2',
+    links: [
+      { label: 'Gestes critiques', href: '/modules/module-5.html#situations' },
+      { label: 'Outils terrain', href: '/tools/livret.html' },
+      { label: 'Urgence immédiate', href: '/urgence/hemorragie.html' },
+      { label: 'Voir aussi C3', href: '/modules/module-3.html' }
+    ]
+  },
+  '/modules/module-3.html': {
+    title: 'Accès rapide C3',
+    links: [
+      { label: 'Gestes critiques', href: '/modules/module-5.html#situations' },
+      { label: 'PI SST', href: '/tools/pi.html' },
+      { label: 'Urgence arrêt cardiaque', href: '/urgence/arret-cardiaque.html' },
+      { label: 'Voir aussi C4', href: '/modules/module-4.html' }
+    ]
+  },
+  '/modules/module-4.html': {
+    title: 'Accès rapide C4',
+    links: [
+      { label: 'C5 — Secourir', href: '/modules/module-5.html' },
+      { label: 'PI SST', href: '/tools/pi.html' },
+      { label: 'Urgence', href: '/urgence/arret-cardiaque.html' },
+      { label: 'Livret terrain', href: '/tools/livret.html#alerte' }
+    ]
+  },
+  '/modules/module-5.html': {
+    title: 'Accès rapide C5',
+    links: [
+      { label: 'Gestes', href: '/modules/module-5.html#situations' },
+      { label: 'PI complet', href: '/tools/pi.html' },
+      { label: 'Urgence', href: '/urgence/arret-cardiaque.html' },
+      { label: 'Voir aussi DAE', href: '/urgence/dae.html' }
+    ]
+  },
+  '/modules/module-6.html': {
+    title: 'Accès rapide C6',
+    links: [
+      { label: 'PAP complet', href: '/tools/pap.html' },
+      { label: 'Outils INRS', href: '/tools/livret.html' },
+      { label: 'Urgence', href: '/urgence/arret-cardiaque.html' },
+      { label: 'Voir aussi C7', href: '/modules/module-7.html' }
+    ]
+  }
 };
 
 function isActivePath(href) {
@@ -82,6 +135,7 @@ function injectGlobalNav() {
       ${renderGroup('Par situations', NAV_GROUPS.situations)}
       ${renderGroup('Par publics', NAV_GROUPS.publics)}
       ${renderGroup('Par outils', NAV_GROUPS.outils)}
+      ${renderGroup('Accès rapide', NAV_GROUPS.accesRapide)}
     </details>`;
 
   main.prepend(nav);
@@ -104,6 +158,19 @@ function injectBreadcrumb() {
   main.prepend(crumb);
 }
 
+function injectModuleShortcuts() {
+  const main = document.querySelector('.app-main');
+  if (!main) return;
+  const path = window.location.pathname.replace(getBasePath(), '');
+  const config = MODULE_CONTEXT[path];
+  if (!config) return;
+
+  const section = document.createElement('section');
+  section.className = 'module-shortcuts';
+  section.innerHTML = `<h3>${config.title}</h3><div class="quick-links">${config.links.map((item) => `<a class="quick-link" href="${toUrl(item.href)}">${item.label}</a>`).join('')}</div>`;
+  main.insertBefore(section, main.children[2] || null);
+}
+
 function injectSeeAlso() {
   const main = document.querySelector('.app-main');
   if (!main) return;
@@ -111,12 +178,31 @@ function injectSeeAlso() {
   const section = document.createElement('section');
   section.className = 'card see-also';
 
-  let links = NAV_GROUPS.outils.slice(0, 3);
-  if (path.includes('/urgence/')) links = [
-    { label: 'PI SST', href: '/modules/module-5.html' },
-    { label: 'Alerter (C4)', href: '/modules/module-4.html' },
-    { label: 'Révision express', href: '/revision/index.html' }
+  let links = [
+    { label: 'PAP SST', href: '/tools/pap.html' },
+    { label: 'PI SST', href: '/tools/pi.html' },
+    { label: 'Livret terrain', href: '/tools/livret.html' }
   ];
+
+  if (path.includes('/urgence/')) {
+    links = [
+      { label: 'PI SST', href: '/tools/pi.html' },
+      { label: 'Alerter (C4)', href: '/modules/module-4.html' },
+      { label: 'Révision express', href: '/revision/index.html' }
+    ];
+  } else if (path.includes('/modules/module-4.html')) {
+    links = [
+      { label: 'C5 — Plan d’intervention', href: '/modules/module-5.html' },
+      { label: 'PI complet', href: '/tools/pi.html' },
+      { label: 'Urgence immédiate', href: '/urgence/arret-cardiaque.html' }
+    ];
+  } else if (path.includes('/modules/module-5.html')) {
+    links = [
+      { label: 'PI complet', href: '/tools/pi.html' },
+      { label: 'DAE', href: '/urgence/dae.html' },
+      { label: 'Livret terrain', href: '/tools/livret.html' }
+    ];
+  }
 
   section.innerHTML = `<h3>Voir aussi</h3><div class="quick-links">${links.map((l) => `<a class="quick-link" href="${toUrl(l.href)}">${l.label}</a>`).join('')}</div>`;
   main.append(section);
@@ -125,6 +211,7 @@ function injectSeeAlso() {
 function initNavigation() {
   injectGlobalNav();
   injectBreadcrumb();
+  injectModuleShortcuts();
   injectSeeAlso();
 
   const prev = document.querySelector('[data-nav="prev"]');

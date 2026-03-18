@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PI SST — support intégré</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body class="app-shell" data-prev="/tools/pap.html" data-next="/tools/staying-alive.html">
+  <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
+  <main class="app-main">
+    <section class="hero hero-premium">
+      <div class="hero-split">
+        <div>
+          <p class="hero-kicker">Outil pédagogique</p>
+          <h1>PI SST — intégration directe</h1>
+          <p>Le support local <code>assets/html/pi/PI_SST.html</code> est intégré tel quel, avec des liens rapides vers C5, les urgences et les gestes par situation.</p>
+        </div>
+        <aside class="hero-panel institutional-card">
+          <h2>Accès rapides</h2>
+          <div class="quick-links quick-links--spaced"><a class="quick-link" href="#pi-source">Source</a><a class="quick-link" href="#pi-embed">Intégration</a><a class="quick-link" href="#pi-liens">Voir aussi</a></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="preview-grid">
+      <article class="preview-card"><img src="../assets/images/previews/Manuel-formateur-de-formateurs-SST-V10-2016_p2.png" alt="Aperçu PI SST" /><div><h3>Arborescence conservée</h3><p>Le PI d’origine reste central, sans simplification ni réécriture.</p></div></article>
+      <article class="preview-card"><img src="../assets/images/previews/General_p2.png" alt="Aperçu gestes reliés au PI" /><div><h3>Liens renforcés</h3><p>Depuis cette page, accéder directement à C5, au livret, aux urgences et aux gestes critiques.</p></div></article>
+    </section>
+
+    <section id="pi-source" class="card-action">
+      <div class="section-heading"><div><h2>Source locale</h2><p>Support arborescent intégré depuis le dépôt sans transformation du contenu source.</p></div><span class="badge">Asset interne</span></div>
+      <div class="doc-toolbar"><a class="btn-primary" href="../assets/html/pi/PI_SST.html" target="_blank" rel="noopener">Ouvrir la source PI</a><a class="btn-secondary" href="../modules/module-5.html">Aller vers C5</a><a class="btn-secondary" href="livret.html">Aller vers le livret</a></div>
+    </section>
+
+    <section id="pi-embed" class="card-action">
+      <div class="section-heading"><div><h2>Intégration du PI</h2><p>Lecture directe du vrai fichier arborescent local.</p></div><span class="badge">PI</span></div>
+      <div class="asset-embed asset-embed--tall"><iframe title="PI SST intégré" src="../assets/html/pi/PI_SST.html"></iframe></div>
+    </section>
+
+    <section id="pi-liens" class="card-action">
+      <div class="section-heading"><div><h2>Liens depuis les situations C5</h2><p>Accès clair vers les situations d’urgence et les modules associés.</p></div><span class="badge">Navigation</span></div>
+      <div class="quick-links quick-links--spaced"><a class="quick-link" href="../modules/module-5.html#branche-saignement">Saignement</a><a class="quick-link" href="../modules/module-5.html#branche-etouffement">Étouffement</a><a class="quick-link" href="../modules/module-5.html#branche-inconscience">Inconscience</a><a class="quick-link" href="../modules/module-5.html#branche-arret">Arrêt cardiaque</a><a class="quick-link" href="../urgence/dae.html">DAE</a><a class="quick-link" href="../modules/module-4.html">C4 — Alerter</a></div>
+    </section>
+  </main>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+</body>
+</html>
