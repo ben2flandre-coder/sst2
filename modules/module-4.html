@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Étape 3 • C4 Alerter</title>
+<title>Étape 7 • C4 Alerter</title>
 <link rel="stylesheet" href="../assets/css/main.css" />
 <link rel="stylesheet" href="../assets/css/layout.css" />
 <link rel="stylesheet" href="../assets/css/components.css" />
@@ -14,144 +14,71 @@
 <button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
 </header>
 <main class="app-main">
-<section class="progress-hero card-action">
+<section class="card-action progress-banner">
 <div>
-<p class="hero-kicker">Étape 3 sur 5</p>
+<p class="hero-kicker">Étape 7 sur 8</p>
 <h1>C4 — Alerter</h1>
-<p>Une alerte utile tient en quelques secondes : bon numéro, bon message, bon guidage des secours.</p>
+<p>Une alerte utile tient en quelques secondes : lieu exact, événement, victimes, gestes en cours, numéro de rappel.</p>
 </div>
-<div class="progress-meta">
-<strong>Progression</strong>
-<div class="step-progress">
-<span class="is-complete">1</span>
-<span class="is-complete">2</span>
-<span class="is-active">3</span>
-<span>4</span>
-<span>5</span>
-</div>
-<p>Après l’alerte : secourir sans délai.</p>
+<div class="training-roadmap">
+<article class="progress-step progress-step--done" data-step="1"><strong>C1</strong><span>Rôle SST</span></article>
+<article class="progress-step progress-step--done" data-step="2"><strong>C6</strong><span>PAP</span></article>
+<article class="progress-step progress-step--done" data-step="3"><strong>C7</strong><span>Alerte interne</span></article>
+<article class="progress-step progress-step--done" data-step="4"><strong>C8</strong><span>Remontée</span></article>
+<article class="progress-step progress-step--done" data-step="5"><strong>C2</strong><span>Protéger</span></article>
+<article class="progress-step progress-step--done" data-step="6"><strong>C3</strong><span>Examiner</span></article>
+<article class="progress-step progress-step--active" data-step="7"><strong>C4</strong><span>Alerter</span></article>
+<article class="progress-step" data-step="8"><strong>C5</strong><span>Secourir</span></article>
 </div>
 </section>
+
 <section class="content-grid-two">
 <article class="quote-card alert-script-card">
 <p class="badge badge--alert">Script d’alerte</p>
-<h2>Le message à lire ou faire lire</h2>
-<p>« Ici [nom], SST sur [lieu exact]. Nous avons [événement]. Il y a [nombre] victime(s). La victime est [état visible]. Le danger persistant est [oui/non]. Les gestes en cours sont [gestes]. Rappel au [numéro]. »</p>
+<h2>Message à lire ou faire lire</h2>
+<p>« Ici [nom], SST, sur [lieu exact]. Nous avons [événement]. Il y a [nombre] victime(s). La victime est [état visible]. Danger persistant : [oui/non]. Gestes en cours : [gestes]. Rappel au [numéro]. »</p>
 </article>
-<article class="card media-summary-card institutional-card">
-<p class="badge">Repère visuel</p>
-<h2>Le bon ordre</h2>
-<div class="step-sequence step-sequence--mini">
-<article class="step-card">
-<strong>Où ?</strong>
-<span>Lieu exact, accès, étage, atelier.</span>
-</article>
-<article class="step-card">
-<strong>Quoi ?</strong>
-<span>Événement + danger persistant.</span>
-</article>
-<article class="step-card">
-<strong>Qui ?</strong>
-<span>Nombre de victimes et état.</span>
-</article>
-<article class="step-card">
-<strong>Que fais-je ?</strong>
-<span>Gestes en cours et rappel.</span>
-</article>
+<article class="card-action">
+<p class="badge">Lecture rapide</p>
+<h2>Ordre visuel</h2>
+<div class="field-mini-flow">
+<article class="field-cue panel--info"><strong>Où ?</strong><span>lieu exact et accès.</span></article>
+<article class="field-cue panel--warning"><strong>Quoi ?</strong><span>événement + danger.</span></article>
+<article class="field-cue panel--danger"><strong>Qui ?</strong><span>victimes + état.</span></article>
+<article class="field-cue panel--success"><strong>Que fais-je ?</strong><span>gestes + rappel.</span></article>
 </div>
 </article>
 </section>
-<section class="card-action">
-<div class="section-heading">
-<div>
-<p class="badge">Quel numéro selon la situation ?</p>
-<h2>Tableau de choix immédiat</h2>
-</div>
-</div>
-<div class="table-wrap">
-<table class="alert-table">
-<thead>
-<tr>
-<th>Numéro</th>
-<th>Quand l’utiliser</th>
-<th>Exemple SST</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<strong>15</strong>
-</td>
-<td>Urgence médicale, malaise grave, douleur thoracique, détresse vitale.</td>
-<td>Malaise avec trouble de la parole ou arrêt cardiaque.</td>
-</tr>
-<tr>
-<td>
-<strong>18</strong>
-</td>
-<td>Incendie, explosion, secours d’urgence liés à un sinistre.</td>
-<td>Feu d’atelier, brûlure avec environnement à risque.</td>
-</tr>
-<tr>
-<td>
-<strong>112</strong>
-</td>
-<td>Numéro d’urgence européen si doute, téléphone mobile ou besoin de bascule rapide.</td>
-<td>Appel unique depuis un site extérieur ou inconnu.</td>
-</tr>
-<tr>
-<td>
-<strong>114</strong>
-</td>
-<td>Urgence par SMS ou visio, notamment si la personne ne peut pas parler ou entendre.</td>
-<td>Témoin sourd, personne bloquée sans possibilité d’appel vocal.</td>
-</tr>
-</tbody>
-</table>
-</div>
+
+<section class="alert-lane">
+<article class="alert-card alert-card--danger"><strong>15</strong><span>urgence médicale, détresse vitale, douleur thoracique.</span></article>
+<article class="alert-card alert-card--warning"><strong>18</strong><span>incendie, explosion, sinistre.</span></article>
+<article class="alert-card alert-card--info"><strong>112</strong><span>appel unique en doute ou sur mobile.</span></article>
+<article class="alert-card alert-card--success"><strong>114</strong><span>SMS / visio si la voix n’est pas possible.</span></article>
 </section>
+
 <section class="content-grid-two">
 <article class="card-action">
-<p class="badge">Cas d’usage 114</p>
-<h2>Quand le 114 devient prioritaire</h2>
-<ul class="list-tight">
-<li>La personne qui alerte est sourde, malentendante, aphasique ou ne peut pas parler.</li>
-<li>L’environnement empêche une conversation vocale efficace.</li>
-<li>Le message écrit permet de transmettre un lieu exact, une photo ou une visio.</li>
-</ul>
+<h2>Missionner un témoin</h2>
+<p>Le SST désigne : « Vous appelez le 15. Vous revenez me confirmer. Puis vous guidez les secours jusqu’à nous. »</p>
 </article>
 <article class="red-flag">
 <h2>Erreurs fréquentes</h2>
 <ul class="list-tight">
 <li>Adresse ou accès imprécis.</li>
-<li>Message trop long, sans ordre.</li>
+<li>Message trop long.</li>
 <li>Oublier les gestes déjà commencés ou le numéro de rappel.</li>
 </ul>
 </article>
 </section>
-<section class="card-action">
-<h2>Missionner un témoin</h2>
-<p>Le SST ne dit pas “quelqu’un appelle ?”. Il désigne une personne : “Vous, appelez le 15. Revenez me confirmer l’appel. Puis guidez les secours jusqu’à nous.”</p>
-</section>
+
 <div class="grid two module-nav-grid">
 <a class="btn-secondary" href="module-3.html">Retour C3</a>
 <a class="btn-primary" href="module-5.html">Suivant : C5</a>
 </div>
 </main>
-<div class="floating-urgence">
-<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-</div>
-<footer class="app-footer">
-<button class="btn-secondary" data-nav="prev">Précédent</button>
-<button class="btn-primary" data-nav="hub">Accueil</button>
-<button class="btn-secondary" data-nav="next">Suivant</button>
-<button class="btn-danger" data-nav="urgence">URGENCE</button>
-</footer>
-<script src="../assets/js/navigation.js">
-</script>
-<script src="../assets/js/ui.js">
-</script>
-<script src="../assets/js/app.js">
-</script>
+<div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+<footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+<script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
 </body>
 </html>

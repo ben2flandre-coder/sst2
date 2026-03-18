@@ -8,12 +8,24 @@ function toUrl(path) {
   return `${getBasePath()}${path}`;
 }
 
-function goToModule(n) {
-  window.location.href = toUrl(`/modules/module-${n}.html`);
+function goToModule(id) {
+  const map = {
+    c1: '/modules/module-c1.html',
+    c6: '/modules/module-6.html',
+    c7: '/modules/module-7.html',
+    c8: '/modules/module-8.html',
+    c2: '/modules/module-2.html',
+    c3: '/modules/module-3.html',
+    c4: '/modules/module-4.html',
+    c5: '/modules/module-5.html'
+  };
+  const target = map[id] || '/modules/module-c1.html';
+  window.location.href = toUrl(target);
 }
 
-function goToUrgence(type) {
-  window.location.href = toUrl(`/urgence/${type}.html`);
+function goToUrgence(type = 'index') {
+  const target = type === 'index' ? '/urgence/index.html' : `/urgence/${type}.html`;
+  window.location.href = toUrl(target);
 }
 
 function goHome() {
@@ -22,17 +34,20 @@ function goHome() {
 
 const NAV_GROUPS = {
   formation: [
-    { label: 'Étape 1 • C1', href: '/modules/module-c1.html' },
-    { label: 'Étape 2 • C2', href: '/modules/module-2.html' },
-    { label: 'Étape 2 • C3', href: '/modules/module-3.html' },
-    { label: 'Étape 3 • C4', href: '/modules/module-4.html' },
-    { label: 'Étape 4 • C5', href: '/modules/module-5.html' },
-    { label: 'Étape 5 • C6', href: '/modules/module-6.html' }
+    { label: '1 • C1', href: '/modules/module-c1.html' },
+    { label: '2 • C6', href: '/modules/module-6.html' },
+    { label: '3 • C7', href: '/modules/module-7.html' },
+    { label: '4 • C8', href: '/modules/module-8.html' },
+    { label: '5 • C2', href: '/modules/module-2.html' },
+    { label: '6 • C3', href: '/modules/module-3.html' },
+    { label: '7 • C4', href: '/modules/module-4.html' },
+    { label: '8 • C5', href: '/modules/module-5.html' }
   ],
   revision: [
-    { label: 'Révision terrain', href: '/revision/index.html' }
+    { label: 'Révision réflexe', href: '/revision/index.html' }
   ],
   urgence: [
+    { label: 'Hub urgence', href: '/urgence/index.html' },
     { label: 'Saignement', href: '/urgence/hemorragie.html' },
     { label: 'Étouffement', href: '/urgence/etouffement.html' },
     { label: 'Inconscience', href: '/urgence/inconscience.html' },
@@ -41,7 +56,7 @@ const NAV_GROUPS = {
     { label: 'Malaise', href: '/urgence/malaise.html' }
   ],
   formateur: [
-    { label: 'Accueil formateur', href: '/tools/ressources-formateur.html' },
+    { label: 'Accueil outils', href: '/tools/ressources-formateur.html' },
     { label: 'PAP', href: '/tools/pap.html' },
     { label: 'PI', href: '/tools/pi.html' },
     { label: 'Médiathèque', href: '/tools/videos-inrs.html' },
@@ -51,6 +66,18 @@ const NAV_GROUPS = {
 
 const MODULE_CONTEXT = {
   '/modules/module-c1.html': {
+    title: 'Étape suivante',
+    links: [{ label: 'Aller à C6', href: '/modules/module-6.html' }]
+  },
+  '/modules/module-6.html': {
+    title: 'Étape suivante',
+    links: [{ label: 'Aller à C7', href: '/modules/module-7.html' }]
+  },
+  '/modules/module-7.html': {
+    title: 'Étape suivante',
+    links: [{ label: 'Aller à C8', href: '/modules/module-8.html' }]
+  },
+  '/modules/module-8.html': {
     title: 'Étape suivante',
     links: [{ label: 'Aller à C2', href: '/modules/module-2.html' }]
   },
@@ -69,19 +96,12 @@ const MODULE_CONTEXT = {
   '/modules/module-5.html': {
     title: 'Accès C5',
     links: [
+      { label: 'PI terrain', href: '/modules/module-5.html#pi' },
       { label: 'Saignement', href: '/modules/module-5.html#saignement' },
       { label: 'Étouffement', href: '/modules/module-5.html#etouffement' },
       { label: 'Malaise', href: '/modules/module-5.html#malaise' },
       { label: 'Inconscience', href: '/modules/module-5.html#inconscience' },
-      { label: 'Arrêt cardiaque', href: '/modules/module-5.html#arret' },
-      { label: 'Risque spécifique', href: '/modules/module-5.html#risque' }
-    ]
-  },
-  '/modules/module-6.html': {
-    title: 'Après le parcours',
-    links: [
-      { label: 'Révision terrain', href: '/revision/index.html' },
-      { label: 'Urgence vitale', href: '/urgence/arret-cardiaque.html' }
+      { label: 'Arrêt cardiaque', href: '/modules/module-5.html#arret' }
     ]
   }
 };
@@ -113,7 +133,7 @@ function injectGlobalNav() {
   const path = window.location.pathname.replace(getBasePath(), '');
   const type = getPageType(path);
   const sections = [
-    renderGroup('Formation', NAV_GROUPS.formation),
+    renderGroup('Parcours SST', NAV_GROUPS.formation),
     renderGroup('Révision', NAV_GROUPS.revision),
     renderGroup('Urgence', NAV_GROUPS.urgence)
   ];
@@ -126,7 +146,7 @@ function injectGlobalNav() {
   nav.className = 'global-nav';
   nav.innerHTML = `
     <details>
-      <summary>${type === 'tools' ? 'Navigation formateur' : 'Navigation apprenant'}</summary>
+      <summary>${type === 'tools' ? 'Navigation formateur' : 'Navigation SST'}</summary>
       ${sections.join('')}
     </details>`;
 
@@ -139,8 +159,8 @@ function injectBreadcrumb() {
   const h1 = main.querySelector('h1');
   const label = h1 ? h1.textContent.trim() : 'Page SST';
   const path = window.location.pathname.replace(getBasePath(), '');
-  let parent = { label: 'Formation', href: '/modules/module-c1.html' };
-  if (path.includes('/urgence/')) parent = { label: 'Urgence', href: '/urgence/arret-cardiaque.html' };
+  let parent = { label: 'Parcours SST', href: '/modules/module-c1.html' };
+  if (path.includes('/urgence/')) parent = { label: 'Urgence', href: '/urgence/index.html' };
   if (path.includes('/tools/')) parent = { label: 'Outils formateur', href: '/tools/ressources-formateur.html' };
   if (path.includes('/revision/')) parent = { label: 'Révision', href: '/revision/index.html' };
 
@@ -173,16 +193,16 @@ function injectSeeAlso() {
   section.className = 'card see-also';
 
   let links = [
-    { label: 'Révision terrain', href: '/revision/index.html' },
-    { label: 'Urgence vitale', href: '/urgence/arret-cardiaque.html' },
+    { label: 'Révision réflexe', href: '/revision/index.html' },
+    { label: 'Hub urgence', href: '/urgence/index.html' },
     { label: 'C5 — Secourir', href: '/modules/module-5.html' }
   ];
 
   if (path.includes('/urgence/')) {
     links = [
+      { label: 'Hub urgence', href: '/urgence/index.html' },
       { label: 'C5 — Secourir', href: '/modules/module-5.html' },
-      { label: 'Révision terrain', href: '/revision/index.html' },
-      { label: 'Arrêt cardiaque / DAE', href: '/urgence/dae.html' }
+      { label: 'Révision réflexe', href: '/revision/index.html' }
     ];
   }
 
@@ -220,5 +240,5 @@ function initNavigation() {
     next.addEventListener('click', () => { if (target) window.location.href = toUrl(target); });
   }
   hub.forEach((el) => el.addEventListener('click', goHome));
-  urg.forEach((el) => el.addEventListener('click', () => goToUrgence('arret-cardiaque')));
+  urg.forEach((el) => el.addEventListener('click', () => goToUrgence('index')));
 }

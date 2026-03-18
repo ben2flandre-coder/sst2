@@ -1488,3 +1488,388 @@
     justify-self: center;
   }
 }
+
+/* SST / INRS visual reinforcement */
+.path-rail,
+.progress-rail,
+.pictogram-row,
+.field-cues,
+.reflex-strip,
+.alert-lane,
+.gesture-strip,
+.status-grid,
+.report-grid,
+.internal-alert-grid,
+.visual-legend,
+.emergency-wall,
+.home-zones,
+.training-roadmap {
+  display: grid;
+  gap: 14px;
+}
+
+.training-roadmap {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.roadmap-step,
+.progress-step {
+  position: relative;
+  border-radius: 18px;
+  padding: 14px;
+  background: #fff;
+  border: 2px solid #d8dee6;
+  min-height: 112px;
+}
+
+.roadmap-step::before,
+.progress-step::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.roadmap-step strong,
+.progress-step strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.roadmap-step--active,
+.progress-step--active {
+  border-color: #1d4ed8;
+  background: #eff6ff;
+  box-shadow: 0 14px 28px rgba(29, 78, 216, 0.16);
+}
+
+.roadmap-step--done,
+.progress-step--done {
+  border-color: #22c55e;
+  background: #f0fdf4;
+}
+
+.roadmap-step--danger,
+.emergency-button--critical,
+.panel--critical {
+  border-color: #ef4444;
+  background: #fff1f2;
+}
+
+.roadmap-step--warning,
+.panel--warning,
+.emergency-button--warning {
+  border-color: #f59e0b;
+  background: #fff7ed;
+}
+
+.roadmap-step--info,
+.panel--info,
+.emergency-button--info {
+  border-color: #0ea5e9;
+  background: #eff6ff;
+}
+
+.roadmap-step--success,
+.panel--success,
+.emergency-button--success {
+  border-color: #22c55e;
+  background: #f0fdf4;
+}
+
+.sequence-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.pictogram-row,
+.field-cues,
+.reflex-strip,
+.gesture-strip,
+.visual-legend {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.pictogram-card,
+.field-cue,
+.reflex-card,
+.gesture-card,
+.legend-card,
+.panel,
+.report-card,
+.alert-card,
+.emergency-button,
+.situation-focus,
+.timeline-card {
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid #d8dee6;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.pictogram-card,
+.field-cue,
+.legend-card,
+.gesture-card,
+.situation-focus {
+  display: grid;
+  gap: 8px;
+}
+
+.pictogram {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.pictogram--red { background: #fee2e2; color: #991b1b; }
+.pictogram--orange { background: #ffedd5; color: #c2410c; }
+.pictogram--blue { background: #dbeafe; color: #1d4ed8; }
+.pictogram--green { background: #dcfce7; color: #15803d; }
+
+.progress-banner {
+  display: grid;
+  gap: 14px;
+}
+
+.progress-banner__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.progress-banner__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.status-chip--danger { background: #fee2e2; color: #991b1b; }
+.status-chip--warning { background: #ffedd5; color: #c2410c; }
+.status-chip--info { background: #dbeafe; color: #1d4ed8; }
+.status-chip--success { background: #dcfce7; color: #15803d; }
+
+.internal-alert-grid,
+.report-grid,
+.status-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.alert-lane {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.alert-card,
+.report-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.alert-card::after,
+.report-card::after,
+.timeline-card::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: var(--secondary);
+}
+
+.alert-card--danger::after,
+.report-card--danger::after,
+.timeline-card--danger::after { background: #ef4444; }
+.alert-card--warning::after,
+.report-card--warning::after,
+.timeline-card--warning::after { background: #f59e0b; }
+.alert-card--info::after,
+.report-card--info::after,
+.timeline-card--info::after { background: #0ea5e9; }
+.alert-card--success::after,
+.report-card--success::after,
+.timeline-card--success::after { background: #22c55e; }
+
+.field-mini-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mini-flow__item strong,
+.field-mini-flow strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+.situation-card--detailed {
+  display: grid;
+  gap: 16px;
+}
+
+.situation-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
+  gap: 14px;
+}
+
+.situation-visual,
+.situation-decision {
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.situation-visual {
+  border: 2px solid #dbeafe;
+  background: #eff6ff;
+}
+
+.situation-visual--danger { border-color: #fecaca; background: #fff1f2; }
+.situation-visual--warning { border-color: #fed7aa; background: #fff7ed; }
+.situation-visual--success { border-color: #bbf7d0; background: #f0fdf4; }
+
+.situation-signal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.situation-detail-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mini-panel {
+  border-radius: 16px;
+  border: 1px solid #d8dee6;
+  background: #fff;
+  padding: 14px;
+}
+
+.mini-panel--danger { background: #fff1f2; border-color: #fecaca; }
+.mini-panel--warning { background: #fff7ed; border-color: #fed7aa; }
+.mini-panel--primary { background: #eff6ff; border-color: #bfdbfe; }
+.mini-panel--success { background: #f0fdf4; border-color: #bbf7d0; }
+
+.red-flag h2,
+.red-flag h3 {
+  color: #991b1b;
+}
+
+.emergency-wall {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.emergency-button {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 14px;
+  min-height: 118px;
+  border-width: 2px;
+}
+
+.emergency-button__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: rgba(255,255,255,0.72);
+}
+
+.emergency-button strong { display: block; margin-bottom: 4px; }
+
+.quick-link--block,
+.quick-links--block .quick-link {
+  width: 100%;
+}
+
+.home-zones {
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.reflex-card--critical { background: #fff1f2; border-color: #fecaca; }
+.reflex-card--warning { background: #fff7ed; border-color: #fed7aa; }
+.reflex-card--info { background: #eff6ff; border-color: #bfdbfe; }
+.reflex-card--success { background: #f0fdf4; border-color: #bbf7d0; }
+
+.visual-note {
+  border-left: 5px solid #0ea5e9;
+  background: #eff6ff;
+  padding: 14px;
+  border-radius: 16px;
+}
+
+.visual-note--success { border-left-color: #22c55e; background: #f0fdf4; }
+.visual-note--warning { border-left-color: #f59e0b; background: #fff7ed; }
+.visual-note--danger { border-left-color: #ef4444; background: #fff1f2; }
+
+@media (max-width: 1100px) {
+  .training-roadmap,
+  .alert-lane,
+  .field-mini-flow,
+  .timeline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .internal-alert-grid,
+  .report-grid,
+  .status-grid,
+  .situation-detail-grid,
+  .home-zones,
+  .emergency-wall {
+    grid-template-columns: 1fr;
+  }
+
+  .situation-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .training-roadmap,
+  .alert-lane,
+  .field-mini-flow,
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-step,
+  .progress-step,
+  .emergency-button {
+    min-height: auto;
+  }
+}

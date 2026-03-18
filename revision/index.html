@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="../assets/css/layout.css" />
 <link rel="stylesheet" href="../assets/css/components.css" />
 </head>
-<body class="app-shell" data-prev="/modules/module-6.html" data-next="/urgence/arret-cardiaque.html">
+<body class="app-shell" data-prev="/modules/module-5.html" data-next="/urgence/index.html">
 <header class="app-header">
 <div class="app-title">SST • Révision terrain</div>
 <button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
@@ -18,161 +18,105 @@
 <div class="hero-split hero-split--balanced">
 <div>
 <p class="hero-kicker">Mode terrain</p>
-<h1>Réviser en 10 secondes</h1>
-<p>Fiches flash, red flags, tri par geste et tri par urgence pour retrouver l’action essentielle immédiatement.</p>
+<h1>Révision = fiches réflexes visuelles</h1>
+<p>Triées par geste, avec pictos, mini schémas et red flags. Objectif : retrouver le bon réflexe sans relire un cours.</p>
 </div>
 <aside class="hero-panel institutional-card">
-<h2>Si je vois ça → je fais ça</h2>
+<h2>Je vois → je fais → j’évite</h2>
 <div class="pi-decision pi-decision--home">
-<article class="pi-branch">
-<strong>Sang abondant</strong>
-<span>Je comprime.</span>
-</article>
-<article class="pi-branch">
-<strong>Ne respire pas</strong>
-<span>J’alerte, je masse, DAE.</span>
-</article>
-<article class="pi-branch">
-<strong>Respire, ne répond pas</strong>
-<span>PLS.</span>
-</article>
-<article class="pi-branch">
-<strong>Ne parle plus</strong>
-<span>Claques puis compressions adaptées.</span>
-</article>
+<article class="pi-branch"><strong>🩸 Sang abondant</strong><span>Je comprime.</span></article>
+<article class="pi-branch"><strong>⚡ Ne respire pas</strong><span>J’alerte, je masse, DAE.</span></article>
+<article class="pi-branch"><strong>🛏️ Respire, ne répond pas</strong><span>PLS.</span></article>
+<article class="pi-branch"><strong>🫁 Ne parle plus</strong><span>Claques puis compressions.</span></article>
 </div>
 </aside>
 </div>
 </section>
+
 <section class="card-action">
 <div class="section-heading">
 <div>
 <p class="badge">Tri rapide</p>
-<h2>Choisir une entrée</h2>
+<h2>Entrées terrain</h2>
 </div>
 </div>
 <div class="quick-links quick-links--spaced quick-links--block">
 <a class="quick-link" href="#tri-geste">Par geste</a>
-<a class="quick-link" href="#tri-urgence">Par urgence</a>
-<a class="quick-link" href="#flash">Fiches flash</a>
-<a class="quick-link" href="../modules/module-5.html">Aller à C5</a>
+<a class="quick-link" href="#tri-urgence">Par niveau d’urgence</a>
+<a class="quick-link" href="#flash">Fiches réflexes</a>
+<a class="quick-link" href="../modules/module-5.html">Retour C5</a>
 </div>
 </section>
-<section id="tri-geste" class="content-grid-two">
-<article class="card-action">
-<p class="badge">Par geste</p>
-<h2>Je cherche un enchaînement</h2>
-<div class="quick-links quick-links--spaced quick-links--block">
-<a class="quick-link quick-link--danger" href="../urgence/hemorragie.html">Comprimer</a>
-<a class="quick-link quick-link--danger" href="../urgence/etouffement.html">Désobstruer</a>
-<a class="quick-link" href="../urgence/inconscience.html">PLS</a>
-<a class="quick-link quick-link--danger" href="../urgence/arret-cardiaque.html">RCP / DAE</a>
-<a class="quick-link" href="../urgence/brulure.html">Refroidir</a>
-<a class="quick-link" href="../urgence/malaise.html">Questionner / surveiller</a>
-</div>
-</article>
-<article id="tri-urgence" class="card-action">
-<p class="badge badge--alert">Par urgence</p>
-<h2>Je cherche une priorité vitale</h2>
-<div class="priority-stack">
-<article class="priority-item priority-item--critical">
-<strong>Urgence vitale</strong>
-<span>Arrêt cardiaque, étouffement total, saignement abondant.</span>
-</article>
-<article class="priority-item priority-item--alert">
-<strong>Urgence grave</strong>
-<span>Inconscience, malaise avec signe grave, brûlure grave.</span>
-</article>
-<article class="priority-item">
-<strong>Surveillance active</strong>
-<span>Plaie simple, traumatisme sans menace vitale immédiate.</span>
-</article>
-</div>
-</article>
+
+<section id="tri-geste" class="pictogram-row">
+<article class="gesture-card panel--info"><span class="pictogram pictogram--blue">🩸</span><strong>Comprimer</strong><span><a href="../urgence/hemorragie.html">Hémorragie</a></span></article>
+<article class="gesture-card panel--warning"><span class="pictogram pictogram--orange">🫁</span><strong>Désobstruer</strong><span><a href="../urgence/etouffement.html">Étouffement</a></span></article>
+<article class="gesture-card panel--info"><span class="pictogram pictogram--blue">🛏️</span><strong>PLS</strong><span><a href="../urgence/inconscience.html">Inconscience</a></span></article>
+<article class="gesture-card panel--critical"><span class="pictogram pictogram--red">⚡</span><strong>Masser / DAE</strong><span><a href="../urgence/arret-cardiaque.html">Arrêt cardiaque</a></span></article>
+<article class="gesture-card panel--warning"><span class="pictogram pictogram--orange">🔥</span><strong>Refroidir</strong><span><a href="../urgence/brulure.html">Brûlure</a></span></article>
+<article class="gesture-card panel--success"><span class="pictogram pictogram--green">📝</span><strong>Tracer</strong><span><a href="../modules/module-8.html">Remontée prévention</a></span></article>
 </section>
+
+<section id="tri-urgence" class="priority-stack">
+<article class="priority-item priority-item--critical"><strong>🔴 Urgence vitale</strong><span>Arrêt cardiaque, étouffement total, saignement abondant.</span></article>
+<article class="priority-item priority-item--alert"><strong>🟠 Urgence grave</strong><span>Inconscience, malaise avec signe grave, brûlure grave.</span></article>
+<article class="priority-item"><strong>🟢 Prévention / suivi</strong><span>Remontée, fiche événement, action corrective après l’intervention.</span></article>
+</section>
+
 <section id="flash" class="review-grid review-grid--dense">
-<article id="saignement" class="review-card review-card--alert">
-<p class="badge badge--alert">Red flag</p>
-<h2>Saignement abondant</h2>
-<p>
-<strong>Je vois :</strong> sang abondant ou jaillissement.</p>
-<p>
-<strong>Je fais :</strong> compression immédiate.</p>
-<p>
-<strong>J’évite :</strong> relâcher la compression.</p>
+<article class="reflex-card reflex-card--critical">
+<strong>🩸 Saignement abondant</strong>
+<p><strong>Je vois :</strong> sang abondant ou jaillissement.</p>
+<p><strong>Je fais :</strong> compression immédiate.</p>
+<p><strong>J’évite :</strong> relâcher la compression.</p>
 <a class="quick-link" href="../urgence/hemorragie.html">Ouvrir la fiche</a>
 </article>
-<article id="etouffement" class="review-card review-card--critical">
-<p class="badge badge--alert">Urgence respiratoire</p>
-<h2>Étouffement</h2>
-<p>
-<strong>Je vois :</strong> ne peut plus parler, tousser ou respirer.</p>
-<p>
-<strong>Je fais :</strong> 5 claques dorsales puis compressions adaptées.</p>
-<p>
-<strong>J’évite :</strong> faire boire.</p>
-<a class="quick-link" href="../urgence/etouffement.html">Ouvrir la fiche</a>
-</article>
-<article id="inconscience" class="review-card">
-<p class="badge">Respiration normale</p>
-<h2>Inconscience</h2>
-<p>
-<strong>Je vois :</strong> ne répond pas mais respire.</p>
-<p>
-<strong>Je fais :</strong> PLS + surveillance.</p>
-<p>
-<strong>J’évite :</strong> laisser sur le dos.</p>
-<a class="quick-link" href="../urgence/inconscience.html">Ouvrir la fiche</a>
-</article>
-<article id="arret" class="review-card review-card--critical">
-<p class="badge badge--alert">Urgence vitale</p>
-<h2>Arrêt cardiaque</h2>
-<p>
-<strong>Je vois :</strong> ne répond pas, ne respire pas normalement.</p>
-<p>
-<strong>Je fais :</strong> alerte, RCP, DAE.</p>
-<p>
-<strong>J’évite :</strong> attendre le DAE avant de masser.</p>
+<article class="reflex-card reflex-card--critical">
+<strong>⚡ Arrêt cardiaque</strong>
+<p><strong>Je vois :</strong> ne répond pas, ne respire pas normalement.</p>
+<p><strong>Je fais :</strong> alerte, massage, DAE.</p>
+<p><strong>J’évite :</strong> attendre le DAE pour commencer.</p>
 <a class="quick-link" href="../urgence/arret-cardiaque.html">Ouvrir la fiche</a>
 </article>
-<article id="brulure" class="review-card">
-<p class="badge">Atteinte thermique / chimique</p>
-<h2>Brûlure</h2>
-<p>
-<strong>Je vois :</strong> douleur, rougeur, cloque ou atteinte grave.</p>
-<p>
-<strong>Je fais :</strong> refroidir et protéger.</p>
-<p>
-<strong>J’évite :</strong> glace, crème, cloque percée.</p>
+<article class="reflex-card reflex-card--warning">
+<strong>🫁 Étouffement</strong>
+<p><strong>Je vois :</strong> ne peut plus parler, tousser ou respirer.</p>
+<p><strong>Je fais :</strong> 5 claques dorsales puis compressions adaptées.</p>
+<p><strong>J’évite :</strong> faire boire.</p>
+<a class="quick-link" href="../urgence/etouffement.html">Ouvrir la fiche</a>
+</article>
+<article class="reflex-card reflex-card--info">
+<strong>🛏️ Inconscience</strong>
+<p><strong>Je vois :</strong> ne répond pas mais respire.</p>
+<p><strong>Je fais :</strong> PLS + surveillance.</p>
+<p><strong>J’évite :</strong> laisser sur le dos.</p>
+<a class="quick-link" href="../urgence/inconscience.html">Ouvrir la fiche</a>
+</article>
+<article class="reflex-card reflex-card--warning">
+<strong>🔥 Brûlure</strong>
+<p><strong>Je vois :</strong> douleur, rougeur, cloque ou atteinte grave.</p>
+<p><strong>Je fais :</strong> refroidir et protéger.</p>
+<p><strong>J’évite :</strong> glace, crème, cloque percée.</p>
 <a class="quick-link" href="../urgence/brulure.html">Ouvrir la fiche</a>
 </article>
-<article id="malaise" class="review-card">
-<p class="badge">Signe grave possible</p>
-<h2>Malaise</h2>
-<p>
-<strong>Je vois :</strong> douleur thoracique, trouble neurologique, gêne respiratoire.</p>
-<p>
-<strong>Je fais :</strong> repos, questionnement bref, appel 15 si signe grave.</p>
-<p>
-<strong>J’évite :</strong> banaliser.</p>
-<a class="quick-link" href="../urgence/malaise.html">Ouvrir la fiche</a>
+<article class="reflex-card reflex-card--success">
+<strong>📝 Remontée prévention</strong>
+<p><strong>Je vois :</strong> accident, presque-accident, situation dangereuse.</p>
+<p><strong>Je fais :</strong> danger → situation → dommage → action.</p>
+<p><strong>J’évite :</strong> transmettre une info floue.</p>
+<a class="quick-link" href="../modules/module-8.html">Ouvrir C8</a>
 </article>
 </section>
 </main>
-<div class="floating-urgence">
-<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-</div>
+<div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
 <footer class="app-footer">
 <button class="btn-secondary" data-nav="prev">Précédent</button>
 <button class="btn-primary" data-nav="hub">Accueil</button>
 <button class="btn-secondary" data-nav="next">Suivant</button>
 <button class="btn-danger" data-nav="urgence">URGENCE</button>
 </footer>
-<script src="../assets/js/navigation.js">
-</script>
-<script src="../assets/js/ui.js">
-</script>
-<script src="../assets/js/app.js">
-</script>
+<script src="../assets/js/navigation.js"></script>
+<script src="../assets/js/ui.js"></script>
+<script src="../assets/js/app.js"></script>
 </body>
 </html>
