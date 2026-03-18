@@ -31,7 +31,7 @@ const NAV_GROUPS = {
   ],
   revision: [
     { label: 'Révision terrain', href: '/revision/index.html' },
-    { label: 'Livret PDF', href: '/tools/livret.html' }
+    { label: 'Livret SST', href: '/tools/livret.html' }
   ],
   urgence: [
     { label: 'Saignement', href: '/urgence/hemorragie.html' },
@@ -42,10 +42,11 @@ const NAV_GROUPS = {
     { label: 'Malaise', href: '/urgence/malaise.html' }
   ],
   formateur: [
-    { label: 'Outils formateur', href: '/tools/ressources-formateur.html' },
+    { label: 'Accueil formateur', href: '/tools/ressources-formateur.html' },
     { label: 'PAP', href: '/tools/pap.html' },
     { label: 'PI', href: '/tools/pi.html' },
-    { label: 'Médiathèque', href: '/tools/videos-inrs.html' }
+    { label: 'Médiathèque', href: '/tools/videos-inrs.html' },
+    { label: 'Livret', href: '/tools/livret.html' }
   ]
 };
 
@@ -71,6 +72,7 @@ const MODULE_CONTEXT = {
     links: [
       { label: 'Saignement', href: '/urgence/hemorragie.html' },
       { label: 'Étouffement', href: '/urgence/etouffement.html' },
+      { label: 'Arrêt cardiaque', href: '/urgence/arret-cardiaque.html' },
       { label: 'Adulte', href: '/modules/module-5.html#variante-adulte' },
       { label: 'Enfant', href: '/modules/module-5.html#variante-enfant' },
       { label: 'Nourrisson', href: '/modules/module-5.html#variante-nourrisson' }
@@ -80,10 +82,18 @@ const MODULE_CONTEXT = {
     title: 'Après le parcours',
     links: [
       { label: 'Révision terrain', href: '/revision/index.html' },
-      { label: 'Outils formateur', href: '/tools/ressources-formateur.html' }
+      { label: 'Aide-mémoire', href: '/tools/livret.html' }
     ]
   }
 };
+
+function getPageType(path) {
+  if (path.includes('/tools/')) return 'tools';
+  if (path.includes('/urgence/')) return 'urgence';
+  if (path.includes('/revision/')) return 'revision';
+  if (path.includes('/modules/')) return 'modules';
+  return 'home';
+}
 
 function isActivePath(href) {
   const current = window.location.pathname.replace(getBasePath(), '');
@@ -101,15 +111,24 @@ function injectGlobalNav() {
   const main = document.querySelector('.app-main');
   if (!main || document.body.classList.contains('home-main')) return;
 
+  const path = window.location.pathname.replace(getBasePath(), '');
+  const type = getPageType(path);
+  const sections = [
+    renderGroup('Formation', NAV_GROUPS.formation),
+    renderGroup('Révision', NAV_GROUPS.revision),
+    renderGroup('Urgence', NAV_GROUPS.urgence)
+  ];
+
+  if (type === 'tools') {
+    sections.unshift(renderGroup('Outils formateur', NAV_GROUPS.formateur));
+  }
+
   const nav = document.createElement('nav');
   nav.className = 'global-nav';
   nav.innerHTML = `
     <details>
-      <summary>Navigation SST</summary>
-      ${renderGroup('Formation', NAV_GROUPS.formation)}
-      ${renderGroup('Révision', NAV_GROUPS.revision)}
-      ${renderGroup('Urgence', NAV_GROUPS.urgence)}
-      ${renderGroup('Formateur', NAV_GROUPS.formateur)}
+      <summary>${type === 'tools' ? 'Navigation formateur' : 'Navigation apprenant'}</summary>
+      ${sections.join('')}
     </details>`;
 
   main.prepend(nav);
@@ -156,15 +175,23 @@ function injectSeeAlso() {
 
   let links = [
     { label: 'Révision terrain', href: '/revision/index.html' },
-    { label: 'Agir en urgence', href: '/urgence/arret-cardiaque.html' },
-    { label: 'Outils formateur', href: '/tools/ressources-formateur.html' }
+    { label: 'Urgence vitale', href: '/urgence/arret-cardiaque.html' },
+    { label: 'Livret SST', href: '/tools/livret.html' }
   ];
 
   if (path.includes('/urgence/')) {
     links = [
       { label: 'C5 — Secourir', href: '/modules/module-5.html' },
       { label: 'Révision terrain', href: '/revision/index.html' },
-      { label: 'Livret PDF', href: '/tools/livret.html' }
+      { label: 'Arrêt cardiaque / DAE', href: '/urgence/dae.html' }
+    ];
+  }
+
+  if (path.includes('/tools/')) {
+    links = [
+      { label: 'Accueil formateur', href: '/tools/ressources-formateur.html' },
+      { label: 'PAP', href: '/tools/pap.html' },
+      { label: 'PI', href: '/tools/pi.html' }
     ];
   }
 

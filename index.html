@@ -8,28 +8,32 @@
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
 </head>
-<body class="app-shell" data-prev="" data-next="/modules/module-c1.html">
+<body class="app-shell home-main" data-prev="" data-next="/modules/module-c1.html">
   <header class="app-header">
     <div class="app-title">SST • Parcours guidé</div>
     <button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
   </header>
 
-  <main class="app-main home-main">
+  <main class="app-main">
     <section class="hero hero-home hero-premium">
       <div class="hero-split hero-split--balanced">
         <div>
-          <p class="hero-kicker">Formation SST</p>
-          <h1>Se former, réviser, agir et animer sans confusion.</h1>
-          <p>Choisissez une entrée claire selon votre besoin immédiat : commencer la formation, réviser vite, agir en urgence ou ouvrir les outils formateur.</p>
+          <p class="hero-kicker">Formation SST professionnelle</p>
+          <h1>Un parcours simple pour protéger, examiner, alerter et secourir.</h1>
+          <p>La plateforme distingue clairement le parcours apprenant, la révision terrain, l’accès urgence et l’espace formateur. L’utilisateur sait immédiatement où il est, quoi faire et où cliquer.</p>
+          <div class="hero-actions hero-actions--start">
+            <a class="btn-primary" href="modules/module-c1.html">Commencer la formation</a>
+            <a class="btn-secondary" href="revision/index.html">Réviser maintenant</a>
+          </div>
         </div>
         <aside class="hero-panel hero-panel--glass">
           <h2>Repère immédiat</h2>
-          <p class="hero-panel__lead">Un stagiaire comprend où commencer en 5 secondes.</p>
+          <p class="hero-panel__lead">Double mission SST : prévenir l’accident et porter secours sans perte de temps.</p>
           <div class="quick-links quick-links--spaced">
-            <a class="quick-link" href="modules/module-c1.html">Étape 1 • C1</a>
+            <a class="quick-link" href="modules/module-c1.html">Parcours apprenant</a>
             <a class="quick-link" href="revision/index.html">Révision terrain</a>
-            <a class="quick-link" href="urgence/arret-cardiaque.html">Urgence vitale</a>
-            <a class="quick-link" href="tools/ressources-formateur.html">Espace formateur</a>
+            <a class="quick-link quick-link--danger" href="urgence/arret-cardiaque.html">Urgence vitale</a>
+            <a class="quick-link" href="tools/ressources-formateur.html">Outils formateur</a>
           </div>
         </aside>
       </div>
@@ -41,14 +45,14 @@
         <div>
           <p class="badge">Parcours apprenant</p>
           <h2>Commencer la formation</h2>
-          <p>Suivre la progression SST complète, étape par étape, de C1 à C6.</p>
+          <p>Suivre la progression SST complète, de l’analyse de situation jusqu’à la prévention dans l’entreprise.</p>
         </div>
         <ul class="list-tight entry-card__list">
-          <li>Étape 1 • C1 Prévention</li>
-          <li>Étape 2 • C2 / C3 Protéger / Examiner</li>
-          <li>Étape 3 • C4 Alerter</li>
-          <li>Étape 4 • C5 Secourir</li>
-          <li>Étape 5 • C6 Prévention dans l'entreprise</li>
+          <li>C1 Prévention : observer, analyser, transmettre.</li>
+          <li>C2 / C3 : protéger puis examiner.</li>
+          <li>C4 : alerter avec un message clair.</li>
+          <li>C5 : secourir selon la bonne situation.</li>
+          <li>C6 : agir sur les risques du travail réel.</li>
         </ul>
         <a class="btn-primary" href="modules/module-c1.html">Démarrer</a>
       </article>
@@ -57,8 +61,8 @@
         <span class="entry-card__number">2</span>
         <div>
           <p class="badge">Révision mobile</p>
-          <h2>Réviser rapidement</h2>
-          <p>Retrouver les gestes clés, les red flags et les conduites à tenir en 2 clics.</p>
+          <h2>Réviser</h2>
+          <p>Retrouver les gestes clés, les red flags et la conduite à tenir en quelques secondes.</p>
         </div>
         <div class="pill-row">
           <span class="pill">Saignement</span>
@@ -75,40 +79,41 @@
         <span class="entry-card__number">3</span>
         <div>
           <p class="badge badge--alert">Situation réelle</p>
-          <h2>Agir en urgence</h2>
-          <p>Accéder directement à la conduite à tenir selon la détresse observée.</p>
+          <h2>Urgence</h2>
+          <p>Accéder directement à la conduite à tenir, avec gestes, erreurs à éviter et adaptation à l’âge.</p>
         </div>
-        <div class="entry-actions-grid">
+        <div class="entry-actions-grid quick-links quick-links--spaced">
           <a class="quick-link quick-link--danger" href="urgence/hemorragie.html">Saignement</a>
           <a class="quick-link quick-link--danger" href="urgence/etouffement.html">Étouffement</a>
           <a class="quick-link quick-link--danger" href="urgence/inconscience.html">Inconscience</a>
           <a class="quick-link quick-link--danger" href="urgence/arret-cardiaque.html">Arrêt cardiaque</a>
           <a class="quick-link quick-link--danger" href="urgence/brulure.html">Brûlure</a>
-          <button class="btn-danger" type="button" onclick="goToUrgence('arret-cardiaque')">⚡ URGENCE</button>
+          <button class="btn-danger" type="button" onclick="goToUrgence('arret-cardiaque')">⚡ Accès urgence</button>
         </div>
       </article>
 
       <article class="entry-card">
         <span class="entry-card__number">4</span>
         <div>
-          <p class="badge">Espace dédié</p>
+          <p class="badge">Espace séparé</p>
           <h2>Outils formateur</h2>
-          <p>Retrouver PAP, PI, livret PDF, fiches pédagogiques, déroulés, ressources INRS et médiathèque.</p>
+          <p>Retrouver PAP, PI, livret, médiathèque, déroulés et documents d’animation dans un espace dédié.</p>
         </div>
         <div class="quick-links quick-links--spaced">
           <a class="quick-link" href="tools/pap.html">PAP</a>
           <a class="quick-link" href="tools/pi.html">PI</a>
-          <a class="quick-link" href="tools/livret.html">Livret PDF</a>
+          <a class="quick-link" href="tools/livret.html">Livret</a>
           <a class="quick-link" href="tools/videos-inrs.html">Médiathèque</a>
         </div>
-        <a class="btn-secondary" href="tools/ressources-formateur.html">Ouvrir les outils</a>
+        <a class="btn-secondary" href="tools/ressources-formateur.html">Ouvrir l’espace formateur</a>
       </article>
     </section>
 
-    <section class="quick-gesture-bar">
+    <section class="quick-gesture-bar" aria-label="Accès rapide gestes">
       <div>
-        <p class="badge">Accès gestes rapides</p>
-        <h2>Besoin d'un geste immédiatement ?</h2>
+        <p class="badge">Accès rapide gestes</p>
+        <h2>Besoin d’un geste immédiatement ?</h2>
+        <p>Choisir directement la situation critique à traiter.</p>
       </div>
       <div class="quick-links quick-links--spaced">
         <a class="quick-link" href="urgence/hemorragie.html">Saignement</a>
@@ -116,7 +121,7 @@
         <a class="quick-link" href="urgence/inconscience.html">Inconscience</a>
         <a class="quick-link" href="urgence/arret-cardiaque.html">Arrêt cardiaque</a>
         <a class="quick-link" href="urgence/brulure.html">Brûlure</a>
-        <a class="quick-link" href="revision/index.html">Révision terrain</a>
+        <a class="quick-link" href="urgence/malaise.html">Malaise</a>
       </div>
     </section>
   </main>
