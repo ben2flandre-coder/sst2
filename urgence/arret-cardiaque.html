@@ -8,84 +8,40 @@
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
 </head>
-<body class="app-shell" data-prev="/urgence/inconscience.html" data-next="/urgence/dae.html">
-  <header class="app-header">
-    <div class="app-title">SST • Plateforme App</div>
-    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
-  </header>
+<body class="app-shell" data-prev="/index.html" data-next="/revision/index.html">
+  <header class="app-header"><div class="app-title">SST • Agir en urgence</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
   <main class="app-main">
     <section class="hero hero-premium hero-premium--critical">
       <div class="premium-header">
-        <span class="icon-badge icon-badge--critical" aria-hidden="true">🫀</span>
+        <span class="icon-badge icon-badge--critical" aria-hidden="true">⚡</span>
         <div>
-          <p class="hero-kicker">Urgence vitale</p>
-          <h1>⚡ Arrêt cardiaque</h1>
-          <p>Mode urgence : identification rapide, appel immédiat, RCP continue, DAE dès qu'il arrive.</p>
+          <p class="hero-kicker">Agir en urgence</p>
+          <h1>Arrêt cardiaque</h1>
+          <p>RCP immédiate et DAE dès qu'il arrive.</p>
         </div>
       </div>
     </section>
 
-    <nav class="anchor-nav" aria-label="Sous-navigation arrêt cardiaque">
-      <a class="quick-link" href="#actions">Actions immédiates</a>
-      <a class="quick-link" href="#variantes">Variantes d'âge</a>
-      <a class="quick-link" href="#videos">Ressources</a>
-    </nav>
+    <section class="urgent-grid">
+      <article class="urgence-step urgence-step--strong"><h3>Reconnaître</h3><p>Ne répond pas, ne respire pas ou respiration anormale.</p></article>
+      <article class="urgence-step urgence-step--strong"><h3>Alerter</h3><p>Faire appeler le 15 / 112 et demander le DAE.</p></article>
+      <article class="urgence-step urgence-step--strong"><h3>Masser</h3><p>Commencer les compressions thoraciques sans attendre.</p></article>
+      <article class="urgence-step urgence-step--strong"><h3>Défibriller</h3><p>Allumer le DAE, suivre les consignes, reprendre aussitôt la RCP.</p></article>
+    </section>
 
-    <section id="actions" class="urgent-grid">
-      <article class="urgence-step urgence-step--strong"><h3>Étape 1 — Reconnaître</h3><p>La victime ne répond pas et ne respire pas normalement : considérer l'arrêt cardiaque.</p></article>
-      <article class="urgence-step urgence-step--strong"><h3>Étape 2 — Faire alerter</h3><p>Demander immédiatement le <strong>15</strong> ou le <strong>112</strong> et faire apporter le <strong>DAE</strong>.</p></article>
-      <article class="urgence-step urgence-step--strong"><h3>Étape 3 — Masser</h3><p>Commencer sans attendre les compressions thoraciques, 30/2 si formé, sinon compressions seules.</p></article>
-      <article class="urgence-step urgence-step--strong"><h3>Étape 4 — Défibriller</h3><p>Allumer le DAE, suivre ses consignes, s'écarter pendant l'analyse et reprendre immédiatement la RCP.</p></article>
+    <section class="audience-panels">
+      <article class="card" id="variante-adulte"><h2>Adulte</h2><p>Compressons standard et DAE dès disponibilité.</p></article>
+      <article class="card" id="variante-enfant"><h2>Enfant</h2><p>Gestes adaptés à la morphologie, électrodes pédiatriques si disponibles.</p></article>
+      <article class="card" id="variante-nourrisson"><h2>Nourrisson</h2><p>Technique spécifique, compressions adaptées et alerte rapide.</p></article>
     </section>
 
     <section class="grid two">
-      <article id="variantes" class="card objective-card">
-        <h3>Variantes adulte / enfant / nourrisson</h3>
-        <ul class="list-tight">
-          <li><strong>Adulte :</strong> profondeur et rythme standard, DAE dès disponibilité.</li>
-          <li><strong>Enfant :</strong> compression adaptée à la taille, électrodes pédiatriques si disponibles.</li>
-          <li><strong>Nourrisson :</strong> technique spécifique, priorité à l'alerte médicalisée et à la continuité des compressions adaptées.</li>
-        </ul>
-      </article>
-      <article class="red-flag">
-        <h3>Red flags / erreurs à éviter</h3>
-        <ul>
-          <li>Interrompre trop longtemps les compressions.</li>
-          <li>Perdre du temps à vérifier un pouls.</li>
-          <li>Attendre le DAE avant de commencer la RCP.</li>
-          <li>Toucher la victime pendant l'analyse.</li>
-        </ul>
-      </article>
+      <a class="btn-primary" href="../modules/module-5.html">Retour C5</a>
+      <a class="btn-secondary" href="../revision/index.html">Révision rapide</a>
     </section>
-
-    <section id="videos" class="card-action media-callout">
-      <div class="section-heading">
-        <div>
-          <h2>Ressources et démonstrations utiles</h2>
-          <p>Compléter le geste avec les assets locaux déjà présents dans le dépôt : PI source, livret et outil Staying Alive.</p>
-        </div>
-        <span class="badge">Assets locaux</span>
-      </div>
-      <div class="resource-grid">
-        <a class="resource-card" href="../modules/module-5.html#source-pi"><strong>PI SST — source locale</strong><span>Lecture directe de l'arborescence PI depuis le dépôt.</span></a>
-        <a class="resource-card" href="../tools/livret.html"><strong>Livret terrain local</strong><span>Aperçu et téléchargement du livret SST déjà embarqué.</span></a>
-        <a class="resource-card" href="../tools/staying-alive.html"><strong>Staying Alive</strong><span>App DAE et citoyens secouristes à activer pendant l'alerte.</span></a>
-      </div>
-    </section>
-
-    <div class="grid two"><button class="btn-primary" type="button" onclick="goHome()">Retour HUB</button><a class="btn-secondary" href="../modules/module-5.html#situations">Retour à la fiche geste</a></div>
   </main>
-  <div class="floating-urgence">
-    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-  </div>
-  <footer class="app-footer">
-    <button class="btn-secondary" data-nav="prev">Précédent</button>
-    <button class="btn-primary" data-nav="hub">HUB</button>
-    <button class="btn-secondary" data-nav="next">Suivant</button>
-    <button class="btn-danger" data-nav="urgence">URGENCE</button>
-  </footer>
-  <script src="../assets/js/navigation.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <script src="../assets/js/app.js"></script>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
 </body>
 </html>
