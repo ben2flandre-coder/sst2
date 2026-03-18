@@ -13,61 +13,68 @@
 <div class="app-title">SST • Mode urgence</div>
 <button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
 </header>
-<main class="app-main">
+<main class="app-main app-main--compact">
 <section class="hero hero-premium hero-premium--critical">
-<div class="hero-split hero-split--balanced">
-<div>
-<p class="hero-kicker">Mode réel</p>
-<h1>Urgence terrain : gros boutons, geste vital direct</h1>
-<p>Choisissez la situation observée. Les accès les plus critiques sont placés en premier et en rouge.</p>
-</div>
-<aside class="hero-panel">
-<div class="field-mini-flow">
-<article class="field-cue panel--danger"><strong>1. Protéger</strong><span>éviter le sur-accident.</span></article>
-<article class="field-cue panel--warning"><strong>2. Examiner</strong><span>repérer le signe majeur.</span></article>
-<article class="field-cue panel--info"><strong>3. Alerter</strong><span>désigner un témoin.</span></article>
-<article class="field-cue panel--success"><strong>4. Secourir</strong><span>geste immédiat.</span></article>
-</div>
-</aside>
-</div>
+  <div class="hero-split hero-split--balanced">
+    <div>
+      <p class="hero-kicker">Mode terrain immédiat</p>
+      <h1>Choisir la situation observée et ouvrir directement la conduite à tenir.</h1>
+      <p>Les gestes vitaux sont placés en premier. Toutes les tuiles sont entièrement cliquables, lisibles et accessibles au clavier.</p>
+    </div>
+    <aside class="hero-panel hero-panel--legend">
+      <div class="field-mini-flow field-mini-flow--compact">
+        <article class="field-cue panel--danger"><strong>1. Protéger</strong><span>éviter le sur-accident.</span></article>
+        <article class="field-cue panel--warning"><strong>2. Examiner</strong><span>lire le signe majeur.</span></article>
+        <article class="field-cue panel--info"><strong>3. Alerter</strong><span>missionner un témoin.</span></article>
+        <article class="field-cue panel--success"><strong>4. Secourir</strong><span>agir sans attendre.</span></article>
+      </div>
+    </aside>
+  </div>
 </section>
 
-<section class="emergency-wall">
-<a class="emergency-button emergency-button--critical" href="arret-cardiaque.html"><span class="emergency-button__icon">⚡</span><span><strong>Arrêt cardiaque</strong>Massage immédiat + DAE.</span></a>
-<a class="emergency-button emergency-button--critical" href="hemorragie.html"><span class="emergency-button__icon">🩸</span><span><strong>Saignement abondant</strong>Compression immédiate.</span></a>
-<a class="emergency-button emergency-button--warning" href="etouffement.html"><span class="emergency-button__icon">🫁</span><span><strong>Étouffement</strong>Claques dorsales puis compressions.</span></a>
-<a class="emergency-button emergency-button--info" href="inconscience.html"><span class="emergency-button__icon">🛏️</span><span><strong>Inconscience</strong>PLS et surveillance.</span></a>
-<a class="emergency-button emergency-button--warning" href="malaise.html"><span class="emergency-button__icon">🫀</span><span><strong>Malaise</strong>Repos, signe grave, appel 15.</span></a>
-<a class="emergency-button emergency-button--warning" href="brulure.html"><span class="emergency-button__icon">🔥</span><span><strong>Brûlure</strong>Refroidir rapidement, protéger.</span></a>
+<section class="card-action stack-section">
+  <div class="section-heading section-heading--spread">
+    <div>
+      <p class="badge badge--alert">Accès directs</p>
+      <h2>Situations d’urgence terrain</h2>
+    </div>
+  </div>
+  <div class="tile-grid tile-grid--emergency tile-grid--wide">
+    <a class="action-tile action-tile--danger" href="arret-cardiaque.html"><span class="tile-icon tile-icon--danger">AC</span><div><strong>Arrêt cardiaque</strong><span>Massage immédiat + DAE.</span></div></a>
+    <a class="action-tile action-tile--danger" href="hemorragie.html"><span class="tile-icon tile-icon--danger">HE</span><div><strong>Saignement abondant</strong><span>Compression immédiate.</span></div></a>
+    <a class="action-tile action-tile--warning" href="etouffement.html"><span class="tile-icon tile-icon--warning">ET</span><div><strong>Étouffement</strong><span>Claques dorsales puis compressions.</span></div></a>
+    <a class="action-tile action-tile--info" href="inconscience.html"><span class="tile-icon tile-icon--info">IN</span><div><strong>Inconscience</strong><span>PLS et surveillance.</span></div></a>
+    <a class="action-tile action-tile--warning" href="malaise.html"><span class="tile-icon tile-icon--warning">MA</span><div><strong>Malaise</strong><span>Repos, surveillance, appel adapté.</span></div></a>
+    <a class="action-tile action-tile--warning" href="brulure.html"><span class="tile-icon tile-icon--warning">BR</span><div><strong>Brûlure</strong><span>Refroidir et protéger.</span></div></a>
+  </div>
 </section>
 
-<section class="content-grid-two">
-<article class="card-action">
-<p class="badge badge--alert">Accès direct gestes vitaux</p>
-<h2>Lecture en 3 secondes</h2>
-<div class="alert-lane">
-<article class="alert-card alert-card--danger"><strong>Ne respire pas</strong><span>RCP / DAE.</span></article>
-<article class="alert-card alert-card--danger"><strong>Sang abondant</strong><span>Compression.</span></article>
-<article class="alert-card alert-card--warning"><strong>Ne parle plus</strong><span>Désobstruction.</span></article>
-<article class="alert-card alert-card--info"><strong>Respire, ne répond pas</strong><span>PLS.</span></article>
-</div>
-</article>
-<article class="red-flag">
-<h2>À éviter</h2>
-<ul class="list-tight">
-<li>Perdre du temps dans un menu catalogue.</li>
-<li>Lire un bloc long au lieu d’ouvrir la fiche utile.</li>
-<li>Attendre seul sans missionner un témoin.</li>
-</ul>
-</article>
+<section class="content-grid-two content-grid-two--stack">
+  <article class="card-action stack-section">
+    <p class="badge badge--alert">Lecture rapide</p>
+    <div class="tile-grid tile-grid--signals">
+      <article class="signal-card signal-card--danger"><strong>Ne respire pas</strong><span>RCP / DAE.</span></article>
+      <article class="signal-card signal-card--danger"><strong>Sang abondant</strong><span>Compression.</span></article>
+      <article class="signal-card signal-card--warning"><strong>Ne parle plus</strong><span>Désobstruction.</span></article>
+      <article class="signal-card signal-card--info"><strong>Respire, ne répond pas</strong><span>PLS.</span></article>
+    </div>
+  </article>
+  <article class="red-flag red-flag--full">
+    <h2>À éviter</h2>
+    <ul class="list-tight">
+      <li>Perdre du temps dans des écrans non utiles.</li>
+      <li>Lire un long texte au lieu d’ouvrir la fiche terrain.</li>
+      <li>Rester seul sans désigner de témoin pour alerter.</li>
+    </ul>
+  </article>
 </section>
 </main>
-<div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+<div class="floating-urgence"><button class="btn-danger" data-nav="urgence">Urgence</button></div>
 <footer class="app-footer">
 <button class="btn-secondary" data-nav="prev">Précédent</button>
 <button class="btn-primary" data-nav="hub">Accueil</button>
 <button class="btn-secondary" data-nav="next">Suivant</button>
-<button class="btn-danger" data-nav="urgence">URGENCE</button>
+<button class="btn-danger" data-nav="urgence">Urgence</button>
 </footer>
 <script src="../assets/js/navigation.js"></script>
 <script src="../assets/js/ui.js"></script>
