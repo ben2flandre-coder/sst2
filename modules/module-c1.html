@@ -3,101 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module C1 - Rôle du SST</title>
+  <title>Étape 1 • C1 Prévention</title>
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
-  <style>
-    .c1-section { margin-bottom: 1rem; }
-    .next-block { margin-top: 0.7rem; display: none; }
-    .next-block.active { display: block; animation: fadeIn .45s ease; }
-    .mental-check { margin-top: 0.6rem; color: #0f766e; font-weight: 600; display: none; }
-    .mental-check.active { display: block; }
-    .sst-flow { display: grid; gap: 0.7rem; }
-    .flow-item { border: 1px solid #cbd5e1; border-radius: 12px; padding: 0.9rem; background: #fff; text-align: left; width: 100%; cursor: pointer; }
-    .flow-arrow { text-align: center; font-weight: 700; color: #64748b; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; transform: translateY(0);} }
-  </style>
 </head>
-<body class="app-shell" data-prev="/modules/module-0.html" data-next="/modules/module-6.html">
-  <header class="app-header">
-    <div class="app-title">SST • Plateforme App</div>
-    <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
-  </header>
+<body class="app-shell" data-prev="/index.html" data-next="/modules/module-2.html">
+  <header class="app-header"><div class="app-title">SST • Parcours apprenant</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
   <main class="app-main">
-    <section class="hero">
-      <h1>C1 — Le rôle du SST dans l'entreprise</h1>
-      <p>Le SST agit dans l'urgence, mais aussi dans l'organisation quotidienne de la prévention.</p>
+    <section class="progress-hero card-action">
+      <div>
+        <p class="hero-kicker">Étape 1 sur 5</p>
+        <h1>C1 — Prévention : observer et analyser</h1>
+        <p>Commencez ici. Le rôle du SST est d'observer le travail réel, repérer les dangers et préparer une action utile.</p>
+      </div>
+      <div class="progress-meta">
+        <strong>Progression</strong>
+        <div class="step-progress" aria-label="Progression de la formation">
+          <span class="is-active">1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        </div>
+        <p>Prochaine étape : protéger puis examiner.</p>
+      </div>
     </section>
 
-    <h2 class="section-title">A. Rôle du SST</h2>
-    <div class="grid c1-section">
-      <article class="card"><h3>Secourir</h3><p>Intervenir immédiatement pour préserver la victime en appliquant les conduites SST.</p></article>
-      <article class="card"><h3>Prévenir</h3><p>Repérer les situations dangereuses et proposer des améliorations concrètes.</p></article>
-      <article class="card"><h3>Agir dans l'organisation</h3><p>Relayer les informations utiles au manager, au référent sécurité et à l'équipe.</p></article>
-    </div>
-    <button class="btn-secondary section-trigger" data-target="c1-next-1">Et maintenant ?</button>
-    <div class="next-block" id="c1-next-1"><p>Ton rôle n'est pas isolé : tu relies le terrain, l'alerte et l'organisation de l'entreprise.</p></div>
-    <p class="mental-check" id="c1-check-1">✔ Validation mentale : je sais où commence et où continue ma mission SST.</p>
+    <section class="learning-grid">
+      <article class="card objective-card">
+        <h2>Objectif</h2>
+        <p>Observer une situation de travail, comprendre ce qui expose au danger et formuler un signalement simple.</p>
+      </article>
+      <article class="card">
+        <h2>À retenir</h2>
+        <ul class="list-tight">
+          <li>Je regarde l'environnement avant la victime.</li>
+          <li>Je repère la source du risque et le mécanisme de l'accident.</li>
+          <li>Je transmets un fait utile, court et concret.</li>
+        </ul>
+      </article>
+    </section>
 
-    <h2 class="section-title">B. Double mission</h2>
-    <div class="grid two c1-section">
-      <article class="card-action"><h3>Mission secours</h3><p>Gérer la situation immédiate, protéger, examiner, alerter et secourir sans délai.</p></article>
-      <article class="card-action"><h3>Mission prévention</h3><p>Après l'événement, contribuer à l'analyse pour éviter qu'un accident similaire se reproduise.</p></article>
-    </div>
-    <button class="btn-secondary section-trigger" data-target="c1-next-2">Et maintenant ?</button>
-    <div class="next-block" id="c1-next-2"><p>Un bon SST pense déjà à l'après-intervention : ce qui doit changer dans le travail réel.</p></div>
-    <p class="mental-check" id="c1-check-2">✔ Validation mentale : je combine réflexe d'urgence et culture prévention.</p>
+    <section class="step-sequence">
+      <article class="step-card"><strong>1. Observer</strong><span>Lieu, matériel, circulation, énergie, produits, posture, gestes.</span></article>
+      <article class="step-card"><strong>2. Analyser</strong><span>Qu'est-ce qui peut blesser ? Qui est exposé ? Qu'est-ce qui aggrave ?</span></article>
+      <article class="step-card"><strong>3. Agir</strong><span>Supprimer si possible le danger simple ou sécuriser la zone.</span></article>
+      <article class="step-card"><strong>4. Transmettre</strong><span>Décrire clairement la situation à la bonne personne.</span></article>
+    </section>
 
-    <h2 class="section-title">C. Cadre entreprise</h2>
-    <div class="grid c1-section">
-      <article class="card"><h3>Organisation des secours</h3><p>Identifier les moyens disponibles : matériel, plan d'intervention, relais internes.</p></article>
-      <article class="card"><h3>Alerte interne</h3><p>Prévenir rapidement les bonnes personnes (encadrement, sécurité, collègues ressources).</p></article>
-      <article class="card"><h3>Alerte externe</h3><p>Contacter les secours publics avec un message précis : lieu, situation, risques, état victime.</p></article>
-    </div>
-    <button class="btn-secondary section-trigger" data-target="c1-next-3">Et maintenant ?</button>
-    <div class="next-block" id="c1-next-3"><p>Tu t'intègres à une chaîne d'action collective : chaque alerte bien faite fait gagner des minutes vitales.</p></div>
-    <p class="mental-check" id="c1-check-3">✔ Validation mentale : je sais activer l'alerte interne puis externe sans hésiter.</p>
+    <section class="grid two">
+      <article class="card">
+        <h2>Exemple concret</h2>
+        <p>Un carton gêne le passage près d'un chariot. Le risque est la collision ou la chute. L'action immédiate est de dégager l'accès et de signaler l'encombrement répété.</p>
+      </article>
+      <article class="red-flag">
+        <h2>Erreurs fréquentes</h2>
+        <ul>
+          <li>Regarder seulement la victime sans lire la situation.</li>
+          <li>Décrire un danger de façon vague.</li>
+          <li>Attendre la fin de journée pour transmettre.</li>
+        </ul>
+      </article>
+    </section>
 
-    <h2 class="section-title">LOGIQUE SST</h2>
-    <div class="sst-flow">
-      <button class="flow-item" title="Repérer la source du risque avant toute action."><strong>DANGER</strong></button>
-      <div class="flow-arrow">↓</div>
-      <button class="flow-item" title="Mettre en sécurité la zone et les personnes exposées."><strong>PROTÉGER</strong></button>
-      <div class="flow-arrow">↓</div>
-      <button class="flow-item" title="Analyser rapidement l'état de la victime."><strong>EXAMINER</strong></button>
-      <div class="flow-arrow">↓</div>
-      <button class="flow-item" title="Transmettre une alerte claire et exploitable."><strong>ALERTER</strong></button>
-      <div class="flow-arrow">↓</div>
-      <button class="flow-item" title="Réaliser le geste adapté à la détresse constatée."><strong>SECOURIR</strong></button>
-    </div>
-
-    <div class="grid two" style="margin-top:1rem;">
-      <a class="btn-primary" href="module-6.html">Continuer vers C6</a>
-      <button class="btn-danger" onclick="goToUrgence('arret-cardiaque')">Mode urgence</button>
-    </div>
+    <section class="module-callout card-action">
+      <div>
+        <h2>Cap sur l'étape 2</h2>
+        <p>Une fois le danger compris, le SST doit protéger sans s'exposer puis examiner la victime.</p>
+      </div>
+      <a class="btn-primary" href="module-2.html">Suivant : C2 / C3</a>
+    </section>
   </main>
-  <div class="floating-urgence">
-    <button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
-  </div>
-  <footer class="app-footer">
-    <button class="btn-secondary" data-nav="prev">Précédent</button>
-    <button class="btn-primary" data-nav="hub">HUB</button>
-    <button class="btn-secondary" data-nav="next">Suivant</button>
-    <button class="btn-danger" data-nav="urgence">URGENCE</button>
-  </footer>
-  <script src="../assets/js/navigation.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <script src="../assets/js/app.js"></script>
-  <script>
-    document.querySelectorAll('.section-trigger').forEach((btn, idx) => {
-      btn.addEventListener('click', () => {
-        const block = document.getElementById(btn.dataset.target);
-        const check = document.getElementById(`c1-check-${idx + 1}`);
-        if (block) block.classList.toggle('active');
-        if (check) check.classList.toggle('active');
-      });
-    });
-  </script>
+  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
+  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
+  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
 </body>
 </html>
