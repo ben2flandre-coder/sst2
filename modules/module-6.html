@@ -14,12 +14,140 @@
     <button class="btn-secondary hub-btn" data-nav="hub">HUB</button>
   </header>
   <main class="app-main">
-    <section class="hero">
-      <h1>C6 — Repérer</h1>
-      <p>Mode terrain : tu observes, tu analyses vite, tu agis et tu transmets. Ici, chaque décision compte.</p>
+    <section class="hero hero-premium">
+      <div class="hero-split">
+        <div>
+          <p class="hero-kicker">Compétence C6</p>
+          <h1>C6 — Repérer et structurer l'observation terrain</h1>
+          <p>Le PAP relie l'observation à l'action : danger, situation dangereuse, événement déclencheur, dommage, prévention et transmission.</p>
+        </div>
+        <aside class="hero-panel institutional-card">
+          <h2>Repère méthode</h2>
+          <div class="risk-chain">
+            <span class="risk-step">Danger</span>
+            <span class="schema-arrow">→</span>
+            <span class="risk-step">Situation dangereuse</span>
+            <span class="schema-arrow">→</span>
+            <span class="risk-step">Événement déclencheur</span>
+            <span class="schema-arrow">→</span>
+            <span class="risk-step">Dommage</span>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <section class="card-action">
+    <nav class="anchor-nav" aria-label="Sous-navigation C6">
+      <a class="quick-link" href="#pap-vue">PAP visuel</a>
+      <a class="quick-link" href="#lecture-metier">Exemples métiers</a>
+      <a class="quick-link" href="#transmission">Transmission</a>
+      <a class="quick-link" href="#simulateur">Simulateur</a>
+    </nav>
+
+    <section class="card-action source-doc-card">
+      <div class="section-heading">
+        <div>
+          <h2>Source PAP intégrée</h2>
+          <p>Le module embarque désormais un document source local dédié dans <code>assets/docs/PAP_SST.html</code>.</p>
+        </div>
+        <a class="btn-secondary doc-toolbar__link" href="../assets/docs/PAP_SST.html" target="_blank" rel="noopener">Ouvrir la source PAP</a>
+      </div>
+      <div class="source-frame">
+        <iframe title="Source PAP SST" src="../assets/docs/PAP_SST.html"></iframe>
+      </div>
+    </section>
+
+    <section id="pap-vue" class="card-action" data-pap>
+      <div class="section-heading">
+        <div>
+          <h2>PAP SST — lecture progressive</h2>
+          <p>Cliquer sur chaque étape pour retrouver le bon niveau d'analyse et le bon vocabulaire de transmission.</p>
+        </div>
+        <span class="badge">PAP</span>
+      </div>
+      <div class="pap-steps" role="tablist" aria-label="Étapes du PAP">
+        <button class="pap-step is-active" type="button" role="tab" aria-selected="true" data-pap-step="situation">Observation</button>
+        <span class="pap-arrow">→</span>
+        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="danger">Danger</button>
+        <span class="pap-arrow">→</span>
+        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="risque">Situation / événement</button>
+        <span class="pap-arrow">→</span>
+        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="dommage">Dommage</button>
+        <span class="pap-arrow">→</span>
+        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="action">Action de prévention</button>
+        <span class="pap-arrow">→</span>
+        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="transmission">Transmission</button>
+      </div>
+      <article class="card pap-detail-box">
+        <h3 data-pap-title>Situation</h3>
+        <p data-pap-text>Décrire le contexte réel : lieu, tâche, personne, moment. Sans interprétation.</p>
+      </article>
+      <div class="digital-board">
+        <article class="board-column">
+          <h3>Observer</h3>
+          <p>Ce que je vois réellement sur le poste, sans juger.</p>
+        </article>
+        <article class="board-column">
+          <h3>Comprendre</h3>
+          <p>Ce qui expose la personne : danger, zone dangereuse, événement déclencheur.</p>
+        </article>
+        <article class="board-column board-column-highlight">
+          <h3>Agir</h3>
+          <p>Supprimer ou réduire l'exposition avec une mesure réalisable.</p>
+        </article>
+        <article class="board-column">
+          <h3>Transmettre</h3>
+          <p>Faire remonter un fait clair, utile, traçable et orienté prévention.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="lecture-metier" class="scenario-grid">
+      <article class="scenario-card">
+        <h3>Exemple métier — atelier</h3>
+        <p><strong>Observation :</strong> opérateur main proche d'une zone de coupe capot ouvert.</p>
+        <p><strong>Danger :</strong> organes en mouvement.</p>
+        <p><strong>Situation dangereuse :</strong> accès possible à la zone de coupe pendant le redémarrage.</p>
+        <p><strong>Événement déclencheur :</strong> relance machine pour dégager un bourrage.</p>
+        <p><strong>Dommage :</strong> coupure grave / amputation.</p>
+        <p><strong>Action :</strong> arrêt, consignation, fermeture, rappel procédure.</p>
+      </article>
+      <article class="scenario-card">
+        <h3>Exemple métier — logistique</h3>
+        <p><strong>Observation :</strong> palette haute instable sur quai humide.</p>
+        <p><strong>Danger :</strong> charge instable + sol glissant.</p>
+        <p><strong>Situation dangereuse :</strong> manœuvre cariste avec visibilité réduite.</p>
+        <p><strong>Événement déclencheur :</strong> recul + désaxage de palette.</p>
+        <p><strong>Dommage :</strong> écrasement pied / fracture / chute.</p>
+        <p><strong>Action :</strong> baliser, assécher, stabiliser, reprogrammer le flux.</p>
+      </article>
+      <article class="scenario-card">
+        <h3>Exemple métier — bureau / accueil</h3>
+        <p><strong>Observation :</strong> câble et cartons sur l'allée d'évacuation.</p>
+        <p><strong>Danger :</strong> obstacle bas sur axe de marche.</p>
+        <p><strong>Situation dangereuse :</strong> circulation maintenue pendant la fermeture.</p>
+        <p><strong>Événement déclencheur :</strong> déplacement d'un collègue inattentif.</p>
+        <p><strong>Dommage :</strong> trébuchement, entorse, choc crânien.</p>
+        <p><strong>Action :</strong> dégager, sécuriser, rappeler la règle et tracer.</p>
+      </article>
+    </section>
+
+    <section id="transmission" class="grid two">
+      <article class="card objective-card">
+        <h3>Transmission utile</h3>
+        <p>Structure courte : <strong>fait observé → danger / exposition → dommage possible → action déjà prise → besoin de relais</strong>.</p>
+        <p class="mechanic-example">Exemple : « Quai 2 : palette instable sur sol humide, risque de chute de charge et d'écrasement. Zone balisée, besoin d'assèchement et de reprise de stockage. »</p>
+      </article>
+      <article class="red-flag">
+        <h3>À éviter</h3>
+        <ul>
+          <li>Messages vagues : « Faites attention ».</li>
+          <li>Se limiter au dommage sans décrire l'exposition.</li>
+          <li>Attendre la réunion hebdomadaire pour une situation encore active.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="simulateur" class="card-action">
       <h2>Simulator SST C6</h2>
       <p>Démarre un cas et passe obligatoirement par le PAP : <strong>observer → analyser → agir → transmettre</strong>.</p>
       <p class="sim-progress-text" data-sim-global-progress>C6 : 0/2 cas validés.</p>
@@ -44,6 +172,7 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/pap.js"></script>
   <script src="../assets/js/c678.js"></script>
 </body>
 </html>

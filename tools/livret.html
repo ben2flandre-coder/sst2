@@ -11,23 +11,101 @@
 <body class="app-shell" data-prev="/revision/index.html" data-next="/tools/staying-alive.html">
   <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
   <main class="app-main">
-    <section class="hero"><h1>Aide-mémoire SST (outil terrain)</h1><p>Version opérationnelle avec téléchargement PDF, impression immédiate et ancrages rapides.</p></section>
+    <section class="hero hero-premium">
+      <div class="hero-split">
+        <div>
+          <p class="hero-kicker">Outil terrain</p>
+          <h1>Livret SST imprimable</h1>
+          <p>Page dédiée au téléchargement, à l'impression et à l'accès ultra-rapide aux séquences critiques du livret aide-mémoire SST.</p>
+        </div>
+        <aside class="hero-panel institutional-card">
+          <h2>Accès directs</h2>
+          <div class="quick-links quick-links--spaced">
+            <a class="quick-link" href="#alerte">Alerte</a>
+            <a class="quick-link" href="#saignement">Saignement abondant</a>
+            <a class="quick-link" href="#inconscience">Inconscience</a>
+            <a class="quick-link" href="#arret">Arrêt cardiaque</a>
+            <a class="quick-link" href="#brulure">Brûlure</a>
+            <a class="quick-link" href="#etouffement">Étouffement</a>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-    <article class="card-action">
-      <h2>Téléchargement et impression</h2>
-      <div class="grid two"><a class="btn-primary" href="https://www.inrs.fr/dms/inrs/CataloguePapier/ED/TI-ED-4085/ed4085.pdf" target="_blank" rel="noopener">📄 Télécharger le PDF INRS</a><button class="btn-secondary" type="button" onclick="window.print()">🖨️ Imprimer</button></div>
-      <p><strong>Objectif :</strong> disposer d'un support stable en salle et en poste de travail pour homogénéiser les messages SST.</p>
-    </article>
+    <section class="card-action">
+      <div class="section-heading">
+        <div>
+          <h2>Téléchargement et impression</h2>
+          <p>Accéder au PDF de référence puis lancer une impression papier sans quitter la plateforme.</p>
+        </div>
+        <span class="badge">Livret</span>
+      </div>
+      <div class="grid two">
+        <a class="btn-primary" href="../assets/docs/livret-sst.pdf" target="_blank" rel="noopener">📄 Télécharger le PDF</a>
+        <button class="btn-secondary" type="button" data-print-page>🖨️ Imprimer</button>
+      </div>
+      <p class="helper-text">Si l'aperçu intégré ne se charge pas selon le navigateur, utilisez le bouton de téléchargement pour ouvrir le PDF dans un nouvel onglet.</p>
+    </section>
 
-    <h2 class="section-title">Sommaire cliquable</h2>
-    <nav class="tool-nav"><a class="btn-secondary" href="#alerte">Alerte</a><a class="btn-secondary" href="#saignement">Saignement</a><a class="btn-secondary" href="#inconscience">Inconscience</a><a class="btn-secondary" href="#arret">Arrêt cardiaque</a><a class="btn-secondary" href="#brulure">Brûlure</a><a class="btn-secondary" href="#etouffement">Étouffement</a></nav>
+    <section class="card-action">
+      <div class="section-heading">
+        <div>
+          <h2>Sommaire cliquable</h2>
+          <p>Accès rapides vers les situations demandées en formation et en révision.</p>
+        </div>
+        <span class="badge">Sommaire</span>
+      </div>
+      <nav class="tool-nav">
+        <a class="btn-secondary" href="#alerte">Alerte</a>
+        <a class="btn-secondary" href="#saignement">Saignement abondant</a>
+        <a class="btn-secondary" href="#inconscience">Inconscience</a>
+        <a class="btn-secondary" href="#arret">Arrêt cardiaque</a>
+        <a class="btn-secondary" href="#brulure">Brûlure</a>
+        <a class="btn-secondary" href="#etouffement">Étouffement</a>
+      </nav>
+    </section>
 
-    <section id="alerte" class="card"><h3>Alerte</h3><p>15 / 18 / 112 / 114 selon contexte.</p><p><strong>Extrait :</strong> « Où ? Quoi ? Combien ? Risque persistant ? Gestes engagés ? »</p></section>
-    <section id="saignement" class="card"><h3>Saignement abondant</h3><p>Compression immédiate, allonger, alerter, surveiller.</p><p><strong>Extrait :</strong> priorité absolue à l'arrêt de la perte sanguine.</p></section>
-    <section id="inconscience" class="card"><h3>Inconscience</h3><p>Victime inconsciente qui respire : PLS + surveillance continue.</p><p><strong>Extrait :</strong> réévaluer la respiration régulièrement.</p></section>
-    <section id="arret" class="card"><h3>Arrêt cardiaque</h3><p>Victime inconsciente qui ne respire pas : RCP + DAE.</p><p><strong>Extrait :</strong> interruptions de compressions minimales.</p></section>
-    <section id="brulure" class="card"><h3>Brûlure</h3><p>Refroidir 15 à 20 min, protéger ensuite, alerter si grave.</p><p><strong>Extrait :</strong> ne pas appliquer de corps gras.</p></section>
-    <section id="etouffement" class="card"><h3>Étouffement</h3><p>Toux inefficace : claques dorsales puis compressions adaptées.</p><p><strong>Extrait :</strong> enchaîner jusqu'à désobstruction ou inconscience.</p></section>
+    <section class="pdf-preview card-action">
+      <div class="section-heading">
+        <div>
+          <h2>Aperçu intégré du PDF</h2>
+          <p>Lecture embarquée du support printable pour consultation rapide en salle ou sur poste.</p>
+        </div>
+        <span class="badge">Aperçu</span>
+      </div>
+      <div class="media-embed pdf-frame">
+        <iframe title="Aperçu du livret SST" src="../assets/docs/livret-sst.pdf#toolbar=1&navpanes=0&scrollbar=1"></iframe>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article id="alerte" class="card technique-card">
+        <div class="section-heading"><h3>Alerte</h3><a class="quick-link" href="../modules/module-4.html">Retour à la fiche geste</a></div>
+        <p><strong>Priorité :</strong> transmettre où, quoi, combien, état de la victime, risque persistant et gestes déjà engagés.</p>
+        <div class="quick-links"><a class="quick-link" href="../modules/module-4.html">C4 — Alerter</a><a class="quick-link" href="../urgence/arret-cardiaque.html">Urgence arrêt cardiaque</a></div>
+      </article>
+      <article id="saignement" class="card technique-card">
+        <div class="section-heading"><h3>Saignement abondant</h3><a class="quick-link" href="../urgence/hemorragie.html">Retour à la fiche geste</a></div>
+        <p><strong>Priorité :</strong> compression immédiate, allonger si possible, couvrir, faire alerter et surveiller.</p>
+      </article>
+      <article id="inconscience" class="card technique-card">
+        <div class="section-heading"><h3>Inconscience</h3><a class="quick-link" href="../urgence/inconscience.html">Retour à la fiche geste</a></div>
+        <p><strong>Priorité :</strong> victime inconsciente qui respire = PLS, surveillance continue et réévaluation régulière.</p>
+      </article>
+      <article id="arret" class="card technique-card technique-card--critical">
+        <div class="section-heading"><h3>Arrêt cardiaque</h3><a class="quick-link" href="../urgence/arret-cardiaque.html">Retour à la fiche geste</a></div>
+        <p><strong>Priorité :</strong> RCP immédiate, DAE dès que disponible, interruptions minimales.</p>
+        <div class="quick-links"><a class="quick-link" href="../urgence/dae.html">Voir le DAE</a><a class="quick-link" href="staying-alive.html">Voir Staying Alive</a></div>
+      </article>
+      <article id="brulure" class="card technique-card">
+        <div class="section-heading"><h3>Brûlure</h3><a class="quick-link" href="../urgence/brulure.html">Retour à la fiche geste</a></div>
+        <p><strong>Priorité :</strong> refroidir longuement, protéger ensuite, alerter si brûlure grave, chimique ou électrique.</p>
+      </article>
+      <article id="etouffement" class="card technique-card">
+        <div class="section-heading"><h3>Étouffement</h3><a class="quick-link" href="../urgence/etouffement.html">Retour à la fiche geste</a></div>
+        <p><strong>Priorité :</strong> 5 claques dorsales, puis compressions adaptées à l'âge jusqu'à désobstruction ou perte de connaissance.</p>
+      </article>
+    </section>
   </main>
   <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
   <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
