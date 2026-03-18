@@ -30,8 +30,7 @@ const NAV_GROUPS = {
     { label: 'Étape 5 • C6', href: '/modules/module-6.html' }
   ],
   revision: [
-    { label: 'Révision terrain', href: '/revision/index.html' },
-    { label: 'Livret SST', href: '/tools/livret.html' }
+    { label: 'Révision terrain', href: '/revision/index.html' }
   ],
   urgence: [
     { label: 'Saignement', href: '/urgence/hemorragie.html' },
@@ -82,7 +81,7 @@ const MODULE_CONTEXT = {
     title: 'Après le parcours',
     links: [
       { label: 'Révision terrain', href: '/revision/index.html' },
-      { label: 'Aide-mémoire', href: '/tools/livret.html' }
+      { label: 'Urgence vitale', href: '/urgence/arret-cardiaque.html' }
     ]
   }
 };
@@ -176,7 +175,7 @@ function injectSeeAlso() {
   let links = [
     { label: 'Révision terrain', href: '/revision/index.html' },
     { label: 'Urgence vitale', href: '/urgence/arret-cardiaque.html' },
-    { label: 'Livret SST', href: '/tools/livret.html' }
+    { label: 'C5 — Secourir', href: '/modules/module-5.html' }
   ];
 
   if (path.includes('/urgence/')) {
