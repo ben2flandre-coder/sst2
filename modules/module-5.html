@@ -11,79 +11,106 @@
 <body class="app-shell" data-prev="/modules/module-4.html" data-next="/modules/module-6.html">
   <header class="app-header"><div class="app-title">SST • Parcours apprenant</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
   <main class="app-main">
-    <section class="progress-hero card-action progress-hero--critical">
-      <div>
-        <p class="hero-kicker">Étape 4 sur 5</p>
-        <h1>C5 — Secourir</h1>
-        <p>Le cœur du SST : identifier la bonne situation, agir vite et adapter le geste à l'adulte, l'enfant ou le nourrisson.</p>
-      </div>
-      <div class="progress-meta">
-        <strong>Progression</strong>
-        <div class="step-progress"><span class="is-complete">1</span><span class="is-complete">2</span><span class="is-complete">3</span><span class="is-active">4</span><span>5</span></div>
-        <p>Filtre public réel ci-dessous.</p>
+    <section class="progress-hero hero-premium--critical">
+      <div class="hero-split hero-split--balanced">
+        <div>
+          <p class="hero-kicker">Étape 4 sur 5</p>
+          <h1>C5 — Secourir</h1>
+          <p>Le cœur du SST : reconnaître la situation, choisir la conduite à tenir, adapter le geste à l’âge et surveiller jusqu’au relais.</p>
+        </div>
+        <div class="progress-meta">
+          <strong>Progression</strong>
+          <div class="step-progress"><span class="is-complete">1</span><span class="is-complete">2</span><span class="is-complete">3</span><span class="is-active">4</span><span>5</span></div>
+          <p>Repère PI simplifié : protéger, examiner, alerter, secourir.</p>
+        </div>
       </div>
     </section>
 
     <nav class="anchor-nav" aria-label="Navigation C5">
+      <a class="quick-link" href="#pi">Logique PI</a>
       <a class="quick-link" href="#situations">Situations</a>
       <a class="quick-link" href="#variante-adulte">Adulte</a>
       <a class="quick-link" href="#variante-enfant">Enfant</a>
       <a class="quick-link" href="#variante-nourrisson">Nourrisson</a>
     </nav>
 
+    <section id="pi" class="step-sequence">
+      <article class="step-card"><strong>1. Protéger</strong><span>Supprimer ou isoler le danger sans s’exposer.</span></article>
+      <article class="step-card"><strong>2. Examiner</strong><span>Identifier le signe prioritaire qui oriente tout le geste.</span></article>
+      <article class="step-card"><strong>3. Alerter</strong><span>Faire appeler le 15 / 112 et demander l’aide utile.</span></article>
+      <article class="step-card"><strong>4. Secourir</strong><span>Réaliser la bonne conduite à tenir puis surveiller sans interruption.</span></article>
+    </section>
+
     <section id="situations" class="situation-grid">
       <article class="situation-card">
         <div class="section-heading"><h2>Saignement abondant</h2><a class="quick-link" href="../urgence/hemorragie.html">Accès urgence</a></div>
-        <p><strong>Objectif :</strong> stopper la perte de sang immédiatement.</p>
-        <p><strong>Signes :</strong> sang qui coule abondamment, imprègne vite ou jaillit.</p>
-        <p><strong>Conduite à tenir :</strong> compression immédiate, allonger si possible, faire alerter, surveiller.</p>
-        <p><strong>Erreurs fréquentes :</strong> relâcher la compression, perdre du temps à chercher du matériel, laisser la victime seule.</p>
-        <p><strong>Cas concret :</strong> coupure profonde sur tôle en atelier avec sol déjà taché.</p>
+        <p><strong>But :</strong> stopper la perte de sang immédiatement.</p>
+        <p><strong>Repère clé :</strong> sang abondant, qui imprègne vite ou jaillit.</p>
+        <p><strong>Action :</strong> compression immédiate, allonger si possible, faire alerter, surveiller.</p>
+        <p><strong>Erreur fréquente :</strong> relâcher la compression pour chercher du matériel.</p>
+        <p><strong>Cas concret :</strong> coupure profonde sur tôle en atelier.</p>
       </article>
 
       <article class="situation-card">
         <div class="section-heading"><h2>Étouffement</h2><a class="quick-link" href="../urgence/etouffement.html">Accès urgence</a></div>
-        <p><strong>Objectif :</strong> désobstruer rapidement les voies aériennes.</p>
-        <p><strong>Signes :</strong> impossibilité de parler, tousser ou respirer.</p>
-        <p><strong>Conduite à tenir :</strong> 5 claques dorsales puis compressions adaptées à l'âge.</p>
-        <p><strong>Erreurs fréquentes :</strong> faire boire, mettre les doigts dans la bouche sans voir le corps étranger, hésiter trop longtemps.</p>
-        <p><strong>Cas concret :</strong> salarié s'étouffe à la pause repas et porte les mains à sa gorge.</p>
+        <p><strong>But :</strong> désobstruer rapidement les voies aériennes.</p>
+        <p><strong>Repère clé :</strong> impossibilité de parler, tousser ou respirer.</p>
+        <p><strong>Action :</strong> 5 claques dorsales puis compressions adaptées à l’âge.</p>
+        <p><strong>Erreur fréquente :</strong> faire boire ou attendre trop longtemps.</p>
+        <p><strong>Cas concret :</strong> salarié qui porte les mains à sa gorge au repas.</p>
       </article>
 
       <article class="situation-card">
         <div class="section-heading"><h2>Inconscience</h2><a class="quick-link" href="../urgence/inconscience.html">Accès urgence</a></div>
-        <p><strong>Objectif :</strong> maintenir une respiration libre en attendant les secours.</p>
-        <p><strong>Signes :</strong> ne répond pas, respire normalement.</p>
-        <p><strong>Conduite à tenir :</strong> PLS, alerte, surveillance continue.</p>
-        <p><strong>Erreurs fréquentes :</strong> oublier de contrôler la respiration, laisser sur le dos, s'éloigner.</p>
-        <p><strong>Cas concret :</strong> collègue retrouvé inconscient après un malaise dans le vestiaire.</p>
+        <p><strong>But :</strong> maintenir une respiration libre en attendant les secours.</p>
+        <p><strong>Repère clé :</strong> ne répond pas, respire normalement.</p>
+        <p><strong>Action :</strong> PLS, alerte, surveillance continue.</p>
+        <p><strong>Erreur fréquente :</strong> oublier de contrôler la respiration.</p>
+        <p><strong>Cas concret :</strong> collègue retrouvé inconscient après un malaise.</p>
       </article>
 
       <article class="situation-card situation-card--critical">
         <div class="section-heading"><h2>Arrêt cardiaque</h2><a class="quick-link" href="../urgence/arret-cardiaque.html">Accès urgence</a></div>
-        <p><strong>Objectif :</strong> maintenir une circulation minimale jusqu'à l'arrivée du DAE et des secours.</p>
-        <p><strong>Signes :</strong> ne répond pas, ne respire pas ou respiration anormale.</p>
-        <p><strong>Conduite à tenir :</strong> alerte immédiate, RCP, DAE dès qu'il arrive.</p>
-        <p><strong>Erreurs fréquentes :</strong> interrompre les compressions, attendre le DAE, chercher le pouls.</p>
-        <p><strong>Cas concret :</strong> salarié retrouvé au sol après effort, sans réponse et sans respiration normale.</p>
+        <p><strong>But :</strong> maintenir une circulation minimale jusqu’au relais.</p>
+        <p><strong>Repère clé :</strong> ne répond pas, ne respire pas ou respiration anormale.</p>
+        <p><strong>Action :</strong> alerte immédiate, RCP, DAE dès qu’il arrive.</p>
+        <p><strong>Erreur fréquente :</strong> attendre le DAE au lieu de masser.</p>
+        <p><strong>Cas concret :</strong> salarié retrouvé au sol après effort, sans réponse.</p>
       </article>
 
       <article class="situation-card">
         <div class="section-heading"><h2>Brûlure</h2><a class="quick-link" href="../urgence/brulure.html">Accès urgence</a></div>
-        <p><strong>Objectif :</strong> limiter l'extension de la brûlure et protéger la victime.</p>
-        <p><strong>Signes :</strong> douleur, rougeur, cloques, atteinte chimique ou électrique.</p>
-        <p><strong>Conduite à tenir :</strong> refroidir longuement, protéger, alerter si gravité.</p>
-        <p><strong>Erreurs fréquentes :</strong> glaçons, crème, percer les cloques, arracher un vêtement collé.</p>
-        <p><strong>Cas concret :</strong> projection de liquide chaud sur l'avant-bras en cuisine collective.</p>
+        <p><strong>But :</strong> limiter l’extension de la brûlure.</p>
+        <p><strong>Repère clé :</strong> douleur, rougeur, cloque, atteinte chimique ou électrique.</p>
+        <p><strong>Action :</strong> refroidir longuement, protéger, alerter si gravité.</p>
+        <p><strong>Erreur fréquente :</strong> mettre crème, glace ou percer les cloques.</p>
+        <p><strong>Cas concret :</strong> projection de liquide chaud sur l’avant-bras.</p>
       </article>
 
       <article class="situation-card">
         <div class="section-heading"><h2>Malaise</h2><a class="quick-link" href="../urgence/malaise.html">Accès urgence</a></div>
-        <p><strong>Objectif :</strong> repérer la gravité et déclencher une aide médicale rapidement.</p>
-        <p><strong>Signes :</strong> douleur thoracique, gêne respiratoire, sueurs, trouble de la parole, pâleur.</p>
-        <p><strong>Conduite à tenir :</strong> mettre au repos, questionner brièvement, surveiller, alerter si signe grave.</p>
-        <p><strong>Erreurs fréquentes :</strong> banaliser, laisser repartir, donner à boire ou à manger sans raison.</p>
-        <p><strong>Cas concret :</strong> salarié confus avec douleur thoracique et sueurs au poste de travail.</p>
+        <p><strong>But :</strong> repérer la gravité et appeler rapidement si besoin.</p>
+        <p><strong>Repère clé :</strong> douleur thoracique, difficulté à parler, gêne respiratoire, sueurs, pâleur.</p>
+        <p><strong>Action :</strong> repos, questionnement bref, surveillance, alerte si signe grave.</p>
+        <p><strong>Erreur fréquente :</strong> banaliser et laisser repartir la victime.</p>
+        <p><strong>Cas concret :</strong> salarié confus avec douleur thoracique au poste.</p>
+      </article>
+    </section>
+
+    <section class="grid two">
+      <article class="red-flag">
+        <h2>Erreurs fréquentes à rendre visibles</h2>
+        <ul class="list-tight">
+          <li>Passer trop vite au geste sans lire la situation.</li>
+          <li>Retarder l’alerte alors que l’urgence est vitale.</li>
+          <li>Interrompre la surveillance après le premier geste.</li>
+          <li>Utiliser la technique adulte chez l’enfant ou le nourrisson.</li>
+        </ul>
+      </article>
+      <article class="card-action">
+        <h2>Repère terrain</h2>
+        <p>Le bon enchaînement reste toujours le même : danger, signe prioritaire, alerte, geste adapté, surveillance.</p>
+        <a class="btn-secondary" href="../tools/pi.html">Voir la logique PI simplifiée</a>
       </article>
     </section>
 
@@ -92,8 +119,8 @@
         <h2>Variante adulte</h2>
         <ul class="list-tight">
           <li>Compressons thoraciques standard en arrêt cardiaque.</li>
-          <li>Compressions abdominales possibles en étouffement si indiquées.</li>
-          <li>Message d'alerte souvent transmis par témoin ou collègue proche.</li>
+          <li>Compressions abdominales possibles en cas d’étouffement si indiquées.</li>
+          <li>Mobiliser rapidement un témoin pour l’alerte et le DAE.</li>
         </ul>
       </article>
       <article id="variante-enfant" class="card">
@@ -109,17 +136,17 @@
         <ul class="list-tight">
           <li>Techniques spécifiques, sans geste brutal.</li>
           <li>Étouffement : alternance claques dorsales / compressions thoraciques adaptées.</li>
-          <li>Surveillance constante et alerte rapide.</li>
+          <li>Surveillance constante et alerte très rapide.</li>
         </ul>
       </article>
     </section>
 
     <section class="media-inline card-action">
       <div>
-        <h2>Voir les démonstrations</h2>
-        <p>La médiathèque regroupe les démonstrations par geste pour C5.</p>
+        <h2>Démonstrations utiles</h2>
+        <p>La médiathèque formateur regroupe les démonstrations officielles à réutiliser pendant les ateliers pratiques.</p>
       </div>
-      <a class="btn-secondary" href="../tools/videos-inrs.html#c5">Voir la démonstration</a>
+      <a class="btn-secondary" href="../tools/videos-inrs.html#c5">Voir la médiathèque C5</a>
     </section>
 
     <div class="grid two module-nav-grid">
