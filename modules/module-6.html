@@ -19,137 +19,104 @@
         <div>
           <p class="hero-kicker">Compétence C6</p>
           <h1>C6 — Repérer et structurer l'observation terrain</h1>
-          <p>Le PAP relie l'observation à l'action : danger, situation dangereuse, événement déclencheur, dommage, prévention et transmission.</p>
+          <p>Cette page renvoie d'abord vers la source HTML réelle du PAP SST, puis vers les documents PDF, déroulés et aperçus déjà disponibles dans <code>/assets/</code>.</p>
         </div>
         <aside class="hero-panel institutional-card">
           <h2>Repère méthode</h2>
           <div class="risk-chain">
-            <span class="risk-step">Danger</span>
+            <span class="risk-step">Source PAP</span>
             <span class="schema-arrow">→</span>
-            <span class="risk-step">Situation dangereuse</span>
+            <span class="risk-step">PDF de référence</span>
             <span class="schema-arrow">→</span>
-            <span class="risk-step">Événement déclencheur</span>
+            <span class="risk-step">Déroulés formateur</span>
             <span class="schema-arrow">→</span>
-            <span class="risk-step">Dommage</span>
+            <span class="risk-step">Simulateur</span>
           </div>
         </aside>
       </div>
     </section>
 
     <nav class="anchor-nav" aria-label="Sous-navigation C6">
-      <a class="quick-link" href="#pap-vue">PAP visuel</a>
-      <a class="quick-link" href="#lecture-metier">Exemples métiers</a>
-      <a class="quick-link" href="#transmission">Transmission</a>
+      <a class="quick-link" href="#source-pap">Source PAP</a>
+      <a class="quick-link" href="#references-pap">Références locales</a>
+      <a class="quick-link" href="#deroules-pap">Déroulés</a>
       <a class="quick-link" href="#simulateur">Simulateur</a>
     </nav>
 
-    <section class="card-action source-doc-card">
+    <section id="source-pap" class="card-action source-doc-card">
       <div class="section-heading">
         <div>
           <h2>Source PAP intégrée</h2>
-          <p>Le module embarque désormais un document source local dédié dans <code>assets/docs/PAP_SST.html</code>.</p>
+          <p>Le module ouvre directement la source locale prioritaire <code>assets/html/pap/PAP_SST.html</code>, sans fabriquer de PAP simplifié parallèle.</p>
         </div>
-        <a class="btn-secondary doc-toolbar__link" href="../assets/docs/PAP_SST.html" target="_blank" rel="noopener">Ouvrir la source PAP</a>
+        <a class="btn-secondary doc-toolbar__link" href="../assets/html/pap/PAP_SST.html" target="_blank" rel="noopener">Ouvrir la source PAP</a>
       </div>
       <div class="source-frame">
-        <iframe title="Source PAP SST" src="../assets/docs/PAP_SST.html"></iframe>
+        <iframe title="Source PAP SST" src="../assets/html/pap/PAP_SST.html"></iframe>
       </div>
     </section>
 
-    <section id="pap-vue" class="card-action" data-pap>
+    <section id="references-pap" class="card-action media-callout">
       <div class="section-heading">
         <div>
-          <h2>PAP SST — lecture progressive</h2>
-          <p>Cliquer sur chaque étape pour retrouver le bon niveau d'analyse et le bon vocabulaire de transmission.</p>
+          <h2>Ressources locales de référence</h2>
+          <p>Réemploi des PDF et aperçus déjà fournis dans <code>/assets/docs/reference-pdfs/</code> et <code>/assets/images/previews/</code>.</p>
         </div>
-        <span class="badge">PAP</span>
+        <span class="badge">Références locales</span>
       </div>
-      <div class="pap-steps" role="tablist" aria-label="Étapes du PAP">
-        <button class="pap-step is-active" type="button" role="tab" aria-selected="true" data-pap-step="situation">Observation</button>
-        <span class="pap-arrow">→</span>
-        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="danger">Danger</button>
-        <span class="pap-arrow">→</span>
-        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="risque">Situation / événement</button>
-        <span class="pap-arrow">→</span>
-        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="dommage">Dommage</button>
-        <span class="pap-arrow">→</span>
-        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="action">Action de prévention</button>
-        <span class="pap-arrow">→</span>
-        <button class="pap-step" type="button" role="tab" aria-selected="false" data-pap-step="transmission">Transmission</button>
-      </div>
-      <article class="card pap-detail-box">
-        <h3 data-pap-title>Situation</h3>
-        <p data-pap-text>Décrire le contexte réel : lieu, tâche, personne, moment. Sans interprétation.</p>
-      </article>
-      <div class="digital-board">
-        <article class="board-column">
-          <h3>Observer</h3>
-          <p>Ce que je vois réellement sur le poste, sans juger.</p>
-        </article>
-        <article class="board-column">
-          <h3>Comprendre</h3>
-          <p>Ce qui expose la personne : danger, zone dangereuse, événement déclencheur.</p>
-        </article>
-        <article class="board-column board-column-highlight">
-          <h3>Agir</h3>
-          <p>Supprimer ou réduire l'exposition avec une mesure réalisable.</p>
-        </article>
-        <article class="board-column">
-          <h3>Transmettre</h3>
-          <p>Faire remonter un fait clair, utile, traçable et orienté prévention.</p>
-        </article>
+      <div class="resource-grid">
+        <a class="resource-card" href="../assets/html/pap/PAP_SST.html" target="_blank" rel="noopener">
+          <strong>PAP SST — source HTML</strong>
+          <span>Source locale prioritaire à consulter en plein écran si besoin.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/reference-pdfs/Fiche-outils-INRS.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Aperçu de la Fiche outils INRS" />
+          <strong>Fiche outils</strong>
+          <span>PDF local déjà présent dans le dépôt.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/reference-pdfs/General.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/General_p1.png" alt="Aperçu du PDF General" />
+          <strong>General.pdf</strong>
+          <span>Ressource documentaire locale utilisable en complément du PAP.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/reference-pdfs/Pedagogie.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/Pedagogie_p1.png" alt="Aperçu du PDF Pédagogie" />
+          <strong>Pedagogie.pdf</strong>
+          <span>Repères pédagogiques présents dans le dépôt.</span>
+        </a>
       </div>
     </section>
 
-    <section id="lecture-metier" class="scenario-grid">
-      <article class="scenario-card">
-        <h3>Exemple métier — atelier</h3>
-        <p><strong>Observation :</strong> opérateur main proche d'une zone de coupe capot ouvert.</p>
-        <p><strong>Danger :</strong> organes en mouvement.</p>
-        <p><strong>Situation dangereuse :</strong> accès possible à la zone de coupe pendant le redémarrage.</p>
-        <p><strong>Événement déclencheur :</strong> relance machine pour dégager un bourrage.</p>
-        <p><strong>Dommage :</strong> coupure grave / amputation.</p>
-        <p><strong>Action :</strong> arrêt, consignation, fermeture, rappel procédure.</p>
-      </article>
-      <article class="scenario-card">
-        <h3>Exemple métier — logistique</h3>
-        <p><strong>Observation :</strong> palette haute instable sur quai humide.</p>
-        <p><strong>Danger :</strong> charge instable + sol glissant.</p>
-        <p><strong>Situation dangereuse :</strong> manœuvre cariste avec visibilité réduite.</p>
-        <p><strong>Événement déclencheur :</strong> recul + désaxage de palette.</p>
-        <p><strong>Dommage :</strong> écrasement pied / fracture / chute.</p>
-        <p><strong>Action :</strong> baliser, assécher, stabiliser, reprogrammer le flux.</p>
-      </article>
-      <article class="scenario-card">
-        <h3>Exemple métier — bureau / accueil</h3>
-        <p><strong>Observation :</strong> câble et cartons sur l'allée d'évacuation.</p>
-        <p><strong>Danger :</strong> obstacle bas sur axe de marche.</p>
-        <p><strong>Situation dangereuse :</strong> circulation maintenue pendant la fermeture.</p>
-        <p><strong>Événement déclencheur :</strong> déplacement d'un collègue inattentif.</p>
-        <p><strong>Dommage :</strong> trébuchement, entorse, choc crânien.</p>
-        <p><strong>Action :</strong> dégager, sécuriser, rappeler la règle et tracer.</p>
-      </article>
-    </section>
-
-    <section id="transmission" class="grid two">
-      <article class="card objective-card">
-        <h3>Transmission utile</h3>
-        <p>Structure courte : <strong>fait observé → danger / exposition → dommage possible → action déjà prise → besoin de relais</strong>.</p>
-        <p class="mechanic-example">Exemple : « Quai 2 : palette instable sur sol humide, risque de chute de charge et d'écrasement. Zone balisée, besoin d'assèchement et de reprise de stockage. »</p>
-      </article>
-      <article class="red-flag">
-        <h3>À éviter</h3>
-        <ul>
-          <li>Messages vagues : « Faites attention ».</li>
-          <li>Se limiter au dommage sans décrire l'exposition.</li>
-          <li>Attendre la réunion hebdomadaire pour une situation encore active.</li>
-        </ul>
-      </article>
+    <section id="deroules-pap" class="card-action media-callout">
+      <div class="section-heading">
+        <div>
+          <h2>Déroulés pédagogiques et supports formateur</h2>
+          <p>Utilisation prioritaire des PDF déjà extraits et de leurs aperçus image, sans réécriture de contenu métier.</p>
+        </div>
+        <span class="badge">Formateur</span>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-card" href="../assets/docs/unzipped/Formateur/Déroulé-formateur SST-septembre-2021.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/D-roul--formateur-SST-septembre-2021_p1.png" alt="Aperçu du déroulé formateur SST septembre 2021" />
+          <strong>Déroulé formateur SST</strong>
+          <span>Version formateur locale déjà fournie.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/unzipped/Formateur/Déroulé-MAC-formateur SST-septembre-2021.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/D-roul--MAC-formateur-SST-septembre-2021_p1.png" alt="Aperçu du déroulé MAC formateur SST septembre 2021" />
+          <strong>Déroulé MAC formateur SST</strong>
+          <span>Version MAC formateur disponible localement.</span>
+        </a>
+        <a class="resource-card" href="../assets/docs/reference-pdfs/Fiches-pedagogiques-formateur-SST-V3.pdf" target="_blank" rel="noopener">
+          <img src="../assets/images/previews/Fiches-pedagogiques-formateur-SST-V3_p1.png" alt="Aperçu des fiches pédagogiques formateur SST" />
+          <strong>Fiches pédagogiques formateur</strong>
+          <span>Support PDF de référence fourni dans le repo.</span>
+        </a>
+      </div>
     </section>
 
     <section id="simulateur" class="card-action">
       <h2>Simulator SST C6</h2>
-      <p>Démarre un cas et passe obligatoirement par le PAP : <strong>observer → analyser → agir → transmettre</strong>.</p>
+      <p>Démarre un cas et passe obligatoirement par le PAP en complément des sources documentaires locales.</p>
       <p class="sim-progress-text" data-sim-global-progress>C6 : 0/2 cas validés.</p>
     </section>
 
@@ -172,7 +139,6 @@
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/app.js"></script>
-  <script src="../assets/js/pap.js"></script>
   <script src="../assets/js/c678.js"></script>
 </body>
 </html>
