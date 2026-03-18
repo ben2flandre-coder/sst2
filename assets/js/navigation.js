@@ -51,7 +51,9 @@ const NAV_GROUPS = {
     { label: 'PAP SST', href: '/tools/pap.html' },
     { label: 'PI SST', href: '/tools/pi.html' },
     { label: 'Aide-mémoire PDF', href: '/tools/livret.html' },
+    { label: 'Vidéos INRS', href: '/tools/videos-inrs.html' },
     { label: 'Staying Alive', href: '/tools/staying-alive.html' },
+    { label: 'Ressources formateur', href: '/tools/ressources-formateur.html' },
     { label: 'Révision', href: '/revision/index.html' },
     { label: 'Simulateur / cas concrets', href: '/modules/module-8.html' }
   ],

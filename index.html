@@ -10,69 +10,154 @@
 </head>
 <body class="app-shell" data-prev="" data-next="/modules/module-0.html">
   <header class="app-header"><div class="app-title">SST • Plateforme App</div><button class="btn-secondary hub-btn" data-nav="hub">HUB</button></header>
-  <main class="app-main">
-    <section class="hero hero-premium">
-      <div class="hero-split">
+  <main class="app-main home-main">
+    <section class="hero hero-premium hero-home">
+      <div class="hero-split hero-split--balanced">
         <div>
           <p class="hero-kicker">Plateforme SST premium</p>
-          <h1>Prévention + secours dans un parcours visuel, crédible et immédiatement exploitable.</h1>
-          <p>Accès direct par compétences, situations, publics, outils institutionnels, ressources intégrées PAP / PI et démonstrations utiles au formateur comme au stagiaire.</p>
-          <div class="hero-actions">
+          <h1>Retrouver les gestes, les outils et les ressources sans subir les documents bruts.</h1>
+          <p>Le parcours redevient clair : urgence immédiate, révision guidée, documents institutionnels encapsulés dans des cartes premium et vues dédiées.</p>
+          <div class="hero-actions hero-actions--start">
             <button class="btn-danger" type="button" onclick="goToUrgence('arret-cardiaque')">⚡ URGENCE IMMÉDIATE</button>
             <a class="btn-secondary" href="tools/livret.html">Ouvrir le livret terrain</a>
+            <a class="btn-secondary" href="revision/index.html">Révision express</a>
           </div>
         </div>
-        <aside class="hero-panel institutional-card">
-          <h2>Repères institutionnels</h2>
+        <aside class="hero-panel institutional-card hero-panel--glass">
+          <h2>Accès essentiels</h2>
+          <div class="quick-links quick-links--spaced">
+            <a class="quick-link" href="tools/pap.html">PAP</a>
+            <a class="quick-link" href="tools/pi.html">PI</a>
+            <a class="quick-link" href="tools/livret.html">Aide-mémoire</a>
+            <a class="quick-link" href="tools/videos-inrs.html">Vidéos INRS</a>
+            <a class="quick-link" href="tools/staying-alive.html">Staying Alive</a>
+            <a class="quick-link" href="tools/ressources-formateur.html">Ressources formateur</a>
+          </div>
           <div class="brand-strip--visual" aria-label="Repères institutionnels SST">
             <figure class="brand-visual"><img src="assets/images/previews/Fiche-outils-INRS_p1.png" alt="Repère INRS" /><span>INRS</span></figure>
-            <figure class="brand-visual"><img src="assets/images/previews/Deroule-pedagogique-SST-Mar-2021_p1.png" alt="Repère SST" /><span>SST</span></figure>
-            <figure class="brand-visual"><img src="assets/images/previews/Pedagogie_p1.png" alt="Repère GRETA" /><span>GRETA</span></figure>
-            <figure class="brand-visual"><img src="assets/images/previews/General_p1.png" alt="Repère FORPREV" /><span>FORPREV</span></figure>
+            <figure class="brand-visual"><img src="assets/images/previews/Deroule-pedagogique-SST-Mar-2021_p1.png" alt="Repère SST" /><span>Pédagogie SST</span></figure>
+            <figure class="brand-visual"><img src="assets/images/previews/Pedagogie_p1.png" alt="Repère méthodes" /><span>Prévention</span></figure>
+            <figure class="brand-visual"><img src="assets/images/previews/General_p1.png" alt="Repère secours" /><span>Secours</span></figure>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="hero-visual-grid">
-      <article class="hero-visual-card">
-        <img src="assets/images/previews/Fiche-outils-INRS_p2.png" alt="Aperçu des outils INRS" />
-        <div>
-          <h3>Outils INRS visibles</h3>
-          <p>Les documents et repères officiels sont mis au premier plan dans les modules, les outils et les renvois rapides.</p>
-        </div>
+    <section class="quick-access-grid">
+      <article class="quick-access-card">
+        <h3>Parcours</h3>
+        <p>Retrouver le fil pédagogique par compétence, situation et public.</p>
+        <div class="quick-links"><a class="quick-link" href="modules/module-c1.html">Compétences</a><a class="quick-link" href="modules/module-5.html#situations">Situations</a><a class="quick-link" href="modules/module-5.html#variante-adulte">Publics</a></div>
       </article>
-      <article class="hero-visual-card">
-        <img src="assets/images/previews/Deroule-pedagogique-MAC-SST-Mar-2021_p1.png" alt="Aperçu de déroulé SST" />
+      <article class="quick-access-card quick-access-card--alert">
+        <h3>Urgence</h3>
+        <p>Basculer sans délai sur les conduites à tenir prioritaires.</p>
+        <div class="quick-links"><a class="quick-link" href="urgence/arret-cardiaque.html">Arrêt cardiaque</a><a class="quick-link" href="urgence/hemorragie.html">Hémorragie</a><a class="quick-link" href="urgence/dae.html">DAE</a></div>
+      </article>
+      <article class="quick-access-card">
+        <h3>Outils</h3>
+        <p>Ouvrir les supports encapsulés, lisibles et prêts pour la formation.</p>
+        <div class="quick-links"><a class="quick-link" href="tools/livret.html">Livret</a><a class="quick-link" href="tools/pap.html">PAP</a><a class="quick-link" href="tools/pi.html">PI</a></div>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="dashboard-card dashboard-card--feature">
+        <div class="icon-badge">🧭</div>
         <div>
           <h3>Parcours guidé</h3>
-          <p>Entrée par les compétences, les situations d’urgence, les gestes critiques et les variantes par public.</p>
+          <p>Entrée par compétence, situation ou public avec navigation globale toujours visible.</p>
         </div>
       </article>
-      <article class="hero-visual-card">
-        <img src="assets/images/previews/Quiz-2019_p1.png" alt="Aperçu de révision SST" />
+      <article class="dashboard-card dashboard-card--feature">
+        <div class="icon-badge">📘</div>
         <div>
-          <h3>Révision et action</h3>
-          <p>Des modules visuels, des outils consultables et des accès directs aux conduites à tenir terrain.</p>
+          <h3>Révision actionnable</h3>
+          <p>Livret, PI, gestes critiques et rappels terrain dans des formats maîtrisés.</p>
+        </div>
+      </article>
+      <article class="dashboard-card dashboard-card--feature">
+        <div class="icon-badge icon-badge--critical">🫀</div>
+        <div>
+          <h3>Réponse terrain</h3>
+          <p>Urgence immédiate, DAE, Staying Alive et aides utiles à l’intervention.</p>
         </div>
       </article>
     </section>
 
-    <section class="quick-access-grid">
-      <article class="quick-access-card">
-        <h3>Accès rapide gestes</h3>
-        <p>Retrouver immédiatement les branches critiques et les conduites à tenir.</p>
-        <div class="quick-links"><a class="quick-link" href="modules/module-5.html#situations">PI / gestes</a><a class="quick-link" href="urgence/hemorragie.html">Hémorragie</a><a class="quick-link" href="urgence/arret-cardiaque.html">Arrêt cardiaque</a></div>
+    <h2 class="section-title">Ressources premium</h2>
+    <section class="resource-hub-grid">
+      <article class="resource-hub-card">
+        <img src="assets/images/previews/Pedagogie_p1.png" alt="Vignette PAP" />
+        <div>
+          <span class="badge">Prévention</span>
+          <h3>PAP SST</h3>
+          <p>Vue pédagogique propre avec résumé, étapes clés, accès rapides et source documentaire.</p>
+        </div>
+        <div class="card-actions-row">
+          <a class="btn-primary" href="tools/pap.html">Ouvrir</a>
+          <a class="btn-secondary" href="assets/html/pap/PAP_SST.html" target="_blank" rel="noopener">Consulter la source</a>
+        </div>
       </article>
-      <article class="quick-access-card">
-        <h3>Accès rapide outils</h3>
-        <p>Ouvrir les supports exploitables en formation sans quitter la plateforme.</p>
-        <div class="quick-links"><a class="quick-link" href="tools/livret.html">Livret PDF</a><a class="quick-link" href="tools/pap.html">PAP</a><a class="quick-link" href="tools/pi.html">PI</a></div>
+      <article class="resource-hub-card">
+        <img src="assets/images/previews/General_p2.png" alt="Vignette PI" />
+        <div>
+          <span class="badge">Intervention</span>
+          <h3>PI SST</h3>
+          <p>Arborescence secourir réintégrée dans une page lisible avec liens vers les modules et urgences.</p>
+        </div>
+        <div class="card-actions-row">
+          <a class="btn-primary" href="tools/pi.html">Ouvrir</a>
+          <a class="btn-secondary" href="assets/html/pi/PI_SST.html" target="_blank" rel="noopener">Consulter la source</a>
+        </div>
       </article>
-      <article class="quick-access-card">
-        <h3>Accès rapide urgence</h3>
-        <p>Basculer immédiatement vers les fiches d’intervention critiques.</p>
-        <div class="quick-links"><a class="quick-link" href="urgence/dae.html">DAE</a><a class="quick-link" href="urgence/inconscience.html">Inconscience</a><a class="quick-link" href="urgence/etouffement.html">Étouffement</a></div>
+      <article class="resource-hub-card">
+        <img src="assets/images/previews/Fiche-outils-INRS_p2.png" alt="Vignette aide-mémoire" />
+        <div>
+          <span class="badge">Terrain</span>
+          <h3>Aide-mémoire SST</h3>
+          <p>Bon PDF local, aperçu cadré, téléchargement, impression et sommaire exploitable en séance.</p>
+        </div>
+        <div class="card-actions-row">
+          <a class="btn-primary" href="tools/livret.html">Ouvrir</a>
+          <a class="btn-secondary" href="assets/docs/livret-sst.pdf" target="_blank" rel="noopener">Consulter la source</a>
+        </div>
+      </article>
+      <article class="resource-hub-card">
+        <img src="assets/images/previews/Fiches-pedagogiques-formateur-SST-V3_p1.png" alt="Vignette vidéos INRS" />
+        <div>
+          <span class="badge">Pratique</span>
+          <h3>Vidéos pratiques INRS</h3>
+          <p>Liens officiels prêts à l’emploi pour animer une séquence ou prolonger une démonstration.</p>
+        </div>
+        <div class="card-actions-row">
+          <a class="btn-primary" href="tools/videos-inrs.html">Ouvrir</a>
+          <a class="btn-secondary" href="https://www.inrs.fr/risques/sst.html" target="_blank" rel="noopener">Consulter la source</a>
+        </div>
+      </article>
+      <article class="resource-hub-card">
+        <img src="assets/images/staying-alive.svg" alt="Vignette Staying Alive" class="resource-hub-card__logo" />
+        <div>
+          <span class="badge">Chaîne de survie</span>
+          <h3>Staying Alive</h3>
+          <p>Application de repérage DAE et mobilisation citoyenne reliée au parcours arrêt cardiaque.</p>
+        </div>
+        <div class="card-actions-row">
+          <a class="btn-primary" href="tools/staying-alive.html">Ouvrir</a>
+          <a class="btn-secondary" href="https://www.stayingalive.org/" target="_blank" rel="noopener">Consulter la source</a>
+        </div>
+      </article>
+      <article class="resource-hub-card">
+        <img src="assets/images/previews/Manuel-formateur-de-formateurs-SST-V10-2016_p1.png" alt="Vignette ressources formateur" />
+        <div>
+          <span class="badge">Formateur</span>
+          <h3>Ressources formateur</h3>
+          <p>Manuel, fiches pédagogiques, déroulés et quiz regroupés dans une bibliothèque propre.</p>
+        </div>
+        <div class="card-actions-row">
+          <a class="btn-primary" href="tools/ressources-formateur.html">Ouvrir</a>
+          <a class="btn-secondary" href="assets/docs/reference-pdfs/Manuel-formateur-de-formateurs-SST-V10-2016.pdf" target="_blank" rel="noopener">Consulter la source</a>
+        </div>
       </article>
     </section>
 
@@ -81,7 +166,7 @@
         <span class="rail-icon" aria-hidden="true">🛡️</span>
         <div>
           <h2>Prévenir</h2>
-          <p>PAP visuel : observer, caractériser le danger, comprendre l'événement déclencheur, proposer l'action et transmettre.</p>
+          <p>PAP, repérage des dangers, analyse du mécanisme d’apparition du dommage et transmission.</p>
         </div>
         <a class="quick-link" href="tools/pap.html">Accéder au PAP</a>
       </article>
@@ -89,87 +174,19 @@
         <span class="rail-icon" aria-hidden="true">🫀</span>
         <div>
           <h2>Secourir</h2>
-          <p>PI arborescent : examen, alerte, conduite à tenir et renvois directs vers les fiches geste adulte, enfant, nourrisson.</p>
+          <p>PI, conduites à tenir, variantes adulte/enfant/nourrisson et renvois gestes critiques.</p>
         </div>
         <a class="quick-link" href="tools/pi.html">Accéder au PI</a>
       </article>
       <article class="rail-card rail-card--tools">
-        <span class="rail-icon" aria-hidden="true">📘</span>
+        <span class="rail-icon" aria-hidden="true">🎥</span>
         <div>
           <h2>Outiller</h2>
-          <p>Livret terrain, Staying Alive, ressources visuelles et révision guidée pour entraîner les automatismes.</p>
+          <p>Livret, vidéos INRS, ressources formateur et outils de survie dans un hub app-like.</p>
         </div>
-        <a class="quick-link" href="tools/livret.html">Voir les outils</a>
+        <a class="quick-link" href="tools/videos-inrs.html">Voir les outils</a>
       </article>
     </section>
-
-    <h2 class="section-title">Accès rapides visuels</h2>
-    <section class="dashboard-grid">
-      <article class="dashboard-card">
-        <h3>Par compétence</h3>
-        <p>Entrer par l'objectif pédagogique et la compétence évaluée.</p>
-        <div class="quick-links">
-          <a class="quick-link" href="modules/module-c1.html">C1</a><a class="quick-link" href="modules/module-2.html">C2</a><a class="quick-link" href="modules/module-3.html">C3</a><a class="quick-link" href="modules/module-4.html">C4</a><a class="quick-link" href="modules/module-5.html">C5</a><a class="quick-link" href="modules/module-6.html">C6</a><a class="quick-link" href="modules/module-7.html">C7</a><a class="quick-link" href="modules/module-8.html">C8</a>
-        </div>
-      </article>
-      <article class="dashboard-card">
-        <h3>Par situation</h3>
-        <p>Basculer immédiatement vers la conduite à tenir prioritaire.</p>
-        <div class="quick-links">
-          <a class="quick-link" href="urgence/hemorragie.html">Saignement abondant</a><a class="quick-link" href="urgence/etouffement.html">Étouffement</a><a class="quick-link" href="urgence/malaise.html">Malaise</a><a class="quick-link" href="urgence/brulure.html">Brûlure</a><a class="quick-link" href="urgence/inconscience.html">Inconscience</a><a class="quick-link" href="urgence/arret-cardiaque.html">Arrêt cardiaque</a><a class="quick-link" href="urgence/dae.html">DAE</a>
-        </div>
-      </article>
-      <article class="dashboard-card">
-        <h3>Par public</h3>
-        <p>Retrouver les variantes adulte, enfant et nourrisson dans chaque branche de décision.</p>
-        <div class="quick-links">
-          <a class="quick-link" href="modules/module-5.html#variante-adulte">Adulte</a><a class="quick-link" href="modules/module-5.html#variante-enfant">Enfant</a><a class="quick-link" href="modules/module-5.html#variante-nourrisson">Nourrisson</a>
-        </div>
-      </article>
-      <article class="dashboard-card">
-        <h3>Par outil</h3>
-        <p>Ouvrir le livret, le PAP, le PI, la révision ou les outils DAE.</p>
-        <div class="quick-links">
-          <a class="quick-link" href="tools/livret.html">Livret</a><a class="quick-link" href="tools/pap.html">PAP</a><a class="quick-link" href="tools/pi.html">PI</a><a class="quick-link" href="tools/staying-alive.html">Staying Alive</a>
-        </div>
-      </article>
-    </section>
-
-    <h2 class="section-title">Outils et parcours recommandés</h2>
-    <div class="grid">
-      <article class="card-action card-illustrated">
-        <div class="card-illustration" aria-hidden="true">🧭</div>
-        <div>
-          <h3>PAP SST</h3>
-          <p>Intégration directe du support local existant, enrichi d’un cadre visuel, d’un accès dédié et de liens vers C6.</p>
-          <a class="btn-secondary" href="tools/pap.html">Ouvrir le module PAP</a>
-        </div>
-      </article>
-      <article class="card-action card-illustrated">
-        <div class="card-illustration" aria-hidden="true">🌿</div>
-        <div>
-          <h3>PI SST</h3>
-          <p>Arborescence secourir + branches C2-C3-C4-C5 + renvois rapides vers chaque geste et chaque public.</p>
-          <a class="btn-secondary" href="tools/pi.html">Ouvrir le module PI</a>
-        </div>
-      </article>
-      <article class="card-action card-illustrated">
-        <div class="card-illustration" aria-hidden="true">📄</div>
-        <div>
-          <h3>Livret SST imprimable</h3>
-          <p>Téléchargement, aperçu intégré, impression, sommaire et accès directs vers les conduites à tenir prioritaires.</p>
-          <a class="btn-secondary" href="tools/livret.html">Ouvrir le livret</a>
-        </div>
-      </article>
-      <article class="card-action card-illustrated">
-        <div class="card-illustration" aria-hidden="true">📍</div>
-        <div>
-          <h3>Staying Alive + DAE</h3>
-          <p>Localisation des DAE, citoyens secouristes et articulation immédiate avec l'arrêt cardiaque et la défibrillation.</p>
-          <div class="grid two"><a class="btn-secondary" href="tools/staying-alive.html">Staying Alive</a><a class="btn-secondary" href="urgence/dae.html">Voir le DAE</a></div>
-        </div>
-      </article>
-    </div>
   </main>
   <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
   <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">HUB</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
