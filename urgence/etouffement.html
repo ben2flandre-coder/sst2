@@ -1,43 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urgence • Étouffement</title>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/layout.css" />
-  <link rel="stylesheet" href="../assets/css/components.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Urgence • Étouffement</title>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/layout.css" />
+<link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/urgence/hemorragie.html" data-next="/urgence/inconscience.html">
-  <header class="app-header"><div class="app-title">SST • Agir en urgence</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
-  <main class="app-main">
-    <section class="hero hero-premium hero-premium--critical"><div class="premium-header"><span class="icon-badge" aria-hidden="true">🫁</span><div><p class="hero-kicker">Agir en urgence</p><h1>Étouffement</h1><p>Je désobstrue vite et j’adapte immédiatement le geste à l’âge.</p></div></div></section>
-
-    <section class="pi-decision">
-      <article class="pi-branch"><strong>Je vois</strong><span>Ne peut plus parler, tousser ou respirer.</span></article>
-      <article class="pi-branch"><strong>Je fais</strong><span>5 claques dorsales.</span></article>
-      <article class="pi-branch"><strong>Si échec</strong><span>Compressions adaptées.</span></article>
-      <article class="pi-branch"><strong>Je surveille</strong><span>Air repasse ? Aggravation ?</span></article>
-    </section>
-
-    <section class="urgent-grid">
-      <article class="urgence-step urgence-step--strong"><h3>1. Reconnaître</h3><p>Victime qui porte souvent les mains à la gorge et ne parle plus.</p></article>
-      <article class="urgence-step urgence-step--strong"><h3>2. Claques dorsales</h3><p>Donner 5 claques efficaces entre les omoplates.</p></article>
-      <article class="urgence-step urgence-step--strong"><h3>3. Compressions</h3><p>Si échec, enchaîner avec la technique adaptée à l’âge.</p></article>
-      <article class="urgence-step urgence-step--strong"><h3>4. Alerte</h3><p>Faire appeler si la gêne persiste ou si la victime s’aggrave.</p></article>
-    </section>
-
-    <section class="grid two">
-      <article class="card"><h2>À faire</h2><ul class="list-tight"><li>Agir tout de suite.</li><li>Réévaluer après chaque série.</li><li>Adapter force et placement.</li><li>Préparer l’alerte si nécessaire.</li></ul></article>
-      <article class="red-flag"><h2>À éviter</h2><ul class="list-tight"><li>Faire boire la victime.</li><li>Mettre les doigts dans la bouche sans voir.</li><li>Attendre trop longtemps.</li><li>Utiliser un geste d’adulte chez le nourrisson.</li></ul></article>
-    </section>
-
-    <section class="audience-panels audience-panels--dense"><article class="card"><h2>Adulte</h2><p>Claques dorsales puis compressions adaptées à l’adulte.</p></article><article class="card"><h2>Enfant</h2><p>Même logique avec intensité adaptée.</p></article><article class="card"><h2>Nourrisson</h2><p>Claques dorsales et compressions thoraciques spécifiques.</p></article></section>
-    <section class="card-action"><h2>Cas concret métier</h2><p>À la pause repas, un salarié ne parle plus et se tient la gorge. L’enchaînement doit être immédiat, sans discussion inutile.</p></section>
-    <section class="grid two"><a class="btn-primary" href="../modules/module-5.html">Retour C5</a><a class="btn-secondary" href="../revision/index.html">Révision rapide</a></section>
-  </main>
-  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
-  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
-  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+<header class="app-header">
+<div class="app-title">SST • Agir en urgence</div>
+<button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
+</header>
+<main class="app-main">
+<section class="hero hero-premium hero-premium--critical">
+<div class="premium-header">
+<span class="icon-badge" aria-hidden="true">🫁</span>
+<div>
+<p class="hero-kicker">Agir en urgence</p>
+<h1>Étouffement</h1>
+<p>Je désobstrue vite et j’adapte immédiatement le geste à l’âge.</p>
+</div>
+</div>
+</section>
+<section class="emergency-router card-action">
+<div class="quick-links quick-links--spaced quick-links--block">
+<a class="quick-link quick-link--danger" href="hemorragie.html">Saignement</a>
+<a class="quick-link quick-link--danger" href="etouffement.html">Étouffement</a>
+<a class="quick-link" href="inconscience.html">Inconscience</a>
+<a class="quick-link quick-link--danger" href="arret-cardiaque.html">Arrêt cardiaque</a>
+<a class="quick-link" href="brulure.html">Brûlure</a>
+<a class="quick-link" href="malaise.html">Malaise</a>
+</div>
+</section>
+<section class="pi-decision">
+<article class="pi-branch">
+<strong>Je vois</strong>
+<span>ne peut plus parler, tousser ou respirer.</span>
+</article>
+<article class="pi-branch">
+<strong>Je fais</strong>
+<span>5 claques dorsales puis compressions adaptées.</span>
+</article>
+<article class="pi-branch">
+<strong>J’alerte</strong>
+<span>si la gêne persiste ou si la victime s’aggrave.</span>
+</article>
+<article class="pi-branch">
+<strong>Je surveille</strong>
+<span>air qui repasse, fatigue, aggravation.</span>
+</article>
+</section>
+<section class="urgent-grid">
+<article class="urgence-step urgence-step--strong">
+<h3>1. Reconnaître</h3>
+<p>Victime silencieuse, souvent les mains à la gorge.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>2. Claques dorsales</h3>
+<p>Donner 5 claques efficaces entre les omoplates.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>3. Compressions</h3>
+<p>Si échec, enchaîner avec la technique adaptée à l’âge.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>4. Alerter</h3>
+<p>Faire appeler si la gêne persiste ou si la victime s’aggrave.</p>
+</article>
+</section>
+<section class="grid two">
+<article class="card">
+<h2>À faire</h2>
+<ul class="list-tight">
+<li>Agir tout de suite.</li>
+<li>Réévaluer après chaque série.</li>
+<li>Adapter force et placement.</li>
+<li>Préparer l’alerte si nécessaire.</li>
+</ul>
+</article>
+<article class="red-flag">
+<h2>À éviter</h2>
+<ul class="list-tight">
+<li>Faire boire la victime.</li>
+<li>Mettre les doigts dans la bouche sans voir.</li>
+<li>Attendre trop longtemps.</li>
+<li>Utiliser un geste d’adulte chez le nourrisson.</li>
+</ul>
+</article>
+</section>
+<section class="audience-panels audience-panels--dense">
+<article class="card">
+<h2>Adulte</h2>
+<p>Claques dorsales puis compressions adaptées à l’adulte.</p>
+</article>
+<article class="card">
+<h2>Enfant</h2>
+<p>Même logique avec intensité adaptée.</p>
+</article>
+<article class="card">
+<h2>Nourrisson</h2>
+<p>Claques dorsales et compressions thoraciques spécifiques.</p>
+</article>
+</section>
+<section class="card-action">
+<h2>Cas concret métier</h2>
+<p>À la pause repas, un salarié ne parle plus et se tient la gorge. L’enchaînement doit être immédiat, sans discussion inutile.</p>
+</section>
+<section class="grid two">
+<a class="btn-primary" href="../modules/module-5.html">Retour C5</a>
+<a class="btn-secondary" href="../revision/index.html">Révision rapide</a>
+</section>
+</main>
+<div class="floating-urgence">
+<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+</div>
+<footer class="app-footer">
+<button class="btn-secondary" data-nav="prev">Précédent</button>
+<button class="btn-primary" data-nav="hub">Accueil</button>
+<button class="btn-secondary" data-nav="next">Suivant</button>
+<button class="btn-danger" data-nav="urgence">URGENCE</button>
+</footer>
+<script src="../assets/js/navigation.js">
+</script>
+<script src="../assets/js/ui.js">
+</script>
+<script src="../assets/js/app.js">
+</script>
 </body>
 </html>

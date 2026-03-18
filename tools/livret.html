@@ -1,52 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Livret SST local</title>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/layout.css" />
-  <link rel="stylesheet" href="../assets/css/components.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Livret SST local</title>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/layout.css" />
+<link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/revision/index.html" data-next="/tools/videos-inrs.html">
-  <header class="app-header"><div class="app-title">SST • Outils formateur</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
-  <main class="app-main">
-    <section class="hero hero-premium">
-      <div class="hero-split hero-split--balanced">
-        <div>
-          <p class="hero-kicker">PDF local</p>
-          <h1>Livret SST</h1>
-          <p>Version locale propre à distribuer, imprimer ou utiliser comme aide-mémoire terrain. L’aperçu reste compact pour éviter les pages lourdes.</p>
-          <div class="hero-actions hero-actions--start">
-            <a class="btn-primary" href="../assets/docs/livret-sst.pdf" target="_blank" rel="noopener">Télécharger le PDF</a>
-            <button class="btn-secondary" type="button" data-print-page>Imprimer</button>
-            <a class="btn-secondary" href="../revision/index.html">Depuis la révision</a>
-          </div>
-        </div>
-        <aside class="hero-panel institutional-card">
-          <h2>Usages</h2>
-          <ul class="list-tight">
-            <li>remise stagiaire ;</li>
-            <li>révision de fin de séquence ;</li>
-            <li>aide-mémoire terrain ;</li>
-            <li>impression rapide en salle.</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section class="pdf-preview card-action">
-      <div class="section-heading"><div><h2>Aperçu du livret</h2><p>Source locale unique : <code>assets/docs/livret-sst.pdf</code>.</p></div><span class="badge">Local</span></div>
-      <div class="media-embed pdf-frame pdf-frame--compact"><iframe title="Aperçu du livret SST" loading="lazy" src="../assets/docs/livret-sst.pdf#toolbar=1&navpanes=0&scrollbar=1"></iframe></div>
-    </section>
-
-    <section class="grid two">
-      <article class="card"><h2>Accès rapides</h2><div class="quick-links quick-links--spaced"><a class="quick-link" href="../revision/index.html">Révision terrain</a><a class="quick-link" href="../modules/module-4.html">C4 Alerter</a><a class="quick-link" href="../modules/module-5.html">C5 Secourir</a></div></article>
-      <article class="card"><h2>Gestes clés dans le livret</h2><ul class="list-tight"><li>Alerte</li><li>Saignement abondant</li><li>Inconscience</li><li>Arrêt cardiaque / DAE</li><li>Brûlure / Étouffement</li></ul></article>
-    </section>
-  </main>
-  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
-  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
-  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+<header class="app-header">
+<div class="app-title">SST • Outils formateur</div>
+<button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
+</header>
+<main class="app-main">
+<section class="hero hero-premium">
+<div class="hero-split hero-split--balanced">
+<div>
+<p class="hero-kicker">PDF local</p>
+<h1>Livret SST</h1>
+<p>Source locale unique et propre : téléchargement, impression et aperçu cadré sans faux lien ni renvoi externe parasite.</p>
+<div class="hero-actions hero-actions--start">
+<a class="btn-primary" href="../assets/docs/livret-sst.pdf" target="_blank" rel="noopener">Télécharger le PDF</a>
+<button class="btn-secondary" type="button" data-print-page>Imprimer</button>
+<a class="btn-secondary" href="#apercu">Aperçu</a>
+</div>
+</div>
+<aside class="hero-panel institutional-card">
+<h2>Usages</h2>
+<ul class="list-tight">
+<li>remise stagiaire ;</li>
+<li>révision de fin de séquence ;</li>
+<li>aide-mémoire terrain ;</li>
+<li>impression rapide en salle.</li>
+</ul>
+</aside>
+</div>
+</section>
+<section class="content-grid-two">
+<article class="card-action">
+<p class="badge">Résumé pédagogique</p>
+<h2>Quand l’utiliser</h2>
+<p>En clôture de séquence, pour une révision autonome ou comme support papier court à conserver après la formation.</p>
+</article>
+<article class="card-action">
+<p class="badge">Intérêt SST</p>
+<h2>À quoi il sert</h2>
+<p>Revoir rapidement l’alerte, les priorités vitales et les gestes clés sans ouvrir la documentation complète formateur.</p>
+</article>
+</section>
+<section id="apercu" class="pdf-preview card-action">
+<div class="section-heading">
+<div>
+<h2>Aperçu du livret</h2>
+<p>Source locale : <code>assets/docs/livret-sst.pdf</code>.</p>
+</div>
+<span class="badge">Local</span>
+</div>
+<div class="media-embed pdf-frame pdf-frame--compact">
+<iframe title="Aperçu du livret SST" loading="lazy" src="../assets/docs/livret-sst.pdf#toolbar=1&navpanes=0&scrollbar=1">
+</iframe>
+</div>
+</section>
+<section class="grid two">
+<article class="card">
+<h2>Ancrages rapides</h2>
+<div class="quick-links quick-links--spaced">
+<a class="quick-link" href="../revision/index.html">Révision terrain</a>
+<a class="quick-link" href="../modules/module-4.html">C4 Alerter</a>
+<a class="quick-link" href="../modules/module-5.html">C5 Secourir</a>
+</div>
+</article>
+<article class="card">
+<h2>Gestes clés dans le livret</h2>
+<ul class="list-tight">
+<li>Alerte</li>
+<li>Saignement abondant</li>
+<li>Inconscience</li>
+<li>Arrêt cardiaque / DAE</li>
+<li>Brûlure / Étouffement</li>
+</ul>
+</article>
+</section>
+</main>
+<div class="floating-urgence">
+<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+</div>
+<footer class="app-footer">
+<button class="btn-secondary" data-nav="prev">Précédent</button>
+<button class="btn-primary" data-nav="hub">Accueil</button>
+<button class="btn-secondary" data-nav="next">Suivant</button>
+<button class="btn-danger" data-nav="urgence">URGENCE</button>
+</footer>
+<script src="../assets/js/navigation.js">
+</script>
+<script src="../assets/js/ui.js">
+</script>
+<script src="../assets/js/app.js">
+</script>
 </body>
 </html>

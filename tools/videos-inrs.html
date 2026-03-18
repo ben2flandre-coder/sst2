@@ -1,73 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Médiathèque gestes SST</title>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/layout.css" />
-  <link rel="stylesheet" href="../assets/css/components.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Médiathèque gestes SST</title>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/layout.css" />
+<link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/tools/livret.html" data-next="/tools/ressources-formateur.html">
-  <header class="app-header"><div class="app-title">SST • Outils formateur</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
-  <main class="app-main">
-    <section class="hero hero-premium">
-      <div class="hero-split hero-split--balanced">
-        <div>
-          <p class="hero-kicker">Médiathèque par compétence</p>
-          <h1>Vidéos et ressources INRS</h1>
-          <p>Cette page sert uniquement à préparer une démonstration fiable en formation. Chaque entrée est reliée à un module ou à une situation utile.</p>
-        </div>
-        <aside class="hero-panel institutional-card">
-          <h2>Entrées</h2>
-          <div class="quick-links quick-links--spaced">
-            <a class="quick-link" href="#c2">C2 Protéger</a>
-            <a class="quick-link" href="#c3">C3 Examiner</a>
-            <a class="quick-link" href="#c4">C4 Alerter</a>
-            <a class="quick-link" href="#c5">C5 Secourir</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="c2" class="card-action">
-      <div class="section-heading"><div><h2>C2 — Protéger</h2><p>Préparer la lecture de situation et l’organisation des secours.</p></div><span class="badge">Support formateur</span></div>
-      <div class="resource-grid">
-        <a class="resource-card" href="https://www.inrs.fr/demarche/organisation-secours/accident-malaise.html" target="_blank" rel="noopener"><strong>Organisation des secours</strong><span>Repères sur la protection et l’environnement d’intervention.</span></a>
-        <a class="resource-card" href="https://www.inrs.fr/risques/sst.html" target="_blank" rel="noopener"><strong>Cadre SST INRS</strong><span>Vue d’ensemble pour rappeler la mission du SST.</span></a>
-      </div>
-    </section>
-
-    <section id="c3" class="card-action">
-      <div class="section-heading"><div><h2>C3 — Examiner</h2><p>Appuyer l’identification du signe prioritaire et la bascule vers la conduite adaptée.</p></div><span class="badge">Support formateur</span></div>
-      <div class="resource-grid">
-        <a class="resource-card" href="https://www.inrs.fr/media.html?refINRS=outil31" target="_blank" rel="noopener"><strong>PI SST interactif</strong><span>Support officiel utile pour montrer la logique d’orientation.</span></a>
-        <a class="resource-card" href="../modules/module-5.html"><strong>Retour C5</strong><span>Réutiliser immédiatement les repères avec les apprenants.</span></a>
-      </div>
-    </section>
-
-    <section id="c4" class="card-action">
-      <div class="section-heading"><div><h2>C4 — Alerter</h2><p>Structurer le message d’alerte et la coordination des témoins.</p></div><span class="badge">Support formateur</span></div>
-      <div class="resource-grid">
-        <a class="resource-card" href="https://www.inrs.fr/demarche/organisation-secours/accident-malaise.html" target="_blank" rel="noopener"><strong>Accident, malaise, alerte</strong><span>Repères sur l’appel et l’organisation des secours.</span></a>
-        <a class="resource-card" href="../modules/module-4.html"><strong>Retour C4</strong><span>Réinjecter le message type dans le parcours apprenant.</span></a>
-      </div>
-    </section>
-
-    <section id="c5" class="card-action">
-      <div class="section-heading"><div><h2>C5 — Secourir</h2><p>Accès rapide aux fiches opérationnelles pour les démonstrations et ateliers.</p></div><span class="badge">Support formateur</span></div>
-      <div class="resource-grid">
-        <a class="resource-card" href="../urgence/hemorragie.html"><strong>Saignement</strong><span>Compression immédiate et surveillance.</span></a>
-        <a class="resource-card" href="../urgence/etouffement.html"><strong>Étouffement</strong><span>Claques dorsales et compressions selon l’âge.</span></a>
-        <a class="resource-card" href="../urgence/inconscience.html"><strong>Inconscience</strong><span>PLS et surveillance.</span></a>
-        <a class="resource-card" href="../urgence/arret-cardiaque.html"><strong>Arrêt cardiaque</strong><span>RCP et DAE.</span></a>
-        <a class="resource-card" href="../urgence/brulure.html"><strong>Brûlure</strong><span>Refroidissement et protection.</span></a>
-        <a class="resource-card" href="../urgence/malaise.html"><strong>Malaise</strong><span>Repérage de la gravité et conduite à tenir.</span></a>
-      </div>
-    </section>
-  </main>
-  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
-  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
-  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+<header class="app-header">
+<div class="app-title">SST • Outils formateur</div>
+<button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
+</header>
+<main class="app-main">
+<section class="hero hero-premium">
+<div class="hero-split hero-split--balanced">
+<div>
+<p class="hero-kicker">Médiathèque légère</p>
+<h1>Vidéos INRS et démonstrations à relier au bon geste</h1>
+<p>Une page propre, courte et orientée usage : chaque entrée sert à préparer une démonstration fiable ou à recaler une conduite à tenir.</p>
+</div>
+<aside class="hero-panel institutional-card">
+<h2>Entrées</h2>
+<div class="quick-links quick-links--spaced">
+<a class="quick-link" href="#canal">Canal officiel</a>
+<a class="quick-link" href="#gestes">Gestes clés</a>
+<a class="quick-link" href="#ressources">Ressources stables</a>
+</div>
+</aside>
+</div>
+</section>
+<section id="canal" class="content-grid-two">
+<article class="card-action">
+<p class="badge">Canal officiel</p>
+<h2>INRSFrance / vidéos INRS</h2>
+<p>Point d’entrée stable pour retrouver les productions audiovisuelles de l’INRS et préparer une démonstration en formation.</p>
+<div class="card-actions-row">
+<a class="btn-primary" href="https://www.inrs.fr/publications/videos" target="_blank" rel="noopener">Voir la médiathèque INRS</a>
+<a class="btn-secondary" href="https://www.inrs.fr/demarche/organisation-secours/accident-malaise.html" target="_blank" rel="noopener">Organisation des secours</a>
+</div>
+</article>
+<article class="card media-summary-card institutional-card">
+<p class="badge">Repère visuel</p>
+<h2>Liens à utiliser en animation</h2>
+<div class="inrs-figure inrs-figure--duo">
+<img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Aperçu outil INRS" />
+<img src="../assets/images/previews/Fiche-outils-INRS_p2.png" alt="Aperçu outil INRS complémentaire" />
+</div>
+</article>
+</section>
+<section id="gestes" class="resource-grid">
+<article class="resource-card resource-card--visual">
+<img src="../assets/images/previews/General_p1.png" alt="Alerter" />
+<strong>Alerter</strong>
+<span>À montrer avant les mises en situation pour stabiliser le message et le rôle du témoin.</span>
+<a class="btn-primary" href="../modules/module-4.html">Revoir C4</a>
+</article>
+<article class="resource-card resource-card--visual">
+<img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Saignement" />
+<strong>Saignement abondant</strong>
+<span>À utiliser pour montrer la priorité absolue : compression immédiate puis surveillance.</span>
+<a class="btn-primary" href="../urgence/hemorragie.html">Voir la démonstration</a>
+</article>
+<article class="resource-card resource-card--visual">
+<img src="../assets/images/previews/Quiz-2019_p1.png" alt="Étouffement" />
+<strong>Étouffement</strong>
+<span>À relier au repérage visuel et à l’adaptation du geste selon l’âge.</span>
+<a class="btn-primary" href="../urgence/etouffement.html">Voir la démonstration</a>
+</article>
+<article class="resource-card resource-card--visual">
+<img src="../assets/images/previews/General_p2.png" alt="Inconscience" />
+<strong>Inconscience</strong>
+<span>Utile pour revoir l’enchaînement conscience, respiration, PLS, alerte.</span>
+<a class="btn-primary" href="../urgence/inconscience.html">Voir la démonstration</a>
+</article>
+<article class="resource-card resource-card--visual">
+<img src="../assets/images/previews/Fiche-outils-INRS_p2.png" alt="Arrêt cardiaque et DAE" />
+<strong>Arrêt cardiaque / DAE</strong>
+<span>À utiliser pour rappeler que le DAE s’ajoute au massage, il ne le remplace jamais.</span>
+<a class="btn-primary" href="../urgence/arret-cardiaque.html">Voir la démonstration</a>
+</article>
+<article class="resource-card resource-card--visual">
+<img src="../assets/images/previews/Pedagogie_p2.png" alt="Brûlure et risque spécifique" />
+<strong>Brûlure / risque spécifique</strong>
+<span>À utiliser pour relier le geste au contexte de travail et à la protection de zone.</span>
+<a class="btn-primary" href="../urgence/brulure.html">Voir la démonstration</a>
+</article>
+</section>
+<section id="ressources" class="card-action">
+<div class="section-heading">
+<div>
+<h2>Ressources stables</h2>
+<p>Liens officiels courts à garder dans l’espace formateur.</p>
+</div>
+<span class="badge">Sources officielles</span>
+</div>
+<div class="resource-grid">
+<a class="resource-card" href="https://www.inrs.fr/publications/videos" target="_blank" rel="noopener">
+<strong>Vidéos INRS</strong>
+<span>Entrée officielle vers les productions audiovisuelles.</span>
+</a>
+<a class="resource-card" href="https://www.inrs.fr/demarche/organisation-secours/accident-malaise.html" target="_blank" rel="noopener">
+<strong>Organisation des secours</strong>
+<span>Base fiable pour protection, alerte et intervention.</span>
+</a>
+<a class="resource-card" href="https://www.inrs.fr/media.html?refINRS=outil31" target="_blank" rel="noopener">
+<strong>PI SST interactif</strong>
+<span>Support officiel pour visualiser les branches de décision.</span>
+</a>
+</div>
+</section>
+</main>
+<div class="floating-urgence">
+<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+</div>
+<footer class="app-footer">
+<button class="btn-secondary" data-nav="prev">Précédent</button>
+<button class="btn-primary" data-nav="hub">Accueil</button>
+<button class="btn-secondary" data-nav="next">Suivant</button>
+<button class="btn-danger" data-nav="urgence">URGENCE</button>
+</footer>
+<script src="../assets/js/navigation.js">
+</script>
+<script src="../assets/js/ui.js">
+</script>
+<script src="../assets/js/app.js">
+</script>
 </body>
 </html>

@@ -69,12 +69,12 @@ const MODULE_CONTEXT = {
   '/modules/module-5.html': {
     title: 'Accès C5',
     links: [
-      { label: 'Saignement', href: '/urgence/hemorragie.html' },
-      { label: 'Étouffement', href: '/urgence/etouffement.html' },
-      { label: 'Arrêt cardiaque', href: '/urgence/arret-cardiaque.html' },
-      { label: 'Adulte', href: '/modules/module-5.html#variante-adulte' },
-      { label: 'Enfant', href: '/modules/module-5.html#variante-enfant' },
-      { label: 'Nourrisson', href: '/modules/module-5.html#variante-nourrisson' }
+      { label: 'Saignement', href: '/modules/module-5.html#saignement' },
+      { label: 'Étouffement', href: '/modules/module-5.html#etouffement' },
+      { label: 'Malaise', href: '/modules/module-5.html#malaise' },
+      { label: 'Inconscience', href: '/modules/module-5.html#inconscience' },
+      { label: 'Arrêt cardiaque', href: '/modules/module-5.html#arret' },
+      { label: 'Risque spécifique', href: '/modules/module-5.html#risque' }
     ]
   },
   '/modules/module-6.html': {

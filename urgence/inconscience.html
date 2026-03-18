@@ -1,35 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urgence • Inconscience</title>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/layout.css" />
-  <link rel="stylesheet" href="../assets/css/components.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Urgence • Inconscience</title>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/layout.css" />
+<link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/urgence/etouffement.html" data-next="/urgence/arret-cardiaque.html">
-  <header class="app-header"><div class="app-title">SST • Agir en urgence</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
-  <main class="app-main">
-    <section class="hero hero-premium"><div class="premium-header"><span class="icon-badge" aria-hidden="true">😵</span><div><p class="hero-kicker">Agir en urgence</p><h1>Inconscience</h1><p>Je contrôle la respiration, je mets en PLS, j’alerte et je surveille.</p></div></div></section>
-
-    <section class="pi-decision">
-      <article class="pi-branch"><strong>Je vois</strong><span>La victime ne répond pas.</span></article>
-      <article class="pi-branch"><strong>Je vérifie</strong><span>La respiration est normale.</span></article>
-      <article class="pi-branch"><strong>Je fais</strong><span>PLS.</span></article>
-      <article class="pi-branch"><strong>Je surveille</strong><span>Respiration jusqu’au relais.</span></article>
-    </section>
-
-    <section class="urgent-grid"><article class="urgence-step urgence-step--strong"><h3>1. Stimuler</h3><p>Parler et vérifier l’absence de réponse.</p></article><article class="urgence-step urgence-step--strong"><h3>2. Respirer</h3><p>Basculer la tête si besoin et vérifier la respiration.</p></article><article class="urgence-step urgence-step--strong"><h3>3. PLS</h3><p>Installer en position latérale de sécurité si la respiration est normale.</p></article><article class="urgence-step urgence-step--strong"><h3>4. Alerter</h3><p>Faire appeler et contrôler régulièrement la respiration.</p></article></section>
-
-    <section class="grid two"><article class="card"><h2>À faire</h2><ul class="list-tight"><li>Vérifier d’abord la respiration.</li><li>Installer en PLS si elle est normale.</li><li>Rester auprès de la victime.</li><li>Réévaluer sans interruption.</li></ul></article><article class="red-flag"><h2>À éviter</h2><ul class="list-tight"><li>Oublier le contrôle de la respiration.</li><li>Laisser la victime sur le dos.</li><li>S’éloigner après la PLS.</li><li>Confondre respiration anormale et respiration efficace.</li></ul></article></section>
-
-    <section class="audience-panels audience-panels--dense"><article class="card"><h2>Adulte</h2><p>PLS standard et surveillance rapprochée.</p></article><article class="card"><h2>Enfant</h2><p>Même logique, gestuelle adaptée à la morphologie.</p></article><article class="card"><h2>Nourrisson</h2><p>Position de sécurité adaptée et liberté des voies aériennes.</p></article></section>
-    <section class="card-action"><h2>Cas concret métier</h2><p>Dans un vestiaire, un collègue ne répond plus mais respire. La priorité est la respiration puis la PLS, avant toute autre action.</p></section>
-    <section class="grid two"><a class="btn-primary" href="../modules/module-5.html">Retour C5</a><a class="btn-secondary" href="../revision/index.html">Révision rapide</a></section>
-  </main>
-  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
-  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
-  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+<header class="app-header">
+<div class="app-title">SST • Agir en urgence</div>
+<button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
+</header>
+<main class="app-main">
+<section class="hero hero-premium ">
+<div class="premium-header">
+<span class="icon-badge" aria-hidden="true">😵</span>
+<div>
+<p class="hero-kicker">Agir en urgence</p>
+<h1>Inconscience</h1>
+<p>Je contrôle la respiration, je mets en PLS, j’alerte et je surveille.</p>
+</div>
+</div>
+</section>
+<section class="emergency-router card-action">
+<div class="quick-links quick-links--spaced quick-links--block">
+<a class="quick-link quick-link--danger" href="hemorragie.html">Saignement</a>
+<a class="quick-link quick-link--danger" href="etouffement.html">Étouffement</a>
+<a class="quick-link" href="inconscience.html">Inconscience</a>
+<a class="quick-link quick-link--danger" href="arret-cardiaque.html">Arrêt cardiaque</a>
+<a class="quick-link" href="brulure.html">Brûlure</a>
+<a class="quick-link" href="malaise.html">Malaise</a>
+</div>
+</section>
+<section class="pi-decision">
+<article class="pi-branch">
+<strong>Je vois</strong>
+<span>la victime ne répond pas mais respire normalement.</span>
+</article>
+<article class="pi-branch">
+<strong>Je fais</strong>
+<span>contrôle de la respiration puis PLS.</span>
+</article>
+<article class="pi-branch">
+<strong>J’alerte</strong>
+<span>faire appeler et transmettre les signes utiles.</span>
+</article>
+<article class="pi-branch">
+<strong>Je surveille</strong>
+<span>respiration jusqu’au relais.</span>
+</article>
+</section>
+<section class="urgent-grid">
+<article class="urgence-step urgence-step--strong">
+<h3>1. Stimuler</h3>
+<p>Parler et vérifier l’absence de réponse.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>2. Respirer</h3>
+<p>Basculer la tête si besoin et vérifier la respiration.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>3. PLS</h3>
+<p>Installer en position latérale de sécurité si la respiration est normale.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>4. Alerter</h3>
+<p>Faire appeler et contrôler régulièrement la respiration.</p>
+</article>
+</section>
+<section class="grid two">
+<article class="card">
+<h2>À faire</h2>
+<ul class="list-tight">
+<li>Vérifier d’abord la respiration.</li>
+<li>Installer en PLS si elle est normale.</li>
+<li>Rester auprès de la victime.</li>
+<li>Réévaluer sans interruption.</li>
+</ul>
+</article>
+<article class="red-flag">
+<h2>À éviter</h2>
+<ul class="list-tight">
+<li>Oublier le contrôle de la respiration.</li>
+<li>Laisser la victime sur le dos.</li>
+<li>S’éloigner après la PLS.</li>
+<li>Confondre respiration anormale et respiration efficace.</li>
+</ul>
+</article>
+</section>
+<section class="audience-panels audience-panels--dense">
+<article class="card">
+<h2>Adulte</h2>
+<p>PLS standard et surveillance rapprochée.</p>
+</article>
+<article class="card">
+<h2>Enfant</h2>
+<p>Même logique, gestuelle adaptée à la morphologie.</p>
+</article>
+<article class="card">
+<h2>Nourrisson</h2>
+<p>Position de sécurité adaptée et liberté des voies aériennes.</p>
+</article>
+</section>
+<section class="card-action">
+<h2>Cas concret métier</h2>
+<p>Dans un vestiaire, un collègue ne répond plus mais respire. La priorité est la respiration puis la PLS, avant toute autre action.</p>
+</section>
+<section class="grid two">
+<a class="btn-primary" href="../modules/module-5.html">Retour C5</a>
+<a class="btn-secondary" href="../revision/index.html">Révision rapide</a>
+</section>
+</main>
+<div class="floating-urgence">
+<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+</div>
+<footer class="app-footer">
+<button class="btn-secondary" data-nav="prev">Précédent</button>
+<button class="btn-primary" data-nav="hub">Accueil</button>
+<button class="btn-secondary" data-nav="next">Suivant</button>
+<button class="btn-danger" data-nav="urgence">URGENCE</button>
+</footer>
+<script src="../assets/js/navigation.js">
+</script>
+<script src="../assets/js/ui.js">
+</script>
+<script src="../assets/js/app.js">
+</script>
 </body>
 </html>

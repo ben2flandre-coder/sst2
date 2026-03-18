@@ -1,33 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urgence • DAE</title>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/layout.css" />
-  <link rel="stylesheet" href="../assets/css/components.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Urgence • Défibrillateur automatisé externe</title>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/layout.css" />
+<link rel="stylesheet" href="../assets/css/components.css" />
 </head>
-<body class="app-shell" data-prev="/urgence/arret-cardiaque.html" data-next="/revision/index.html">
-  <header class="app-header"><div class="app-title">SST • Agir en urgence</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
-  <main class="app-main">
-    <section class="hero hero-premium hero-premium--critical"><div class="premium-header"><span class="icon-badge" aria-hidden="true">⚡</span><div><p class="hero-kicker">Arrêt cardiaque</p><h1>Défibrillateur automatisé externe</h1><p>J’allume, je pose, je laisse analyser, je reprends immédiatement la RCP.</p></div></div></section>
-
-    <section class="pi-decision">
-      <article class="pi-branch"><strong>Allumer</strong><span>Dès son arrivée.</span></article>
-      <article class="pi-branch"><strong>Poser</strong><span>Suivre le schéma des électrodes.</span></article>
-      <article class="pi-branch"><strong>Écarter</strong><span>Personne ne touche pendant l’analyse.</span></article>
-      <article class="pi-branch"><strong>Reprendre</strong><span>RCP immédiatement après.</span></article>
-    </section>
-
-    <section class="urgent-grid"><article class="urgence-step urgence-step--strong"><h3>1. Allumer</h3><p>Mettre l’appareil en marche dès qu’il arrive.</p></article><article class="urgence-step urgence-step--strong"><h3>2. Poser</h3><p>Placer les électrodes comme indiqué sur les schémas.</p></article><article class="urgence-step urgence-step--strong"><h3>3. Analyser</h3><p>Ne toucher personne pendant l’analyse et le choc.</p></article><article class="urgence-step urgence-step--strong"><h3>4. Reprendre</h3><p>Relancer immédiatement la RCP après chaque analyse ou choc.</p></article></section>
-
-    <section class="grid two"><article class="card"><h2>À faire</h2><ul class="list-tight"><li>Suivre les consignes vocales.</li><li>Préparer l’espace autour de la victime.</li><li>Utiliser les électrodes pédiatriques si disponibles pour l’enfant.</li><li>Reprendre la RCP aussitôt.</li></ul></article><article class="red-flag"><h2>À éviter</h2><ul class="list-tight"><li>Attendre le DAE avant de commencer la RCP.</li><li>Toucher la victime pendant l’analyse.</li><li>Perdre du temps après le choc.</li><li>Oublier d’annoncer “écartez-vous”.</li></ul></article></section>
-
-    <section class="grid two"><a class="btn-primary" href="arret-cardiaque.html">Retour arrêt cardiaque</a><a class="btn-secondary" href="../revision/index.html">Révision rapide</a></section>
-  </main>
-  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
-  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
-  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+<body class="app-shell" data-prev="/urgence/malaise.html" data-next="/revision/index.html">
+<header class="app-header">
+<div class="app-title">SST • Agir en urgence</div>
+<button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
+</header>
+<main class="app-main">
+<section class="hero hero-premium hero-premium--critical">
+<div class="premium-header">
+<span class="icon-badge" aria-hidden="true">⚡</span>
+<div>
+<p class="hero-kicker">Arrêt cardiaque</p>
+<h1>Défibrillateur automatisé externe</h1>
+<p>J’allume, je pose, je laisse analyser, je reprends immédiatement la RCP.</p>
+</div>
+</div>
+</section>
+<section class="emergency-router card-action">
+<div class="quick-links quick-links--spaced quick-links--block">
+<a class="quick-link quick-link--danger" href="hemorragie.html">Saignement</a>
+<a class="quick-link quick-link--danger" href="etouffement.html">Étouffement</a>
+<a class="quick-link" href="inconscience.html">Inconscience</a>
+<a class="quick-link quick-link--danger" href="arret-cardiaque.html">Arrêt cardiaque</a>
+<a class="quick-link" href="brulure.html">Brûlure</a>
+<a class="quick-link" href="malaise.html">Malaise</a>
+</div>
+</section>
+<section class="pi-decision">
+<article class="pi-branch">
+<strong>Je vois</strong>
+<span>arrêt cardiaque confirmé, DAE disponible.</span>
+</article>
+<article class="pi-branch">
+<strong>Je fais</strong>
+<span>allumer, poser, suivre les consignes vocales.</span>
+</article>
+<article class="pi-branch">
+<strong>J’alerte</strong>
+<span>missionner un témoin si ce n’est pas déjà fait.</span>
+</article>
+<article class="pi-branch">
+<strong>Je surveille</strong>
+<span>personne ne touche pendant l’analyse, RCP reprise aussitôt.</span>
+</article>
+</section>
+<section class="urgent-grid">
+<article class="urgence-step urgence-step--strong">
+<h3>1. Allumer</h3>
+<p>Mettre l’appareil en marche dès qu’il arrive.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>2. Poser</h3>
+<p>Placer les électrodes comme indiqué sur les schémas.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>3. Analyser</h3>
+<p>Ne toucher personne pendant l’analyse et le choc.</p>
+</article>
+<article class="urgence-step urgence-step--strong">
+<h3>4. Reprendre</h3>
+<p>Relancer immédiatement la RCP après chaque analyse ou choc.</p>
+</article>
+</section>
+<section class="grid two">
+<article class="card">
+<h2>À faire</h2>
+<ul class="list-tight">
+<li>Suivre les consignes vocales.</li>
+<li>Préparer l’espace autour de la victime.</li>
+<li>Utiliser les électrodes pédiatriques si disponibles pour l’enfant.</li>
+<li>Reprendre la RCP aussitôt.</li>
+</ul>
+</article>
+<article class="red-flag">
+<h2>À éviter</h2>
+<ul class="list-tight">
+<li>Attendre le DAE avant de commencer la RCP.</li>
+<li>Toucher la victime pendant l’analyse.</li>
+<li>Perdre du temps après le choc.</li>
+<li>Oublier d’annoncer “écartez-vous”.</li>
+</ul>
+</article>
+</section>
+<section class="audience-panels audience-panels--dense">
+<article class="card">
+<h2>Adulte</h2>
+<p>Adulte : électrodes standard.</p>
+</article>
+<article class="card">
+<h2>Enfant</h2>
+<p>Enfant : électrodes pédiatriques si disponibles.</p>
+</article>
+<article class="card">
+<h2>Nourrisson</h2>
+<p>Nourrisson : suivre les consignes adaptées si matériel pédiatrique disponible.</p>
+</article>
+</section>
+<section class="card-action">
+<h2>Cas concret métier</h2>
+<p>Sur site, un collègue apporte le DAE pendant le massage. Le SST l’intègre immédiatement sans arrêter durablement la RCP.</p>
+</section>
+<section class="grid two">
+<a class="btn-primary" href="../modules/module-5.html">Retour C5</a>
+<a class="btn-secondary" href="../revision/index.html">Révision rapide</a>
+</section>
+</main>
+<div class="floating-urgence">
+<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+</div>
+<footer class="app-footer">
+<button class="btn-secondary" data-nav="prev">Précédent</button>
+<button class="btn-primary" data-nav="hub">Accueil</button>
+<button class="btn-secondary" data-nav="next">Suivant</button>
+<button class="btn-danger" data-nav="urgence">URGENCE</button>
+</footer>
+<script src="../assets/js/navigation.js">
+</script>
+<script src="../assets/js/ui.js">
+</script>
+<script src="../assets/js/app.js">
+</script>
 </body>
 </html>
