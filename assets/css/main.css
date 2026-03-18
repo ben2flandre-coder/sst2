@@ -619,3 +619,36 @@ code {
     width: 100%;
   }
 }
+
+
+/* SST premium additions */
+.institution-strip { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 16px; }
+.institution-strip span { border:1px solid rgba(255,255,255,0.34); border-radius:999px; padding:7px 10px; font-size:0.78rem; font-weight:800; letter-spacing:0.04em; }
+.institution-strip--light span { background:rgba(255,255,255,0.16); }
+.entry-card--dominant { grid-column:span 2; }
+.quick-links--block .quick-link { min-width:150px; }
+.path-strip { margin-top:18px; }
+.inrs-figure--duo { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.mission-grid,.situation-detail-grid,.visual-case-grid,.priority-stack,.mini-flow { display:grid; gap:12px; }
+.mini-panel { border:1px solid #d7e3ef; background:linear-gradient(180deg,#ffffff,#f8fbff); border-radius:16px; padding:14px; display:grid; gap:6px; }
+.mini-panel strong { color:var(--primary); }
+.mini-panel--primary { border-color:#9cc7e2; background:#eef7fd; }
+.mini-panel--success { border-color:#99f6e4; background:#ecfeff; }
+.mini-panel--danger { border-color:#fecaca; background:#fff1f2; }
+.mini-panel--warning { border-color:#fed7aa; background:#fff7ed; }
+.mini-flow__item,.priority-item { border:1px solid #d8dee6; border-radius:14px; padding:14px; background:#fff; }
+.priority-item--critical { border-color:#ef4444; background:#fff1f2; }
+.priority-item--alert { border-color:#f59e0b; background:#fffbeb; }
+.table-wrap { overflow-x:auto; }
+.alert-table { width:100%; border-collapse:collapse; min-width:640px; }
+.alert-table th,.alert-table td { padding:14px 12px; border-bottom:1px solid #d8dee6; text-align:left; vertical-align:top; }
+.alert-table th { background:#eff6ff; color:var(--primary); }
+.situation-grid--single { grid-template-columns:1fr; }
+.situation-card--detailed { padding:20px; }
+.review-card--critical,.situation-card--critical { border-color:#ef4444; box-shadow:0 14px 32px rgba(185,28,28,0.12); }
+.emergency-router { padding:14px 18px; }
+.pdf-frame iframe { width:100%; min-height:620px; border:0; }
+.pdf-frame--compact iframe { min-height:520px; }
+@media (min-width:721px) { .situation-detail-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } .visual-case-grid,.mission-grid,.content-grid-two,.mini-flow { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:900px) { .entry-card--dominant { grid-column:span 1; } }
+@media (max-width:720px) { .inrs-figure--duo { grid-template-columns:1fr; } .quick-links--block .quick-link,.hero-actions--start > * { width:100%; } .alert-table { min-width:100%; } }

@@ -1,59 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PI SST</title>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/layout.css" />
-  <link rel="stylesheet" href="../assets/css/components.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PI SST</title>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/layout.css" />
+<link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/tools/pap.html" data-next="/tools/livret.html">
-  <header class="app-header"><div class="app-title">SST • Outils formateur</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
-  <main class="app-main">
-    <section class="hero hero-premium">
-      <div class="hero-split hero-split--balanced">
-        <div>
-          <p class="hero-kicker">Secourir</p>
-          <h1>PI SST complet</h1>
-          <p>Plan d’intervention formateur pour animer les décisions, faire verbaliser les signes prioritaires et relier immédiatement une situation à la bonne conduite à tenir.</p>
-          <div class="hero-actions hero-actions--start"><a class="btn-primary" href="../assets/html/pi/PI_SST.html" target="_blank" rel="noopener">Ouvrir la source PI</a></div>
-        </div>
-        <aside class="hero-panel institutional-card">
-          <h2>Repère</h2>
-          <div class="inrs-figure">
-            <img src="../assets/images/previews/General_p2.png" alt="Aperçu du PI SST" />
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="content-grid-two">
-      <article class="card-action">
-        <h2>Usage formateur</h2>
-        <ul class="list-tight">
-          <li>Démarrer une simulation.</li>
-          <li>Réduire l’hésitation dans le groupe.</li>
-          <li>Faire verbaliser signe, alerte, conduite et surveillance.</li>
-        </ul>
-      </article>
-      <article class="card-action">
-        <h2>Structure</h2>
-        <div class="pi-decision">
-          <article class="pi-branch"><strong>Protéger</strong><span>Sécuriser la zone.</span></article>
-          <article class="pi-branch"><strong>Examiner</strong><span>Repérer le signe majeur.</span></article>
-          <article class="pi-branch"><strong>Alerter</strong><span>Message utile.</span></article>
-          <article class="pi-branch"><strong>Secourir</strong><span>Conduite adaptée.</span></article>
-        </div>
-      </article>
-    </section>
-
-    <section class="card-action"><div class="section-heading"><div><h2>Accès direct par situation</h2><p>Pour basculer rapidement vers la fiche utile pendant un atelier ou une remédiation.</p></div><span class="badge">Conduites à tenir</span></div><div class="resource-grid"><a class="resource-card resource-card--visual" href="../urgence/hemorragie.html"><img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Saignement abondant" /><strong>Saignement abondant</strong><span>Compression immédiate et surveillance.</span></a><a class="resource-card resource-card--visual" href="../urgence/etouffement.html"><img src="../assets/images/previews/Quiz-2019_p1.png" alt="Étouffement" /><strong>Étouffement</strong><span>Claques dorsales et compressions adaptées.</span></a><a class="resource-card resource-card--visual" href="../urgence/inconscience.html"><img src="../assets/images/previews/General_p1.png" alt="Inconscience" /><strong>Inconscience</strong><span>PLS et surveillance continue.</span></a><a class="resource-card resource-card--visual" href="../urgence/arret-cardiaque.html"><img src="../assets/images/previews/Fiche-outils-INRS_p2.png" alt="Arrêt cardiaque" /><strong>Arrêt cardiaque</strong><span>RCP immédiate et DAE.</span></a></div></section>
-
-    <section class="card-action" id="source"><div class="section-heading"><div><h2>Source documentaire</h2><p>Le HTML source complet reste disponible à part.</p></div><span class="badge">Asset interne</span></div><div class="doc-toolbar"><a class="btn-primary doc-toolbar__link" href="../assets/html/pi/PI_SST.html" target="_blank" rel="noopener">Ouvrir le HTML source</a><a class="btn-secondary doc-toolbar__link" href="../assets/docs/PI_SST.html" target="_blank" rel="noopener">Version doc</a></div></section>
-  </main>
-  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
-  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
-  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+<header class="app-header">
+<div class="app-title">SST • Outils formateur</div>
+<button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
+</header>
+<main class="app-main">
+<section class="hero hero-premium">
+<div class="hero-split hero-split--balanced">
+<div>
+<p class="hero-kicker">Secourir</p>
+<h1>PI SST complet</h1>
+<p>Plan d’intervention formateur pour animer les décisions, faire verbaliser les signes prioritaires et relier immédiatement une situation à la bonne conduite à tenir.</p>
+<div class="hero-actions hero-actions--start">
+<a class="btn-primary" href="#source">Voir le cadrage formateur</a>
+</div>
+</div>
+<aside class="hero-panel institutional-card">
+<p class="badge">À quoi ça sert pour le SST</p>
+<h2>Stabiliser la décision en situation</h2>
+<ul class="list-tight">
+<li>repérer le signe majeur ;</li>
+<li>choisir la bonne branche ;</li>
+<li>enchaîner alerte, geste et surveillance.</li>
+</ul>
+</aside>
+</div>
+</section>
+<section class="content-grid-two">
+<article class="card media-summary-card institutional-card">
+<p class="badge">Résumé pédagogique</p>
+<h2>Lecture visuelle immédiate</h2>
+<div class="inrs-figure">
+<img src="../assets/images/previews/General_p2.png" alt="Aperçu du PI SST" />
+</div>
+</article>
+<article class="card-action">
+<p class="badge">Structure</p>
+<h2>Le fil conducteur formateur</h2>
+<div class="pi-decision">
+<article class="pi-branch">
+<strong>Protéger</strong>
+<span>Sécuriser la zone.</span>
+</article>
+<article class="pi-branch">
+<strong>Examiner</strong>
+<span>Repérer le signe majeur.</span>
+</article>
+<article class="pi-branch">
+<strong>Alerter</strong>
+<span>Message utile.</span>
+</article>
+<article class="pi-branch">
+<strong>Secourir</strong>
+<span>Conduite adaptée.</span>
+</article>
+</div>
+</article>
+</section>
+<section class="card-action" id="source">
+<div class="section-heading">
+<div>
+<h2>Accès direct par situation</h2>
+<p>Pour basculer rapidement vers la fiche utile pendant un atelier, une démonstration ou une remédiation.</p>
+</div>
+<span class="badge">Conduites à tenir</span>
+</div>
+<div class="resource-grid">
+<a class="resource-card resource-card--visual" href="../urgence/hemorragie.html">
+<img src="../assets/images/previews/Fiche-outils-INRS_p1.png" alt="Saignement abondant" />
+<strong>Saignement abondant</strong>
+<span>Compression immédiate et surveillance.</span>
+</a>
+<a class="resource-card resource-card--visual" href="../urgence/etouffement.html">
+<img src="../assets/images/previews/Quiz-2019_p1.png" alt="Étouffement" />
+<strong>Étouffement</strong>
+<span>Claques dorsales et compressions adaptées.</span>
+</a>
+<a class="resource-card resource-card--visual" href="../urgence/inconscience.html">
+<img src="../assets/images/previews/General_p1.png" alt="Inconscience" />
+<strong>Inconscience</strong>
+<span>PLS et surveillance continue.</span>
+</a>
+<a class="resource-card resource-card--visual" href="../urgence/arret-cardiaque.html">
+<img src="../assets/images/previews/Fiche-outils-INRS_p2.png" alt="Arrêt cardiaque" />
+<strong>Arrêt cardiaque</strong>
+<span>RCP immédiate et DAE.</span>
+</a>
+</div>
+</section>
+<section class="card-action">
+<div class="section-heading">
+<div>
+<h2>Cadrage formateur</h2>
+<p>Le plan d’intervention a été réintégré ici en version exploitable pour l’animation, afin d’éviter l’ouverture de ressources locales incomplètes pendant la formation.</p>
+</div>
+<span class="badge">Asset intégré</span>
+</div>
+<div class="quick-links quick-links--spaced">
+<a class="quick-link" href="ressources-formateur.html">Retour outils</a>
+<a class="quick-link" href="../modules/module-4.html">Voir C4</a>
+<a class="quick-link" href="../modules/module-5.html">Voir C5</a>
+</div>
+</section>
+</main>
+<div class="floating-urgence">
+<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+</div>
+<footer class="app-footer">
+<button class="btn-secondary" data-nav="prev">Précédent</button>
+<button class="btn-primary" data-nav="hub">Accueil</button>
+<button class="btn-secondary" data-nav="next">Suivant</button>
+<button class="btn-danger" data-nav="urgence">URGENCE</button>
+</footer>
+<script src="../assets/js/navigation.js">
+</script>
+<script src="../assets/js/ui.js">
+</script>
+<script src="../assets/js/app.js">
+</script>
 </body>
 </html>

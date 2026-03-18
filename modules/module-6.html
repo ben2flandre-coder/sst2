@@ -1,89 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Étape 5 • C6 Prévention</title>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/layout.css" />
-  <link rel="stylesheet" href="../assets/css/components.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Étape 5 • C6 Prévention</title>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/layout.css" />
+<link rel="stylesheet" href="../assets/css/components.css" />
 </head>
 <body class="app-shell" data-prev="/modules/module-5.html" data-next="/revision/index.html">
-  <header class="app-header"><div class="app-title">SST • Parcours apprenant</div><button class="btn-secondary hub-btn" data-nav="hub">Accueil</button></header>
-  <main class="app-main">
-    <section class="progress-hero card-action">
-      <div>
-        <p class="hero-kicker">Étape 5 sur 5</p>
-        <h1>C6 — Éviter que cela recommence</h1>
-        <p>Après le secours, le SST aide à transformer l’événement en action de prévention claire et utile.</p>
-      </div>
-      <div class="progress-meta">
-        <strong>Progression</strong>
-        <div class="step-progress"><span class="is-complete">1</span><span class="is-complete">2</span><span class="is-complete">3</span><span class="is-complete">4</span><span class="is-active">5</span></div>
-        <p>Fin du parcours apprenant.</p>
-      </div>
-    </section>
-
-    <section class="content-grid-two">
-      <article class="card media-summary-card">
-        <p class="badge">Retour PAP</p>
-        <h2>Le même raisonnement qu’en C1</h2>
-        <div class="inrs-figure">
-          <img src="../assets/images/previews/Pedagogie_p2.png" alt="Aperçu visuel du PAP SST" />
-        </div>
-      </article>
-      <article class="card-action">
-        <p class="badge">Objectif</p>
-        <h2>Passer du fait à l’amélioration</h2>
-        <p>Décrire sans juger, repérer la cause, proposer une action réaliste et la transmettre rapidement.</p>
-      </article>
-    </section>
-
-    <section class="pap-ladder" aria-label="PAP simplifié pour le débrief">
-      <article class="pap-node"><strong>Danger</strong><span>Ce qui a rendu l’accident possible.</span></article>
-      <span class="pap-arrow">→</span>
-      <article class="pap-node"><strong>Situation</strong><span>Comment l’exposition s’est produite.</span></article>
-      <span class="pap-arrow">→</span>
-      <article class="pap-node"><strong>Dommage</strong><span>Ce qui s’est passé ou aurait pu arriver.</span></article>
-      <span class="pap-arrow">→</span>
-      <article class="pap-node"><strong>Action</strong><span>Ce qu’on change pour éviter la répétition.</span></article>
-    </section>
-
-    <section class="step-sequence">
-      <article class="step-card"><strong>1. Décrire</strong><span>Les faits, sans jugement.</span></article>
-      <article class="step-card"><strong>2. Rechercher</strong><span>La source du risque.</span></article>
-      <article class="step-card"><strong>3. Proposer</strong><span>Une mesure concrète.</span></article>
-      <article class="step-card"><strong>4. Transmettre</strong><span>Au bon interlocuteur, rapidement.</span></article>
-    </section>
-
-    <section class="grid two">
-      <article class="card-action">
-        <h2>Cas concret</h2>
-        <p>Après une chute sur sol glissant, la mesure utile peut être : balisage immédiat, nettoyage structuré, rangement du matériel d’entretien et information à l’équipe.</p>
-      </article>
-      <article class="red-flag">
-        <h2>Erreurs fréquentes</h2>
-        <ul class="list-tight">
-          <li>S’arrêter au secours sans retour d’expérience.</li>
-          <li>Parler de faute au lieu d’une situation à corriger.</li>
-          <li>Transmettre sans fait précis.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="module-callout card-action">
-      <div>
-        <h2>Ensuite</h2>
-        <p>Consolidez les réflexes avec la révision terrain ou ouvrez une fiche urgence pour retrouver un geste immédiatement.</p>
-      </div>
-      <div class="card-actions-row">
-        <a class="btn-primary" href="../revision/index.html">Réviser rapidement</a>
-        <a class="btn-secondary" href="../urgence/arret-cardiaque.html">Urgence</a>
-      </div>
-    </section>
-  </main>
-  <div class="floating-urgence"><button class="btn-danger" data-nav="urgence">⚡ URGENCE</button></div>
-  <footer class="app-footer"><button class="btn-secondary" data-nav="prev">Précédent</button><button class="btn-primary" data-nav="hub">Accueil</button><button class="btn-secondary" data-nav="next">Suivant</button><button class="btn-danger" data-nav="urgence">URGENCE</button></footer>
-  <script src="../assets/js/navigation.js"></script><script src="../assets/js/ui.js"></script><script src="../assets/js/app.js"></script>
+<header class="app-header">
+<div class="app-title">SST • Parcours apprenant</div>
+<button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
+</header>
+<main class="app-main">
+<section class="progress-hero card-action">
+<div>
+<p class="hero-kicker">Étape 5 sur 5</p>
+<h1>C6 — Éviter que cela recommence</h1>
+<p>Après le secours, le SST transforme un fait observé en action de prévention claire, simple et utile.</p>
+</div>
+<div class="progress-meta">
+<strong>Progression</strong>
+<div class="step-progress">
+<span class="is-complete">1</span>
+<span class="is-complete">2</span>
+<span class="is-complete">3</span>
+<span class="is-complete">4</span>
+<span class="is-active">5</span>
+</div>
+<p>Fin du parcours apprenant.</p>
+</div>
+</section>
+<section class="content-grid-two">
+<article class="card media-summary-card institutional-card">
+<p class="badge">Retour PAP</p>
+<h2>Le même raisonnement qu’en C1</h2>
+<div class="inrs-figure">
+<img src="../assets/images/previews/Pedagogie_p2.png" alt="Aperçu visuel du PAP SST" />
+</div>
+</article>
+<article class="card-action">
+<p class="badge">Objectif</p>
+<h2>Passer du fait à l’action utile</h2>
+<p>Décrire sans juger, repérer la cause, proposer une action réaliste puis la transmettre rapidement.</p>
+</article>
+</section>
+<section class="pap-ladder" aria-label="PAP simplifié pour le débrief">
+<article class="pap-node">
+<strong>Danger</strong>
+<span>Ce qui a rendu l’accident possible.</span>
+</article>
+<span class="pap-arrow">→</span>
+<article class="pap-node">
+<strong>Situation</strong>
+<span>Comment l’exposition s’est produite.</span>
+</article>
+<span class="pap-arrow">→</span>
+<article class="pap-node">
+<strong>Dommage</strong>
+<span>Ce qui s’est passé ou aurait pu arriver.</span>
+</article>
+<span class="pap-arrow">→</span>
+<article class="pap-node">
+<strong>Action</strong>
+<span>Ce qu’on change pour éviter la répétition.</span>
+</article>
+</section>
+<section class="step-sequence">
+<article class="step-card">
+<strong>1. Danger</strong>
+<span>Je nomme la source réelle.</span>
+</article>
+<article class="step-card">
+<strong>2. Situation</strong>
+<span>Je décris l’exposition vécue.</span>
+</article>
+<article class="step-card">
+<strong>3. Dommage</strong>
+<span>Je précise ce qui s’est produit.</span>
+</article>
+<article class="step-card">
+<strong>4. Action</strong>
+<span>Je propose une mesure concrète.</span>
+</article>
+</section>
+<section class="content-grid-two">
+<article class="scenario-card scenario-card--accent">
+<p class="badge">Cas concret 1</p>
+<h2>Sol glissant</h2>
+<p>
+<strong>Danger :</strong> sol humide non signalé.</p>
+<p>
+<strong>Situation :</strong> passage fréquent devant la zone.</p>
+<p>
+<strong>Dommage :</strong> chute avec douleur empêchant la marche.</p>
+<p>
+<strong>Action :</strong> balisage, nettoyage structuré, rangement du matériel.</p>
+</article>
+<article class="scenario-card scenario-card--accent">
+<p class="badge">Cas concret 2</p>
+<h2>Outil laissé ouvert</h2>
+<p>
+<strong>Danger :</strong> lame ou arête accessible.</p>
+<p>
+<strong>Situation :</strong> outil abandonné sur le plan de travail.</p>
+<p>
+<strong>Dommage :</strong> coupure simple ou profonde.</p>
+<p>
+<strong>Action :</strong> rangement immédiat, rappel de procédure, stockage adapté.</p>
+</article>
+</section>
+<section class="grid two">
+<article class="card-action">
+<h2>Ce qu’on attend du SST</h2>
+<div class="mini-flow">
+<article class="mini-flow__item">
+<strong>Dire le fait</strong>
+<span>Sans jugement ni accusation.</span>
+</article>
+<article class="mini-flow__item">
+<strong>Montrer le lien</strong>
+<span>Danger → situation → dommage.</span>
+</article>
+<article class="mini-flow__item">
+<strong>Proposer</strong>
+<span>Une action réaliste et transmissible.</span>
+</article>
+</div>
+</article>
+<article class="red-flag">
+<h2>Erreurs fréquentes</h2>
+<ul class="list-tight">
+<li>S’arrêter au secours sans retour d’expérience.</li>
+<li>Parler de faute au lieu d’une situation à corriger.</li>
+<li>Transmettre sans fait précis ni action concrète.</li>
+</ul>
+</article>
+</section>
+<section class="module-callout card-action">
+<div>
+<h2>Ensuite</h2>
+<p>Consolidez les réflexes avec la révision terrain ou ouvrez une fiche urgence pour retrouver l’action essentielle immédiatement.</p>
+</div>
+<div class="card-actions-row">
+<a class="btn-primary" href="../revision/index.html">Réviser rapidement</a>
+<a class="btn-secondary" href="../urgence/arret-cardiaque.html">Urgence</a>
+</div>
+</section>
+</main>
+<div class="floating-urgence">
+<button class="btn-danger" data-nav="urgence">⚡ URGENCE</button>
+</div>
+<footer class="app-footer">
+<button class="btn-secondary" data-nav="prev">Précédent</button>
+<button class="btn-primary" data-nav="hub">Accueil</button>
+<button class="btn-secondary" data-nav="next">Suivant</button>
+<button class="btn-danger" data-nav="urgence">URGENCE</button>
+</footer>
+<script src="../assets/js/navigation.js">
+</script>
+<script src="../assets/js/ui.js">
+</script>
+<script src="../assets/js/app.js">
+</script>
 </body>
 </html>
