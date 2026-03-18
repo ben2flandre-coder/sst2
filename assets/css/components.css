@@ -1351,3 +1351,140 @@
   .btn-secondary,
   .btn-danger { min-height: 46px; }
 }
+
+.hero-panel--glass {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.entry-card--quiet {
+  border-style: dashed;
+  opacity: 0.98;
+}
+
+.visual-band {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.visual-band--full {
+  margin: 0;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid #d8dee6;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.visual-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.inrs-figure {
+  display: grid;
+  gap: 12px;
+  align-items: start;
+}
+
+.inrs-figure img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #d8dee6;
+  background: #fff;
+}
+
+.inrs-figure--compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pap-ladder {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, auto));
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pap-node {
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+}
+
+.pap-node strong,
+.pi-branch strong {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.pi-decision {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pi-decision--home .pi-branch {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.pi-branch {
+  background: #f8fbff;
+  border: 1px solid #bfdbfe;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+}
+
+.alert-script-card {
+  border-left: 6px solid var(--warning);
+}
+
+.situation-grid--focus {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.audience-panels--dense {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.review-grid--dense {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.step-sequence--mini {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .inrs-figure--compact,
+  .pi-decision,
+  .review-grid--dense,
+  .situation-grid--focus,
+  .audience-panels--dense,
+  .step-sequence--mini {
+    grid-template-columns: 1fr;
+  }
+
+  .pap-ladder {
+    grid-template-columns: 1fr;
+  }
+
+  .pap-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+  }
+}
