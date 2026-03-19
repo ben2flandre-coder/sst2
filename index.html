@@ -9,315 +9,60 @@
 <link rel="stylesheet" href="assets/css/components.css" />
 </head>
 <body class="app-shell home-main" data-prev="" data-next="/modules/module-c1.html">
-<svg class="ui-icons" aria-hidden="true" focusable="false">
-  <symbol id="i-proteger" viewBox="0 0 24 24">
-    <path d="M12 3l7 3v5c0 4.5-2.9 8.5-7 10-4.1-1.5-7-5.5-7-10V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M9.5 12.5l1.7 1.7 3.6-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="i-examiner" viewBox="0 0 24 24">
-    <circle cx="10.5" cy="10.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
-    <path d="M15 15l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M8.5 10.5h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="i-alerter" viewBox="0 0 24 24">
-    <path d="M12 4l8 14H4L12 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M12 9v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-    <circle cx="12" cy="16.5" r="1" fill="currentColor"/>
-  </symbol>
-  <symbol id="i-secourir" viewBox="0 0 24 24">
-    <path d="M10 4h4v5h5v4h-5v5h-4v-5H5V9h5V4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="i-prevenir" viewBox="0 0 24 24">
-    <path d="M5 18h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M7 18V9l5-4 5 4v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M10 13h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="i-urgence" viewBox="0 0 24 24">
-    <path d="M13 2L5 13h5l-1 9 8-11h-5l1-9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="i-revision" viewBox="0 0 24 24">
-    <path d="M6 4h9l3 3v13H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M15 4v3h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M9 11h6M9 15h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="i-outils" viewBox="0 0 24 24">
-    <path d="M14 6l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M5 19l6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M13 4l7 7-2 2-7-7a3 3 0 1 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M4 20l3-1 9-9-2-2-9 9-1 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-  </symbol>
-</svg>
 <header class="app-header">
 <div class="app-title">SST • Hub apprenant</div>
 <button class="btn-secondary hub-btn" data-nav="hub">Accueil</button>
 </header>
-<main class="app-main app-main--home">
-<section class="hero hero-home hero-home--learner">
-  <div class="hero-split hero-split--balanced">
+<main class="app-main app-main--home app-main--home-final">
+<section class="hero hero-home hero-home--learner hero-home--final">
+  <div class="hero-home__content">
+    <p class="hero-kicker">Parcours SST terrain</p>
+    <h1>Le geste juste. Tout de suite.</h1>
+    <p class="hero-home__lead">Prévention, urgence, révision et outils formateur dans un facing plus net, plus dense et plus lisible.</p>
+    <div class="brand-strip brand-strip--compact">
+      <span class="brand-token brand-token--sst">SST</span>
+      <span class="brand-token brand-token--inrs">INRS</span>
+      <span class="brand-token brand-token--forprev">PAP</span>
+      <span class="brand-token brand-token--greta">PI</span>
+    </div>
+    <a class="btn-primary btn-primary--hero" href="modules/module-c1.html">Commencer la formation</a>
+  </div>
+</section>
+
+<section class="home-entry-grid" aria-label="Accès principaux SST">
+  <a class="home-entry-card home-entry-card--danger" href="urgence/index.html">
+    <span class="tile-icon tile-icon--danger">U</span>
     <div>
-      <p class="hero-kicker">Parcours terrain SST</p>
-      <h1>Un outil SST dense, lisible et aligné sur la progression officielle.</h1>
-      <p>Le parcours apprenant suit strictement la séquence C1 → C6 → C7 → C8 → C2 → C3 → C4 → C5 pour relier prévention, alerte et geste de secours sans rupture pédagogique.</p>
-      <div class="brand-strip">
-        <span class="brand-token brand-token--sst">SST</span>
-        <span class="brand-token brand-token--inrs">INRS</span>
-        <span class="brand-token brand-token--forprev">PAP terrain</span>
-        <span class="brand-token brand-token--greta">PI terrain</span>
-      </div>
-      <div class="hero-actions hero-actions--start">
-        <a class="btn-primary" href="modules/module-c1.html">Commencer la formation</a>
-        <a class="btn-danger" href="urgence/index.html">Urgence</a>
-        <a class="btn-secondary" href="revision/index.html">Révision</a>
-      </div>
+      <p class="badge badge--alert">Urgence</p>
+      <h2>Accès immédiat</h2>
+      <p>Hémorragie, étouffement, inconscience, arrêt cardiaque et DAE sans détour.</p>
     </div>
-    <aside class="hero-panel hero-panel--glass hero-panel--legend">
-      <p class="badge">Repères visuels SST / INRS</p>
-      <div class="legend-stack">
-        <div class="legend-line legend-line--danger"><span class="tile-icon tile-icon--danger">U</span><div><strong>Rouge</strong><span>urgence vitale et red flags.</span></div></div>
-        <div class="legend-line legend-line--warning"><span class="tile-icon tile-icon--warning">A</span><div><strong>Orange</strong><span>alerte, examen et vigilance.</span></div></div>
-        <div class="legend-line legend-line--info"><span class="tile-icon tile-icon--info">G</span><div><strong>Bleu</strong><span>geste, ordre d’action, décision.</span></div></div>
-        <div class="legend-line legend-line--success"><span class="tile-icon tile-icon--success">P</span><div><strong>Vert</strong><span>prévention, PAP et remontée utile.</span></div></div>
-      </div>
-      <div class="brand-strip--visual">
-        <figure class="brand-visual">
-          <img src="assets/images/previews/Pedagogie_p1.png" alt="Repère visuel PAP SST" />
-          <span>Schéma PAP terrain</span>
-        </figure>
-        <figure class="brand-visual">
-          <img src="assets/images/previews/Fiche-outils-INRS_p1.png" alt="Repère visuel PI et gestes SST" />
-          <span>Repères PI et gestes</span>
-        </figure>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<section class="card-action progress-banner" aria-label="Progression officielle SST">
-  <div class="section-heading section-heading--spread">
+  </a>
+  <a class="home-entry-card home-entry-card--info" href="revision/index.html">
+    <span class="tile-icon tile-icon--info">R</span>
     <div>
-      <p class="badge">Progression / compétences</p>
-      <h2>Ordre pédagogique officiel conservé</h2>
-      <p>Le facing reste stable, mais chaque étape gagne des repères visuels, des liens outils et un ancrage SST plus net.</p>
+      <p class="badge">Révision</p>
+      <h2>Fiches réflexes</h2>
+      <p>Conduites à tenir, erreurs à éviter et points de décision en lecture rapide.</p>
     </div>
-    <div class="progress-banner__chips">
-      <span class="status-chip status-chip--success">Prévention d’abord</span>
-      <span class="status-chip status-chip--info">App logique</span>
-      <span class="status-chip status-chip--danger">Urgence visible</span>
-    </div>
-  </div>
-  <div class="training-roadmap training-roadmap--compact">
-    <a class="learning-tile learning-tile--info is-current" href="modules/module-c1.html" data-step="1">
-      <span class="tile-icon tile-icon--info">C1</span>
-      <strong>Rôle du SST</strong>
-      <span>Double mission, lecture de situation, entrée PAP.</span>
-    </a>
-    <a class="learning-tile learning-tile--success" href="modules/module-6.html" data-step="2">
-      <span class="tile-icon tile-icon--success">C6</span>
-      <strong>Analyser</strong>
-      <span>Mécanisme danger → situation → dommage → action.</span>
-    </a>
-    <a class="learning-tile learning-tile--warning" href="modules/module-7.html" data-step="3">
-      <span class="tile-icon tile-icon--warning">C7</span>
-      <strong>Prévenir</strong>
-      <span>Qui informer, quoi dire, avec quel canal.</span>
-    </a>
-    <a class="learning-tile learning-tile--success" href="modules/module-8.html" data-step="4">
-      <span class="tile-icon tile-icon--success">C8</span>
-      <strong>Tracer</strong>
-      <span>Remontée utile et action de prévention.</span>
-    </a>
-    <a class="learning-tile learning-tile--info" href="modules/module-2.html" data-step="5">
-      <span class="tile-icon tile-icon--info">C2</span>
-      <strong>Protéger</strong>
-      <span>Éviter le sur-accident et garder la zone sûre.</span>
-    </a>
-    <a class="learning-tile learning-tile--warning" href="modules/module-3.html" data-step="6">
-      <span class="tile-icon tile-icon--warning">C3</span>
-      <strong>Examiner</strong>
-      <span>Repérer le signe majeur rapidement.</span>
-    </a>
-    <a class="learning-tile learning-tile--warning" href="modules/module-4.html" data-step="7">
-      <span class="tile-icon tile-icon--warning">C4</span>
-      <strong>Alerter</strong>
-      <span>Message clair, guidage, confirmation.</span>
-    </a>
-    <a class="learning-tile learning-tile--danger" href="modules/module-5.html" data-step="8">
-      <span class="tile-icon tile-icon--danger">C5</span>
-      <strong>Secourir</strong>
-      <span>Toutes les techniques terrain + PI.</span>
-    </a>
-  </div>
-</section>
-
-<section class="resource-hub-grid" aria-label="Repères SST majeurs">
-  <article class="resource-hub-card">
-    <img src="assets/images/previews/Pedagogie_p2.png" alt="Lecture prévention PAP" />
-    <p class="badge">Prévention</p>
-    <h2>C1 à C8 ancrés dans le PAP</h2>
-    <p>Le danger, la situation dangereuse, le dommage et l’action servent de fil conducteur avant, pendant et après l’événement.</p>
-    <a class="quick-link quick-link--block" href="modules/module-6.html">Voir la séquence prévention</a>
-  </article>
-  <article class="resource-hub-card">
-    <img src="assets/images/previews/General_p2.png" alt="Lecture intervention PI" />
-    <p class="badge badge--alert">Intervention</p>
-    <h2>C5 piloté par le PI</h2>
-    <p>Le PI soutient la décision en 4 temps : protéger, examiner, alerter, secourir, avec un geste clé par situation.</p>
-    <a class="quick-link quick-link--block" href="modules/module-5.html">Voir toutes les techniques</a>
-  </article>
-  <article class="resource-hub-card">
-    <img src="assets/images/previews/Fiche-outils-INRS_p2.png" alt="Repère urgence terrain SST" />
-    <p class="badge badge--alert">Urgence</p>
-    <h2>Accès réflexe en mode terrain</h2>
-    <p>Les fiches d’urgence gardent visibles les gestes vitaux, le DAE, la PLS et les conduites à tenir les plus critiques.</p>
-    <a class="quick-link quick-link--block" href="urgence/index.html">Basculer en mode urgence</a>
-  </article>
-</section>
-
-<section class="quick-access-grid" aria-label="Outils intégrés SST">
-  <article class="quick-access-card">
-    <p class="badge">Outil prévention</p>
-    <h2>PAP</h2>
-    <p>À utiliser en C1, C6, C7 et C8 pour nommer le danger, comprendre l’exposition et proposer une action de prévention réaliste.</p>
-    <div class="card-actions-row">
-      <a class="btn-primary" href="modules/module-c1.html">Entrée C1</a>
-      <a class="btn-secondary" href="tools/pap.html">Ouvrir le PAP</a>
-    </div>
-  </article>
-  <article class="quick-access-card quick-access-card--alert">
-    <p class="badge badge--alert">Outil intervention</p>
-    <h2>PI</h2>
-    <p>À utiliser en C5 pour orienter le geste, décider sans flottement et relier chaque signe majeur à la bonne conduite à tenir.</p>
-    <div class="card-actions-row">
-      <a class="btn-primary" href="modules/module-5.html">Entrée C5</a>
-      <a class="btn-secondary" href="tools/pi.html">Ouvrir le PI</a>
-    </div>
-  </article>
-</section>
-
-<section class="home-flow" aria-label="Accès apprenant principaux">
-  <article class="card-action stack-section">
-    <div class="section-heading section-heading--spread">
-      <div>
-        <p class="badge badge--alert">Urgence</p>
-        <h2>4 accès terrain immédiats</h2>
-        <p>Chaque tuile est lisible, pleine largeur et reliée à une fiche utilisable en situation réelle.</p>
-      </div>
-      <a class="quick-link quick-link--danger" href="urgence/index.html">Voir tout le mode urgence</a>
-    </div>
-    <div class="tile-grid tile-grid--emergency">
-      <a class="action-tile action-tile--danger" href="urgence/hemorragie.html">
-        <span class="tile-icon tile-icon--danger">HE</span>
-        <div>
-          <strong>Saignement abondant</strong>
-          <span>Compression immédiate, alerte, surveillance.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--danger" href="urgence/etouffement.html">
-        <span class="tile-icon tile-icon--danger">ET</span>
-        <div>
-          <strong>Étouffement</strong>
-          <span>Claques dorsales, compressions, décision rapide.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--danger" href="urgence/arret-cardiaque.html">
-        <span class="tile-icon tile-icon--danger">AC</span>
-        <div>
-          <strong>Arrêt cardiaque</strong>
-          <span>Massage cardiaque + DAE sans attendre.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--warning" href="urgence/inconscience.html">
-        <span class="tile-icon tile-icon--warning">IN</span>
-        <div>
-          <strong>Inconscience</strong>
-          <span>PLS, alerte et contrôle respiratoire.</span>
-        </div>
-      </a>
-    </div>
-  </article>
-
-  <article class="card-action stack-section">
-    <div class="section-heading section-heading--spread">
-      <div>
-        <p class="badge">Révision</p>
-        <h2>Fiches réflexes et repères de décision</h2>
-        <p>On retrouve les conduites à tenir, les erreurs fréquentes et les points d’attention en quelques secondes.</p>
-      </div>
-      <a class="quick-link" href="revision/index.html">Ouvrir toutes les fiches</a>
-    </div>
-    <div class="tile-grid tile-grid--revision">
-      <a class="action-tile action-tile--info" href="urgence/hemorragie.html">
-        <span class="tile-icon tile-icon--info">V</span>
-        <div>
-          <strong>Je vois un saignement abondant</strong>
-          <span>Je comprime tout de suite et je fais alerter.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--warning" href="urgence/etouffement.html">
-        <span class="tile-icon tile-icon--warning">R</span>
-        <div>
-          <strong>La victime ne parle plus</strong>
-          <span>Je désobstrue sans délai.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--danger" href="modules/module-5.html#dae">
-        <span class="tile-icon tile-icon--danger">DAE</span>
-        <div>
-          <strong>La victime ne respire pas</strong>
-          <span>J’alerte, je masse, je pose le DAE dès son arrivée.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--success" href="modules/module-8.html">
-        <span class="tile-icon tile-icon--success">PAP</span>
-        <div>
-          <strong>Après l’intervention</strong>
-          <span>Je trace l’événement pour empêcher la répétition.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--warning" href="modules/module-7.html">
-        <span class="tile-icon tile-icon--warning">INT</span>
-        <div>
-          <strong>Organisation interne</strong>
-          <span>Qui prévenir, quoi transmettre, qui guide.</span>
-        </div>
-      </a>
-      <a class="action-tile action-tile--info" href="tools/pi.html">
-        <span class="tile-icon tile-icon--info">PI</span>
-        <div>
-          <strong>Décider avec le PI</strong>
-          <span>Protéger, examiner, alerter, secourir.</span>
-        </div>
-      </a>
-    </div>
-  </article>
-</section>
-
-<section class="quick-gesture-bar quick-gesture-bar--memo" aria-label="Mémo terrain">
-  <div class="section-heading section-heading--spread">
+  </a>
+  <a class="home-entry-card home-entry-card--success" href="modules/module-6.html">
+    <span class="tile-icon tile-icon--success">P</span>
     <div>
-      <p class="badge">Mémo terrain</p>
-      <h2>4 réflexes qui structurent toute la plateforme</h2>
+      <p class="badge">Prévention</p>
+      <h2>Entrer par le PAP</h2>
+      <p>Le danger, l’exposition et l’action de prévention restent reliés au parcours apprenant.</p>
     </div>
-  </div>
-  <div class="field-mini-flow field-mini-flow--compact">
-    <article class="field-cue panel--success"><strong>1. Voir</strong><span>danger, situation dangereuse, dommage possible.</span></article>
-    <article class="field-cue panel--warning"><strong>2. Informer</strong><span>alerte interne puis externe selon le cas.</span></article>
-    <article class="field-cue panel--info"><strong>3. Agir</strong><span>protéger, examiner, secourir dans l’ordre.</span></article>
-    <article class="field-cue panel--success"><strong>4. Tracer</strong><span>PAP, action immédiate, remontée utile.</span></article>
-  </div>
+  </a>
+  <a class="home-entry-card home-entry-card--slate" href="tools/ressources-formateur.html">
+    <span class="tile-icon tile-icon--slate">T</span>
+    <div>
+      <p class="badge">Outils formateur</p>
+      <h2>Espace séparé</h2>
+      <p>PAP, PI et ressources d’animation restent accessibles sans polluer l’espace apprenant.</p>
+    </div>
+  </a>
 </section>
-
-<aside class="support-panel" aria-label="Outils secondaires">
-  <details>
-    <summary>Espace outils secondaires</summary>
-    <div class="support-panel__links">
-      <a href="tools/ressources-formateur.html">Accueil outils</a>
-      <a href="tools/pap.html">PAP</a>
-      <a href="tools/pi.html">PI</a>
-      <a href="tools/livret.html">Livret</a>
-    </div>
-  </details>
-</aside>
 </main>
 <footer class="app-footer">
 <button class="btn-secondary" data-nav="prev">Précédent</button>
