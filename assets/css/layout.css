@@ -127,3 +127,21 @@ body {
     bottom: calc(var(--footer-height) + 10px);
   }
 }
+
+/* Final spacing pass */
+.app-main {
+  padding: 16px 16px 22px;
+  max-width: 1180px;
+}
+
+.app-main > section + section,
+.app-main > div + section,
+.home-main section + section {
+  margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 12px 12px 18px;
+  }
+}
